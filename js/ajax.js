@@ -1,6 +1,6 @@
 class peticionAjax {
     respuesta () {
-        let http = dato.asincrono ? this : this.xmlhttp;
+        let http = this.asincrono ? this : this.xmlhttp;
         if (http.readyState == 4) {
             if (http.responseType != "arraybuffer") {
                 if (http.responseText == "" || http.responseText == null) {
@@ -18,7 +18,7 @@ class peticionAjax {
                 resultado.success  = false;
                 resultado.errmsg   = 'Se esperaba un objeto JSON';
             }
-            if (typeof this.retorno == "function") this.retorno((http.status == 200 && resultado.success), resultado, dato.extra);
+            if (typeof this.retorno == "function") this.retorno((http.status == 200 && resultado.success), resultado, this.extra);
         }
     }
     
@@ -33,7 +33,7 @@ class peticionAjax {
                 this.xmlhttp.setRequestHeader("Content-type", "application/json;" + this.caracteres);
                 this.xmlhttp.send(JSON.stringify(this.parametros));
             } else {
-                this.xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded;" + dato.caracteres);
+                this.xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded;" + this.caracteres);
                 this.xmlhttp.send(cad);
             }
         } else if (this.metodo == "DELETE") {
