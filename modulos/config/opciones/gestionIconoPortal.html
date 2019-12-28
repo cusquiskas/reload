@@ -1,0 +1,78 @@
+<form
+        name="listadoImagenes"
+        method="POST"
+        frC-Callback="listadoImagenes"
+        frC-AutoLoad="true"
+        action="/management/mvc-management/controller/portal.xwi_icono.listar_imagenes.json">
+    <div class="container">
+        <div class="row">
+            <div class="buscadorFiltrosListado">
+                <div class="md-form">
+                    <input type="text" name="P_IMAGEN" maxlength="200"/>
+                    <label for="P_IMAGEN" class="activa active">Búsqueda por Texto</label></div>
+
+                <input type="text" class="dn"/>
+
+                <div class="md-form">
+                    <input type="date" name="P_FECHAHASTA" class="inputdate-unstyled"/>
+                    <label for="P_FECHAHASTA" class="activa active">Fecha</label>
+                </div>
+
+                <button type="submit" class="btn btn-info">
+                    <i class="material-icons">search</i>
+                    <span>Buscar</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="card-block gestionIconos">
+        <h4 class="card-title">Iconos</h4>
+
+
+        <div class="datatable">
+            <table
+                    class="tblGestionImagen table table-style-01"
+                    type="datatable"
+                    select="selectedRow"
+                    deselect="deselectedRow"
+                    source="root.ico"
+                    language="ES"
+                    pagination="false">
+
+                <thead>
+                <tr>
+                    <th data="CODICO" width="10%">Código</th>
+                    <th data="fdesde" width="10%">Fecha Desde</th>
+                    <th data="fhasta" width="10%">Fecha Hasta</th>
+                    <th data="texto" width="40%">Texto</th>
+                    <th data="nombreimagen" width="50%">Imagen</th>
+                </tr>
+                </thead>
+            </table>
+
+            <div for="datatable">
+
+                <button class="btn btn-outline-indigo" alpulsar="clickNuevo">Nuevo</button>
+                <button class="btn btn-outline-indigo" alpulsar="clickModificar">Modificar</button>
+                <button class="btn btn-outline-danger" alpulsar="clickBorrar">Borrar</button>
+            </div>
+
+
+        </div>
+    </div>
+</form>
+
+
+<form
+        name="borrarIcono"
+        class="dn"
+        method="POST"
+        frC-Callback="borrarIcono"
+        action="/management/mvc-management/controller/portal.xwi_icono.guardar_icono.json">
+
+    <input name="P_CODICO" required/>
+    <input class="dn" type="text" name="P_FLAG"/>
+</form>
+

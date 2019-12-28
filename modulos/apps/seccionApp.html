@@ -1,0 +1,57 @@
+<div class="seccionApp cuerpo" id="#seccionApp">
+    <div class="row">
+        <template id='modal'></template>
+        <form name="cargaOpciones" class="dn" method="POST" frC-Callback="callbackCargaOpciones" action="/management/mvc-management/controller/portal.xwi_menu.listar_menu_usuario.json">
+            <input name="p_codmca">
+        </form>
+        <form class="dn" name="guardarFavorito" frC-callback="guardarFavorito" method="post" action="/management/mvc-management/controller/portal.xwi_menu.guardar_favorito_usuario.json">
+            <input name="p_codmop" value="" />
+            <input name="p_flag" value="" />
+        </form>
+        <div class="menuNuevaFuncionalidad col-12 col-sm-3 col-lg-1 hijosSinPadding">
+            <div class="menuAppIframe sidebar-navigation" id="menuAppIframe">
+                <ul id="ulMenu">
+                    <li id="accionMenu" class="accionMenu">
+                        <span class="textoAccionMenu">
+                            <div class="flex">
+                                <span class="titleMenu" id="wordMenu">ocultar</span>
+                                <span class="barraMenu escribir">|</span>
+                                <span class="subtitleMenu">menú</span>
+                                <span class="iconoMenu rotar180"><img src="res/img/flecha.svg"></span>
+                            </div>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-12 col-sm-8 col-lg-9 contenidoMostrado">
+            <div class="row migas">
+                <div class="col-12 col-sm-8 col-md-9 col-xl-10">
+                    <form name="carpetas" frC-Callback="carpetas">
+                        <div class="tituloAplicacion page-content-subtitle">
+                            <frC-Graft name="titulo">Titulo</frC-Graft>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-12 col-sm-4 col-md-3 col-xl-2 dn">
+                    <button type="button" class="btn btn-primary returnBtn">
+                        <i class="material-icons">exit_to_app</i>
+                        <span>VOLVER</span>
+                    </button>
+                </div>
+            </div>
+            <div class="divCajas dn">
+                <div class="totalCajas row" id="cajasOpciones"></div>
+            </div>
+            <div class="seccionAppIframe">
+                <iframe name="applicationFrame" src="/newintra/acceso_portal.html" frameborder="0"></iframe>
+            </div>
+            <div class="divTemplate dn">
+                <template id="templateAplicacion"></template>
+            </div>
+            <div class="divTemplateModal dn">
+                <template id="templateAplicacionModal"></template>
+            </div>
+        </div>
+    </div>
+</div>

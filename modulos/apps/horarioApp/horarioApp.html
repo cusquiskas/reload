@@ -1,0 +1,35 @@
+<div class="d-flex justify-content-center flex-column ">
+    <div name="buttons" class="w-100 d-flex justify-content-center mt-2 btnsRegistroHorario bg-white">
+        <button class="btn btn-primary  col-md-3 d-flex justify-content-center" tabindex="0" type="button"
+            aria-label="Inserción">Fichaje Virtual</button>
+        <button class="btn btn-primary  col-md-3 d-flex justify-content-center" tabindex="0" type="button"
+            aria-label="Fichaje">Incidencia Fichaje</button>
+            <button class="btn btn-primary  dn col-md-3 d-flex justify-content-center" tabindex="0" type="button"
+            aria-label="responsable"><span class="toggleSpanResp">Fichajes Empleados</span><span class="toggleSpanResp dn">Fichajes Propios</span></button>
+            <button class="btn btn-primary  dn col-md-3 d-flex justify-content-center" tabindex="0" type="button"
+            aria-label="calendarioListado">Calendario/Listado</button>
+        <button class="btn floatAddBtn col-md-2  col-5 dn" tabindex="0" type="button" aria-label="refreshData">Refrescar
+            Datos</button>
+        <!-- Click the above button to refresh data -->
+        <form name="getTokenArmageddon" 
+              class="dn" method="GET"
+              frC-Callback="getTokenArmageddon"
+              frC-noSesion="true"
+              action="https://intranet.globalia-sistemas.com/gsic-soporte/restservices/login/portalSSO/">
+        </form>
+        <form name="getEmployees" 
+              class="dn" method="GET"
+              frC-noSesion="true"
+              frC-Callback="getEmployees"
+              action="https://intranet.globalia-sistemas.com/gsic-soporte/restservices/armageddon/ausencias/autorizadores/{CodigoTrabajador}/autorizados/">
+        </form>
+        <form name="acuerdoDirecc"
+              class="dn" method="POST"
+              frC-AutoLoad="true"
+              frC-Callback="getAcuerdoDirecc"
+              action="/management/mvc-management/controller/portal.xwi_presencia.conf_empleado.json">
+        </form>
+    </div>
+    <template id="listContainer"></template>
+    <template id="modal"></template>
+</div>

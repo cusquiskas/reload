@@ -1,0 +1,24 @@
+<div class="gestionFavoritos">
+    <div class="favoritemanager-infotxt listado">
+        A continuación puedes escoger tus Favoritos entre los accesos directos más frecuentes. El resto de accesos también podrás
+        añadirlos a tu lista personal seleccionando la estrella que encontrarás en cada una de las opciones del menú.
+    </div>
+    <div class="listado">
+        <div class="row">
+            <div class="col">APLICACIONES</div>
+            <div class="col-auto cabeceraNumeroFavoritos">
+                <span class="numFavoritosSeleccionados"></span> de 7 seleccionados</div>
+        </div>
+        <div class="tabla tablaGestionFavoritos">
+            <!-- Listado de aplicaciones que puede ser favoritos para el usuario -->
+        </div>
+    </div>
+    <div class="pieNumeroFavoritos">
+        <span class="numFavoritosSeleccionados"></span> de 7 seleccionados</div>
+    <form class="dn" name="listaGestionFavoritos" frC-callback="listaGestionFavoritos" method="post" frC-autoload="true" action="/management/mvc-management/controller/portal.xwi_menu.listar_opmenu_perfil_and_fav.json">
+    </form>
+    <form class="dn" name="guardarFavorito" frC-callback="guardarFavorito" method="post" action="/management/mvc-management/controller/portal.xwi_menu.guardar_favorito_usuario.json">
+        <input name="p_codmop" value="" />
+        <input name="p_flag" value="" />
+    </form>
+</div>

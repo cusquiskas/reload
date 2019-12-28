@@ -1,0 +1,265 @@
+<div class="excenencia-licencia-cae">
+    <form name="frmCodigoPlantilla" class='dn' method="POST" frC-Callback="cbkCodigoPlantilla"
+        action="/management/mvc-management/controller/newintra.xwi_plantilla_cae.decision_plantilla.json"
+        frC-AutoLoad="true">
+        <input type="hidden" name="p_codgrp" value="1">
+    </form>
+    <form name="frmUpdateDocs" class='dn' method="POST" frC-Callback="cbkUpdateDocs"
+        action="/management/mvc-management/controller/newintra.xwi_plantilla_cae.guarda_documento.json"
+        frC-AutoLoad="false">
+        <input type="hidden" name="p_codtra" value="empty">
+        <input type="hidden" name="p_nomext">
+        <input type="hidden" name="p_nomint">
+    </form>
+
+    <form name="frmExcedenciaLicencia" method="POST" frC-Callback="cbkExcedenciaLicencia"
+        action="/management/mvc-management/controller/newintra.xwi_plantilla_cae.guarda_tramite.json">
+        <input type="hidden" name="p_codplt" required>
+        <input type="hidden" name="p_nomext" required>
+        <label for="p_nomext" class="dn">Ficheros Adjuntos</label>
+        <input type="hidden" name="p_nomint">
+
+        <div class="panel-estado">
+            <div class="tituloConfig">Estado Solicitud</div>
+            <div class="md-form row">
+                <div class="md-form col-6">
+                    <div class="input-group">
+                        <input name="p_estsol" class="form-control" type="text" readonly frC-Submit="false" />
+                    </div>
+                </div>
+                <div class="md-form col-6">
+                    <div class="input-group observaciones_responsable dn">
+                        <input name="observ" class="form-control" type="text" readonly frC-Submit="false" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel-observacion dn">
+            <div class="tituloConfig">Observaciones</div>
+            <div class="md-form row">
+                <div class="md-form col-12">
+                    <div class="input-group">
+                        <textarea name="p_observ" class="form-control" readonly frC-Submit="false"
+                            style="max-height: 200px;"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="formulario">
+            <div class="tituloConfig">Datos Personales</div>
+            <div class="md-form row">
+                <div class="md-form col-4">
+                    <div class="input-group">
+                        <input name="p_numusr" class="form-control" type="text" disabled frC-Submit="false" />
+                        <label for="p_numusr">Nº Usuario</label>
+                    </div>
+                </div>
+                <div class="md-form col-8">
+                    <div class="input-group">
+                        <input name="p_nombre_completo" class="form-control" type="text" disabled frC-Submit="false" />
+                        <label for="p_nombre_completo">Nombre y Apellidos</label>
+                    </div>
+                </div>
+            </div>
+            <div class="md-form row">
+                <div class="md-form col-4">
+                    <div class="input-group">
+                        <input name="p_empresa" class="form-control" type="text" disabled frC-Submit="false" />
+                        <label for="p_empresa">Empresa</label>
+                    </div>
+                </div>
+                <div class="md-form col-4">
+                    <div class="input-group">
+                        <input name="p_centro" class="form-control" type="text" disabled frC-Submit="false" />
+                        <label for="p_centro">Centro de Trabajo</label>
+                    </div>
+                </div>
+                <div class="md-form col-4">
+                    <div class="input-group">
+                        <input name="p_departamento" class="form-control" type="text" disabled frC-Submit="false" />
+                        <label for="p_departamento">Departamento</label>
+                    </div>
+                </div>
+            </div>
+            <div class="md-form row">
+                <div class="md-form col-6">
+                    <div class="input-group">
+                        <input name="p_tlfusr" class="form-control" type="text" required />
+                        <label for="p_tlfusr">Teléfono</label>
+                    </div>
+                </div>
+                <div class="md-form col-6">
+                    <div class="input-group">
+                        <input name="p_emlusr" class="form-control" type="text" required />
+                        <label for="p_emlusr">E-Mail</label>
+                    </div>
+                </div>
+            </div>
+            <div class="tituloConfig">Responsables</div>
+            <div class="md-form row">
+                <div class="md-form col">
+                    <div class="input-group dn">
+                        <input name="p_codres" required>
+                        <label for="p_codres">Superior Jerárquico</label>
+                    </div>
+                    <table class="tbl-responsable table table-bordered custom-table-1">
+                        <thead>
+                            <tr>
+                                <th style="width: 70%;">Nombre</th>
+                                <th style="width: 30%;">Posición</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="tabla">
+            <div class="tituloConfig">Tipo de Excedencia</div>
+            <label for="p_valor1" class="dn">Tipo de Excedencia</label>
+            <table class="tbl-valores table table-bordered custom-table-0">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Solicitud Inicial</th>
+                        <th>Prórroga</th>
+                        <th>Reincorporación</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Por Guarda Legal Hijo</th>
+                        <td><input name="p_valor1" type="radio" value="value_1" data-toggle="tooltip" data-html="true"
+                                required></td>
+                        <td><input name="p_valor1" type="radio" value="value_2" data-toggle="tooltip" data-html="true">
+                        </td>
+                        <td><input class="rein_3" name="p_valor1" type="radio" value="value_3" data-toggle="tooltip"
+                                data-html="true">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Por Guarda Legal Familiar</th>
+                        <td><input name="p_valor1" type="radio" value="value_4" data-toggle="tooltip" data-html="true">
+                        </td>
+                        <td><input name="p_valor1" type="radio" value="value_5" data-toggle="tooltip" data-html="true">
+                        </td>
+                        <td><input class="rein_6" name="p_valor1" type="radio" value="value_6" data-toggle="tooltip"
+                                data-html="true">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Por Motivos Personales (Voluntaria)</th>
+                        <td><input name="p_valor1" type="radio" value="value_7" data-toggle="tooltip" data-html="true">
+                        </td>
+                        <td><input name="p_valor1" type="radio" value="value_8" data-toggle="tooltip" data-html="true">
+                        </td>
+                        <td><input class="rein_9" name="p_valor1" type="radio" value="value_9" data-toggle="tooltip"
+                                data-html="true">
+                        </td>
+                    </tr>
+                    <tr class="elem-by-codpla" codpla="1">
+                        <th>Especiales Articulo 30</th>
+                        <td><input name="p_valor1" type="radio" value="value_10" data-toggle="tooltip" data-html="true">
+                        </td>
+                        <td><input name="p_valor1" type="radio" value="value_11" data-toggle="tooltip" data-html="true">
+                        </td>
+                        <td><input class="rein_121" name="p_valor1" type="radio" value="value_12" data-toggle="tooltip"
+                                data-html="true">
+                        </td>
+                    </tr>
+                    <tr class="elem-by-codpla" codpla="5">
+                        <th>Voluntaria con reserva de puesto (Articulo 30)</th>
+                        <td><input name="p_valor1" type="radio" value="value_10" data-toggle="tooltip" data-html="true">
+                        </td>
+                        <td><input name="p_valor1" type="radio" value="value_11" data-toggle="tooltip" data-html="true">
+                        </td>
+                        <td><input class="rein_125" name="p_valor1" type="radio" value="value_12" data-toggle="tooltip"
+                                data-html="true">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="tbl-valores table table-bordered custom-table-0 elem-by-codpla" codpla="4,5,6,7">
+                <tbody>
+                    <tr>
+                        <th>Licencia No Retribuida / Permiso sin sueldo</th>
+                        <td><input name="p_valor1" type="radio" value="value_13" data-toggle="tooltip" data-html="true">
+                        </td>
+                        <!-- XX584 - 29/10/2019 - Solo iniciales en las Licencias No Retribuidas -->
+                        <!-- <td><input name="p_valor1" type="radio" value="value_14" data-toggle="tooltip" data-html="true">
+                        </td> -->
+                        <td><input type="hidden"></td>
+                        <td><input type="hidden"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="fechas">
+            <div class="tituloConfig">Condiciones Solicitadas</div>
+            <div class="md-form row">
+                <div class="md-form col-6">
+                    <div class="input-group">
+                        <input name="p_valor2" class="form-control inputdate-unstyled" type="date" required />
+                        <label for="p_valor2" class="active">Fecha Inicio</label>
+                    </div>
+                </div>
+                <div class="md-form col-6 fechaFin">
+                    <div class="input-group">
+                        <input name="p_valor3" class="form-control inputdate-unstyled" type="date" required />
+                        <label for="p_valor3" class="active">Fecha Fin</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel-estado2">
+            <div class="tituloConfig">Estado Solicitud</div>
+            <div class="md-form row">
+                <div class="md-form col-6">
+                    <div class="input-group">
+                        <input class="form-control estado" type="text" readonly frC-Submit="false" />
+                    </div>
+                </div>
+                <div class="md-form col-6">
+                    <div class="input-group observaciones_responsable2 dn">
+                        <input class="form-control observ" type="text" readonly frC-Submit="false" />
+                    </div>
+                </div>
+            </div>
+            <div class="md-form row">
+                <div class="md-form col-6">
+                    <div class="input-group token"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="boton">
+            <div class="md-form row">
+                <div class="md-form col-3"></div>
+                <div class="md-form col">
+                    <button class="btn btn-primary btn-with-img btn-adjuntar_ficheros" type="button">
+                        <span>Adjuntos </span><i class="material-icons">attach_file</i>
+                    </button>
+                </div>
+                <div class="md-form col hide-on-view hide-on-modf hide-on-solicitar botonera-aceptar">
+                    <button class="btn btn-primary btn-with-img btn-aceptar" type="button">
+                        <span>Aceptar </span><i class="material-icons">check</i>
+                    </button>
+                </div>
+                <div class="md-form col hide-on-view hide-on-modf hide-on-solicitar botonera-rechazar">
+                    <button class="btn btn-primary btn-with-img btn-rechazar" type="button">
+                        <span>Rechazar </span><i class="material-icons">close</i>
+                    </button>
+                </div>
+                <div class="md-form col hide-on-view hide-on-modf hide-on-accept">
+                    <button class="btn btn-primary btn-with-img btn-solicitar-excedencia" type="button">
+                        <span>Solicitar </span><i class="material-icons">send</i>
+                    </button>
+                </div>
+                <div class="md-form col-3"></div>
+            </div>
+        </div>
+    </form>
+</div>

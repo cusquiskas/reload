@@ -1,0 +1,80 @@
+<template id='modal'></template>
+<div class="modalFoto">
+    <button type="button" class="discard btn waves-effect waves-light">
+        <i class="material-icons">close</i>
+    </button>
+    <img src="" alt="">
+</div>
+<div class="container-fluid tablon-anuncios">
+    <h1 class="page-content-title">Tablón de anuncios</h1>
+    <div class="sidebar-module sidebar-phones">
+        <h2 class="module-title">Búsqueda por tema y fecha</h2>
+        <form name="eliminarAnuncios" class="dn" method="POST" frC-Callback="eliminarAnuncios"
+            action="/management/mvc-management/controller/newintra.xwi_anuncios.guardar_documentos.json">
+            <input name="p_flag" value="D" />
+            <input name="p_seqdoc" required />
+        </form>
+        <form name="tablonAnunciosBusc" method="POST" frC-Callback="tablonAnunciosBusc" frC-AutoLoad="true"
+            action="/management/mvc-management/controller/newintra.xwi_anuncios.listar_documentos.json">
+            <div class="row">
+                <div class="form-group col-12 col-md-4">
+                    <input type="text" hidden>
+                    <input class="form-control tablonBuscarKeyUp" type="text" placeholder="Tema" name="p_titdoc"
+                        maxlength="100">
+                </div>
+                <div class="form-group col-12 col-md-3">
+                    <input type="date" class="form-control calendar" id="inlineFormInputGroup" placeholder="Fecha"
+                        name="p_feccre">
+                </div>
+                <div class="form-group col-12 col-md-3">
+                    <select class="form-control" data-toggle="tooltip" data-placement="top" title="Provincias"
+                        name="p_codcpo" frC-indexResponse="root:des,cod"
+                        frC-Store="/management/mvc-management/controller/newintra.xwi_personal.xlist$provincias.json?p_pais=&p_ctlcbk=&p_swicod=S">
+                        <option value=''>...Provincias...</option>
+                    </select>
+                </div>
+                <div class="col-12 col-md-2">
+                    <button name="tengoQueTenerNombre" frC-Submit="false" type="submit"
+                        class="btn btn-outline-primary globalia">Buscar »</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="row">
+        <div class="col-6 col-md-9">
+            <h2 class="page-content-subtitle">» Todos los anuncios</h2>
+        </div>
+        <div class="col-6 col-md-3 text-right">
+            <button type="button" class="btn btn-primary crearAnuncio">+ Crear anuncio</button>
+        </div>
+    </div>
+</div>
+<div class="container-fluid tablon-anuncios">
+    <div class="card-columns" id="listadoTabAnuncios">
+        <!-- Listado de anuncios -->
+        <template id="tempListAnuncios"></template>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <div class="pagination">
+                <!-- Paginación -->
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid fullWidth">
+    <div class="row">
+        <div class="col-12">
+            <template id="cajaBanners2"></template>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <template id="cajaPreFooter2"></template>
+        </div>
+    </div>
+</div>

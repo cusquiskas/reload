@@ -1,0 +1,90 @@
+<div name="myModalReplace" class="modal show customBackdrop" data-backdrop="static" data-keyboard="false"
+    style="display: block; padding-right: 17px;" aria-modal="true">
+    <div class="modal-dialog">
+        <div class="modal-content"
+            style="width: auto; height: auto; margin: 0px auto; max-width: 50vw; max-height: 100vh;">
+            <div class="modal-header">
+                <h4 class="modal-title" name="modalTitle"></h4>
+                <button type="button" class="close" data-dismiss="modal" name="closeModalReplace">
+                    <span aria-hidden="true">×</span>
+                    <span class="sr-only">Close</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div>
+                    <div>
+                        <form name="listadoPerfil" method="POST" frC-Callback="onFormModalLoad" frC-AutoLoad="true">
+                            <div class="md-form row justify-content-center">
+                                <div class="input-group col-10">
+                                    <input type="text" class="form-control" name="codusr" maxlength="10" required>
+                                    <label for="codusr">Empleado <span class="text-danger">*</span></label>
+                                    <span class="input-group-addon hide-on-modal lupaBuscarUsuarios verUsuario mt-3">
+                                        <i class="material-icons" name="lupa">search</i>
+                                    </span>
+                                    <input type="text" name="usrname"class="form-control" disabled>
+                                </div>
+                            </div>
+
+                            <div class="mt-3 row justify-content-center">
+                                <div class="md-form  input-group col-5">
+                                    <select class="form-control" name="codapl" frC-indexResponse="root:d,c" class="75"
+                                        frC-Store="/management/mvc-management/controller/newintra.xwi_perfiles_rrhh.xlist$list_procesos.json?p_codapl=CAE"
+                                        disabled>
+                                    </select>
+                                    <label class="p-0 control-label active" for="codapl">Aplicación</label>
+                                </div>
+                                <div class="md-form input-group col-5">
+                                    <select class="form-control" name="p_apl" frC-Reference="!p_apl:codapl"
+                                        frC-indexResponse="root:despfl,codpfl"
+                                        frC-Store="/management/mvc-management/controller/newintra.xwi_perfiles_rrhh.xlist$perfiles_aplicacion.json"
+                                        disabled>
+                                    </select>
+                                    <label class="p-0 control-label active" for="p_apl">Perfil</label>
+                                </div>
+                                <div class="mt-3 col-10">
+                                    <div class="radio d-flex">
+                                        <label><input type="radio" name="btnAllOrg" disabled required>Todas
+                                            las
+                                            unidades
+                                            Organizativas</label>
+                                    </div>
+                                    <div class="radio d-flex">
+                                        <label><input type="radio" name="btnCurrentOrg" disabled required>
+                                            <frC-Graft name="selectedDpt"></frC-Graft>
+                                        </label>
+                                    </div>
+                                    <div class="col-12 d-flex justify-content-center">
+                                        <button class="btn floatAddBtn w-50" tabindex="0" name="saveReplaceOrClone"
+                                            disabled>Guardar
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <input name="dptNames" hidden />
+                        </form>
+
+                        <form name="guardar_perfiles" method="post" frC-callback="onUserAdded"
+                            action="/management/mvc-management/controller/newintra.xwi_perfiles_rrhh.xml$actualizar_perfiles.json">
+                            <input name="p_aplicacion" type="hidden" value="" />
+                            <input name="p_perfil" type="hidden" value="">
+                            <input name="p_empdep" type="hidden" value="">
+                            <input name="p_usuario" type="hidden" value="">
+                            <input name="p_modo" type="hidden" value="OM">
+                        </form>
+
+                        <form name="borrar_perfil" method="post"
+                            action="/management/mvc-management/controller/newintra.xwi_perfiles_rrhh.xml$eliminar_perfiles.json"
+                            frC-Callback="deleteHandler">
+                            <input type="hidden" name="p_aplicacion">
+                            <input type="hidden" name="p_perfil">
+                            <input type="hidden" name="p_usuario">
+                            <input type="hidden" name="p_empresa">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>

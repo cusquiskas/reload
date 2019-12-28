@@ -1,0 +1,122 @@
+<div class="card">
+    <div class="card-header aperturaDatosPersonales cambio nav-lvl-1" id="heading1">
+        <h5 class="mb-0">
+            <a data-toggle="collapse" role="button">
+                Datos Personales
+            </a>
+        </h5>
+    </div>
+    <div id="collapse1" class="collapse show cuerpoDatosPersonales">
+        <div class="card-body">
+            <form name="initDatosPersonales" method="POST" class="dn" frC-Callback="initDatosPersonales"
+                action="/management/mvc-management/controller/newintra.xwi_autoservicio.datpe$obtener_datos_personales.json"
+                frC-AutoLoad="true">
+                <input name="p_codusr">
+                <input name="p_fecsol">
+                <input name="p_perfil">
+                <input name="xchn" value="json">
+            </form>
+            <form name="datosPersonalesform" method="POST" frC-Callback="datosPersonalesform"
+                action="/management/mvc-management/controller/newintra.xwi_autoservicio.datpe$guardar_datos.json">
+                <div id="datosPersonalesForm">
+                    <input type="hidden" name="p_adivia" />
+                    <input type="hidden" name="p_docper">
+                    <input type="hidden" name="p_password" />
+                    <input type="hidden" name="P_xsid" />
+
+                    <div class="md-form row formRowsAutoserv">
+                        <div class="col-12 col-md-3 combosDatPer">
+                            <select class="form-control custom-select" name="p_tipvia" frC-indexResponse="root:des,cod"
+                                frC-Store="/management/mvc-management/controller/newintra.xwi_personal.xlist$tiposvia.json?xchn=json&p_swicod=S&p_ctlcbk="
+                                readonly disabled required></select>
+                            <label for="p_tipvia" class="active">Tipo de vía</label>
+                        </div>
+                        <div class="col-12 col-md-5">
+                            <input type="text" class="form-control" name="p_nomvia" readonly disabled required />
+                            <label for="p_nomvia" class="active">Dirección</label>
+                        </div>
+                        <div class="col-12 col-md-2">
+                            <input type="text" class="form-control col" name="p_numvia" readonly disabled required />
+                            <label for="p_numvia" class="active">Número</label>
+                        </div>
+                        <div class="col-12 col-md-2">
+                            <input type="text" class="form-control col" name="p_plavia" readonly disabled />
+                            <label for="p_plavia" class="active">Piso</label>
+                        </div>
+                    </div>
+
+                    <div class="md-form row formRowsAutoserv">
+                        <div class="col-12 col-md-2">
+                            <input type="text" class="form-control" name="p_codcpo" readonly disabled required />
+                            <label for="p_codcpo" class="active">Código postal</label>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <input type="text" class="form-control" name="p_pobper" readonly disabled required />
+                            <label for="p_pobper" class="active">Localidad</label>
+                        </div>
+                        <div class="col-12 col-md-3 combosDatPer">
+                            <select type="text" class="form-control custom-select" name="p_nacper"
+                                frC-indexResponse="root:alter,cod"
+                                frC-Store="/management/mvc-management/controller/newintra.xwi_personal.xlist$paises.json?xchn=json&p_ctlcbk=&p_nation=&p_swicod=S"
+                                readonly disabled required></select>
+                            <label for="p_nacper" class="active">País</label>
+                        </div>
+                        <div class="col-12 col-md-3 combosDatPer">
+                            <select class="form-control custom-select" name="p_proper" frC-Reference="p_pais:p_nacper"
+                                frC-indexResponse="root:des,cod"
+                                frC-Store="/management/mvc-management/controller/newintra.xwi_personal.xlist$provincias.json?xchn=json&p_ctlcbk=&p_swicod=S"
+                                readonly disabled required></select>
+                            <label for="p_proper" class="active">Provincia</label>
+                        </div>
+                    </div>
+                    <div class="md-form row formRowsAutoserv">
+                        <div class="col-12 col-md-6">
+                            <input type="text" class="form-control" name="p_correo" readonly disabled />
+                            <label for="p_correo" class="active">Email</label>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <input type="text" class="form-control" name="p_te1per" readonly disabled />
+                            <label for="p_te1per" class="active">Emergencias&nbsp;<i
+                                    title="Teléfono de contacto en caso de emergencia"
+                                    class="material-icons">info</i></label>
+
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <input type="text" class="form-control" name="p_tmovil" readonly disabled />
+                            <label for="p_tmovil" class="active">Móvil</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="md-form col">
+                        <p class="mensajeRRHH">
+                            Informamos que, los datos recogidos en el apartado Datos Personales, son exclusivamente
+                            consumidos por el departamento de RRHH de la empresa a caso necesario y por el propio
+                            empleado en efectos de validación y rectificación de los mismos.
+                        </p>
+                    </div>
+                </div>
+                <div class="row float-right">
+                    <div class="btnModificando row dn">
+                        <button type="button" class="btn btn-outline-success" id="guardarDatosPersonales">
+                            <i class="material-icons">save</i>
+                            <span>Guardar</span>
+                        </button>
+                        <button type="button" class="btn btn-outline-danger asd asd asf" id="cancelarDatosPersonales">
+                            <i class="material-icons">clear</i>
+                            <span>Cancelar</span>
+                        </button>
+                    </div>
+                    <button type="button" class="btn btn-outline-warning" id="modificarDatosPersonales">
+                        <i class="material-icons">edit</i>
+                        <span>Modificar</span>
+                    </button>
+                    <div id="mensajeDatosPersonales" class="mensajeRRHH dn">
+                        Trámite de modificación pendiente para este empleado
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,30 @@
+<div class="recuperarSesion container">
+    <div class="text-center">
+        <div class="card-block">
+            <form name="accionReLogin" frC-noSesion="true" method="POST" frC-Callback="accionReLogin"
+                action="/management/mvc-management/controller/portal.xwi_acceso.relogin.json">
+                <input type="hidden" name="xsid">
+                <input type="hidden" name="p_oldses">
+                <input name="p_pasusr" type="hidden" required>
+                <div class="input-group">
+                    <span class="input-group-prepend">
+                        <span class="input-group-text">
+                            <i class="material-icons">person</i>
+                        </span>
+                    </span>
+                    <input id="login-username" name="p_codusr" type="text" class="form-control" placeholder="Código de empleado" required>
+                </div>
+                <div class="input-group">
+                    <span class="input-group-prepend">
+                        <span class="input-group-text">
+                            <i class="material-icons">lock</i>
+                        </span>
+                    </span>
+                    <input id="login-password" name="p_pasusr2" type="password" class="form-control" placeholder="Contraseña" frC-Submit="false">
+                </div>
+                <button class="btn btn-primary btnEntrarSesion" type="button">ENTRAR</button>
+            </form>
+            <form name="autExecuteForm" class="dn" frC-Callback="autExecuteForm" frC-autoload="true"></form>
+        </div>
+    </div>
+</div>

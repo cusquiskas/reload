@@ -1,0 +1,40 @@
+<div class="usuarioBloqueado container">
+    <div class="card text-center">
+        <div class="card-block">
+            <div class="logoColorBloqueo"></div>
+            <h5 class="titleLogoPortal">Portal del Empleado</h5>
+            <div class="card-body">
+                <h6 class="card-title">Usuario bloqueado</h6>
+                <p class="card-text text-left">Para desbloquear su usuario, introduzca su DNI y fecha de nacimiento:</p>
+            </div>
+            <form name="desbloquear" class="form-horizontal" method="POST" frC-Callback="desbloquear" action="/management/mvc-management/controller/portal.xwi_acceso.desbloqueo.json">
+                <input type="hidden" name="xchn" value="JSON">
+                <input type="hidden" name="p_codusr">
+                <div class="form-row">
+                    <div class="input-group col-12">
+                        <span class="input-group-prepend">
+                            <span class="input-group-text">
+                                <i class="material-icons">perm_identity</i>
+                            </span>
+                        </span>
+                        <input id="desbloquearDNI" name="p_dniusr" type="text" class="form-control" placeholder="DNI/NIF/NIE" required>
+                    </div>
+                    <div class="input-group col-12">
+                        <span class="input-group-prepend">
+                            <i class="material-icons">date_range</i>
+                            <span class="input-group-text">
+                                <i class="material-icons">perm_identity</i>
+                            </span>
+                        </span>
+                        <input id="desbloquearFecha" name="p_fecnac" type="date" class="form-control" placeholder="Fecha de nacimiento" required>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary">ACEPTAR</button>
+                    </div>
+                </div>
+            </form>
+            <form name="cargaDatosDesbloquear" class="dn" frC-Callback="cargaDatosDesbloquear" frC-AutoLoad="true">
+            </form>
+        </div>
+    </div>
+</div>

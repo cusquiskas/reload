@@ -1,0 +1,27 @@
+<div id="myModalPoliticasRGPD" class="modal fade" data-backdrop="static" data-keyboard="false">
+    <div id="idModalDialog" class="modal-dialog">
+        <div id="idModalContent" class="modal-content">
+            <div class="politicasRGPD">
+                <div class="container">
+                    <form name="aceptarPoliticasRGPD" frC-callback="aceptarPoliticasRGPD" method="POST" action="/management/mvc-management/controller/portal.xwi_rgpd.aceptar_politica_rgpd.json">
+                        <input id="inputCodigoPolitica" class="dn" name="p_codpol">
+                        <input class="dn" name="p_vesion">
+                        <div>
+                            <h3 id="tituloPoliticaRGPD"></h3>
+                            <br>
+                            <div id="entradillaPoliticaRGPD" class="entradillaPoliticaRGPD" readonly></div>
+                            <div class="contenidoPoliticaRGPD">
+                                <div id="cuerpoPoliticaRGPD" class="cuerpoPoliticaRGPD"></div>
+                            </div>
+                            <div>
+                                <button id="botonAceptarSeguir" type="submit" class="btn btn-primary botonPoliticaRGPD">ACEPTAR Y SEGUIR</button>
+                                <button id="botonMasTarde" type="button" class="btn btn-info botonPoliticaRGPD">Más Tarde</button>
+                            </div>
+                        </div>
+                    </form>
+                    <form name="mostrarPoliticaRGPD" method="POST" frC-callback="mostrarPoliticaRGPD" frC-autoload="true" action="/management/mvc-management/controller/portal.xwi_rgpd.listar_politica_rgpd.json"></form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,67 @@
+<div class="gestionPoliticasRGPD">
+    <template id='modal'></template>
+    <div class="tituloGestionPoliticasRGPD">
+        <h4>Gestión de Politicas</h4>
+    </div>
+
+    <form name="ultimaVersion" class="dn" frC-Callback="ultimaVersion" method="POST"
+        action="/management/mvc-management/controller/portal.xwi_rgpd.ultima_version_politicasRGPD.json">
+        <input type="text" name="p_codpol" />
+    </form>
+
+    <form name="generarExcel" class="dn" frC-Callback="generarExcel" method="POST"
+        action="/management/mvc-management/controller/portal.xwi_rgpd.listar_aceptacion.json">
+        <input type="text" name="p_codpol" required />
+        <input type="text" name="p_vesion" required />
+        <input type="text" name="p_numero" required />
+    </form>
+
+    <form name="listadoPoliticas" method="POST" frC-Callback="listadoPoliticas"
+        action="/management/mvc-management/controller/portal.xwi_rgpd.listar_politica_rgpd_nombre.json">
+        <div class="container">
+            <div class="row">
+                <div class="filtrosPolitica">
+                    <div class="md-form">
+                        <input type="text" class="form-control" name="p_nomlar" maxlength="50" />
+                        <label for="p_nomlar">Búsqueda por nombre de política...</label>
+                    </div>
+                    <div class="md-form">
+                        <select id="selectListarPoliticas" class="form-control custom-select" name="p_chkact">
+                            <option value="S">Activas</option>
+                            <option value="N">No activas</option>
+                            <option value="">Todas</option>
+                        </select>
+                        <label for="filtro" class="active">Listar</label>
+                    </div>
+                    <div class="md-form">
+                        <button type="submit" class="btn btn-info">
+                            <span>Buscar</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="datatable">
+            <table class="tblGestionPoliticas table table-style-01" type="datatable" select="politicaSeleccionada"
+                deselect="politicasDesseleccionada" language="ES" source="root.pol" pagination="false">
+                <thead>
+                    <tr>
+                        <th data="codpol" width="10%">Código</th>
+                        <th data="nomlar" width="30%">Nombre</th>
+                        <th data="chkact" width="10%">Activa</th>
+                        <th data="vesion" width="10%">Versión</th>
+                        <th data="chkacc" width="10%">V. Activa</th>
+                        <th data="fechcr" type="date" inmask="DD/MM/YYYY" outmask="DD/MM/YYYY" width="15%">Creación</th>
+                        <th data="fechap" type="date" inmask="DD/MM/YYYY" outmask="DD/MM/YYYY" width="15%">Publicación
+                        </th>
+                    </tr>
+                </thead>
+            </table>
+            <div for="datatable">
+                <button class="btn btn-outline-success" alpulsar="insertarPolitica">Insertar Política</button>
+                <button class="btn btn-outline-indigo" alpulsar="modificarPolitica">Modificar Notificación</button>
+                <button class="btn btn-outline-cyan" alpulsar="descargaAceptacion">Descargar Aceptaciones</button>
+            </div>
+        </div>
+    </form>
+</div>

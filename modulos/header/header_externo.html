@@ -1,0 +1,35 @@
+<header>
+    <div class="container-fluid fixed-top">
+        <div class="row seccionHeadFija">
+            <div class="col-auto mr-auto logoNavbar">
+                <form name="IconoHeader"
+                    action="/management/mvc-management/controller/portal.xwi_icono.icono_ahora.json" method="POST"
+                    frC-Callback="IconoHeader">
+                </form>
+                <img src="res/img/logo-GLB-portal-empleado.png" alt="" itemprop="logo">
+            </div>
+            <div class="col-auto cerrarSesion">
+                <form name="cerrarSesion"
+                    action="/management/mvc-management/controller/portal.xwi_acceso.borrar_sesion.json" method="POST"
+                    frC-Callback="cerrarSesion">
+                    <div class="btnSalirPortal dn">
+                        <img src="res/img/logout.svg" alt="">
+                        <span class="textoSalir">Salir</span>
+                    </div>
+                    <input type="hidden" name="p_oldses">
+                </form>
+            </div>
+        </div>
+        <form name="datosSesion"
+            action="/management/mvc-management/controller/newintra.xwi_acceso3.xml$datos_acceso_externo.xml"
+            method="POST" frC-Callback="datosSesion" class="dn">
+            <input name="p_sesid"> <input name="xchn" value="JSON">
+        </form>
+        <form name="cargaSesion" method="POST" frC-Callback="cargaSesion" frC-AutoLoad="true" class="dn"> </form>
+    </div>
+</header>
+
+<div class="modal-overlay"></div>
+
+<form name="IconoHeaderManejar" class="dn" frC-AutoLoad="true" frC-Callback="IconoHeaderManejar">
+</form>

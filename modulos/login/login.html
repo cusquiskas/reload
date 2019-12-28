@@ -1,0 +1,49 @@
+<div class="new-login">
+    <div class="border-login"></div>
+    <template id='modal'></template>
+    <template id='passwordRecovery'></template>
+    <section class="main-container login-form-container">
+        <form name="login" frC-noSesion="false" class="form-horizontal login-form box-sizing-initial" role="form"
+            method="POST" frC-Callback="login" action="/management/mvc-management/controller/portal.xwi_acceso.login.json">
+            <input type="hidden" name="xchn" value="JSON">
+            <input type="hidden" name="xsid">
+            <input type="hidden" name="p_pasusr" required>
+
+            <h2>
+                <img src="res/img/logo-portal-empleado.png" alt="Globalia - portal del empleado">
+            </h2>
+            <label class="text-input-label">
+                <span class="text-input-label-icon box-sizing-initial">
+                    <img src="res/img/icon-user.png" alt="Nombre de usuario">
+                </span>
+                <input id="login-username" name="p_codusr" type="text" placeholder="Código de empleado" required>
+            </label>
+            <label class="text-input-label">
+                <span class="text-input-label-icon box-sizing-initial">
+                    <img src="res/img/icon-password.png" alt="Contraseña">
+                </span>
+                <input id="login-password" name="p_psswrd" type="password" placeholder="Contraseña" frC-Submit="false">
+            </label>
+            <label class="meta-input-label checkbox-label">
+                <input id="checkMantenerSesion" name="p_sesion" type="checkbox" frC-Submit="false">
+                <small>Mantener sesión iniciada</small>
+            </label>
+            <p class="meta-input-label">
+                <button id="buttonLoginPrincipal" class="button dark" type="button">Entrar</button>
+            </p>
+            <div class="password-recovery-action">
+                <a href="login-recuperar-1.html"><small>No recuerdo mi contraseña »</small></a>
+            </div>
+        </form>
+        <div class="divNotificaciones">
+            <div id="primero">
+                <div class="primero">¡Activa las alertas de escritorio! ... Recibe notificaciones cada vez que
+                    publiquemos
+                    nuevas noticias.</div>
+                <div>
+                    <img class="imagenNotificaciones" src="res/img/icon-notificacion.png">
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

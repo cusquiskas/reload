@@ -1,0 +1,122 @@
+
+<div class="card-block gestionExclusiones">
+    <h4 class="card-title">Exclusiones</h4>
+    <form class="form-horizontal botones container" role="form" method="POST" action="">
+        <button type="button" class="btn btn-outline-indigo modalExclusion">Nuevo</button>
+        <button type="button" class="btn btn-outline-indigo modalExclusion">Modificar</button>
+        <button type="button" class="btn btn-outline-danger borrarExclusion">Borrar</button>
+    </form>
+    <div class="tituloConfig">Listado de Exclusiones</div>
+    <form
+        name="listadoExclusiones"
+        method="POST"
+        frC-Callback="listadoExclusiones"
+        frC-AutoLoad="true"
+        action="/management/mvc-management/controller/portal.xwi_telefonia_movil.listar_usuario_exclusion.json">
+        
+        <div class="container">
+            <div class="row">
+                <div class="buscadorFiltrosListado">
+                    <div class="md-form">
+                        <input type="text" name="p_codusr" maxlength="20" />
+                        <label for="p_codusr" class="activa active">Búsqueda por usuario</label>
+                    </div>
+                    <div class="md-form">
+                        <input type="date" name="p_fhasta" class="inputdate-unstyled"/>
+                        <label for="p_fhasta" class="activa active">Fecha</label>
+                    </div>
+                    <div class="md-form">
+                        <select
+                            class="form-control custom-select tipoExclusionSelect"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Tipo de exclusión"
+                            name="p_codtex"
+                            frC-indexResponse="root.texlist:destex,codtex"
+                            frC-Store="/management/mvc-management/controller/portal.xwi_telefonia_movil.listar_tipo_exclusion.json">
+                        </select>
+                        <label for="p_codtex" class="activa active">Tipo de Exclusión</label>
+                    </div>
+
+                    <button type="submit" class="btn btn-info">
+                        <i class="material-icons">search</i>
+                        <span>Buscar</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </form>
+    <form
+        name="borrarExclusiones"
+        method="POST"
+        frC-Callback="borrarExclusiones"
+        action="/management/mvc-management/controller/portal.xwi_telefonia_movil.gestion_usuario_exclusion.json">
+        <input type="hidden" name="p_pkctex" />
+        <input type="hidden" name="p_pkcusr" />
+        <input type="hidden" name="p_pkfhst" />
+        <input type="hidden" name="p_fhasta" />
+        <input type="hidden" name="p_opflag" />
+    </form>
+    <div class="listado">
+        <div class="row">
+            <div class="col-2">Código de Usuario</div>
+            <div class="col-3 left">Nombre de Usuario</div>
+            <div class="col-2">Fecha Desde</div>
+            <div class="col-2">Fecha Hasta</div>
+            <div class="col-3 left">Tipo de Exclusión</div>
+        </div>
+        <div class="tabla" id="listaExclusiones">
+            <!-- Resultado del contenido del listado de opciones de menú -->
+        </div>
+    </div>
+</div>
+
+<!--div class="container nominas text-center">
+    <template id='modal'></template>
+    <form
+        name="listaFrasesLogin"
+        class="dn"
+        method="POST"
+        frC-Callback="listaFrasesLogin"
+        frC-autoload="true"
+        action="/management/mvc-management/controller/portal.xwi_frase.listar_frase.json">
+    </form>
+    <form
+        name="borrarFrasesLogin"
+        class="dn"
+        method="POST"
+        frC-Callback="deleteFrasesInicio"
+        action="/management/mvc-management/controller/portal.xwi_frase.gestion_frase.json">
+
+        <input type="hidden" name="p_codfra">
+        <input type="hidden" name="p_desfra">
+        <input type="hidden" name="p_fchini">
+        <input type="hidden" name="p_fchfin">
+        <input type="hidden" name="p_flag">
+    </form>
+
+    <div class="row">
+        <div class="titulo align-left col-md-10">Mantenimiento de exclusiones</div>
+        <div class="col-md-2 btn-mto">
+            <button id="btn-insrt-fraseslogin" class="btn btn-primary">Insertar</button>
+        </div>
+    </div>
+
+    <div class="listado">
+        <div class="row">
+            <div class="col align-left">Frase</div>
+            <div class="col-2">Desde</div>
+            <div class="col-2">Hasta</div>
+            <div class="col-2"></div>
+        </div>
+        <div class="tabla" id="listaFrasesLogin">
+            <template id="tablaFrasesLogin" />
+        </div>
+    </div>
+
+    <form name="modifyPhrasesInfo">
+        <input type="hidden" name="p_desc">
+        <input type="hidden" name="p_fini">
+        <input type="hidden" name="p_ffin">
+    </form>
+</div-->

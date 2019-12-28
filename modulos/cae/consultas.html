@@ -1,0 +1,59 @@
+<div class="consultas-cae">
+    <form
+        name="frmConsultaCae"
+        method="POST"
+        frC-Callback="cbkConsultaCae"
+        action="/management/mvc-management/controller/newintra.xwi_atencion_empleado.xml$inserta_reclamacion.xml">
+        <input type="hidden" name="p_codusr" value="">
+        <input type="hidden" name="p_codtpa" value="AS">
+        <input type="hidden" name="p_codmot" value="0">
+        <input type="hidden" name="p_codsmo" value="">
+        <input type="hidden" name="xchn" value="JSON">
+
+        <div class="md-form row">
+            <div class="md-form col-8">
+                <div class="input-group">
+                    <input name="p_asunto" class="form-control" type="text" maxlength="50"/>
+                    <label for="p_asunto">Asunto</label>
+                </div>
+            </div>
+            <div class="md-form col-4">
+                <div class="input-group">
+                    <input name="p_docusr" class="form-control" type="text" readonly/>
+                    <label for="p_docusr">Adjunto</label>
+                    <span class="input-group-append delete-input-addon btn-delete-attachment">
+                        <span class="input-group-text">
+                            <i class="material-icons cliqueable">delete</i>
+                        </span>
+                    </span>
+                    <span class="input-group-append cliqueable btn-add-attachment">
+                        <span class="input-group-text">
+                            <i class="material-icons">attach_file</i>
+                        </span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="md-form row">
+            <div class="md-form col">
+                <div class="input-group">
+                    <label for="p_tema">Texto</label>
+                </div>
+            </div>
+        </div>
+        <div class="md-form row">
+            <div class="md-form col">
+                <div class="input-group">
+                    <textarea name="p_tema" class="form-control"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="md-form row">
+            <div class="md-form col">
+                <button class="btn btn-primary btn-with-img btn-consultar">
+                    <span>Realizar Consulta </span><i class="material-icons">send</i>
+                </button>
+            </div>
+        </div>
+    </form>
+</div>

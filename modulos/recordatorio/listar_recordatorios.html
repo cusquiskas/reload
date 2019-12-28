@@ -1,0 +1,160 @@
+<div class="lstRecordatoriosPropios">
+
+    <ul class="nav nav-custom-01">
+        <li class="nav-item">
+            <a class="not-title nav-link active" data-toggle="tab" href=".tab-notif"><h3>Notificaciones</h3></a>
+        </li>
+        <li class="nav-item">
+            <a class="task-title nav-link" data-toggle="tab" href=".tab-tarea"><h3>Mis Tareas</h3></a>
+        </li>
+        <li class="nav-item dn">
+            <a class="enc-title nav-link disabled" data-toggle="tab" href=".tab-encue"><h3>Encuestas</h3></a>
+        </li>
+        <li class="nav-item">
+            <a class="pol-title nav-link" data-toggle="tab" href=".tab-polit"><h3>Políticas</h3></a>
+        </li>
+    </ul>
+    <div class="tab-content">
+        <div class="tab-notif p-3 tab-pane fade show active" role="tabpanel" aria-labelledby="notif-tab">
+            <!--h4 class="card-title not-title">Notificaciones</h4-->
+            <form
+                name="frmListarRecordatoriosNotificaciones"
+                method="POST"
+                frC-Callback="cbkListarRecordatoriosNotificaciones"
+                action="/recordatorio/user_services/list">
+                <input name="codagr" value="100" type="hidden"/>
+        
+                <div class="datatable">
+                    <table
+                        class="table table-style-01"
+                        type="datatable"
+                        header="false"
+                        rowstyle="rowStyle"
+                        select="filaSeleccionadaNotificaciones"
+                        deselect="filaDesseleccionada"
+                        textos="textosNotificaciones"
+                        pagination="8">
+                    
+                        <thead>
+                            <tr>
+                                <th data="fecha" type="date" inmask="DD/MM/YYYY@hh:mm:ss.SSSZ" outmask="DD/MM/YYYY" width="20%">Fecha</th>
+                                <th data="titulo" width="60%">Asunto</th>
+                                <th data="nomest" width="20%">Estado</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </form>
+        </div>
+        <div class="tab-tarea p-3 tab-pane fade" role="tabpanel" aria-labelledby="tarea-tab">
+            <!--h4 class="card-title task-title">Mis Tareas</h4-->
+            <form
+                name="frmListarRecordatoriosTareas"
+                method="POST"
+                frC-Callback="cbkListarRecordatoriosTareas"
+                action="/recordatorio/user_services/list">
+                <input name="codagr" value="200" type="hidden"/>
+        
+                <div class="datatable">
+                    <table
+                        class="table table-style-01"
+                        type="datatable"
+                        header="false"
+                        rowstyle="rowStyle"
+                        select="filaSeleccionadaTareas"
+                        deselect="filaDesseleccionada"
+                        textos="textosTareas"
+                        pagination="8">
+                    
+                        <thead>
+                            <tr>
+                                <th data="fecha" type="date" inmask="DD/MM/YYYY@hh:mm:ss.SSSZ" outmask="DD/MM/YYYY" width="20%">Fecha</th>
+                                <th data="titulo" width="60%">Asunto</th>
+                                <th data="nomest" width="20%">Estado</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </form>
+        </div>
+        <div class="tab-encue p-3 tab-pane fade" role="tabpanel" aria-labelledby="encue-tab">
+            <!--h4 class="card-title enc-title">Encuestas</h4-->
+            <form
+                name="frmListarRecordatoriosEncuestas"
+                method="POST"
+                frC-Callback="cbkListarRecordatoriosEncuestas"
+                action="/recordatorio/user_services/list">
+                <input name="codagr" value="300" type="hidden"/>
+        
+                <div class="datatable">
+                    <table
+                        class="table table-style-01"
+                        type="datatable"
+                        header="false"
+                        rowstyle="rowStyle"
+                        select="filaSeleccionadaNotificaciones"
+                        deselect="filaDesseleccionada"
+                        textos="textosEncuestas"
+                        pagination="8">
+                    
+                        <thead>
+                            <tr>
+                                <th data="fecha" type="date" inmask="DD/MM/YYYY@hh:mm:ss.SSSZ" outmask="DD/MM/YYYY" width="20%">Fecha</th>
+                                <th data="titulo" width="60%">Asunto</th>
+                                <th data="nomest" width="20%">Estado</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </form>
+        </div>
+        <div class="tab-polit p-3 tab-pane fade" role="tabpanel" aria-labelledby="polit-tab">
+            <form
+                name="frmListarPoliticas"
+                method="POST"
+                frC-Callback="cbkListarPoliticas"
+                action="/management/mvc-management/controller/portal.xwi_rgpd.listar_politica_rgpd.json"
+                frC-AutoLoad="true">
+                <input name="p_flag" value="L" type="hidden"/>
+        
+                <div class="datatable">
+                    <table
+                        class="tbl-politicas table table-style-01"
+                        type="datatable"
+                        source="root.pol"
+                        select="filaSeleccionadaPoliticas"
+                        header="false"
+                        rowstyle="rowStylePoliticas"
+                        textos="textosPoliticas"
+                        postprocess="postprocesado"
+                        pagination="8">
+                    
+                        <thead>
+                            <tr>
+                                <th data="title" width="80%">Asunto</th>
+                                <th data="estado" width="20%">Estado</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <form
+        name="frmOnload"
+        frC-Callback="cbkOnload"
+        frC-AutoLoad="true">
+    </form>
+    <form
+        name="frmCambiarEstadoNotificacion"
+        class="dn"
+        method="GET"
+        frC-Callback="cbkCambiarEstadoNotificacion"
+        action="/recordatorio/user_services/change_state"
+        frC-noSesion="true">
+        <input name="codrec" type="number"/>
+        <input name="codest" value="100" type="number"/>
+    </form>
+
+</div>

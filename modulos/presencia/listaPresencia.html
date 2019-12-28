@@ -1,0 +1,118 @@
+<div class="listaPresencia">
+
+    <form
+        name="frmListaPresencia"
+        method="POST" action="/management/mvc-management/controller/portal.xwi_presencia.lista_resumen.json"
+        frC-Callback="cbkListaPresencia">
+
+        <h4 class="center mb-4">Informe de Fichajes Diarios</h4>
+        <div class="container filter mb-4">
+            <div class="card card-body bg-light">
+                <div class="row md-form">
+                    <div class="col-xl-5 col-12 mt-3 text-right order-xl-1">
+                        <button class="btn btn-info btnClearFrmListaPresencia" type="button">
+                            <span>Limpiar</span>
+                            <i class="material-icons">cached</i>
+                        </button>
+                        <button class="btn btn-primary">
+                            <span>Buscar</span>
+                            <i class="material-icons">list</i>
+                        </button>
+                    </div>
+                    <div class="col-xl col-12 mt-3 order-xl-0">
+                        <div class="input-group">
+                            <input name="p_codusr" type="hidden">
+                            <input name="p_nomusr" class="form-control bg-light" type="text" frC-Submit="false">
+                            <label for="p_codusr">Usuario</label>
+                            <div class="input-group-append">
+                                <span class="input-group-text bg-light delete-input-addon">
+                                    <i class="material-icons cliqueable btnClearUsrSearch">cancel</i>
+                                </span>
+                                <span class="input-group-text cliqueable btnUsrSearch">
+                                    <i class="material-icons">search</i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row md-form">
+                    <div class="col-md col-12 mt-3">
+                        <div class="input-group">
+                            <label for="p_fechad" class="active">Desde</label>
+                            <input name="p_fechad" class="form-control inputdate-unstyled bg-light" type="date" required>
+                        </div>
+                    </div>
+                    <div class="col-md col-12 mt-3">
+                        <div class="input-group">
+                            <label for="p_fechah" class="active">Hasta</label>
+                            <input name="p_fechah" class="form-control inputdate-unstyled bg-light" type="date" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="collapse collapse-target">
+                    <div class="row md-form">
+                        <div class="col-md col-12 mt-3">
+                            <div class="input-group">
+                                <select
+                                    name="p_codemp"
+                                    class="form-control custom-select bg-light"
+                                    frC-indexResponse="lov:texto,valor"
+                                    frC-Store="/management/mvc-management/controller/newintra.xwi_personal.xlist$empresas.json?p_empok=N&p_codapl=&p_codusr=&p_codpfl=&p_ctlcbk=&p_fecha=&p_swicod=S&p_tiplst=JSON">
+                                </select>
+                                <label for="p_codemp">Empresa</label>
+                            </div>
+                        </div>
+                        <div class="col-md col-12 mt-3">
+                            <div class="input-group">
+                                <label for="p_ceco">Ceco</label>
+                                <input name="p_ceco" class="form-control bg-light" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="row">
+                    <div class="col text-right">
+                        <label class="mr-3">Búsqueda avanzada</label>
+                        <button type="button" class="btn btn-blanco collapse-button btnCollapseFilter" data-toggle="collapse" data-target=".collapse-target">
+                            <i class="material-icons">expand_more</i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="datatable container">
+            <table
+                class="tblListaPresencia table table-style-01"
+                type="datatable"
+                select="selListaPresencia"
+                source="root"
+                pagination="true"
+                headtemplate='<"dom_wrapper dom_wrapper_padding2 fh-fixedHeader"Br>tip'>
+            
+                <thead>
+                    <tr>
+                        <th data="codusr" width="10%">Cód.Usr</th>
+                        <th data="nombre" width="20%">Nombre</th>
+                        <th data="empresa" width="20%">Empresa</th>
+                        <th data="fecha" width="10%" type="date">Fecha</th>
+                        <th data="horaI" width="10%" type="time">Desde</th>
+                        <th data="horaF" width="10%" type="time">Hasta</th>
+                        <th data="horaT" width="10%" type="time">Tiempo</th>
+                        <th data="concatOcupat" width="10%" type="function">Ocupación</th>
+                    </tr>
+                </thead>
+            </table>
+            <div for="datatable">
+                <button class="btn btn-outline-indigo indigobtn-with-img" alpulsar="btnVer">
+                    <span>Detalle </span><i class="material-icons">search</i>
+                </button>
+                <button class="btn btn-outline-success indigobtn-with-img" alpulsar="excel" title="Informe de Fichajes Diarios">
+                    <span>Excel </span><i class="material-icons">grid_on</i>
+                </button>
+            </div>
+        </div>
+    </form>
+
+</div>

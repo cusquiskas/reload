@@ -1,0 +1,19 @@
+<h2 class="module-title flex-title">
+    <span name="cabeceraAnuncios">
+        <img src="res/img/icon-tablon.png" alt="">Tablón de anuncios</span>
+    <button type="button" class="button-info tablonAnuncios">Ver todos</button>
+</h2>
+<form name="anunciosHome" class="dn" method="POST" frC-Callback="anunciosHome" frC-AutoLoad="true" action="/management/mvc-management/controller/newintra.xwi_anuncios.listar_documentos.json">
+    <input name="p_feccre" />
+    <input name="p_codcpo" />
+    <input name="p_titdoc" />
+    <input name="p_limite" value="8" />
+</form>
+<form name="eliminarAnunciosHome" class="dn" method="POST" frC-Callback="eliminarAnunciosHome" action="/management/mvc-management/controller/newintra.xwi_anuncios.guardar_documentos.json">
+    <input name="p_flag" value="D" />
+    <input name="p_seqdoc" required />
+</form>
+<div class="card-columns" id="listadoTabAnunciosHome">
+    <!-- Listado de anuncios -->
+    <template id="tempListAnunciosHome"></template>
+</div>

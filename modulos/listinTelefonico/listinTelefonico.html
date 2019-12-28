@@ -1,0 +1,70 @@
+<template id='modal'></template>
+<div class="container-fluid mis-contactos">
+    <h1 class="page-content-title">Mis contactos</h1>
+    <div class="sidebar-module sidebar-phones">
+        <h2 class="module-title">Búsqueda en el listín telefónico</h2>
+        <form name="busquedaListinTelefonico" method="POST" frC-Callback="busquedaListinTelefonico" action="/management/mvc-management/controller/portal.xwi_personal.listar_usuario.json">
+            <div class="row">
+                <div class="form-group col-12 col-md-5">
+                    <input class="form-control listinBuscarKeyUp" type="text" placeholder="Nombre" name="p_nomusr"
+                        maxlength="120">
+                </div>
+                <input class="dn" type="text">
+                <div class="form-group col-12 col-md-5">
+                    <select class="form-control add-null" data-toggle="tooltip" data-placement="top" title="Empresas"
+                        name="p_codemp" frC-indexResponse="lov:texto,valor" frC-Store="/management/mvc-management/controller/newintra.xwi_personal.xlist$empresas.json?p_empok=S&p_codapl=&p_codusr=&p_codpfl=&p_tiplst=JSON&p_ctlcbk=&p_fecha=&p_swicod=N">
+                    </select>
+                </div>
+                <div class="form-group col-12 col-md-2">
+                    <button type="submit" class="btn btn-outline-primary globalia listinBuscarClick">Buscar »</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-12 col-md-5">
+                    <input class="form-control listinBuscarKeyUp" type="text" placeholder="Teléfono / Extensión" name="p_telusr"
+                        maxlength="120">
+                </div>
+            </div>
+        </form>
+        <form name="cargarFiltrosBusqueda" class="dn" frC-AutoLoad="true" frC-Callback="cargarFiltrosBusqueda"></form>
+    </div>
+    <form name="resultadosBúsqueda">
+        <h2 class="page-content-subtitle labelResultado">»
+            <frC-Graft name="total"></frC-Graft>
+            <strong>
+                <frC-Graft name="busquedaNom"></frC-Graft>
+                <frC-Graft name="busquedaTel"></frC-Graft>
+                <frC-Graft name="busquedaEmp"></frC-Graft>
+            </strong>
+        </h2>
+    </form>
+</div>
+<div class="container-fluid mis-contactos fullWidth bg-grey">
+    <div class="row" id="listaUsrListTelef">
+        <template id="tempListadoUsrs"></template>
+        <!-- Listado de usuarios encontrados en listín telefónico -->
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <div class="pagination">
+                <!-- Paginación -->
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid fullWidth">
+    <div class="row">
+        <div class="col-12">
+            <template id="cajaBanners1"></template>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <template id="cajaPreFooter1"></template>
+        </div>
+    </div>
+</div>

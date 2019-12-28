@@ -1,0 +1,36 @@
+<div class="bodyNuestro">
+    <template id='modal'></template>
+    <div id="divLogin" class="login container">
+        <div class="card text-center">
+            <div class="card-block">
+                <div class="logoColor"></div>
+                <h5 class="card-title">Portal del Empleado</h5>
+                <form name="login" frC-noSesion="true" class="form-horizontal " role="form" method="POST" frC-Callback="login" action="/management/mvc-management/controller/newintra.xwi_acceso3.xml$valida_acceso_externo.xml">
+                    <input type="hidden" name="xchn" value="JSON">
+                    <input type="hidden" name="xsid">
+                    <input name="p__clave" type="hidden" required>
+                    <div class="input-group">
+                        <span class="input-group-prepend">
+                            <span class="input-group-text">
+                                <i class="material-icons">person</i>
+                            </span>
+                        </span>
+                        <label class="dn" for="p_codusr">Identificador</label>
+                        <input id="login-username" name="p_codusr" type="text" class="form-control" placeholder="Identificador" required>
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-prepend">
+                            <span class="input-group-text">
+                                <i class="material-icons">lock</i>
+                            </span>
+                        </span>
+                        <label class="dn" for="p_auxclave">Contraseña</label>
+                        <input id="login-password" name="p_auxclave" type="password" class="form-control" placeholder="Contraseña" frC-Submit="false">
+                        <input name="p_sesion" type="hidden" value="">
+                    </div>
+                    <button id="buttonLoginPrincipal" type="button" class="btn btn-primary">ENTRAR</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

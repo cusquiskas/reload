@@ -1,0 +1,306 @@
+<div>
+    <div class="row tablaDetallePersonasPerfiles">
+        <div class="col-1">{{codusr}}</div>
+        <div class="col-3">{{nomusr}}</div>
+        <div class="col-4">{{empcen}}</div>
+        <div class="col-2">{{hereda}}</div>
+        <div class="col-2">{{usrbas}}</div>
+    </div>
+
+    <div class="row tablaDetalleOpcionesPerfiles">
+        <div class="col-auto">{{des}}</div>
+    </div>
+
+    <div class="row tablaPerfiles">
+        <div class="col-2" id="{{codpfl}}">{{codpfl}}</div>
+        <div class="col" id="{{nombre}}">{{nombre}}</div>
+        <div class="col-2" id="{{activo}}">{{activo}}</div>
+    </div>
+
+    <div class="row tablaOpcionesMenu">
+        <div class="col-2" id="{{codmop}}">{{codmop}}</div>
+        <div class="col" id="{{nombre}}">{{nombre}}</div>
+        <div class="col-2" id="{{_popup}}">{{_popup}}</div>
+        <div class="col" id="{{stoken}}">{{stoken}}</div>
+        <div class="col" id="{{_qlink}}">{{_qlink}}</div>
+        <div class="col" id="{{activo}}">{{activo}}</div>
+        <div class="col" id="{{newcss}}">{{newcss}}</div>
+        <div class="col-2" id="{{icomop}}">{{icomopPub}}</div>
+    </div>
+
+    <div class="row tablaExclusiones">
+        <div class="col-2">{{codusr}}</div>
+        <div class="col-3 left">{{nomusr}}</div>
+        <div class="col-2">{{fdesde}}</div>
+        <div class="col-2">{{fhasta}}</div>
+        <div class="col-3 left">{{destex}}</div>
+    </div>
+
+    <div class="row tablaNominas">
+        <div class="col-2" id="{{Pernr}}">{{Pernr}}</div>
+        <div class="col sociedad" id="{{Bukrs}}">{{Butxt}}</div>
+        <div class="col-2" id="{{Gjahr}}">{{Gjahr}}</div>
+        <div class="col-2 Mes" id="{{Periodo}}" compl="{{Abkrs}}">{{Periodo}}</div>
+        <div class="anhoMovil">{{Gjahr}}</div>
+        <div class="col-1 imgPdf"></div>
+    </div>
+
+    <div class="row tablaGestionCarpetas">
+        <div class="col-2" id="codmop">{{codmop}}</div>
+        <div class="col-2" id="activo">{{activo}}</div>
+        <div class="col" id="padre">{{padre}}</div>
+    </div>
+
+    <div class="row tablaUsuarios">
+        <div class="col-4 left">{{nombre}}</div>
+        <div class="col-4 left">{{empresa}}</div>
+        <div class="col-4 left">{{uni_org}}</div>
+    </div>
+
+    <!-- Home -->
+    <!-- Novedades -->
+    <div class="col-12 col-md-4 novedades">
+        <a class="enlaceNovedades" href="{{urlnot}}" target="_blank">
+            <article class="internalcomms-post">
+                <figure>
+                    <div class="divImagenNoticia">
+                        <img {{imgnot}} alt="" href="{{urlnot}}" />
+                    </div>
+                </figure>
+                <h3 class="internalcomms-title">
+                    <a href="{{urlnot}}" target="_blank">{{titnot}}</a>
+                </h3>
+                <p class="post-list-category estiComunica">{{catnot}}</p>
+                <div class="post-list-excerpt">
+                    <p>{{desnot}}
+                        <!-- <a href="{{urlnot}}" target="_blank" class="read-further"> Leer más</a> -->
+                    </p>
+                </div>
+            </article>
+        </a>
+    </div>
+
+    <!-- Comunicados -->
+    <div class="comunicados">
+        <li class="media">
+            <article class="comunicados-post">
+                <div class="internalcomms-post-header">
+                    <img {{imgcatnot}} alt="">
+                    <h3 class="internalcomms-title">
+                        <a href="{{urlnot}}" target="_blank">{{titnot}}</a>
+                    </h3>
+                </div>
+                <div class="internalcomms-post-body">
+                    <p>{{desnot}}
+                        <a href="{{urlnot}}" target="_blank" class="read-further"> Leer más</a>
+                    </p>
+                </div>
+            </article>
+        </li>
+    </div>
+
+    <!-- Ofertas -->
+    <div class="carousel-item active ofertasActiva">
+        <div class="divOfertas">
+            <a href="{{urlnot}}" target="_blank">
+                <img class="d-block w-100" {{imgnot}} alt="First slide">
+            </a>
+        </div>
+        <div class="carousel-caption d-md-block employeeoffer-content">
+            <h3>
+                <a class="aOfertasEmpleado" href="{{urlnot}}" target="_blank">{{titnot}}</a>
+            </h3>
+            <p>{{desnot}}</p>
+            <a href="{{urlnot}}" target="_blank" class="read-further">Ver oferta</a>
+        </div>
+    </div>
+
+    <div class="carousel-item ofertas">
+        <div class="divOfertas">
+            <a href="{{urlnot}}" target="_blank">
+                <img class="d-block w-100" {{imgnot}} alt="First slide">
+            </a>
+        </div>
+        <div class="carousel-caption d-md-block employeeoffer-content">
+            <h3>
+                <a class="aOfertasEmpleado" href="{{urlnot}}" target="_blank">{{titnot}}</a>
+            </h3>
+            <p>{{desnot}}</p>
+            <a href="{{urlnot}}" target="_blank" class="read-further">Ver oferta</a>
+        </div>
+    </div>
+
+    <!-- Vacantes -->
+    <div class="vacantes">
+        <li class="media">
+            <article class="vacancies-post">
+                <div class="vacancies-post-header">
+                    <img {{imgcomnot}} alt="">
+                    <h3 class="vacancies-title"></h3>
+                </div>
+                <div class="vacancies-post-body">
+                    <h3 class="vacancies-title">
+                        <a href="{{urlnot}}" target="_blank">{{titnot}}</a>
+                    </h3>
+                    <p>{{desnot}}
+                        <a href="{{urlnot}}" target="_blank" class="read-further"> Leer más</a>
+                    </p>
+                </div>
+            </article>
+        </li>
+    </div>
+
+    <!-- Tablon Anuncios Home -->
+    <div class="card tablonAnunciosHome">
+        <article class="hoverable">
+            <div class="announcements-body">
+                <date>{{feccre}}</date>
+                <h3 class="titulo-anuncio verAnuncio">{{titdoc}}</h3>
+                <span class="announcements-author">{{nombre}}</span>
+                <span class="announcements-phone">{{tlfemp}}</span>
+                <span class="announcements-actions">
+                    <a href="#cabeceraAnuncios" class="{{mostrarLeer}} read-further verAnuncio"> Leer más</a>
+                    <a href="#cabeceraAnuncios" class="{{borrar}} verAnuncio">
+                        <i class="material-icons">remove_red_eye</i>
+                    </a>
+                    <a href="#cabeceraAnuncios" class="{{borrar}} editAnuncio">
+                        <i class="material-icons">edit</i>
+                    </a>
+                    <a href="#cabeceraAnuncios" class="{{borrar}} removeAnuncio">
+                        <i class="material-icons">delete</i>
+                    </a>
+                </span>
+            </div>
+        </article>
+    </div>
+
+    <!-- Tablon Anuncios List -->
+    <div class="card tablonAnunciosList">
+        <article class="hoverable">
+            <div class="divImagenAnuncio {{esImagen}}">
+                <img {{ficrep}} alt="Anuncio">
+            </div>
+            <div class="divPdfAnuncio {{esFichero}}">
+                <a href="{{imgOrigen}}" download>
+                    <div style="text-align: center;" class="imgPdf"></div>
+                </a>
+            </div>
+            <div class="announcements-body">
+                <date>{{feccre}}</date>
+                <h3 class="titulo-anuncio verAnuncio">{{titdoc}}</h3>
+                <span class="announcements-author">{{nombre}}</span>
+                <span class="announcements-phone">{{tlfemp}}</span>
+                <span class="announcements-actions">
+                    <a href="#cabeceraAnuncios" class="{{mostrarLeer}} read-further verAnuncio"> Leer más</a>
+                    <a href="#cabeceraAnuncios" class="{{borrar}} verAnuncio">
+                        <i class="material-icons">remove_red_eye</i>
+                    </a>
+                    <a href="#cabeceraAnuncios" class="{{borrar}} editAnuncio">
+                        <i class="material-icons">edit</i>
+                    </a>
+                    <a href="#cabeceraAnuncios" class="{{borrar}} removeAnuncio">
+                        <i class="material-icons">delete</i>
+                    </a>
+                </span>
+            </div>
+        </article>
+    </div>
+
+    <!-- Listin telefónico -->
+    <div class="col-12 col-lg-4 resultadosListinTelefonico">
+        <div class="contact-list hoverable">
+            <figure class="contact-list-user">
+                <img {{imagenlist}} alt="">
+            </figure>
+            <article class="contact-list-info-user">
+                <h3 class="contact-list-title verUsuario">{{nomusr}}</h3>
+                <p class="contact-list-company">{{nomemp}}</p>
+                <span class="contact-list-phone verTelefonos">
+                    <img src="res/img/icon-telefono.png" alt="">{{ver_tlf}}
+                </span>
+                <!-- <span class="contact-list-ext">
+                    <img src="res/img/icon-ext.png" alt="">{{ver_ext}}{{extusr}}</span> -->
+                <span class="contact-list-mail verMail">
+                    <a href="mailto:{{email}}">
+                        <img src="res/img/icon-email.png" alt="">{{ver_mail}}{{email}}</a>
+                </span>
+            </article>
+        </div>
+    </div>
+
+    <!-- MENU -->
+    <div class="tablaAplicaciones">
+        <a class="enlaceMenuApp waves-effect waves-light nav-lvl-1" href="#">
+            <li class="nav-item active" id="{{cod}}">
+                <img src="" class="imagenMenuCabecera"> {{des}}
+            </li>
+        </a>
+    </div>
+
+    <!-- BUSQUEDA -->
+    <div class="tablaBusquedaOpcionesMenu">
+        <a class="enlaceMenuApp waves-effect waves-light" href="#">
+            <li class="nav-item active" id="{{nombre}}">{{nombre}}</li>
+        </a>
+    </div>
+
+    <!-- favoritos home -->
+    <div class="tablaFavoritosHome">
+        <li class={{estrella}} stoken="{{stoken}}" popup="{{_popup}}" url="{{direcc}}" path="{{path}}"
+            codmop="{{codmop}}">
+            <a href="#cabeceraFavoritos" class="favoritelist-element">{{nombre}}</a>
+        </li>
+    </div>
+
+    <!-- Gestion de favoritos -->
+    <div class="row tablaGestionFavoritos">
+        <div class="col {{favsel}}" id="{{codmop}}">{{nombre}}</div>
+    </div>
+
+    <!-- Encuestas -->
+    <div class="col valoracionCaritasEncuesta">
+        <img src="res/iconos/caras/cara{{valor}}.png" codpre="{{codpre}}" codres="{{codres}}"
+            title="{{desres}}" class="imgEncuesta">
+    </div>
+
+    <!-- Beneficiarios FREE -->
+    <div class="row listadoBeneficiariosAct text-center">
+        <div class="col-12 col-md-2">{{begda}}</div>
+        <div class="col-12 col-md-3">{{nombre}} {{apell1}}</div>
+        <div class="col-12 col-md-2">{{fecnac}}</div>
+        <div class="col-12 col-md-2">{{pparen}}</div>
+        <div class="col-12 col-md-2">{{nif}}</div>
+        <div class="col-12 col-md-1">
+            <i id="{{nif}}_{{cparen}}_{{nombre}}_d" row={{cadena}}
+                class="logoNavbar material-icons btnModificando dn">delete</i>
+            <i id="{{nif}}_{{cparen}}_{{nombre}}_c" class="logoNavbar material-icons dn colorRojo">clear</i>
+            <i id="{{nif}}_{{cparen}}_{{nombre}}_m" class="logoNavbar material-icons dn colorVerde">add</i>
+        </div>
+    </div>
+
+    <!-- Beneficiarios FREE -->
+    <div class="row rowGestionSolicitudBeneficiarios">
+        <div class="col-2">{{begda}}</div>
+        <div class="col-3">{{nombre}} {{apell1}}</div>
+        <div class="col-2">{{fecnac}}</div>
+        <div class="col-2">{{pparen}}</div>
+        <div class="col-3">{{nif}}</div>
+    </div>
+    <div class="row rowGestionSolicitudBeneficiarios2">
+        <div class="col-2">{{begda}}</div>
+        <div class="col-3">{{nombre}} {{apell1}}</div>
+        <div class="col-2">{{fecnac}}</div>
+        <div class="col-2">{{pdespa}}</div>
+        <div class="col-2">{{nif}}</div>
+        <div class="col-1">{{desest}}</div>
+    </div>
+
+    <!-- Tabla de listado de solucitudes de gestiones Cae -->
+    <div class="row rowListaSolicitudCae">
+        <div class="col-2 left">{{daplsol}}</div>
+        <div class="col-2 left">{{fecsol}}</div>
+        <div class="col-2 left">{{descia}}</div>
+        <div class="col-2 left">{{destado}}</div>
+        <div class="col-4 left">{{observ}}</div>
+    </div>
+</div>

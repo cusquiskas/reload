@@ -1,0 +1,83 @@
+<div class="usuarioBloqueado container">
+    <div class="card text-center">
+        <div class="card-block">
+            <div class="logoColorBloqueo"></div>
+            <h5 class="titleLogoPortal">Portal del Empleado</h5>
+            <div class="card-body">
+                <h6 class="card-title">Cambio de contraseña</h6>
+                <p class="card-text text-left">A continuación introduce tu número de empleado y contraseña actual para poder cambiarla:</p>
+            </div>
+            <form name="desbloquear" class="form-horizontal" method="POST" frC-Callback="cambioContrasena" action="/management/mvc-management/controller/portal.xwi_acceso.change_pass.json">
+                <input type="hidden" name="xchn" value="JSON">
+                <input name="p_newpas" type="hidden" required>
+                <input name="p_oldpas" type="hidden" required>
+                <!--input type="hidden" name="p_codusr"-->
+                <div class="form-row">
+                    <div class="col-6">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                    <i class="material-icons">perm_identity</i>
+                                </span>
+                            </div>
+                            <label for="p_codusr" class="dn">ID Usuario</label>
+                            <input id="changePassId" name="p_codusr" type="text" class="form-control" placeholder="ID Usuario" required>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                    <i class="material-icons">lock</i>
+                                </span>
+                            </div>
+                            <label for="p_oldpas" class="dn">Contraseña antigua</label>
+                            <input id="changePassOldPass" name="p_auxoldpss" type="password" class="form-control" placeholder="Contraseña antigua" frC-submit="false">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-12">
+                        <div class="input-group strengthify-input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                    <i class="material-icons">lock</i>
+                                </span>
+                            </div>
+                            <label for="p_psswrd" class="dn">Contraseña nueva</label>
+                            <input id="changePassNewPass1" name="p_psswrd" type="password" class="form-control" placeholder="Contraseña nueva" frC-submit="false">
+                        </div>
+                    </div>
+                    <div class="col-12 next-strengthify-input-group">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                    <i class="material-icons">lock</i>
+                                </span>
+                            </div>
+                            <label for="p_reppas" class="dn">Repetir contraseña</label>
+                            <input id="changePassNewPass2" name="p_reppas" type="password" class="form-control" placeholder="Repetir contraseña" frC-submit="false" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-12">
+                        <button type="button" id="changePassButton" class="btn btn-primary" disabled="disabled">ACEPTAR</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!--form
+        name="frmLoadTypeValidation" class="dn"
+        method="POST" action="/management/mvc-management/controller/portal.xwi_recuperacion.load_password_validation.json"
+        frC-Callback="cbkLoadTypeValidation" frC-AutoLoad="false">
+        <input name="p_codusr">
+    </form-->
+
+    <form
+        name="frmOnloadCambioContrasenaDesatendido" class="dn"
+        frC-Callback="cbkOnloadCambioContrasenaDesatendido" frC-AutoLoad="true">
+    </form>
+</div>

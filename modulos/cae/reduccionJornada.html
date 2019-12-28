@@ -1,0 +1,390 @@
+<div class="reduccion-jornada-cae">
+    <form name="frmCodigoPlantilla" method="POST" frC-Callback="cbkCodigoPlantilla"
+        action="/management/mvc-management/controller/newintra.xwi_plantilla_cae.decision_plantilla.json"
+        frC-AutoLoad="true">
+        <input type="hidden" name="p_codgrp" value="2">
+    </form>
+
+    <form name="frmUpdateDocs" class='dn' method="POST" frC-Callback="cbkUpdateDocs"
+        action="/management/mvc-management/controller/newintra.xwi_plantilla_cae.guarda_documento.json"
+        frC-AutoLoad="false">
+        <input type="hidden" name="p_codtra" value="empty">
+        <input type="hidden" name="p_nomext">
+        <input type="hidden" name="p_nomint">
+    </form>
+
+    <form name="frmReduccionJornada" method="POST" frC-Callback="cbkReduccionJornada"
+        action="/management/mvc-management/controller/newintra.xwi_plantilla_cae.guarda_tramite.json">
+        <input type="hidden" name="p_codplt" required>
+        <input type="hidden" name="p_nomext" required>
+        <label for="p_nomext" class="dn">Ficheros Adjuntos</label>
+        <input type="hidden" name="p_nomint">
+        <input type="hidden" name="p_valor4" required>
+        <label for="p_valor4" class="dn">Horario / Número de Horas</label>
+
+        <div class="panel-estado">
+            <div class="tituloConfig">Estado Solicitud</div>
+            <div class="md-form row">
+                <div class="md-form col-6">
+                    <div class="input-group">
+                        <input name="p_estsol" class="form-control" type="text" readonly frC-Submit="false" />
+                    </div>
+                </div>
+                <div class="md-form col-6">
+                    <div class="input-group observaciones_responsable dn">
+                        <input name="observ" class="form-control" type="text" readonly frC-Submit="false" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel-observacion dn">
+            <div class="tituloConfig">Observaciones</div>
+            <div class="md-form row">
+                <div class="md-form col-12">
+                    <div class="input-group">
+                        <textarea name="p_observ" class="form-control" readonly frC-Submit="false"
+                            style="max-height: 200px;"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="formulario">
+            <div class="tituloConfig">Datos Personales</div>
+            <div class="md-form row">
+                <div class="md-form col-4">
+                    <div class="input-group">
+                        <input name="p_numusr" class="form-control" type="text" disabled frC-Submit="false" />
+                        <label for="p_numusr">Nº Usuario</label>
+                    </div>
+                </div>
+                <div class="md-form col-8">
+                    <div class="input-group">
+                        <input name="p_nombre_completo" class="form-control" type="text" disabled frC-Submit="false" />
+                        <label for="p_nombre_completo">Nombre y Apellidos</label>
+                    </div>
+                </div>
+            </div>
+            <div class="md-form row">
+                <div class="md-form col-4">
+                    <div class="input-group">
+                        <input name="p_empresa" class="form-control" type="text" disabled frC-Submit="false" />
+                        <label for="p_empresa">Empresa</label>
+                    </div>
+                </div>
+                <div class="md-form col-4">
+                    <div class="input-group">
+                        <input name="p_centro" class="form-control" type="text" disabled frC-Submit="false" />
+                        <label for="p_centro">Centro de Trabajo</label>
+                    </div>
+                </div>
+                <div class="md-form col-4">
+                    <div class="input-group">
+                        <input name="p_departamento" class="form-control" type="text" disabled frC-Submit="false" />
+                        <label for="p_departamento">Departamento</label>
+                    </div>
+                </div>
+            </div>
+            <div class="md-form row">
+                <div class="md-form col-6">
+                    <div class="input-group">
+                        <input name="p_tlfusr" class="form-control" type="text" required />
+                        <label for="p_tlfusr">Teléfono</label>
+                    </div>
+                </div>
+                <div class="md-form col-6">
+                    <div class="input-group">
+                        <input name="p_emlusr" class="form-control" type="text" required />
+                        <label for="p_emlusr">E-Mail</label>
+                    </div>
+                </div>
+            </div>
+            <div class="tituloConfig elem-by-codpla" codpla="8,9,10">Responsables</div>
+            <div class="md-form row elem-by-codpla" codpla="8,9,10">
+                <div class="md-form col">
+                    <div class="input-group dn">
+                        <input name="p_codres" required>
+                        <label for="p_codres">Superior Jerárquico</label>
+                    </div>
+                    <table class="tbl-responsable table table-bordered custom-table-1">
+                        <thead>
+                            <tr>
+                                <th style="width: 70%;">Nombre</th>
+                                <th style="width: 30%;">Posición</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="tabla">
+            <div class="tituloConfig">Tipo de Reducción de Jornada</div>
+            <label for="p_valor1" class="dn">Tipo de Reducción de Jornada</label>
+            <table class="tbl-valores table table-bordered custom-table-0">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Solicitud Inicial</th>
+                        <th class="elem-by-codpla" codpla="8,9,10">Prórroga</th>
+                        <th class="elem-by-codpla" codpla="8,9,10">Cambio en Condiciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="elem-by-codpla" codpla="11,12">
+                        <th>Voluntaria</th>
+                        <td><input name="p_valor1" type="radio" value="value_14" data-toggle="tooltip" data-html="true">
+                        </td>
+                        <!-- <td><input name="p_valor1" type="radio" value="value_15" data-toggle="tooltip" data-html="true">
+                        </td> -->
+                    </tr>
+                    <tr>
+                        <th>Por Guarda Legal Hijo</th>
+                        <td><input name="p_valor1" type="radio" value="value_1" data-toggle="tooltip" data-html="true"
+                                required></td>
+                        <td class="elem-by-codpla" codpla="8,9,10"><input name="p_valor1" type="radio" value="value_2"
+                                data-toggle="tooltip" data-html="true">
+                        </td>
+                        <td class="elem-by-codpla" codpla="8,9,10"><input name="p_valor1" type="radio" value="value_3"
+                                data-toggle="tooltip" data-html="true"></td>
+                    </tr>
+                    <tr>
+                        <th>Por Guarda Legal Familiar</th>
+                        <td><input name="p_valor1" type="radio" value="value_4" data-toggle="tooltip" data-html="true">
+                        </td>
+                        <td class="elem-by-codpla" codpla="8,9,10"><input name="p_valor1" type="radio" value="value_5"
+                                data-toggle="tooltip" data-html="true">
+                        </td>
+                        <td class="elem-by-codpla" codpla="8,9,10"><input name="p_valor1" type="radio" value="value_6"
+                                data-toggle="tooltip" data-html="true"></td>
+                    </tr>
+                    <tr class="elem-by-codpla" codpla="10">
+                        <th>Por Motivos Personales</th>
+                        <td><input name="p_valor1" type="radio" value="value_7" data-toggle="tooltip" data-html="true">
+                        </td>
+                        <td><input name="p_valor1" type="radio" value="value_8" data-toggle="tooltip" data-html="true">
+                        </td>
+                        <td><input name="p_valor1" type="radio" value="value_9" data-toggle="tooltip" data-html="true">
+                        </td>
+                    </tr>
+                    <tr class="elem-by-codpla" codpla="8,9,10">
+                        <th>Por Cuidado de un menor afectado por Enfermedad Grave</th>
+                        <td><input name="p_valor1" type="radio" value="value_10" data-toggle="tooltip" data-html="true">
+                        </td>
+                        <td><input name="p_valor1" type="radio" value="value_11" data-toggle="tooltip" data-html="true">
+                        </td>
+                        <td><input name="p_valor1" type="radio" value="value_12" data-toggle="tooltip" data-html="true">
+                        </td>
+                    </tr>
+                    <tr class="elem-by-codpla" codpla="11,12">
+                        <th>Guarda legal hijo o familiar con discapacidad</th>
+                        <td><input name="p_valor1" type="radio" value="value_16" data-toggle="tooltip" data-html="true">
+                        </td>
+                        <!-- <td><input name="p_valor1" type="radio" value="value_17" data-toggle="tooltip" data-html="true">
+                        </td> -->
+                    </tr>
+                    <tr class="elem-by-codpla" codpla="11,12">
+                        <th>Guarda legal por Enfermedad grave</th>
+                        <td><input name="p_valor1" type="radio" value="value_18" data-toggle="tooltip" data-html="true">
+                        </td>
+                        <!-- <td><input name="p_valor1" type="radio" value="value_19" data-toggle="tooltip" data-html="true">
+                        </td> -->
+                    </tr>
+                </tbody>
+            </table>
+            <table class="tbl-valores table table-bordered custom-table-0 elem-by-codpla" codpla="8,9,10,11,12">
+                <tbody>
+                    <tr>
+                        <th>Finalización de la Reducción de Jornada</th>
+                        <td><input class="finRJ" name="p_valor1" type="radio" value="value_13" data-toggle="tooltip"
+                                data-html="true"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="fechas">
+            <div class="tituloConfig">Condiciones Solicitadas</div>
+            <div class="md-form row">
+                <div class="md-form col-6">
+                    <div class="input-group">
+                        <input name="p_valor2" class="form-control inputdate-unstyled" type="date" required />
+                        <label for="p_valor2" class="active">Fecha Inicio</label>
+                    </div>
+                </div>
+                <div class="md-form col-6 fechaFin">
+                    <div class="input-group">
+                        <input name="p_valor3" class="form-control inputdate-unstyled" type="date" required />
+                        <label for="p_valor3" class="active">Fecha Fin</label>
+                    </div>
+                </div>
+            </div>
+            <div class="md-form row regimenPeriodo dn">
+                <div class="md-form col-6">
+                    <div class="input-group">
+                        <input name="p_valor9" class="form-control inputdate-unstyled" type="text" />
+                        <label for="p_valor9" class="active">Régimen</label>
+                    </div>
+                </div>
+                <div class="md-form col-6 fechaFin">
+                    <div class="input-group">
+                        <input name="p_valor8" class="form-control inputdate-unstyled" type="text" />
+                        <label for="p_valor8" class="active">Periodo</label>
+                    </div>
+                </div>
+            </div>
+            <div class="md-form row elem-by-codpla" codpla="8,10">
+                <div class="md-form col-12 concrecion">
+                    <div class="input-group">
+                        <input name="p_horas" class="form-control" type="number" min="1" frC-Submit="false" />
+                        <label for="p_horas" class="active">Número de horas semanales a realizar durante la Reducción de
+                            Jornada</label>
+                    </div>
+                </div>
+            </div>
+            <div class="md-form row elem-by-codpla" codpla="9">
+                <div class="md-form col-12 concrecion">
+                    <div class="input-group">
+                        <label for="p_horario">Horario de Trabajo durante el periodo de reducción de jornada</label>
+                    </div>
+                </div>
+            </div>
+            <div class="md-form row elem-by-codpla" codpla="9">
+                <div class="md-form col-12 concrecion">
+                    <span style="font-size: -60%;">(máximo 250 caracteres)</span>
+                    <div class="input-group">
+                        <textarea name="p_horario" class="form-control" frC-Submit="false" frC-Validate="maxLength"
+                            frC-Validate-value="250"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <div class="diasdescanso hide-on-view hide-on-modf hide-on-accept hide-on-solicitar elem-by-codpla" codpla="11,12">
+        <form name="listadoCupo" method="POST" frC-Callback="listadoCupo"
+            action="/management/mvc-management/controller/newintra.xwi_plantilla_cae.configuracion_supergrupo.json">
+            <input type="text" name="p_codtra" class="dn" />
+            <div class="mensajeRRHH dn">
+                No hay disponibilidad para el periodo integro indicado
+            </div>
+            <div class="datatable datatableCupo dn">
+                <div class="tituloListCupo">
+                    <h4 class="card-title">Listado de Disponibilidad</h4>
+                </div>
+                <div class="botonListCupo verAlt">Ver Fechas Alternativas</div>
+                <table class="tblListadoCupo table table-style-01" type="datatable" select="cupoSeleccionado"
+                    deselect="cupoDesseleccionado" source="root.cupo" language="ES" pagination="true">
+                    <thead>
+                        <tr>
+                            <th data="p_fecini" width="25%">Fecha Inicio</th>
+                            <th data="p_fecfin" width="25%">Fercha Fin</th>
+                            <th data="p_regrjo" width="25%">Régimen</th>
+                            <th data="p_period" width="25%">Periodo</th>
+                        </tr>
+                    </thead>
+                </table>
+                <div for="datatable"></div>
+            </div>
+            <div class="datatable datatableCupoAlt dn">
+                <div class="tituloListCupo">
+                    <h4 class="card-title">Listado Alternativo de Disponibilidad</h4>
+                </div>
+                <div class="botonListCupo verNorm">Volver al Listado Inicial</div>
+                <table class="tblListadoCupoAlt table table-style-01" type="datatable" select="cupoAltSeleccionado"
+                    deselect="cupoAltDesseleccionado" source="root.cupo_alt" language="ES" pagination="true">
+                    <thead>
+                        <tr>
+                            <th data="p_fecini" width="25%">Fecha Inicio</th>
+                            <th data="p_fecfin" width="25%">Fercha Fin</th>
+                            <th data="p_regrjo" width="25%">Régimen</th>
+                            <th data="p_period" width="25%">Periodo</th>
+                        </tr>
+                    </thead>
+                </table>
+                <div for="datatable"></div>
+            </div>
+        </form>
+    </div>
+
+    <p class="mensaje-importante mb-5 hide-on-view hide-on-accept hide-on-tram elem-by-codpla" codpla="11,12">
+        Las fechas indicadas son provisionales hasta la confirmación del cupo
+    </p>
+
+    <div class="panel-estado2">
+        <div class="tituloConfig">Estado Solicitud</div>
+        <div class="md-form row">
+            <div class="md-form col-6">
+                <div class="input-group">
+                    <input class="form-control estado" type="text" readonly />
+                </div>
+            </div>
+            <div class="md-form col-6">
+                <div class="input-group observaciones_responsable2 dn">
+                    <input class="form-control observ" type="text" readonly />
+                </div>
+            </div>
+        </div>
+        <div class="md-form row">
+            <div class="md-form col-6">
+                <div class="input-group token"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="boton">
+        <div class="md-form row">
+            <div class="md-form col-3"></div>
+            <div class="md-form col hide-on-accept hide-on-tram">
+                <button class="btn btn-primary btn-with-img btn-adjuntar_ficheros" type="button">
+                    <span>Adjuntos </span><i class="material-icons">attach_file</i>
+                </button>
+            </div>
+            <div class="md-form col hide-on-view hide-on-modf hide-on-tram botonera-aceptar">
+                <button class="btn btn-primary btn-with-img btn-aceptar" type="button">
+                    <span>Aceptar </span><i class="material-icons">check</i>
+                </button>
+            </div>
+            <div class="md-form col hide-on-view hide-on-modf hide-on-tram botonera-rechazar">
+                <button class="btn btn-primary btn-with-img btn-rechazar" type="button">
+                    <span>Rechazar </span><i class="material-icons">close</i>
+                </button>
+            </div>
+            <div class="md-form col hide-on-view hide-on-modf hide-on-accept hide-on-tram">
+                <button class="btn btn-primary btn-with-img btn-solicitar-reduccjor" type="button">
+                    <span>Solicitar </span><i class="material-icons">send</i>
+                </button>
+            </div>
+            <div class="md-form col hide-on-view hide-on-modf hide-on-accept hide-on-solicitar">
+                <button class="btn btn-primary btn-with-img btn-fintra-reduccjor" type="button">
+                    <span>Tramitar </span><i class="material-icons">send</i>
+                </button>
+            </div>
+            <div class="md-form col hide-on-view hide-on-modf hide-on-accept hide-on-solicitar">
+                <button class="btn btn-primary btn-with-img btn-recha-usu" type="button">
+                    <span>No me interesa </span><i class="material-icons">cancel</i>
+                </button>
+            </div>
+            <div class="md-form col-3"></div>
+        </div>
+    </div>
+    <form name="frmFinalizarTramiteRJ" method="POST" class="dn" frC-Callback="cbkFinalizarTramiteRJ"
+        action="/management/mvc-management/controller/newintra.xwi_plantilla_cae.finalizar_tramite.json">
+        <input name="p_codtra" required>
+        <input name="p_valor8">
+        <input name="p_valor9">
+        <input name="p_fecini">
+        <input name="p_fecfin">
+        <input name="p_idredj">
+        <input name="p_idtirj">
+        <input name="p_idperj">
+        <label for="p_valor8">Periodo</label>
+        <label for="p_valor9">Régimen</label>
+    </form>
+
+    <form name="frmRechazaTramiteUsuRJ" method="POST" class="dn" frC-Callback="cbkRechazaTramiteUsuRJ"
+        action="/management/mvc-management/controller/newintra.xwi_plantilla_cae.rechaza_tramite_usuario.json">
+        <input name="p_codtra" required>
+    </form>
+
+    <form name="frmOnloadRJ" class="dn" frC-Callback="cbkOnloadRJ" frC-AutoLoad="true"></form>
+</div>

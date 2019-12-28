@@ -1,0 +1,32 @@
+<div class="modalPresencia">
+    
+    <form
+        name="frmModalPresencia"
+        method="POST" action="/management/mvc-management/controller/portal.xwi_presencia.lista_detalle.json"
+        frC-Callback="cbkModalPresencia">
+        <input name="p_codusr" type="hidden">
+        <input name="p_fecha" type="hidden">
+        <input name="p_token" type="hidden">
+
+        <div class="datatable">
+            <table
+                class="tblModalPresencia table table-style-01"
+                type="datatable"
+                select="false"
+                source="root">
+            
+                <thead>
+                    <tr>
+                        <th data="codusr" width="10%">Cód.Usr</th>
+                        <th data="nombre" width="25%">Nombre</th>
+                        <th data="fecha" width="20%" type="date" inmask="DD/MM/YYYY HH:mm" outmask="DD/MM/YYYY HH:mm">Fecha</th>
+                        <th data="accion" width="10%">Acción</th>
+                        <th data="puerta" width="35%" type="time">Puerta</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+
+    </form>
+
+</div>

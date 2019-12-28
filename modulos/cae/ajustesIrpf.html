@@ -1,0 +1,75 @@
+<div class="datos-fiscales-cae">
+    <form
+        name="frmInit"
+        class='dn'
+        method="POST"
+        frC-Callback="cbkInit"
+        action="/management/mvc-management/controller/newintra.xwi_autoservicio.datfi$obtener_datos_fiscales.json">
+        <input name="p_codusr">
+        <input name="p_fecsol">
+        <input name="p_perfil">
+    </form>
+    
+    <form name="frmDatosFiscales">
+        <input name="filepath" type="hidden">
+
+        <div class="tituloConfig tituloConfig2">Estado Solicitud</div>
+        <div class="md-form row">
+            <div class="md-form col-12">
+                <div class="input-group">
+                    <input name="p_estsol" class="form-control" type="text" readonly/>
+                    <label for="p_estsol" class="active">Estado</label>
+                </div>
+            </div>
+        </div>
+        
+        <div class="doc145 dn">
+            <div class="tituloConfig">Condiciones IRPF</div>
+            <div class="md-form row">
+                <div class="md-form col-12">
+                    <div class="input-group">
+                        En caso de que tu situación familiar haya sufrido cambios, puedes solicitar la revisión del cálculo del IRPF con este formulario.
+                    </div>
+                </div>
+            </div>
+            <div class="md-form row">
+                <div class="md-form col-12">
+                    <div class="input-group">
+                        <input name="p_cndadj" class="form-control" type="text" readonly/>
+                        <label for="p_cndadj" class="active">Debes imprimir, rellenar, escanear y adjuntar a este formulario</label>
+                        <span class="input-group-append cliqueable btn-cndadj">
+                            <span class="input-group-text">
+                                <i class="material-icons">search</i>
+                            </span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="docIRPF dn">
+            <div class="tituloConfig">Ajuste IRPF</div>
+            <div class="md-form row">
+                <div class="md-form col-12">
+                    <div class="input-group">
+                        Si quieres solicitar un cambio en la retención que se aplica en tú nómina, debes rellenar este formulario.
+                    </div>
+                </div>
+            </div>
+            <div class="md-form row">
+                <div class="md-form col-12">
+                    <div class="input-group">
+                        <input name="p_ajtadj" class="form-control" type="text" readonly/>
+                        <label for="p_ajtadj" class="active">Debes imprimir, rellenar, escanear y adjuntar a este formulario</label>
+                        <span class="input-group-append cliqueable btn-ajtadj">
+                            <span class="input-group-text">
+                                <i class="material-icons">search</i>
+                            </span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </form>
+</div>

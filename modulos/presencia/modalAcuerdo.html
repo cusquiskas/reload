@@ -1,0 +1,46 @@
+<div class="container text-center">
+    <form name="gestionAcuerdo" method="POST" frC-Callback="cbkGestionAcuerdo"
+        action="/management/mvc-management/controller/portal.xwi_presencia.gestion_acuerdo.json">
+        
+        <div class="md-form row">
+            <div class="md-form col-4">
+                <div class="input-group">
+                    <input type="text" class="form-control" name="codusr" maxlength="10" required />
+                    <label for="codusr" class="activa active">Código de Usuario</label>
+                    <div class="input-group-append" style="height: 30px; margin-top: 18px;">
+                        <span class="input-group-text cliqueable btnUsrSearch">
+                            <i class="material-icons">search</i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="md-form col-8">
+                <input type="text" class="form-control" name="codusrX" disabled readonly frC-Submit="false" />
+                <label class="activa active">Nombre de Usuario</label>
+            </div>
+        </div>
+        <div class="md-form row">
+            <div class="md-form col datefield">
+                <input type="date" name="fechad" class="inputdate-unstyled" required />
+                <label for="fechad" class="activa active">Fecha Desde</label>
+            </div>
+            <div class="md-form col datefield">
+                <input type="date" name="fechah" class="inputdate-unstyled" required />
+                <label for="fechah" class="activa active">Fecha Hasta</label>
+            </div>
+            
+        </div>
+        <div class="md-form row">
+            <div class="md-form col datefield">
+                <input type="time" name="horini" class="inputdate-unstyled" required />
+                <label for="horini" class="activa active">Hora Inicio</label>
+            </div>
+            <div class="md-form col datefield">
+                <input type="time" name="horfin" class="inputdate-unstyled" required />
+                <label for="horfin" class="activa active">Hora Fin</label>
+            </div>
+            
+        </div>
+        <button type="submit" class="btn btn-primary">Guardar</button>
+    </form>
+</div>

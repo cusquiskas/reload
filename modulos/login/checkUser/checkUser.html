@@ -1,0 +1,29 @@
+<div class="p-1">
+    <form name="perfilesDePerfil" method="POST" frC-Callback="onCodeSend"
+        action="/management/mvc-management/controller/portal.xwi_menu.acceso_datos_personales.json">
+        <p> Por motivos de seguridad necesitamos verificar su identidad para realizar este cambio.</p>
+        <p> Por favor escoja el medio por el cuál desea recibir el código de verificación que posteriormente debe
+            introducir para verificar su identidad.</p>
+        <div class="row mb-4">
+            <div class="col-md-6 col-6 d-flex justify-content-center">
+                <div class="custom-control custom-radio">
+                    <input type="radio" class="custom-control-input" id="email" name="way" value="email">
+                    <label class="custom-control-label" for="email">EMAIL</label>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-6 d-flex justify-content-center">
+                <div class="custom-control custom-radio">
+                    <input type="radio" class="custom-control-input" id="sms" name="way" value="sms">
+                    <label class="custom-control-label" for="sms">SMS</label>
+                </div>
+            </div>
+
+        </div>
+        <div class="row justify-content-center">
+            <div class="d-flex justify-content-center w-50">
+                <button  class="btn btn-primary returnBtn w-100 d-flex justify-content-center" tabindex="0" type="button" aria-label="save">Enviar código</button>
+            </div>
+        </div>
+    </form>
+</div>

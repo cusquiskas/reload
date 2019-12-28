@@ -1,0 +1,44 @@
+<div class="relacion-bancaria-cae">
+    <form
+        name="frmInit"
+        class='dn'
+        method="POST"
+        frC-Callback="cbkInit"
+        action="/management/mvc-management/controller/newintra.xwi_autoservicio.datba$obtener_datos_bancarios.json">
+        <input name="p_codusr" type="hidden">
+        <input name="p_fecsol" type="hidden">
+        <input name="p_perfil" type="hidden">
+    </form>
+    
+    <form
+        name="frmRelacionBancaria"
+        method="POST"
+        frC-Callback="cbkRelacionBancaria"
+        action="/management/mvc-management/controller/newintra.xwi_plantilla_cae.guarda_tramite.json">
+        <input type="hidden" name="p_codplt" required>
+        <input type="hidden" name="p_nomext" required>
+        <label for="p_nomext" class="dn">Ficheros Adjuntos</label>
+        <input type="hidden" name="p_nomint">
+
+        <div class="tituloConfig">Estado Solicitud</div>
+        <div class="md-form row">
+            <div class="md-form col-12">
+                <div class="input-group">
+                    <input name="p_estsol" class="form-control" type="text" readonly/>
+                    <label for="p_estsol" class="active">Estado</label>
+                </div>
+            </div>
+        </div>
+        
+        <div class="tituloConfig">Datos Bancarios</div>
+        <div class="md-form row">
+            <div class="md-form col-12">
+                <div class="input-group">
+                    <input name="p_codibn" class="form-control" type="text" readonly/>
+                    <label for="p_codibn" class="active">Código IBAN</label>
+                </div>
+            </div>
+        </div>
+        
+    </form>
+</div>

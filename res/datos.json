@@ -1,0 +1,1331 @@
+{
+    "success": true,
+    "total": 209,
+    "children": [
+        {
+            "cod": 52,
+            "nom": "1 CONDICIONES DE LOS ESPACIOS DE TRABAJO",
+            "expanded": true,
+            "leaf": false,
+            "loaded": false,
+            "children": [
+                {
+                    "cod": 46,
+                    "nom": "11 CONFIGURACI�N DE LOS ESPACIOS DE TRABAJO",
+                    "leaf": false,
+                    "loaded": true
+                }
+            ]
+        },
+        {
+            "cod": 65,
+            "nom": "2 INSTALACIONES DE SERVICIO O PROTECCI�N",
+            "expanded": true,
+            "leaf": false,
+            "loaded": false,
+            "children": [
+                {
+                    "cod": 72,
+                    "nom": "21 DISE�O, CONSTRUCCI�N, UBICACI�N, MONTAJE, MANTENIMIENTO, REPARACI�N Y LIMPIEZA DE INSTALACIONES DE SERVICIO O PROTECCI�N",
+                    "leaf": false,
+                    "loaded": false,
+                    "children": [
+                        {
+                            "cod": 272,
+                            "nom": "2101 Corte no debidamente previsto de suministro energ�tico o de servicios (agua, electricidad, aire comprimido, gases, etc.).",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 273,
+                            "nom": "2102 No uso de muy baja tensi�n de funcionamiento (compatible con el MI BT 036) estando establecido su uso obligatorio.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 274,
+                            "nom": "2103 Defectos en el dise�o, construcci�n, montaje, mantenimiento o uso de instalaciones el�ctricas (ubicaci�n de celdas de alta tensi�n, transformadores, aparallaje o instalaciones de baja tensi�n).",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 275,
+                            "nom": "2104 Ausencia/deficiencia de sistemas para evitar la generaci�n de electricidad est�tica.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 276,
+                            "nom": "2105 Sistemas de detecci�n de incendios-transmisi�n de alarma inexistentes, insuficientes o ineficaces.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 277,
+                            "nom": "2106 Almacenamiento de Sustancias y/o Preparados inflamables (?Clasificados como Clases A y B en la MIE-APQ 1?) en coexistencia con focos de ignici�n de distinta etiolog�a (el�ctricos, t�rmicos, mec�nicos...), sin el control preciso.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 278,
+                            "nom": "2107 Inexistencia de instalaci�n anti-explosiva en atm�sferas potencialmente explosivas (aplicable a equipos el�ctricos, instrumentos neum�ticos e hidr�ulicos).",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 279,
+                            "nom": "2108 Dificultad para efectuar un adecuado mantenimiento o limpieza de instalaciones de ser vicio o protecci�n.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 280,
+                            "nom": "2109 Instalaci�n de servicio o protecci�n en mal estado por otra causa diferente de las anteriores.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 281,
+                            "nom": "2110 Ausencia de cubeto de retenci�n de una Instalaci�n de almacenamiento de productos qu�micos.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 282,
+                            "nom": "2111 Tanques o dep�sitos inadecuados (por dise�o, construcci�n, ubicaci�n, mantenimiento, uso, etc) por ejemplo no estancos o fabricados con material inadecuado para la naturaleza de la sustancia almacenada.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 283,
+                            "nom": "2112 Sistemas inadecuados de conducci�n de sustancias o preparados (por dise�o, construcci�n, ubicaci�n, mantenimiento, uso, etc) por ejemplo no estancos, fabricados con material inadecuado para la naturaleza de la sustancia transportado.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 284,
+                            "nom": "2199 Otras causas relativas al dise�o, construcci�n, montaje, mantenimiento, reparaci�n y limpieza de instalaciones de servicio y protecci�n",
+                            "loaded": true,
+                            "leaf": true
+                        }
+                    ]
+                },
+                {
+                    "cod": 73,
+                    "nom": "22 ELEMENTOS Y DISPOSITIVOS DE PROTECCI�N DE INSTALACIONES DE SERVICIO O PROTECCI�N",
+                    "leaf": false,
+                    "loaded": false,
+                    "children": [
+                        {
+                            "cod": 285,
+                            "nom": "2201 Ausencia/deficiencia de medios para evitar los contactos el�ctricos directos (defectos en el aislamiento de las partes activas, barreras o envolventes inexistentes o ineficaces, ausencia o deficiencia en los medios para obstaculizar el paso o incumplimiento en cuanto a las distancias que conforman el volumen de accesibilidad).",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 286,
+                            "nom": "2202 Deficiencias de aislamiento o inadecuado grado de protecci�n (i.p.) en conductores, tomas de corriente, aparatos o conexiones el�ctricas defectuosas de la instalaci�n.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 287,
+                            "nom": "2203 Ausencia o no funcionamiento de elementos constituyentes del sistema de prevenci�n contra contactos indirectos (interruptores diferenciales por ser inadecuados o haber sido ?puenteados?, puesta a tierra, etc.).",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 288,
+                            "nom": "2204 Ausencia o no funcionamiento de dispositivos para la eliminaci�n de la electricidad est�tica.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 289,
+                            "nom": "2205 Imposibilidad de corte omnipolar simult�neo en Instalaciones el�ctricas.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 290,
+                            "nom": "2206 Ausencia de protecci�n contra sobre-intensidad, sobrecarga y cortocircuito en instalaciones el�ctricas.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 291,
+                            "nom": "2207 Ausencia de protecci�n contra sobrepresi�n(v�lvulas de presi�n,venteos, discos de rotura, v�lvulas de descarga, etc.).",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 292,
+                            "nom": "2208 Inexistencia, insuficiencia o ineficacia de medios de extinci�n.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 293,
+                            "nom": "2209 Generaci�n de atm�sferas peligrosas por deficiencias de ventilaci�n, natural o forzada.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 294,
+                            "nom": "2210 Dispositivos de enclavamiento violados (puenteados, anulados, etc.).",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 295,
+                            "nom": "2299 Otras causas relativas los elementos y dispositivos de protecci�n de instalaciones de servicio y protecci�n.",
+                            "loaded": true,
+                            "leaf": true
+                        }
+                    ]
+                },
+                {
+                    "cod": 74,
+                    "nom": "23 SE�ALIZACI�N E INFORMACI�N DE INSTALACIONES DE SERVICIO O PROTECCI�N",
+                    "leaf": false,
+                    "loaded": false,
+                    "children": [
+                        {
+                            "cod": 296,
+                            "nom": "2301 Defectos o insuficiencias en la identificaci�n de conductores activos y de protecci�n.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 297,
+                            "nom": "2302 Conducciones de fluidos peligrosos defi cientemente se�alizadas (inflamables, t�xicos, corrosivos, etc.).",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 298,
+                            "nom": "2303 Medios de lucha contra incendios no se�alizados o se�alizados incorrectamente (pulsadores de alarma, extintores, bie�s,etc.).",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 299,
+                            "nom": "2399 Otras causas relativas a la se�alizaci�n e informaci�n de protecci�n de instalaciones de ser vicio y protecci�n",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 300,
+                            "nom": "2999 Otras causas relativas a las instalaciones de servicio y protecci�n",
+                            "loaded": true,
+                            "leaf": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "cod": 66,
+            "nom": "3 M�QUINAS",
+            "expanded": true,
+            "leaf": false,
+            "loaded": false,
+            "children": [
+                {
+                    "cod": 75,
+                    "nom": "31 DISE�O, CONSTRUCCI�N, UBICACI�N, MONTAJE, MANTENIMIENTO, REPARACI�N Y LIMPIEZA DE M�QUINAS",
+                    "leaf": false,
+                    "loaded": false,
+                    "children": [
+                        {
+                            "cod": 301,
+                            "nom": "3101 Dise�o incorrecto de la m�quina o componente que hace que no se cumplan los principios de la prevenci�n intr�nseca y/o de la ergonom�a.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 302,
+                            "nom": "3102 Modificaciones realizadas en la m�quina que dan lugar a situaciones de riesgo no previstas por el fabricante.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 303,
+                            "nom": "3103 Deficiente ubicaci�n de la m�quina.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 304,
+                            "nom": "3104 Defectos de estabilidad en equipos, m�quinas o sus componentes.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 305,
+                            "nom": "3105 Resistencia mec�nica insuficiente de la m�quina.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 306,
+                            "nom": "3106 Dise�o incorrecto de la m�quina frente a presi�n interna o temperatura o agresi�n qu�mica.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 307,
+                            "nom": "3107 Focos de ignici�n no controlados (por causa mec�nica, el�ctrica, t�rmica o qu�mica).",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 308,
+                            "nom": "3108 Fallos en el sistema neum�tico, hidr�ulico o el�ctrico.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 309,
+                            "nom": "3109 �rganos de accionamiento inseguros (incorrecto dise�o, no visibles o identificables, que posibilitan arranques intempestivos, imposibilitan la detenci�n de partes m�viles, variaci�n incontrolada de velocidad, mal funcionamiento del modo manual, etc.).",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 310,
+                            "nom": "3110 Falta de dispositivos de parada, puesta en marcha y control en el punto de operaci�n (en este ep�grafe no se contempla la parada de emergencia).",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 311,
+                            "nom": "3111 Accesibilidad a �rganos de la m�quina peligrosos (atrapantes, cortantes, punzantes, o con posibilidad de ocasionar un contacto el�ctrico).",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 312,
+                            "nom": "3112 Accesibilidad o falta de medios de aislamiento a zonas de la m�quina en las que puede haber sustancias peligrosas por p�rdidas, fugas etc. o a zonas extremadamente calientes/fr�as.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 313,
+                            "nom": "3113 Deficiencia de los medios de acceso al puesto de trabajo o de conducci�n de la maquina.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 314,
+                            "nom": "3114 Visibilidad insuficiente en el puesto de conducci�n de la m�quina ya sea por un mal dise�o o por no disponer de de dispositivos auxiliares que mejoren la visibilidad cuando el campo de visi�n no es directo (espejos, c�maras de T.V.).",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 315,
+                            "nom": "3115 Defectos o ausencia en el sistema de direcci�n de la m�quina automotriz, en el mecanismo de embrague, en el sistema de cambio de velocidades o en el sistema de frenos.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 316,
+                            "nom": "3116 Difi cultad para efectuar un adecuado mantenimiento, reglaje o limpieza (accesibilidad a partes internas, dificultad de manipulaci�n, dificultad de supervisi�n, ausencia de medios de diagn�stico).",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 317,
+                            "nom": "3117 Ausencia/deficiencia de elementos de montaje de m�quinas.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 318,
+                            "nom": "3118 Deficiencia en el dispositivo de enganche/desenganche entre maquinas.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 319,
+                            "nom": "3119 Categoria insuficiente del dispositivo de mando o de protecci�n.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 320,
+                            "nom": "3199 Otras causas relativas al dise�o, ubicaci�n, construccion, montaje, mantenimiento reparaci�n y limpieza de m�quinas.",
+                            "loaded": true,
+                            "leaf": true
+                        }
+                    ]
+                },
+                {
+                    "cod": 76,
+                    "nom": "32 ELEMENTOS Y DISPOSITIVOS DE PROTECCI�N DE M�QUINAS",
+                    "leaf": false,
+                    "loaded": false,
+                    "children": [
+                        {
+                            "cod": 321,
+                            "nom": "3201 Ausencia y/o deficiencia de resguardos y de dispositivos de protecci�n (nota: el fallo puede consistir en la inexistencia de resguardos o de dispositivos de protecci�n, en su mala instalaci�n, en su aplicaci�n en lugar de otros m�s adecuados al riesgo que quieren evitar).",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 322,
+                            "nom": "3202 Parada de emergencia inexistente, ineficaz o no accesible.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 323,
+                            "nom": "3203 Ausencia /defi ciencia de protecciones colectivas frente a ca�das de personas y objetos desde m�quinas.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 324,
+                            "nom": "3204 Ausencia/deficiencia de protecciones antivuelco en m�quinas automotrices (r.o.p.s.).",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 325,
+                            "nom": "3205 Ausencia/deficiencia de estructura de protecci�n contra ca�da de materiales (f.o.p.s.).",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 326,
+                            "nom": "3206 Ausencia de medios t�cnicos para la consignaci�n (imposibilidad de puesta en marcha) de la m�quina o veh�culo.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 327,
+                            "nom": "3207 Ausencia de dispositivos que eviten que los trabajadores no autorizados utilicen los equipos de trabajo.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 328,
+                            "nom": "3208 Ausencia/deficiencia o falta de uso de dispositivos que mantengan a los conductores o a los trabajadores transportados en su posici�n correcta durante el desplazamiento.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 329,
+                            "nom": "3299 Otras causas relativas a los elementos y dispositivos de protecci�n de m�quinas.",
+                            "loaded": true,
+                            "leaf": true
+                        }
+                    ]
+                },
+                {
+                    "cod": 77,
+                    "nom": "33 SE�ALIZACI�N E INFORMACI�N DE M�QUINAS",
+                    "leaf": false,
+                    "loaded": false,
+                    "children": [
+                        {
+                            "cod": 330,
+                            "nom": "3301 Ausencia de alarmas (puesta en marcha de m�quinas peligrosas o marcha atr�s de veh�culos, etc.).",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 331,
+                            "nom": "3302 Deficiencia/ausencia del manual de instrucciones de m�quinas.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 332,
+                            "nom": "3399 Otras causas relativas a la se�alizaci�n e informaci�n de m�quinas.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 333,
+                            "nom": "3999 Otras causas relativas a las m�quinas.",
+                            "loaded": true,
+                            "leaf": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "cod": 67,
+            "nom": "4 OTROS EQUIPOS DE TRABAJO",
+            "expanded": true,
+            "leaf": false,
+            "loaded": false,
+            "children": [
+                {
+                    "cod": 78,
+                    "nom": "41 DISE�O, CONSTRUCCI�N, UBICACI�N, MONTAJE Y LIMPIEZA DE OTROS EQUIPOS DE TRABAJO",
+                    "leaf": false,
+                    "loaded": false,
+                    "children": [
+                        {
+                            "cod": 334,
+                            "nom": "4101 Dise�o incorrecto del equipo que hace que no se cumplan los principios de la prevenci�n intr�nseca y/o de la ergonom�a.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 335,
+                            "nom": "4102 Deficiente ubicaci�n, defectos de estabilidad en equipos de trabajo debido a una incorrecta construcci�n, montaje y mantenimiento.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 336,
+                            "nom": "4103 Resistencia mec�nica insuficiente del equipo de trabajo.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 337,
+                            "nom": "4104 Dise�o incorrecto del equipo de trabajo frente a presi�n interna o temperatura o agresi�n qu�mica.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 338,
+                            "nom": "4105 Partes del equipo accesibles peligrosas (atrapantes, cortantes, punzantes,etc.).",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 339,
+                            "nom": "4106 Escalera de mano insegura (material no resistente, apoyos inadecuados,etc.).",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 340,
+                            "nom": "4199 Otras causas relativas al dise�o, ubicaci�n, construccion, montaje, y limpieza de otros equipos de trabajo.",
+                            "loaded": true,
+                            "leaf": true
+                        }
+                    ]
+                },
+                {
+                    "cod": 79,
+                    "nom": "42 ELEMENTOS Y DISPOSITIVOS DEPROTECCI�N DE OTROS EQUIPOS DE TRABAJO",
+                    "leaf": false,
+                    "loaded": false,
+                    "children": [
+                        {
+                            "cod": 341,
+                            "nom": "4201 Ausencia/deficiencia de elementos de seguridad en los medios de elevaci�n de cargas (pestillos de seguridad en ganchos, etc).",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 342,
+                            "nom": "4202 Ausencia de elementos de protecci�n de herramientas (protectores de empu�aduras, etc).",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 343,
+                            "nom": "4203 Ausencia /defi ciencia de protecciones colectivas frente a ca�das de personas y objetos desde equipos de trabajo.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 344,
+                            "nom": "4299 Otras causas relativas a los elementos y dispositivos de protecci�n de otros equipos de trabajo",
+                            "loaded": true,
+                            "leaf": true
+                        }
+                    ]
+                },
+                {
+                    "cod": 80,
+                    "nom": "43 SE�ALIZACI�N E INFORMACI�N DE OTROS EQUIPOS DE TRABAJO",
+                    "leaf": false,
+                    "loaded": false,
+                    "children": [
+                        {
+                            "cod": 345,
+                            "nom": "4301 Deficiencia/ausencia del manual de instrucciones o se�alizaci�n (nota: el fallo puede consistir en la inexistencia del manual de instrucciones o en la insuficiente o ininteligible informaci�n contenida en �l o en la utilizaci�n de un idioma incomprensible.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 346,
+                            "nom": "4302 Falta de se�alizaci�n e informaci�n acerca de la carga m�xima en eslingas y otros accesorios de elevaci�n.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 347,
+                            "nom": "4399 Otras causas relativas a la se�alizaci�n e informaci�n de otros equipos de trabajo",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 348,
+                            "nom": "4999 Otras causas relativas a otros equipos de trabajo",
+                            "loaded": true,
+                            "leaf": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "cod": 68,
+            "nom": "5 MATERIALES Y AGENTES CONTAMINANTES",
+            "expanded": true,
+            "leaf": false,
+            "loaded": false,
+            "children": [
+                {
+                    "cod": 81,
+                    "nom": "51 MANIPULACI�N Y ALMACENAMIENTO DE MATERIALES",
+                    "leaf": false,
+                    "loaded": false,
+                    "children": [
+                        {
+                            "cod": 349,
+                            "nom": "5101 Defectos en los materiales utilizados de forma general, exclu�dos los que conforman una m�quina, instalaci�n y equipo.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 350,
+                            "nom": "5102 M ateriales muy pesad os, voluminosos, de gran super fi cie, inestables o con aristas/perfiles cortantes, en relaci�n con los medios utilizados en su manejo.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 351,
+                            "nom": "5103 No mecanizaci�n o automatizaci�n de las operaciones de carga/descarga.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 352,
+                            "nom": "5104 Deficiente sistema de almacenamiento, empaquetado, paletizado, apilamiento, etc.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 353,
+                            "nom": "5105 Zonas de almacenamiento inadecuadas o no previstas.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 354,
+                            "nom": "5106 Falta de planificaci�n y/o vigilancia en operaciones de levantamiento de cargas.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 355,
+                            "nom": "5199 Otras causas relativas a la manipulaci�n y almacenamiento de materiales",
+                            "loaded": true,
+                            "leaf": true
+                        }
+                    ]
+                },
+                {
+                    "cod": 82,
+                    "nom": "52 PRODUCTOS QU�MICOS (sustancias o preparados)",
+                    "leaf": false,
+                    "loaded": false,
+                    "children": [
+                        {
+                            "cod": 356,
+                            "nom": "5201 Inhalaci�n, ingesti�n o contacto con productos qu�micos (sustancias o preparados) presentes en el puesto de trabajo.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 357,
+                            "nom": "5202 Ausencia o deficiencia en los procedimientos de manipulado o almacenamiento de productos qu�micos (sustancias o preparados).",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 358,
+                            "nom": "5203 Presencia de productos qu�micos (sustancias o preparados) en el ambiente (t�xicos, irritantes, inflamables, etc...) en cualquier estado (polvos, vapores, gases, etc.), cuyo control o eliminaci�n no est� garantizado.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 359,
+                            "nom": "5204 Productos qu�micos (sustancias o preparados) capaces de producir reacciones peligrosas (exot�rmicas, t�xicas, etc) cuyo control o eliminaci�n no est� garantizado.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 360,
+                            "nom": "5205 Productos qu�micos (sustancias o preparados) inflamable o explosiva, en cualquier estado f�sico, cuyo control o eliminaci�n no est� garantizado.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 361,
+                            "nom": "5206 Posibilidad de contacto o mezcla de productos qu�micos (sustancias o preparados) incompatibles o que pueden generar una reacci�n con desprendimiento de productos t�xicos, corrosivos y/o calor.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 362,
+                            "nom": "5207 Fugas o derrames de productos qu�micos (sustancias o preparados) (durante su fabricaci�n, transporte, almacenamiento y manipulaci�n).",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 363,
+                            "nom": "5208 Deficiente envasado y etiquetado de los productos qu�micos (sustancias o preparados) utilizados en caso de trasvase en la propia empresa",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 364,
+                            "nom": "5209 Deficiente envasado y etiquetado de los productos qu�micos (sustancias o preparados) utilizados (excluido los trasvasados en la propia empresa).",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 365,
+                            "nom": "5210 Ausencia/deficiencia de protecciones para evitar la generaci�n y propagaci�n de agentes qu�micos (estar� incluida la ausencia/deficiencia de dispositivos de encapsulamiento de la fuente y en general de aquellos que eviten o minimizen la liberaci�n de agentes).",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 366,
+                            "nom": "5299 Otras causas relativas a los productos qu�micos",
+                            "loaded": true,
+                            "leaf": true
+                        }
+                    ]
+                },
+                {
+                    "cod": 83,
+                    "nom": "53 AGENTES BIOL�GICOS Y SERES VIVOS",
+                    "leaf": false,
+                    "loaded": false,
+                    "children": [
+                        {
+                            "cod": 367,
+                            "nom": "5301 Contacto o presencia de animales.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 368,
+                            "nom": "5302 Agentes biol�gicos o seres vivos susceptibles de originar cualquier tipo de infecci�n, alergia o toxicidad, cuyo control o eliminaci�n no est� garantizado.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 369,
+                            "nom": "5303 Ausencia/deficiencia de protecciones para evitar la generaci�n y propagaci�n de agentes biol�gicos (estar� incluida la ausencia/deficiencia de dispositivos de encapsulamiento de la fuente y en general de aquellos que eviten o minimizen la liberaci�n de agentes).",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 370,
+                            "nom": "5304 Deficiencia de medidas de higiene personal adecuadas para la prevenci�n de enfermedades infecciosas.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 371,
+                            "nom": "5399 Otras causas relativas a los agentes biologicos y seres vivos",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 372,
+                            "nom": "5999 Otras causas relativas a materiales y agentes contaminantes",
+                            "loaded": true,
+                            "leaf": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "cod": 69,
+            "nom": "6 ORGANIZACI�N DEL TRABAJO",
+            "expanded": true,
+            "leaf": false,
+            "loaded": false,
+            "children": [
+                {
+                    "cod": 84,
+                    "nom": "61 M�TODO DE TRABAJO",
+                    "leaf": false,
+                    "loaded": false,
+                    "children": [
+                        {
+                            "cod": 373,
+                            "nom": "6101 M�todo de trabajo inexistente.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 374,
+                            "nom": "6102 M�todo de trabajo inadecuado.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 375,
+                            "nom": "6103 Dise�o inadecuado del trabajo o tarea.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 376,
+                            "nom": "6104 Apremio de tiempo o ritmo de trabajo elevado.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 377,
+                            "nom": "6105 Trabajo mon�tono o rutinario, sin medidas para evitar su efecto nocivo.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 378,
+                            "nom": "6106 Trabajos solitarios sin las medidas de prevenci�n adecuadas.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 379,
+                            "nom": "6107 Sobrecarga de la m�quina o equipo (respecto a sus caracter�sticas t�cnicas).",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 380,
+                            "nom": "6108 Sobrecarga del trabajador (fatiga f�sica o mental).",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 381,
+                            "nom": "6109 Existencia de interferencias o falta de coordinaci�n entre trabajadores que realizan la misma o distintas tareas.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 382,
+                            "nom": "6110 Ausencia de vigilancia, control y direcci�n por persona competente.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 383,
+                            "nom": "6111 No organizar el trabajo teniendo en cuenta las condiciones meteorol�gicas adversas.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 384,
+                            "nom": "6199 Otras causas relativas a los m�todos de trabajo",
+                            "loaded": true,
+                            "leaf": true
+                        }
+                    ]
+                },
+                {
+                    "cod": 85,
+                    "nom": "62 REALIZACI�N DE LAS TAREAS",
+                    "leaf": false,
+                    "loaded": false,
+                    "children": [
+                        {
+                            "cod": 385,
+                            "nom": "6201 Operaci�n inhabitual para el operario que la realiza, sea ordinaria o espor�dica.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 386,
+                            "nom": "6202 Operaci�n destinada a evitar aver�as o incidentes o a recuperar incidentes.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 387,
+                            "nom": "6203 Operaci�n extraordinaria realizada en caso de incidentes, accidentes o emergencias.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 388,
+                            "nom": "6299 Otras causas relativas a la organizaci�n de las tareas",
+                            "loaded": true,
+                            "leaf": true
+                        }
+                    ]
+                },
+                {
+                    "cod": 86,
+                    "nom": "63 FORMACI�N, INFORMACI�N, INSTRUCCIONES Y SE�ALIZACI�N SOBRE LA TAREA",
+                    "leaf": false,
+                    "loaded": false,
+                    "children": [
+                        {
+                            "cod": 389,
+                            "nom": "6301 Deficiencias en el sistema de comunicaci�n a nivel horizontal o vertical, incluyendo la incomprensi�n del idioma.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 390,
+                            "nom": "6302 Instrucciones inexistentes.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 391,
+                            "nom": "6303 Instrucciones respecto a la tarea confusas, contradictorias o insuficientes.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 392,
+                            "nom": "6304 Formaci�n/informaci�n inadecuada o inexistente sobre la tarea.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 393,
+                            "nom": "6305 Procedimientos inexistentes o insufi cientes para formar o informar a los trabajadores acerca de la utilizaci�n o manipulaci�n de maquinaria, equipos, productos, materias primas y �tiles de trabajo.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 394,
+                            "nom": "6306 Deficiencia/ausencia de informaci�n o se�alizaci�n visual o ac�stica obligatoria o necesaria, incluyendo la utilizaci�n de un idioma incomprensible para el trabajador.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 395,
+                            "nom": "6307 Falta de se�alista en caso necesario para organizar la circulaci�n de personas y/o veh�culos, as� como el manejo de cargas.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 396,
+                            "nom": "6308 Deficiencia/ausencia de se�alizaci�n de ?prohibido maniobra? en los �rganos de accionamiento, en caso de trabajos a efectuar sin tensi�n, sin presi�n o sin otras energ�as.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 397,
+                            "nom": "6399 Otras causas relativas a la formaci�n, informaci�n, instrucciones y se�alizaci�n sobre la tarea.",
+                            "loaded": true,
+                            "leaf": true
+                        }
+                    ]
+                },
+                {
+                    "cod": 87,
+                    "nom": "64 SELECCI�N Y UTILIZACI�N DE EQUIPOS Y MATERIALES",
+                    "leaf": false,
+                    "loaded": false,
+                    "children": [
+                        {
+                            "cod": 398,
+                            "nom": "6401 No poner a disposici�n de los trabajadores las m�quinas, equipos y medios auxiliares necesarios o adecuados.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 399,
+                            "nom": "6402 Selecci�n de m�quinas no adecuadas al trabajo a realizar.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 400,
+                            "nom": "6403 Selecci�n de �tiles, herramientas y medios auxiliares no adecuados al trabajo a realizar.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 401,
+                            "nom": "6404 Selecci�n de materiales no adecuados al trabajo a realizar.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 402,
+                            "nom": "6405 Utilizaci�n de la m�quina de manera no prevista por el fabricante.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 403,
+                            "nom": "6406 Utilizaci�n de �tiles, herramientas y medios auxiliares de manera no prevista por el fabricante.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 404,
+                            "nom": "6407 Utilizaci�n de materiales en general de manera no prevista por el fabricante.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 405,
+                            "nom": "6408 No comprobaci�n del estado de las m�quinas, herramientas, equipos o medios auxiliares antes de su utilizaci�n.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 406,
+                            "nom": "6409 Ausencia de medios organizativos o procedimientos para la consignaci�n de m�quinas, instalaciones y lugares de trabajo.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 407,
+                            "nom": "6499 Otras causas relativas a la selecci�n y utilizaci�n de equipos y materiales.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 408,
+                            "nom": "6999 Otras causas relativas a la organizaci�n del trabajo.",
+                            "loaded": true,
+                            "leaf": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "cod": 70,
+            "nom": "7 GESTI�N DE LA PREVENCI�N",
+            "expanded": true,
+            "leaf": false,
+            "loaded": false,
+            "children": [
+                {
+                    "cod": 88,
+                    "nom": "71 GESTI�N DE LA PREVENCI�N",
+                    "leaf": false,
+                    "loaded": false,
+                    "children": [
+                        {
+                            "cod": 409,
+                            "nom": "7101 Inexistencia o insuficiencia de un procedimiento que regule la realizaci�n de las actividades dirigidas a la identificaci�n y evaluaci�n de riesgos, incluidas las referidas a los estudios requeridos en las Obras de Construcci�n.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 410,
+                            "nom": "7102 Inexistencia o deficiencia de un procedimiento que regule la planificaci�n de la implantaci�n de las medidas preventivas propuestas, incluidas las referidas a los planes de seguridad en las Obras de Construcci�n.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 411,
+                            "nom": "7103 Procedimientos inexistentes o insuficientes para formar o informar a los trabajadores de los riesgos y las medidas preventivas.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 412,
+                            "nom": "7104 Deficiencias en la organizaci�n de los recursos obligatorios (organizaci�n preventiva) para la realizaci�n de las actividades preventivas exigidas por la normativa.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 413,
+                            "nom": "7105 Procedimientos inexistentes, insuficientes o deficientes. para la coordinaci�n de actividades realizadas por varias empresas.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 414,
+                            "nom": "7106 Inadecuada pol�tica de compras desde el punto de vista de la prevenci�n.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 415,
+                            "nom": "7107 Sistema inadecuado de asignaci�n de tareas por otras razones que no sean la falta de cualificaci�n o experiencia.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 416,
+                            "nom": "7108 No apreciar las caracter�sticas de los trabajadores para la realizaci�n de la tarea o en funci�n de los riesgos.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 417,
+                            "nom": "7199 Otras causas relativas a la gesti�n de la prevenci�n.",
+                            "loaded": true,
+                            "leaf": true
+                        }
+                    ]
+                },
+                {
+                    "cod": 89,
+                    "nom": "72 ACTIVIDADES PREVENTIVAS",
+                    "leaf": false,
+                    "loaded": false,
+                    "children": [
+                        {
+                            "cod": 418,
+                            "nom": "7201 No identificaci�n del/los riesgos que han materializado el accidente.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 419,
+                            "nom": "7202 Medidas preventivas propuestas en la planificaci�n derivada de la evaluaci�n de riesgos insuficientes o inadecuadas, incluidas las referidas al Plan de Seguridad y Salud en el Trabajo en Obras de Construcci�n.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 420,
+                            "nom": "7203 No ejecuci�n de medidas preventivas propuestas en la planifi caci�n derivada de la evaluaci�n de riesgos.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 421,
+                            "nom": "7204 Falta de control del cumplimiento del Plan de seguridad y salud en Construcci�n.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 422,
+                            "nom": "7205 Mantenimiento preventivo inexistente o inadecuado o falta de realizaci�n de las revisiones peri�dicas obligatorias.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 423,
+                            "nom": "7206 Formaci�n/informaci�n inadecuada, inexistente sobre riesgos o medidas preventivas.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 424,
+                            "nom": "7207 Inexistencia o inadecuaci�n de plan y/o medidas de emergencia.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 425,
+                            "nom": "7208 No poner a disposici�n de los trabajadores las prendas o equipos de protecci�n necesarios o ser estos inadecuados o mal mantenidos, o no supervisar su correcta utilizaci�n.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 426,
+                            "nom": "7209 Falta de presencia de los recursos preventivos requeridos.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 427,
+                            "nom": "7210 Vigilancia de la salud inadecuada a los riesgos del puesto de trabajo.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 428,
+                            "nom": "7211 Ausencia/deficiencias de permisos y/o procedimientos de trabajo en inter venciones peligrosas (por ejemplo soldaduras en zonas de riesgo, trabajos en tensi�n, espacios confinados etc.).",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 429,
+                            "nom": "7212 Asignaci�n de tarea a un trabajador con falta de cualificaci�n o experiencia.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 430,
+                            "nom": "7299 Otras causas relativas a las actividades preventivas.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 431,
+                            "nom": "7999 Otras causas relativas a la gesti�n de la prevenci�n",
+                            "loaded": true,
+                            "leaf": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "cod": 71,
+            "nom": "8 FACTORES PERSONALES/INDIVIDUALES",
+            "expanded": true,
+            "leaf": false,
+            "loaded": false,
+            "children": [
+                {
+                    "cod": 90,
+                    "nom": "81 FACTORES DE COMPORTAMIENTO",
+                    "leaf": false,
+                    "loaded": false,
+                    "children": [
+                        {
+                            "cod": 432,
+                            "nom": "8101 Realizaci�n de tareas no asignadas.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 433,
+                            "nom": "8102 Incumplimiento de procedimientos e instrucciones de trabajo.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 434,
+                            "nom": "8103 Incumplimiento de normas de seguridad establecidas.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 435,
+                            "nom": "8104 Uso indebido de materiales, herramientas o �tiles de trabajo, puestos a disposici�n por la empresa.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 436,
+                            "nom": "8105 Uso indebido o no utilizaci�n de medios auxiliares de trabajo o de seguridad puestos a disposici�n por la empresa y de uso obligatorio (empujadores, distanciadores, etc.).",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 437,
+                            "nom": "8106 No utilizaci�n de equipos de protecci�n individual puestos a disposici�n por la empresa y de uso obligatorio.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 438,
+                            "nom": "8107 Retirada o anulaci�n de protecciones o dispositivos de seguridad.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 439,
+                            "nom": "8108 Permanencia de alg�n trabajador dentro de una zona peligrosa o indebida.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 440,
+                            "nom": "8109 Adopci�n de una postura inadecuada en el puesto de trabajo.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 441,
+                            "nom": "8199 Otras causas relativas a los factores de comportamiento.",
+                            "loaded": true,
+                            "leaf": true
+                        }
+                    ]
+                },
+                {
+                    "cod": 91,
+                    "nom": "82 FACTORES INTRINSECOS, DE SALUD O CAPACIDADES",
+                    "leaf": false,
+                    "loaded": false,
+                    "children": [
+                        {
+                            "cod": 442,
+                            "nom": "8201 Incapacidad f�sica o mental para la realizaci�n normal del trabajo.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 443,
+                            "nom": "8202 Deficiente asimilaci�n de �rdenes recibidas.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 444,
+                            "nom": "8203 Falta de cualificaci�n y/o experiencia para la tarea realizada achacable al trabajador.",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 445,
+                            "nom": "8299 Otras causas relativas a los factores intrinsecos, de salud o capacidades",
+                            "loaded": true,
+                            "leaf": true
+                        },
+                        {
+                            "cod": 446,
+                            "nom": "8999 Otras causas relativas a los factores personales",
+                            "loaded": true,
+                            "leaf": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "cod": 72,
+            "nom": "9 OTROS",
+            "expanded": true,
+            "leaf": false,
+            "loaded": false,
+            "children": [
+                {
+                    "cod": 92,
+                    "nom": "91 OTRAS CAUSAS",
+                    "leaf": false,
+                    "loaded": false,
+                    "children": [
+                        {
+                            "cod": 447,
+                            "nom": "9199 Otras causas.",
+                            "loaded": true,
+                            "leaf": true
+                        }
+                    ]
+                },
+                {
+                    "cod": 93,
+                    "nom": "92 HECHOS NO CAUSALES",
+                    "leaf": false,
+                    "loaded": false,
+                    "children": [
+                        {
+                            "cod": 448,
+                            "nom": "9299 Hechos no causales.",
+                            "loaded": true,
+                            "leaf": true
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

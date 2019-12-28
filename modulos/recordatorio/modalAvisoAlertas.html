@@ -1,0 +1,43 @@
+<div id="myModalAvisoAlertas" class="modal fade" data-backdrop="static" data-keyboard="false">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title"></h4>
+            </div>
+            <div class="modal-body">
+                <div class="container modal-container"></div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary btnAceptar" type="button">Aceptar</button>
+            </div>
+        </div>
+    </div>
+    <form
+        name="frmAlertasPendientes" class ="dn"
+        method="POST" action="/recordatorio/user_services/list"
+        frC-callback="cbkAlertasPendientes" frC-noSesion="true">
+        <input name="codest"/>
+    </form>
+    <form
+        name="frmContRecordatoriosPendiente2" class="dn"
+        method="POST" action="/recordatorio/user_services/count"
+        frC-Callback="cbkContarRecordatorios2"
+        frC-noSesion="true">
+        <input name="estados" value="200" type="list"/>
+        <input name="estados" value="400" type="list"/>
+    </form>
+    <form
+        name="frmCambiarEstadoNotificacion2"
+        class="dn"
+        method="GET"
+        frC-Callback="cbkCambiarEstadoNotificacion2"
+        action="/recordatorio/user_services/change_state"
+        frC-noSesion="true">
+        <input name="codrec" type="number"/>
+        <input name="codest" value="100" type="number"/>
+    </form>
+    <form
+        name="frmOnloadAvisoAlertas" class ="dn"
+        frC-callback="cbkOnloadAvisoAlertas" frC-autoload="true">
+    </form>
+</div>

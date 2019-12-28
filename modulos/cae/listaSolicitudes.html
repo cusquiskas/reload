@@ -1,0 +1,85 @@
+<div class="card-block modulListaSolicitudCae">
+    <div class="cabecera">
+        <h4 class="card-title">Solicitudes de Gestiones Cae</h4>
+        <!--form name="botoneraListaSolicitudCae" class="form-horizontal botonera" role="form" method="POST" action="">
+            <button class="btn btn-outline-indigo btn-ver" type="button" param='VIEW' disabled>Ver</button>
+            <button class="btn btn-outline-indigo btn-modificar" type="button" param='MODF' disabled>Modificar</button>
+            <button class="btn btn-outline-indigo btn-tramitar" type="button" param='TRAM' disabled>Tramitar</button>
+            <div class="listado hidden-table-header dn">
+                <div class="row">
+                    <div class="col-2 left">Tipo Solicitud</div>
+                    <div class="col-2 left">F.Solicitud</div>
+                    <div class="col-2 left">Empresa</div>
+                    <div class="col-2 left">Estado</div>
+                    <div class="col-4 left">Observaciones</div>
+                </div>
+            </div>
+        </form-->
+        <div class="tituloConfig">Lista de Solicitudes</div>
+    </div>
+    <form name="frmListaSolicitudCae" method="POST" frC-Callback="cbkListaSolicitudCae" frC-AutoLoad="false"
+        action="/management/mvc-management/controller/newintra.xwi_autoservicio.aser$mis_solicitudes.json">
+        <input name="p_campo" value="fecsol2" type="hidden">
+        <input name="p_order" value="descending" type="hidden">
+        <input name="xjerror" value="S" type="hidden">
+
+        <div class="row filtro">
+            <div class="md-form">
+                <select name="p_codapl" class="form-control custom-select"></select>
+                <label for="p_codapl" class="active">Tipo Solicitud</label>
+            </div>
+            <div class="md-form">
+                <input name="p_fecini" class="inputdate-unstyled" type="date" />
+                <label for="p_fecini" class="active">Fecha Desde</label>
+            </div>
+            <div class="md-form">
+                <input name="p_fecfin" class="inputdate-unstyled" type="date" />
+                <label for="p_fecfin" class="active">Fecha Hasta</label>
+            </div>
+            <div class="md-form">
+                <select name="p_estado" class="form-control custom-select"></select>
+                <label for="p_estado" class="active">Estado</label>
+            </div>
+            <button type="submit" class="btn btn-info btn-with-img">
+                <span>Buscar </span><i class="material-icons">search</i>
+            </button>
+        </div>
+
+        <div class="datatable">
+            <table class="tblSolicitudes table table-style-01" type="datatable" select="selSolicitud" source="list.sol">
+
+                <thead>
+                    <tr>
+                        <th data="daplsol" width="18%">Tipo</th>
+                        <th data="fecsol" width="15%" type="date" inmask="DD/MM/YYYY@hh:mm:ss.SSSZ"
+                            outmask="DD/MM/YYYY HH:mm">Fecha</th>
+                        <th data="descia" width="21%">Empresa</th>
+                        <th data="destado" width="20%">Estado</th>
+                        <th data="getObservaciones" type="function" width="26%">Observaciones</th>
+                    </tr>
+                </thead>
+            </table>
+            <div for="datatable">
+                <button class="btn btn-outline-indigo btn-disabled-gray btn-view" alpulsar="clickVerSolicitud"
+                    disabled>Ver</button>
+                <button class="btn btn-outline-cyan btn-disabled-gray btn-modf" alpulsar="clickModificarSolicitud"
+                    disabled>Modificar</button>
+                <button class="btn btn-outline-success btn-disabled-gray btn-tram" alpulsar="clickTramitarSolicitud"
+                    disabled>Tramitar</button>
+                <button class="btn btn-outline-success btn-disabled-gray btn-canc" alpulsar="clickCancelarSolicitud"
+                    disabled>Anular</button>
+            </div>
+        </div>
+    </form>
+    <!--div class="listado">
+        <div class="row">
+            <div class="col-2">Tipo Solicitud</div>
+            <div class="col-2">F.Solicitud</div>
+            <div class="col-2">Empresa</div>
+            <div class="col-2">Estado</div>
+            <div class="col-4">Observaciones</div>
+        </div>
+        <div class="tabla tblListaSolicitudCae">
+        </div>
+    </div-->
+</div>

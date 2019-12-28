@@ -1,0 +1,72 @@
+<div class="perfilEmpleado cuerpo">
+    <div class="container">
+        <div class="jumbotron">
+            <div class="row m-0">
+                <div class="container">
+                    <h2 class="azulCoorporativo">Perfil de Empleado</h2>
+                </div>
+                <div class="row w-100">
+                    <template id='modal'></template>
+                    <div class="col-12 col-lg-4">
+                        <div class="text-center">
+                            <img src="#" alt="" class="fotoPerfil imagenAvatarUsr" />
+                        </div>
+                        <div class="nombreEmpleado">
+                            <span class="empleadoLogado"></span>
+                        </div>
+                        <div class="nombreEmpleado">
+                            <div class="perfilCompleto"><strong>Perfil Completo</strong></div>
+                            <div class="progress pb-perfil pb-perfil-tooltip pb-perfil-tooltip-2" data-toggle="tooltip"
+                                data-html="true">
+                                <div class="progress-bar progress-bar-perfil" style="width: 0%" role="progressbar">
+                                </div>
+                            </div>
+                        </div>
+                        <button id="cambiarFoto" type="button" class="btn btn-outline-warning" style="margin: 0 auto;">
+                            <i class="material-icons">edit</i>
+                            <span>Modificar Imagen</span>
+                        </button>
+                    </div>
+                    <div class="col-12 col-lg-8">
+                        <div id="accordion" role="tablist">
+
+                            <!-- DATOS PERSONALES -->
+                            <template id="tempDatosPersonales"></template>
+
+                            <!-- DATOS DE EMPRESA -->
+                            <template id="tempDatosEmpresa"></template>
+
+                            <!-- DATOS FISCALES -->
+                            <template id="tempDatosFiscales"></template>
+
+                            <!-- SITUACION FAMILIAR -->
+                            <template id="tempSituacionFamiliar"></template>
+
+                            <!-- PARENTESCO -->
+                            <template id="tempParentesco"></template>
+
+                            <!-- BENEFICIARIOS -->
+                            <template id="tempBeneficiarios"></template>
+
+                            <!-- CAMBIO CUENTA BANCARIA -->
+                            <template id="tempCuentaBancaria"></template>
+
+                            <!-- CAMBIO CONTRASEÑA -->
+                            <template id="tempCambioContrasena"></template>
+
+                            <!-- RECUPERACION CONTRASEÑA -->
+                            <template id="tempRecuperacionContrasena"></template>
+
+                            <!-- PRORRATEO PAGAS EXTRA -->
+                            <template id="tempProrrateoPagas"></template>
+
+                        </div>
+                    </div>
+                    <form name="perfilesDePerfil" method="POST" class="dn" frC-Callback="perfilesDePerfil" action="/management/mvc-management/controller/portal.xwi_menu.acceso_datos_personales.json"
+                        frC-AutoLoad="true">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

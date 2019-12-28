@@ -1,0 +1,24 @@
+<!-- Independiente del login -->
+<div class="gestion-politica-rgpd">
+
+    <h4 class="entradillaPoliticaRGPD entradi"></h4>
+    <div class="card bg-light">
+        <div class="contenidoPoliticaRGPD content well-content card-body"></div>
+    </div>
+
+    <form name="frmLoadPoliticaRGPD" class="dn"
+        method="POST" action="/management/mvc-management/controller/portal.xwi_rgpd.listar_politica_rgpd.json"
+        frC-callback="cbkLoadPoliticaRGPD">
+        <input name="p_flag" value="L" type="hidden"/>
+        <input name="p_codpol">
+        <input name="p_vesion">
+    </form>
+    
+    <form
+        name="fmrAceptarPoliticasRGPD" class="dn"
+        method="POST" action="/management/mvc-management/controller/portal.xwi_rgpd.aceptar_politica_rgpd.json"
+        frC-callback="cbkAceptarPoliticasRGPD">
+        <input name="p_codpol">
+        <input name="p_vesion">
+    </form>
+</div>

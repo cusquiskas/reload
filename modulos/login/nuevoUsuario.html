@@ -1,0 +1,114 @@
+<div class="nuevoUsuario usuarioBloqueado container">
+    <template id='modal'></template>
+    <div class="card text-center">
+        <div class="card-block">
+            <div class="logoColorBloqueo"></div>
+            <h5 class="titleLogoPortal">Portal del Empleado</h5>
+            <div class="card-body">
+                <h6 class="card-title">Nuevo Usuario</h6>
+                <p class="card-text text-left"></p>
+            </div>
+            <form name="primerLogin" class="form-horizontal" method="POST" frC-Callback="primerLogin"
+                action="/management/mvc-management/controller/portal.xwi_acceso.primer_login.json">
+                <div class="form-group md-form row">
+                    <div class="col-12 col-sm-4">
+                        <input type="text" class="form-control" name="p_codusr" placeholder="Nº de empleado" required
+                            readonly disabled>
+                        <label for="p_codusr" class="active placeholder">Nº de empleado</label>
+                    </div>
+                    <div class="col-12 col-sm-4">
+                        <input type="text" class="form-control" name="p_dniusr" placeholder="00000000A" required>
+                        <label for="p_dniusr" class="active placeholder">NIF/NIE</label>
+                    </div>
+                    <div class="col-12 col-sm-4">
+                        <input type="date" class="form-control" name="p_fecnac" placeholder="DD/MM/AAAA" required>
+                        <label for="p_fecnac" class="active placeholder">Fecha de nacimiento</label>
+                    </div>
+                </div>
+                <div class="form-group md-form row">
+                    <div class="col-12 col-sm-7">
+                        <input type="email" class="form-control" name="p_email" placeholder="aaaaaaaaaa@aaaaa.com">
+                        <label for="p_email" class="active placeholder">Correo electrónico</label>
+                    </div>
+                    <div class="col-12 col-sm-3">
+                        <input type="text" class="form-control" name="p_tlfemp" placeholder="000000000">
+                        <label for="p_tlfemp" class="active placeholder">Tlf. Empresa</label>
+                    </div>
+                    <div class="col-12 col-sm-2">
+                        <input type="text" class="form-control" name="p_extusr" placeholder="0000">
+                        <label for="p_extusr" class="active placeholder">Extensión</label>
+                    </div>
+                </div>
+                <div class="recuperacionNuevoUser form-group md-form row">
+                    <div class="col-12 col-sm-6">
+                        <input type="email" class="form-control" name="p_correc" placeholder="aaaaaaaaaa@aaaaa.com"
+                            required>
+                        <label for="p_correc" class="active placeholder">*Email de recuperación</label>
+                    </div>
+                    <div class="col-12 col-sm-6">
+                        <input type="text" class="form-control" name="p_telrec" placeholder="000000000" required>
+                        <label for="p_telrec" class="active placeholder">*Teléfono móvil de recuperación</label>
+                    </div>
+                    <div class="col-12">
+                        <div class="conditionsSinBF">
+                            *El correo electrónico y/o teléfono móvil de recuperación serán utilizados únicamente
+                            en caso de que no recuerdes tu contraseña y necesites recuperar tu clave de acceso a
+                            las Herramientas y Sistemas Corporativos. Utilizaremos dichos medios para hacerte llegar
+                            la información necesaria. La dirección de correo debe ser distinta de tu cuenta
+                            corporativa.
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-12">
+                            <div class="conditions">
+                                Conforme a lo previsto en la Ley Orgánica 15/1999, de 13 de diciembre, de Protección de
+                                Datos de Carácter Personal, el titular
+                                es consciente que Globalia Corporación lleve a efecto el tratamiento automatizado de sus
+                                datos.
+                                Todos los datos facilitados serán tratados de forma confidencial y se destinarán a
+                                ofrecerle
+                                información comercial de los productos y servicios de Globalia Corporación o empresas
+                                asociadas.
+                                Adicionalmente le permitirán acceder a sus datos económicos y personales. Si usted desea
+                                acceder,
+                                rectificar o cancelar sus datos en todo lo referente la Ley orgánica 15/1999 de
+                                Protección
+                                de
+                                Datos de Carácter Personal diríjase al departamento de Recursos Humanos de Globalia
+                                Corporación.
+                                En todo caso, el titular tendrá derecho a solicitar y obtener información de sus datos
+                                de
+                                carácter
+                                personal incluidos en los ficheros automatizados y, en su caso, a rectificar y cancelar
+                                tales
+                                datos, en la forma prevista en la Ley arriba señalada.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div class="aceptarCondNuevoUser form-check col-12">
+                <input class="form-check-input" type="checkbox" id="invalidCheck2" required>
+                <label class="form-check-label" for="invalidCheck2">
+                    He leído y acepto las condiciones
+                </label>
+            </div>
+            <div class="form-group md-form row">
+                <div class="col-12 col-sm-6">
+                    <button type="button" class="botonAceptar btn btn-primary btn-block">ACEPTAR</button>
+                </div>
+                <div class="col-12 col-sm-6">
+                    <button type="button" class="botonVolver btn btn-primary btn-block">VOLVER</button>
+                </div>
+            </div>
+            <form name="existeUsuario" class="dn" method="POST"
+                action="/management/mvc-management/controller/portal.xwi_acceso.existe_usuario.json"
+                frC-Callback="existeUsuario">
+                <input type="hidden" name="p_codusr">
+                <input type="hidden">
+            </form>
+            <form name="cargaDatosCrearUsuario" class="dn" frC-Callback="cargaDatosCrearUsuario" frC-AutoLoad="true">
+            </form>
+        </div>
+    </div>
+</div>

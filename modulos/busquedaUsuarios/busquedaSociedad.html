@@ -1,0 +1,47 @@
+
+<div class="container busquedaSociedad">
+    <form name="busquedaSociedad">
+
+        <div class="md-form row input-div">
+            <div class="md-form col">
+                <div class="input-group">
+                    <select
+                        name="p_codemp"
+                        class="form-control custom-select"
+                        frC-indexResponse="lov:texto,valor"
+                        frC-Store="/management/mvc-management/controller/newintra.xwi_personal.xlist$empresas.json?p_empok=N&p_codapl=&p_codusr=&p_codpfl=&p_ctlcbk=&p_fecha=&p_swicod=S&p_tiplst=JSON">
+                    </select>
+                    <label for="p_codemp">Empresa</label>
+                </div>
+            </div>
+            <div class="md-form col">
+                <div class="input-group">
+                    <select
+                        name="p_coddiv"
+                        class="form-control custom-select"
+                        frC-indexResponse="lov:des,cod"
+                        frC-Store="/management/mvc-management/controller/newintra.xwi_personal.xlist$divisiones.json?p_divok=N&p_ctlcbk=&p_codusr=&p_codapl=&p_codpfl=&p_swicod=S&p_tiplst=JSON"
+                        frC-Reference="!p_codemp:p_codemp">
+                    </select>
+                    <label for="p_coddiv">División</label>
+                </div>
+            </div>
+            <div class="md-form col">
+                <div class="input-group">
+                    <select
+                        name="p_codsdv"
+                        class="form-control custom-select"
+                        frC-indexResponse="lov:des,cod"
+                        frC-Store="/management/mvc-management/controller/newintra.xwi_personal.xlist$subdivisiones.json?p_sdvok=N&p_ctlcbk=&p_codusr=&p_codapl=&p_codpfl=&p_swicod=S&p_tiplst=JSON"
+                        frC-Reference="!p_coddiv:p_coddiv">
+                    </select>
+                    <label for="p_codsdv">Centro de Trabajo</label>
+                </div>
+            </div>
+        </div>        
+    </form>
+</div>
+
+<button type="button" class="btn btn-primary btn-with-img btnSeleccionSociedad">
+    <span>Seleccionar </span><i class="material-icons">done</i>
+</button>

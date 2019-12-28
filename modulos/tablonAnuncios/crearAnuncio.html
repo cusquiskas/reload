@@ -1,0 +1,62 @@
+<div class="container-fluid crear-anuncio">
+    <button type="button" class="btn btn-primary button-info tablonAnuncios">Ver todos los anuncios</button>
+    <form name="gestionAnuncios" method="POST" frC-Callback="gestionAnuncios" action="/management/mvc-management/controller/newintra.xwi_anuncios.guardar_documentos.json">
+        <h1 class="page-content-title">
+            <frC-Graft name="titulo"></frC-Graft> anuncio</h1>
+        <div class="sidebar-module sidebar-phones">
+            <h2 class="module-title">Publicar anuncio</h2>
+            <div class="row">
+                <input type="hidden" name="p_seqdoc" />
+                <div class="col-12 col-md-6">
+                    <div class="form-group col-12">
+                        <label for="p_titdoc">Asunto o título del anuncio</label>
+                        <input class="form-control" type="text" name="p_titdoc" maxlength="100" required>
+                    </div>
+                    <div class="form-group col-12">
+                        <label for="p_codcpo">Provincia</label>
+                        <select class="form-control alto44" data-toggle="tooltip" data-placement="top" title="Provincias" name="p_codcpo" frC-indexResponse="root:des,cod"
+                            frC-Store="/management/mvc-management/controller/newintra.xwi_personal.xlist$provincias.json?p_pais=&p_ctlcbk=&p_swicod=S">
+                            <option value=''>Todas las Provincias</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-12">
+                        <label for="p_ficadj">Imagen asociada</label>
+                        <button type="button" class="btnAdjuntarArchivo" id="btnAdjuntarArchivoTabAnun">
+                            <span>Selecciona archivo</span>
+                        </button>
+                        <input type="text" class="addfile alto44" id="adjuntarArchivoTabAnun" name="p_ficadj" readonly/>
+                        <input type="hidden" class="adjArchTabAnunHidden" name="ficheroDefault" frC-Submit="false" value='=' />
+                        <input type="hidden" name="failUpload" frC-Submit="false" value='false' />
+                        <button type="button" class="btnAdjuntarArchivo eliminarAdjuntarArchivo" id="btnRemoveAdjArchTabAnun">
+                            <i class="material-icons">close</i>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="form-group col-12">
+                        <label for="p_txtdoc">Descripción</label>
+                        <textarea class="form-control" rows="9" name="p_txtdoc" maxlength="4000" required></textarea>
+                    </div>
+                    <div class="col-12 text-right">
+                        <button type="submit" class="btn btn-outline-primary globalia">Guardar »</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+<div class="container-fluid fullWidth">
+    <div class="row">
+        <div class="col-12">
+            <template id="cajaBanners2"></template>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <template id="cajaPreFooter2"></template>
+        </div>
+    </div>
+</div>
+<div class="dn" id="divCargadoresIndexTanAnun"></div>

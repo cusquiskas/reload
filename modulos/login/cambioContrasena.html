@@ -1,0 +1,58 @@
+<div class="card cambioPass">
+    <div class="logoColorBloqueo"></div>
+    <div class="card-header aperturaDatosPersonales nav-lvl-1" role="tab" id="heading7">
+        <h5 class="mb-0">
+            <span>Cambio Contraseña</span>
+            <a data-toggle="collapse" role="button">
+                Cambio Contraseña
+            </a>
+        </h5>
+    </div>
+    <div id="collapse7" class="collapse cuerpoDatosPersonales">
+        <form name="cambioContrasena" class="form-horizontal" method="POST" frC-Callback="cambioContrasena" action="/management/mvc-management/controller/portal.xwi_acceso.cambio_password.json">
+            <div class="card-body">
+                <input type="hidden" name="p_newpas" required />
+                <input type="hidden" name="p_codusr" class="userCod" />
+                <input name="p_oldpas" type="hidden" required>
+                <!--div class="row sinMargen">
+                    <p class="info">Introduce tu nueva contraseña. No puede contener el nombre de cuenta de tu usuario (o partes del mismo en más de dos caracteres consecutivos), la longitud mínima es de 8 caracteres y debe incluir al menos una mayúscula, una minúscula y un número (o símbolo, por ejemplo: !, &, #).</p>
+                </div-->
+                <div class="md-form">
+                    <input type="password" class="form-control" name="p_auxoldpas" placeholder="Contraseña antigua"
+                        frc-Submit="false" />
+                    <label for="p_auxoldpas" class="active">Contraseña antigua</label>
+                </div>
+                <div class="row sinMargen">
+                    <div class="md-form col-12 col-sm-6 p-0">
+                        <div class="input-group strengthify-input-group">
+                            <input type="password" class="form-control" name="p_passwd" placeholder="Contraseña nueva"
+                                frc-Submit="false" />
+                            <label for="p_passwd" class="active">Contraseña nueva</label>
+                        </div>
+                    </div>
+                    <div class="md-form col-12 col-sm-6 p-0">
+                        <input type="password" class="form-control" name="p_reppas" placeholder="Repetir contraseña"
+                            required frc-Submit="false" />
+                        <label for="p_reppas" class="active">Repetir contraseña</label>
+                    </div>
+                </div>
+            </div>
+            <div class="totalCajas row float-right">
+                <button id="botoGardarCambioContrasenya" type="button" class="btn btn-outline-success" disabled="disabled">
+                    <i class="material-icons">save</i>
+                    <span>Guardar</span>
+                </button>
+                <button type="button" class="btn btn-outline-danger cancelPass">
+                    <i class="material-icons">clear</i>
+                    <span>Cancelar</span>
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <form name="frmOnloadCambioContrasena" class="dn" method="POST" action="/management/mvc-management/controller/portal.xwi_recuperacion.load_password_validation.json"
+        frC-Callback="cbkOnloadCambioContrasena" frC-AutoLoad="false">
+
+        <input name="p_codusr" />
+    </form>
+</div>

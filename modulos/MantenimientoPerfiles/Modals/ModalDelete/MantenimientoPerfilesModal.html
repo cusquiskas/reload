@@ -1,0 +1,29 @@
+<div>
+    <div class="datatable">
+        <form name="listadoPerfil" method="POST" frC-Callback="renderDataTable" frC-AutoLoad="true">
+            <div for="datatable" class="Justify-content-center mb-3 d-none">
+                <button class="btn btn-outline-danger" tabindex="0" aria-controls="DataTables_Table_1"
+                    alpulsar="removeUser" type="button"><span>Eliminar</span></button>
+            </div>
+            <table class="tblGestionNotificaciones table table-style-01 text-center" type="datatable" select="onSelectUser"
+                deselect="onDeselectionUser" language="ES" pagination="false">
+                <thead>
+                    <tr>
+                        <th data="Código" width="50%">Código</th>
+                        <th data="Nombre" width="50%">Nombre</th>
+                    </tr>
+                </thead>
+            </table>
+        </form>
+    </div>
+
+    <form name="borrar_perfil" method="post"
+        action="/management/mvc-management/controller/newintra.xwi_perfiles_rrhh.xml$eliminar_perfiles.json"
+        frC-Callback="deleteHandler">
+        <input type="hidden" name="p_aplicacion">
+        <input type="hidden" name="p_perfil">
+        <input type="hidden" name="p_usuario">
+        <input type="hidden" name="p_empresa">
+    </form>
+
+</div>

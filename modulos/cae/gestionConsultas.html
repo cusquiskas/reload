@@ -1,0 +1,90 @@
+<div class="gestion-consulta-cae">
+    <form
+        name="frmInit"
+        class='dn'
+        method="POST"
+        frC-Callback="cbkInit"
+        action="/management/mvc-management/controller/newintra.xwi_autoservicio.datre$obtener_dat_recl_usr.xml">
+        <input name="p_codusr">
+        <input name="p_fecsol">
+        <input name="p_perfil">
+        <input name="xchn" value="JSON">
+    </form>
+    
+    <form name="frmGestionConsulta">
+        <input name="filepath" type="hidden">
+
+        <div class="tituloConfig">Estado Solicitud</div>
+        <div class="md-form row">
+            <div class="md-form col-12">
+                <div class="input-group">
+                    <input name="p_estsol" class="form-control" type="text" readonly/>
+                    <label for="p_estsol" class="active">Estado</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="tituloConfig">Consulta</div>
+        <div class="md-form row">
+            <div class="md-form col-8">
+                <div class="input-group">
+                    <input name="p_asunto" class="form-control" type="text" readonly/>
+                    <label for="p_asunto" class="active">Asunto</label>
+                </div>
+            </div>
+            <div class="md-form col-4">
+                <div class="input-group">
+                    <input name="p_docadj" class="form-control" type="text" readonly/>
+                    <label for="p_docadj" class="active">Adjunto</label>
+                    <span class="input-group-append cliqueable btn-docadj-consulta">
+                        <span class="input-group-text">
+                            <i class="material-icons">search</i>
+                        </span>
+                    </span>
+                </div>
+            </div>
+            <div class="md-form col-12">
+                <div class="input-group">
+                    <label for="p_texto" class="active">Texto</label>
+                </div>
+            </div>
+            <div class="md-form col-12">
+                <div class="input-group">
+                    <textarea name="p_texto" class="form-control border border-secondary" readonly></textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="tituloConfig">Respuesta Consulta</div>
+        <div class="md-form row">
+            <div class="md-form col-8">
+                <div class="input-group">
+                    <input name="p_motivo" class="form-control" type="text" readonly/>
+                    <label for="p_motivo" class="active">Motivo</label>
+                </div>
+            </div>
+            <div class="md-form col-4">
+                <div class="input-group">
+                    <input name="p_docmnt" class="form-control" type="text" readonly/>
+                    <label for="p_docmnt" class="active">Documentación</label>
+                    <span class="input-group-append btn-docadj-respuesta">
+                        <span class="input-group-text">
+                            <i class="material-icons">search</i>
+                        </span>
+                    </span>
+                </div>
+            </div>
+            <div class="md-form col-12">
+                <div class="input-group">
+                    <label for="p_histrl" class="active">Historial</label>
+                </div>
+            </div>
+            <div class="md-form col-12">
+                <div class="input-group">
+                    <div class="alert alert-light border border-secondary w-100 p_histrl" role="alert"></div>
+                    <!--textarea name="p_histrl" class="form-control" readonly></textarea-->
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

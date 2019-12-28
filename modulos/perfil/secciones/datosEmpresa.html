@@ -1,0 +1,125 @@
+<div class="card">
+    <div class="card-header aperturaDatosPersonales nav-lvl-1" id="heading4">
+        <h5 class="mb-0">
+            <a class="collapsed" data-toggle="collapse" role="button">
+                Datos de Empresa
+            </a>
+        </h5>
+    </div>
+    <div id="collapse4" class="collapse cuerpoDatosPersonales">
+        <div class="card-body">
+            <form name="initDatosEmpresa" method="POST" class="dn" frC-Callback="initDatosEmpresa"
+                action="/management/mvc-management/controller/newintra.xwi_general.xml$usuario_telefono.xml"
+                frC-AutoLoad="true">
+                <input type="hidden" name="xchn" value="json">
+                <input type="hidden" name="p_codusr">
+            </form>
+            <form name="datosEmpresa" method="POST" frC-Callback="datosEmpresa"
+                action="/management/mvc-management/controller/newintra.xwi_general.xml$modifica_datos_usuario.xml">
+                <div id="formDatosEmpresa">
+                    <input type="hidden" name="xchn" value="json">
+                    <input type="hidden" name="p_usr">
+                    <input type="hidden" name="p_check">
+                    <div class="md-form row formRowsAutoserv">
+                        <div class="col-12 col-md-7 md-form d-flex">
+                            <input type="email" class="form-control" maxlength="50" name="p_email" id="email"
+                                disabled />
+                            <label id="labelEmail" for="p_email" class="active">Email</label>
+                            <i id="iconoEmail" class="material-icons dn" data-toggle="tooltip" data-placement="top"
+                                data-original-title="Para cambiar el Correo Electrónico contacte con soporte.">info_outline</i>
+                        </div>
+                        <div class="col-12 col-md-5">
+                            <div class="md-form minh-25px">
+                                <div class="form-check checkbox-slider--b-flat">
+                                    <label style="max-width: 90%">
+                                        <input class="checkboxspam" name="p_hidden" type="checkbox" frC-Submit='false'
+                                            disabled>
+                                        <span style="font-size: 12px; color: #adb5bd;">&nbsp;Acepto recibir
+                                            comunicaciones comerciales
+                                            tanto de Globalia como de terceros</span>
+                                        <a style="font-size: 12px; color: #adb5bd; font-style: normal;"
+                                            data-toggle="tooltip" data-placement="top"
+                                            data-original-title="Las comunicaciones comerciales podrán ser de nuestros productos y servicios que puedan resultar de tu interés y, en ocasiones, podrán ser comunicaciones comerciales que promocionan los productos y servicios de un tercero (por ejemplo, los de nuestros socios empresariales).">&nbsp;(+INFO).</a>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md-form row formRowsAutoserv">
+                        <div class="col-12 col-md-4 md-form d-flex">
+                            <input type="number" class="form-control" maxlength="15" name="p_tel" id="telefonoEmpresa"
+                                disabled />
+                            <label for="p_tel" class="active">Teléfono Fijo</label>
+                            <i id="iconoTelEmp" class="material-icons dn" data-toggle="tooltip" data-placement="top"
+                                data-original-title="Para cambiar el Teléfono de Empresa contacte con soporte.">info_outline</i>
+                        </div>
+                        <div class="col-12 col-md-4 md-form d-flex">
+                            <input type="number" class="form-control" maxlength="15" name="p_mov" id="movilEmpresa"
+                                disabled />
+                            <label for="p_mov" class="active">Móvil</label>
+                            <i id="iconoMovEmp" class="material-icons dn" data-toggle="tooltip" data-placement="top"
+                                data-original-title="Para cambiar el Móvil de Empresa contacte con soporte.">info_outline</i>
+                        </div>
+                        <div class="col-12 col-md-4 md-form d-flex">
+                            <input type="number" class="form-control" maxlength="15" name="p_ext" id="extension"
+                                disabled />
+                            <label for="p_ext" class="active">Extensión</label>
+                            <i id="iconoExt" class="material-icons dn" data-toggle="tooltip" data-placement="top"
+                                data-original-title="Para cambiar la Extensión contacte con soporte.">info_outline</i>
+                        </div>
+                    </div>
+                    <div class="md-form d-flex dn">
+                        <input type="password" class="form-control" name="p_password" disabled />
+                        <label for="p_password" class="active">Contraseña</label>
+
+                    </div>
+                    <div class="md-form d-flex dn">
+                        <input type="text" class="form-control" name="P_xsid" disabled />
+                        <label for="P_xsid" class="active">XSID</label>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="md-form col">
+                        <p class="mensajeRRHH">
+                            Informamos que, los datos recogidos en el apartado Datos Empresa y publicados a través del
+                            Portal, son visibles para cualquier
+                            usuario del mismo.
+                            Por tanto, dado el carácter público de este portal, rogamos se abstengan de incluir
+                            cualquier
+                            tipo de dato que pretenda mantenerse
+                            como privado.
+                        </p>
+                    </div>
+                </div>
+                <div class="row float-right">
+                    <div class="btnModificando row dn">
+                        <button type="button" class="btn btn-outline-success" id="guardarDatosEmpresa">
+                            <i class="material-icons">save</i>
+                            <span>Guardar</span>
+                        </button>
+                        <button type="button" class="btn btn-outline-danger" id="cancelarDatosEmpresa">
+                            <i class="material-icons">clear</i>
+                            <span>Cancelar</span>
+                        </button>
+                    </div>
+                    <button type="button" class="btn btn-outline-warning" id="modificarDatosEmpresa">
+                        <i class="material-icons">edit</i>
+                        <span>Modificar</span>
+                    </button>
+                </div>
+            </form>
+            <form name="estadoSpam" method="POST" class="dn" frC-Callback="estadoSpam"
+                action="/management/mvc-management/controller/newintra.xwi_lopd.xml$lista_estado_spam.xml"
+                frC-AutoLoad="true">
+                <input type="text" class="dn">
+                <input type="text" class="dn" name="xchn" value="json">
+            </form>
+            <form name="cambiaEstadoSpam" method="POST" class="dn" frC-Callback="cambiaEstadoSpam"
+                action="/management/mvc-management/controller/newintra.xwi_lopd.xtab$cambia_estado_spam.xml">
+                <input type="text" class="dn">
+                <input type="text" class="dn" name="xchn" value="json">
+            </form>
+        </div>
+    </div>
+</div>

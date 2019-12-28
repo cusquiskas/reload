@@ -1,0 +1,31 @@
+<div id="myModalEncuesta" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header dn">
+                <h4 class="modal-title"></h4>
+                <button id="cerrarModalEncuestas" type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="container encuestaSatisfaccion">
+                    <form name="guardarEncuestaEmpleado" frC-callback="guardarEncuestaEmpleado" method="POST" action="/management/mvc-management/controller/portal.xwi_encuesta.guardar_encuesta_usuario.json">
+                        <input class="dn" name="p_codenc"> <input class="dn" name="p_codres">
+                        <div class="mensajeEncuesta">
+                            <p class="tituloEncuesta"><frC-graft name="desenc"></frC-graft></p>
+                            <span class="cuerpoEncuesta"><frC-graft name="despre"></frC-graft></span>
+                        </div>
+                        <div class="row respuestasPreguntaEncuesta"> </div>
+                        <div class="row">
+                            <div clas="col">
+                                &nbsp;
+                            </div>
+                        </div>
+                    </form>
+                    <form name="mostrarEncuestaEmpleado" method="POST" frC-callback="mostrarEncuestaEmpleado" frC-autoload="true" action="/management/mvc-management/controller/portal.xwi_encuesta.listar_encuesta.json"></form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

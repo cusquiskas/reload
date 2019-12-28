@@ -1,0 +1,33 @@
+<div class="container nominas text-center">
+    <form name="descargaNomina" class="dn" method="POST" frC-Callback="descargaNomina" action="/management/mvc-management/controller/newintra.xwi_consulta_nomina.genera_nomina.json">
+        <input name="p_pernr" />
+        <input name="p_periodo" />
+        <input name="p_bukrs" />
+        <input name="p_gjahr" />
+        <input name="p_juper" />
+        <input name="p_abkrs" />
+    </form>
+
+    <div class="titulo">Nóminas y Certificados</div>
+
+    <form name="listadoNominas" method="POST" frC-Callback="listadoNominas" action="/management/mvc-management/controller/newintra.xwi_consulta_nomina.listado_nomina.json">
+        <div class="md-form dn">
+            <select class="form-control custom-select buscadorPluriEmpleado" name="p_pernr" frC-indexResponse="root:txt,val" frC-Store="/newintra/newintra/1/xwi_consulta_nomina.listado_pluriempleado.json"></select>
+            <label for="p_pernr" class="active">Pluriempleado</label>
+        </div>
+
+        <div class="datatable">
+            <table
+                class="tblNominasCertificados table table-style-01"
+                type="datatable"
+                select="false"
+                header="false"
+                pagination="5"
+                source="root.item"
+                columns="getColumns">
+            
+                <thead></thead>
+            </table>
+        </div>
+    </form>
+</div>

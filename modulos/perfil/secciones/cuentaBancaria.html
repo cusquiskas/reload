@@ -1,0 +1,128 @@
+<div class="card">
+    <div class="card-header aperturaDatosPersonales nav-lvl-1" id="heading5">
+        <h5 class="mb-0">
+            <a class="collapsed" data-toggle="collapse" role="button">
+                Cambio Cuenta Bancaria
+            </a>
+        </h5>
+    </div>
+    <div id="collapse5" class="collapse cuerpoDatosPersonales">
+        <div class="card-body">
+            <form name="initCuentaBancaria" class="dn" method="POST" frC-Callback="initCuentaBancaria"
+                frC-AutoLoad="true"
+                action="/management/mvc-management/controller/newintra.xwi_autoservicio.datba$obtener_datos_bancarios.json">
+                <input name="p_codusr" />
+                <input name="p_fecsol" />
+                <input name="p_perfil" />
+            </form>
+            <form name="cuentaBancaria" method="POST" frC-Callback="cuentaBancaria"
+                action="/management/mvc-management/controller/newintra.xwi_autoservicio.datba$guardar_datos.json">
+                <div id="formCuentaBancaria">
+                    <input type="hidden" name="p_bankl">
+                    <input type="hidden" name="p_bankn">
+                    <input type="hidden" name="p_bkont">
+                    <input type="hidden" name="p_docban">
+                    <input type="hidden" name="p_password" />
+                    <div class="md-form ">
+                        <select type="text" class="form-control custom-select" name="p_banks"
+                            frC-indexResponse="root:alter,cod"
+                            frC-Store="/management/mvc-management/controller/newintra.xwi_personal.xlist$paises.json?xchn=json&p_ctlcbk=&p_nation=&p_swicod=S"
+                            readonly disabled></select>
+                        <label for="pais" class="active">País del banco</label>
+                    </div>
+                    <div id="iban1" class="md-form row sinMargen">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="md-form dn codigoIBAN ">
+                                    <input type="text" class="form-control" frC-Validate="IBAN" name="p_ibaban"
+                                        id="codigoIBAN" readonly disabled required />
+                                    <label for="p_ibaban" class="active">Código IBAN Nuevo <i
+                                            title="El IBAN son las siglas de International Bank Account Number, es decir, el Código Internacional de Cuenta Bancaria. Es un código alfanumérico que identifica tu cuenta bancaria"
+                                            class="material-icons">info</i></label>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="md-form  ibabananti">
+                                    <input type="text" class="form-control " frC-Validate="IBAN" name="p_ibabananti" id="ibabananti" readonly disabled required />
+                                    <label for="p_ibabananti" id="ibabananti_label" class="active">Código IBAN <i
+                                            title="El IBAN son las siglas de International Bank Account Number, es decir, el Código Internacional de Cuenta Bancaria. Es un código alfanumérico que identifica tu cuenta bancaria"
+                                            class="material-icons">info</i> </label>
+                                </div>
+                            </div>
+                            <div class="row dn">
+                                <div class="col-md-6">
+                                    <div class="md-form ">
+                                        <input type="text" class="form-control" name="p_desde" frC-Submit="false"
+                                            id="fechaDesdeBan" readonly disabled />
+                                        <label for="p_desde" class="active">Desde</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="md-form ">
+                                        <input type="text" class="form-control" name="p_hasta" frC-Submit="false"
+                                            id="fechaHastaBan" readonly disabled />
+                                        <label for="p_hasta" class="active">Hasta</label>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--<div id="iban2" class="md-form row sinMargen dn">
+                        <div class="md-form col">
+                            <input type="text" class="form-control" name="p_ibaban2" frC-Submit="false" id="codigoIBAN2"
+                                readonly disabled />
+                            <label for="p_ibaban2" class="active">Código IBAN</label>
+                        </div>
+                        <div class="md-form dn">
+                            <input type="text" class="form-control" name="p_desde2" frC-Submit="false" id="fechaDesde2Ban"
+                                readonly disabled />
+                            <label for="p_desde2" class="active">Desde</label>
+                        </div>
+                        <div class="md-form dn">
+                            <input type="text" class="form-control" name="p_hasta2" frC-Submit="false" id="fechaHasta2Ban"
+                                readonly disabled />
+                            <label for="p_hasta2" class="active">Hasta</label>
+                        </div>
+                    </div>-->
+
+                    <!-- xx541. 08/02/2018 Comentado hasta saber si se tiene que mostrar -->
+                    <!-- xx584. 19/02/2018 No se implementa de momento -->
+                    <!-- <div class="">
+                        <label for="adjuntarCuentaBanco" class="active">Adjuntar documentación</label>
+                        <input type="file" class="form-control" id="adjuntarCuentaBanco" readonly disabled/>
+                    </div> -->
+
+                    <p id="mensajeCuentaBancariaSi" class="mensajeRRHH">
+                        Como medida de seguridad, para solicitar el cambio es necesario que completes primero tu número
+                        de cuenta actual y, a continuación, tu nuevo número.
+                    </p>
+                    <p id="mensajeCuentaBancariain" class="mensajeRRHH">
+                        Los cambios autorizados antes del día 14 se aplicarán en el mes en curso, en caso contrario, los
+                        cambios tendrán efecto al mes siguiente.
+                    </p>
+                    <div class="row float-right">
+                        <div class="btnModificando row dn">
+                            <button type="button" class="btn btn-outline-success" id="guardarCuentaBancaria">
+                                <i class="material-icons">save</i>
+                                <span>Guardar</span>
+                            </button>
+                            <button type="button" class="btn btn-outline-danger" id="cancelarCuentaBancaria">
+                                <i class="material-icons">clear</i>
+                                <span>Cancelar</span>
+                            </button>
+                        </div>
+                        <button type="button" class="btn btn-outline-warning" id="modificarCuentaBancaria">
+                            <i class="material-icons">edit</i>
+                            <span>Modificar</span>
+                        </button>
+                        <div id="mensajeCuentaBancariaNo" class="mensajeRRHH dn">
+                            Trámite de modificación pendiente para este empleado
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

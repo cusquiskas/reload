@@ -1,0 +1,113 @@
+<div class="divAEASolidaria card">
+    <div class="imagenSolicitudAEA">
+        <img src="res/img/AEASolidaria2.png">
+    </div>
+    <div class="card-body formularioSolicitudAEA">
+        <form
+            name="frmSolicitudAEA"
+            method="POST" action="/management/mvc-management/controller/newintra.xwi_accion_social.enviar_formulario.json"
+            frC-Callback="cbkSolicitudAEA"  >
+            <div class="md-form row">
+                <div class="col">
+                    Si has decidido colaborar con AEA Solidaria (Asociación de Empleados de Aeronáutica Solidaria) completa el siguiente formulario:
+                </div>
+            </div>
+            <div class="card card-block bg-light">
+                <div class="md-form row">
+                    <div class="md-form col">
+                        <div class="md-form row">
+                            <div class="md-form col-3">
+                                <div class="input-group">
+                                    <input name="p_codusr" class="form-control" type="text" readonly required>
+                                    <label for="p_codusr" class="active">Nº Empleado</label>
+                                </div>
+                            </div>
+                            <div class="md-form col">
+                                <div class="input-group">
+                                    <input name="nombre" class="form-control" type="text" readonly frC-Submit="false">
+                                    <label for="nombre" class="active">Nombre completo</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md-form col-3">
+                        <div class="input-group">
+                            <input name="dniusr" class="form-control" type="text" readonly frC-Submit="false">
+                            <label for="dniusr" class="active">DNI</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="md-form col">
+                        <div class="input-group">
+                            <input name="nomemp" type="text" readonly frC-Submit="false">
+                            <label for="nomemp" class="active">Empresa</label>
+                        </div>
+                    </div>
+                    <div class="md-form col">
+                        <div class="input-group">
+                            <input name="nomdep" type="text" readonly frC-Submit="false">
+                            <label for="nomdep" class="active">Departamento</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-4 md-form row">
+                <div class="col">
+                    La donación mensual se hará efectiva a partir del mes siguiente al envío del presente formulario. El importe donado a AEA Solidaria no es desgravable, dado que la Asociación no es de utilidad pública.
+                </div>
+            </div>
+            <div class="card card-block bg-light">
+                <div class="md-form row">
+                    <div class="md-form col-6">
+                        <div class="input-group">
+                            <input name="p_email" type="email" maxlength="50" required>
+                            <label for="p_email" class="active">E-Mail</label>
+                        </div>
+                    </div>
+                    <div class="md-form col-6">
+                        <div class="input-group">
+                            <input name="p_tlfono" type="text" max="9999999999">
+                            <label for="p_tlfono" class="active">Teléfono</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col"></div>
+                    <div class="md-form col-4">
+                        <div class="input-group">
+                            <input name="p_import" class="form-control" type="number" min="0" max="9999" size="4" placeholder="Importe donación mensual" required>
+                            <label class="dn" for="p_import">Importe donación mensual</label>
+                            <div class="input-group-append">
+                                <div class="input-group-text">
+                                    <i class="material-icons">euro_symbol</i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md-form col-2">
+                        <button type="submit" class="btn btn-primary btn-with-img">
+                            <span>Enviar </span><i class="material-icons">send</i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="card-body agradecimientoSolicitudAEA dn">
+        <p class="info">Muchas gracias por hacernos llegar tu solicitud. Recuerda que la donación mensual se hará
+            efectiva a partir del mes siguiente al envío del presente formulario. Para más información, puedes ponerte
+            en contacto con info.aeasolidaria@aeasolidaria.com
+        </p>
+    </div>
+    <!--form
+        name="initDatosPersonales" class="dn"
+        method="POST" action="/management/mvc-management/controller/newintra.xwi_autoservicio.datpe$obtener_datos_personales.json"
+        frC-Callback="initDatosPersonales" frC-AutoLoad="true">
+        <input name="p_codusr"> <input name="p_fecsol"> <input name="p_perfil">
+    </form-->
+    <form
+        name="frmOnload" class="dn"
+        frC-Callback="cbkOnload" frC-AutoLoad="true">
+    </form>
+</div>

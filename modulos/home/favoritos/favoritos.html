@@ -1,0 +1,28 @@
+<div class="list-group sidebar-favourites">
+    <h2 class="sidebar-module-title flex-title">
+        <span name="cabeceraFavoritos" class="favoritelist-header">» Favoritos</span>
+        <div class="button-info btnCambiarFavoritos">Cambiar</div>
+    </h2>
+
+    <ul class="favourite-list"></ul>
+
+    <form class="dn" name="listaFavoritosHome" frC-callback="listaFavoritosHome" method="post" frC-autoload="true" action="/management/mvc-management/controller/portal.xwi_menu.listar_menu_opcion_usuario.json">
+        <input name="p_favrto" value="S">
+    </form>
+</div>
+
+<div id="enlace_comedor">
+    <div class="img_comedor">
+        <img src="res/img/comedor.jpg" alt="">
+    </div>
+    <div class="txt_comedor">
+        <div class="title">CONSULTA EL MENÚ DEL DÍA</div>
+        <div id="menuPozuelo" class="txtbody">» Menú en Pozuelo</div>
+        <div id="menuLlucmajor" class="txtbody">» Menú en Llucmajor</div>
+    </div>
+</div>
+<a id="clickEnlaceSalud">
+    <div id="enlace_salud">
+        <img src="res/img/salud.png" alt="">
+    </div>
+</a>

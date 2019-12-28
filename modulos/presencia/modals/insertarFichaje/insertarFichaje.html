@@ -1,0 +1,61 @@
+<div>
+    <form name="insertRecord" class="p-4"
+        action="/management/mvc-management/controller/portal.xwi_presencia.gestion_detalle.json" method="POST"
+        frC-Callback="onDataSaved">
+        <input type="hidden" name="fecha">
+        <input type="hidden" name="direc">
+        <input type="hidden" name="trmnl">
+        <input type="hidden" name="dispFecha">
+        <input type="hidden" name="tokenSession">
+
+        <div class="row">
+            <div class="col-12 mb-3 tRegistro">
+                <span>Tipo de registro</span>
+            </div>
+            <div class="col-12 mb-2 d-flex justify-content-around">
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input class="custom-control-input" type="radio" name="check" id="entrance" value="P1"
+                        frC-Submit="false">
+                    <label class="custom-control-label" for="entrance">ENTRADA</label>
+                </div>
+
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input class="custom-control-input" type="radio" name="check" id="end" value="P2"
+                        frC-Submit="false">
+                    <label class="custom-control-label" for="end">SALIDA</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 col mb-2">
+                <label class="sr-only" for="date">Fecha</label>
+                <div class="input-group">
+                    <div class="input-group-text">
+                        <span class="text-input-label-icon d-flex align-items-center justify-content-start">
+                            <img src="res/img/icon-calendar-register.png" alt="calendar-register">
+                        </span>
+                    </div>
+                    <input type="date" class="form-control" name="date" placeholder="Fecha" frC-Submit="false">
+                </div>
+            </div>
+            <div class="col-md-12 col mb-2">
+                <label class="sr-only" for="time">Hora</label>
+                <div class="input-group ">
+                    <div class="input-group-text">
+                        <span class="text-input-label-icon d-flex align-items-center justify-content-start">
+                            <img src="res/img/icon-clock-register.png" alt="clock-register">
+                        </span>
+                    </div>
+                    <input type="time" class="form-control" name="time" placeholder="HH:MM" maxlength="5"
+                        frC-Submit="false">
+                </div>
+            </div>
+        </div>
+
+        <button type="button" aria-label="insertRecord"
+            class="btn btn-primary returnBtn w-100 d-flex justify-content-center">
+            <span>Guardar</span>
+        </button>
+    </form>
+</div>

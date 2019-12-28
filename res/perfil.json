@@ -1,0 +1,1971 @@
+{
+	"children": {
+		"perfil": [
+			{
+				"codpfl": "AA1",
+				"nombre": "AA12",
+				"activo": "S"
+			},
+			{
+				"codpfl": "AA2",
+				"nombre": "AA2",
+				"activo": "N"
+			},
+			{
+				"codpfl": "ADMINAE",
+				"nombre": "AAEE - Administración Atencion al Empleado",
+				"activo": "S"
+			},
+			{
+				"codpfl": "AAEECOM",
+				"nombre": "AAEE - Mantenimiento de Comunicados",
+				"activo": "S"
+			},
+			{
+				"codpfl": "AAEENQUEST",
+				"nombre": "AAEE - Mantenimiento de Encuestas",
+				"activo": "S"
+			},
+			{
+				"codpfl": "MNTOGRUPOS",
+				"nombre": "AAEE - Mantenimiento de Grupos",
+				"activo": "S"
+			},
+			{
+				"codpfl": "ACSADM",
+				"nombre": "AASS - Administración de Actos Solidarios",
+				"activo": "S"
+			},
+			{
+				"codpfl": "MANUCRG",
+				"nombre": "ADMO - Administración Documentación CRG",
+				"activo": "S"
+			},
+			{
+				"codpfl": "MANUGFC",
+				"nombre": "ADMO - Administración Documentación GFC",
+				"activo": "S"
+			},
+			{
+				"codpfl": "MANUGSC",
+				"nombre": "ADMO - Administración Documentación GSC",
+				"activo": "S"
+			},
+			{
+				"codpfl": "MANUHOT",
+				"nombre": "ADMO - Administración Documentación HOT",
+				"activo": "S"
+			},
+			{
+				"codpfl": "MANUGH",
+				"nombre": "ADMO - Administración Documentación MGHS",
+				"activo": "S"
+			},
+			{
+				"codpfl": "MANUPRM",
+				"nombre": "ADMO - Administración Documentación PRM",
+				"activo": "S"
+			},
+			{
+				"codpfl": "PERFHAN",
+				"nombre": "ADMO - Gestor Perfiles HAN",
+				"activo": "S"
+			},
+			{
+				"codpfl": "PERFHOT",
+				"nombre": "ADMO - Gestor Perfiles HOT",
+				"activo": "S"
+			},
+			{
+				"codpfl": "VISDOCHOT",
+				"nombre": "ADMO - Visualizar Documentación HOT",
+				"activo": "S"
+			},
+			{
+				"codpfl": "VISDOCRG",
+				"nombre": "ADMO - Visualizar documentación CRG",
+				"activo": "S"
+			},
+			{
+				"codpfl": "VISDOGFC",
+				"nombre": "ADMO - Visualizar documentación GFC",
+				"activo": "S"
+			},
+			{
+				"codpfl": "VISDOCGSC",
+				"nombre": "ADMO - Visualizar documentación GSC",
+				"activo": "S"
+			},
+			{
+				"codpfl": "VISDOGH",
+				"nombre": "ADMO - Visualizar documentación MGHS",
+				"activo": "S"
+			},
+			{
+				"codpfl": "VISDOPRM",
+				"nombre": "ADMO - Visualizar documentación PRM",
+				"activo": "S"
+			},
+			{
+				"codpfl": "AESAADMIN",
+				"nombre": "AESA - Administrador Formación",
+				"activo": "S"
+			},
+			{
+				"codpfl": "ALFAPERM",
+				"nombre": "ALFA - Gestión de permisos",
+				"activo": "S"
+			},
+			{
+				"codpfl": "ALFASOLC",
+				"nombre": "ALFA - Solicitudes desde el portal",
+				"activo": "S"
+			},
+			{
+				"codpfl": "ADNAPDIETS",
+				"nombre": "ANAP - Administración Anticipos Dietas NAPYP",
+				"activo": "S"
+			},
+			{
+				"codpfl": "ANTALIS",
+				"nombre": "ANTA - Administrador, Acceso apliación externa",
+				"activo": "S"
+			},
+			{
+				"codpfl": "ANTALISUSE",
+				"nombre": "ANTA - Usuario consulta manual",
+				"activo": "S"
+			},
+			{
+				"codpfl": "ADMINDEP",
+				"nombre": "BENE - Administrador de Beneficios Sociales",
+				"activo": "S"
+			},
+			{
+				"codpfl": "SEGUROS",
+				"nombre": "BENE - Administrador de Seguros para Empleados",
+				"activo": "S"
+			},
+			{
+				"codpfl": "ECTARIF",
+				"nombre": "BENE - TARIFICADOR DE SEGUROS",
+				"activo": "S"
+			},
+			{
+				"codpfl": "BLOGACCESO",
+				"nombre": "BLOG - Acceso al Blog de Globalia",
+				"activo": "S"
+			},
+			{
+				"codpfl": "BLOGADMIN",
+				"nombre": "BLOG - Aministrar Acceso al Blog de Globalia",
+				"activo": "S"
+			},
+			{
+				"codpfl": "BSPAVALES",
+				"nombre": "BSP - Avales",
+				"activo": "S"
+			},
+			{
+				"codpfl": "BSPACCESOS",
+				"nombre": "BSP - Gestión Accesos",
+				"activo": "S"
+			},
+			{
+				"codpfl": "CASHSOL",
+				"nombre": "CASH - Gestión de Cajas Solicitantes",
+				"activo": "S"
+			},
+			{
+				"codpfl": "CDPADM",
+				"nombre": "CDP - Administrador Control de Personal",
+				"activo": "S"
+			},
+			{
+				"codpfl": "CDPOBS",
+				"nombre": "CDP - Observador Control de Personal",
+				"activo": "S"
+			},
+			{
+				"codpfl": "CDPRESP",
+				"nombre": "CDP - Responsable Control de Personal",
+				"activo": "S"
+			},
+			{
+				"codpfl": "CDPSUPADM",
+				"nombre": "CDP - SuperAdministrador Control de Personal",
+				"activo": "S"
+			},
+			{
+				"codpfl": "CALIDAD",
+				"nombre": "CLDD - Perfil para Calidad",
+				"activo": "S"
+			},
+			{
+				"codpfl": "CMAADM",
+				"nombre": "CMAC - Administrador Cuadro de Mando",
+				"activo": "S"
+			},
+			{
+				"codpfl": "CMADIR",
+				"nombre": "CMAC - Dirección Cuadro de Mando",
+				"activo": "S"
+			},
+			{
+				"codpfl": "CMAMED",
+				"nombre": "CMAC - Medición indicadores Cuadro de Mando",
+				"activo": "S"
+			},
+			{
+				"codpfl": "CMAPROV",
+				"nombre": "CMAC - PERFIL PROVISIONAL CMA - SISTEMAS",
+				"activo": "S"
+			},
+			{
+				"codpfl": "CMPRSOPTEL",
+				"nombre": "CMPR - Acceso al Soporte de Telefonía",
+				"activo": "S"
+			},
+			{
+				"codpfl": "CMPRADMIN",
+				"nombre": "CMPR - Administrador compras ins (SOLO SISTEMAS)",
+				"activo": "S"
+			},
+			{
+				"codpfl": "CMPRAUTORI",
+				"nombre": "CMPR - Autorizador de compras ins",
+				"activo": "S"
+			},
+			{
+				"codpfl": "FORCEGES",
+				"nombre": "CMPR - Gestión Perfiles (SalesForce)",
+				"activo": "S"
+			},
+			{
+				"codpfl": "SUNIONGES",
+				"nombre": "CMPR - Gestión Perfiles (Sunion)",
+				"activo": "S"
+			},
+			{
+				"codpfl": "CMPRGESTOR",
+				"nombre": "CMPR - Gestor de compras ins",
+				"activo": "S"
+			},
+			{
+				"codpfl": "CMPGESTOR2",
+				"nombre": "CMPR - Gestor de segundo nivel",
+				"activo": "S"
+			},
+			{
+				"codpfl": "ARTGRASOL",
+				"nombre": "CMPR - Solicitud Compra (Artes Gráficas)",
+				"activo": "S"
+			},
+			{
+				"codpfl": "FORCESOL",
+				"nombre": "CMPR - Solicitud Compra (SalesForce)",
+				"activo": "S"
+			},
+			{
+				"codpfl": "SUNIONSOL",
+				"nombre": "CMPR - Solicitud Servicio (Sunion)",
+				"activo": "S"
+			},
+			{
+				"codpfl": "CNEXTRJCON",
+				"nombre": "CNEX - Consulta Tarjetas",
+				"activo": "S"
+			},
+			{
+				"codpfl": "CNEXUSRTRJ",
+				"nombre": "CNEX - Consulta Usuarios Tarjetas",
+				"activo": "S"
+			},
+			{
+				"codpfl": "CNEXUSR",
+				"nombre": "CNEX - Gestión Usuarios",
+				"activo": "S"
+			},
+			{
+				"codpfl": "CNEXTRJMTO",
+				"nombre": "CNEX - Mto. Tarjetas",
+				"activo": "S"
+			},
+			{
+				"codpfl": "CONPLN",
+				"nombre": "COMC - Consulta de Planning Comercial",
+				"activo": "S"
+			},
+			{
+				"codpfl": "COMSUB",
+				"nombre": "COMP - Administración de Subastas",
+				"activo": "S"
+			},
+			{
+				"codpfl": "MCOSADMIN",
+				"nombre": "CONS - Gestión Accesos Inv. Billetes y MCOs",
+				"activo": "S"
+			},
+			{
+				"codpfl": "INVENADMIN",
+				"nombre": "CONS - Gestión Accesos Inventario Gabriel",
+				"activo": "S"
+			},
+			{
+				"codpfl": "INVGABR",
+				"nombre": "CONS - Inventario Gabriel",
+				"activo": "S"
+			},
+			{
+				"codpfl": "INVMCO",
+				"nombre": "CONS - Inventario de Billetes y MCOs",
+				"activo": "S"
+			},
+			{
+				"codpfl": "CONSUL",
+				"nombre": "CONSU- Consulta datos trabajadores SAP",
+				"activo": "S"
+			},
+			{
+				"codpfl": "CONVMINOR",
+				"nombre": "CONV - Consulta convenios agencias de vieje",
+				"activo": "S"
+			},
+			{
+				"codpfl": "PRESMANAEA",
+				"nombre": "CPRE - Absentismos AEA",
+				"activo": "S"
+			},
+			{
+				"codpfl": "PRESMANBCF",
+				"nombre": "CPRE - Absentismos BCF",
+				"activo": "S"
+			},
+			{
+				"codpfl": "PRESMANCOE",
+				"nombre": "CPRE - Absentismos COE",
+				"activo": "S"
+			},
+			{
+				"codpfl": "PRESMANEFA",
+				"nombre": "CPRE - Absentismos EFA",
+				"activo": "S"
+			},
+			{
+				"codpfl": "PRESMANEMI",
+				"nombre": "CPRE - Absentismos EMI",
+				"activo": "S"
+			},
+			{
+				"codpfl": "PRESMANFEA",
+				"nombre": "CPRE - Absentismos FEA",
+				"activo": "S"
+			},
+			{
+				"codpfl": "PRESMANGSC",
+				"nombre": "CPRE - Absentismos GSC",
+				"activo": "S"
+			},
+			{
+				"codpfl": "PRESMANHAN",
+				"nombre": "CPRE - Absentismos HAN",
+				"activo": "S"
+			},
+			{
+				"codpfl": "PRESMANTRC",
+				"nombre": "CPRE - Absentismos TRC",
+				"activo": "S"
+			},
+			{
+				"codpfl": "PRESMANTRD",
+				"nombre": "CPRE - Absentismos TRD",
+				"activo": "S"
+			},
+			{
+				"codpfl": "PRESMANTRP",
+				"nombre": "CPRE - Absentismos TRP",
+				"activo": "S"
+			},
+			{
+				"codpfl": "PRESMANVHA",
+				"nombre": "CPRE - Absentismos VHA",
+				"activo": "S"
+			},
+			{
+				"codpfl": "PRESMANWIS",
+				"nombre": "CPRE - Absentismos WIS",
+				"activo": "S"
+			},
+			{
+				"codpfl": "PRESACCAUS",
+				"nombre": "CPRE - Ausencias",
+				"activo": "S"
+			},
+			{
+				"codpfl": "PRESACCRES",
+				"nombre": "CPRE - Ausencias Permanente",
+				"activo": "S"
+			},
+			{
+				"codpfl": "PRESFICVIR",
+				"nombre": "CPRE - Fichaje Virtual",
+				"activo": "S"
+			},
+			{
+				"codpfl": "PRESINDAEA",
+				"nombre": "CPRE - Indisposiciones AEA",
+				"activo": "S"
+			},
+			{
+				"codpfl": "PRESINDFEA",
+				"nombre": "CPRE - Indisposiciones FEA",
+				"activo": "S"
+			},
+			{
+				"codpfl": "PRESINDGSC",
+				"nombre": "CPRE - Indisposiciones GSC",
+				"activo": "S"
+			},
+			{
+				"codpfl": "NEWCOMSERV",
+				"nombre": "CSRV - Acceso New Workflow",
+				"activo": "S"
+			},
+			{
+				"codpfl": "CONSAMADEU",
+				"nombre": "CSRV - Consola Amadeus",
+				"activo": "S"
+			},
+			{
+				"codpfl": "CSRVCONTRO",
+				"nombre": "CSRV - Controller Workflow",
+				"activo": "S"
+			},
+			{
+				"codpfl": "CALADMIMS",
+				"nombre": "CSRV - Encuesta Mystery Shopper",
+				"activo": "S"
+			},
+			{
+				"codpfl": "CALIESTMS",
+				"nombre": "CSRV - Estadisticas Mystery Shopper",
+				"activo": "S"
+			},
+			{
+				"codpfl": "GESCOMSERV",
+				"nombre": "CSRV - Gestion Comisiones de Servicio INTERLINE",
+				"activo": "S"
+			},
+			{
+				"codpfl": "CALIDAPERF",
+				"nombre": "CSRV - Gestión Perfiles Mistery Shopper",
+				"activo": "S"
+			},
+			{
+				"codpfl": "NEWCOMGEST",
+				"nombre": "CSRV - Gestión Perfiles XCOMSER",
+				"activo": "S"
+			},
+			{
+				"codpfl": "GESPERFIL",
+				"nombre": "CSRV - Gestión Perfiles y Centros de Coste",
+				"activo": "S"
+			},
+			{
+				"codpfl": "CALINSPEC",
+				"nombre": "CSRV - Inspección Calidad",
+				"activo": "S"
+			},
+			{
+				"codpfl": "CSERVPRUE",
+				"nombre": "CSRV - Solicitud comisiones PRUEBAS",
+				"activo": "S"
+			},
+			{
+				"codpfl": "COMIS",
+				"nombre": "CSRV - Solicitud de comisiones/invitas/descue",
+				"activo": "S"
+			},
+			{
+				"codpfl": "ADMCOMIS1",
+				"nombre": "CSRV - Supervisor de Comisiones nivel 1 Secretaria",
+				"activo": "S"
+			},
+			{
+				"codpfl": "ADMCOMIS2",
+				"nombre": "CSRV - Supervisor de Comisiones nivel 2 Auditoria",
+				"activo": "S"
+			},
+			{
+				"codpfl": "USPRICOMS",
+				"nombre": "CSRV - Usuario privilegiado Comisiones de servicio",
+				"activo": "S"
+			},
+			{
+				"codpfl": "CENTURY21",
+				"nombre": "CT21 - Perfil para Century 21",
+				"activo": "S"
+			},
+			{
+				"codpfl": "CUR_MMC1",
+				"nombre": "CURS - Manipulación Manual de Cargas",
+				"activo": "S"
+			},
+			{
+				"codpfl": "CUR_FUEGO",
+				"nombre": "CURS - Prevención de Fuegos",
+				"activo": "S"
+			},
+			{
+				"codpfl": "CUR_PRIAUX",
+				"nombre": "CURS - Primeros Auxilios",
+				"activo": "S"
+			},
+			{
+				"codpfl": "CUR_SVIAL",
+				"nombre": "CURS - Seguridad Vial",
+				"activo": "S"
+			},
+			{
+				"codpfl": "CYMAADMIN",
+				"nombre": "CYMA - Administrador Cursos",
+				"activo": "S"
+			},
+			{
+				"codpfl": "CYMARESP",
+				"nombre": "CYMA - Responsable Cursos",
+				"activo": "S"
+			},
+			{
+				"codpfl": "DWH_AEA",
+				"nombre": "DWHO - Datawarehouse de AEA",
+				"activo": "S"
+			},
+			{
+				"codpfl": "ENCGYMNASI",
+				"nombre": "ENCU - ENCUESTA GYMNASIO EN GLOBALIA",
+				"activo": "S"
+			},
+			{
+				"codpfl": "ESPNOMINA",
+				"nombre": "ESPC - Acceso a Nómina",
+				"activo": "S"
+			},
+			{
+				"codpfl": "CF_ADM",
+				"nombre": "FACT - Administración Conformar Facturas",
+				"activo": "S"
+			},
+			{
+				"codpfl": "CF_GES01",
+				"nombre": "FACT - Conformar Facturas",
+				"activo": "S"
+			},
+			{
+				"codpfl": "CF_EST02",
+				"nombre": "FACT - Contabilizadas y escaneadas por área",
+				"activo": "S"
+			},
+			{
+				"codpfl": "CF_EST03",
+				"nombre": "FACT - Estado de facturas por sociedad",
+				"activo": "S"
+			},
+			{
+				"codpfl": "CF_EST04",
+				"nombre": "FACT - Estado de facturas por área",
+				"activo": "S"
+			},
+			{
+				"codpfl": "CF_EST01",
+				"nombre": "FACT - Fac. contab. y escaneadas por sociedad",
+				"activo": "S"
+			},
+			{
+				"codpfl": "CF_INF03",
+				"nombre": "FACT - Inf. fac. pendientes conformar por sociedad",
+				"activo": "S"
+			},
+			{
+				"codpfl": "CF_INF04",
+				"nombre": "FACT - Informe códigos de inversión",
+				"activo": "S"
+			},
+			{
+				"codpfl": "CF_INF02",
+				"nombre": "FACT - Informe facturas pendientes de tratar",
+				"activo": "S"
+			},
+			{
+				"codpfl": "CF_INF01",
+				"nombre": "FACT - Informe seguimiento de facturas",
+				"activo": "S"
+			},
+			{
+				"codpfl": "CF_EST05",
+				"nombre": "FACT - Peticiones por sociedad",
+				"activo": "S"
+			},
+			{
+				"codpfl": "CF_EST06",
+				"nombre": "FACT - Peticiones por área",
+				"activo": "S"
+			},
+			{
+				"codpfl": "FACTSUPADM",
+				"nombre": "FACT - Super Administrador Conformación",
+				"activo": "S"
+			},
+			{
+				"codpfl": "FACT_OLD",
+				"nombre": "FACT - Super Administrador Conformación Antigua",
+				"activo": "S"
+			},
+			{
+				"codpfl": "CF_GES02",
+				"nombre": "FACT - Tratar facturas",
+				"activo": "S"
+			},
+			{
+				"codpfl": "FICAGENTE",
+				"nombre": "FCAT - Fichas de Agentes",
+				"activo": "S"
+			},
+			{
+				"codpfl": "VERFFHH",
+				"nombre": "FFHH - Acceso a cursos",
+				"activo": "S"
+			},
+			{
+				"codpfl": "ADMFFHH",
+				"nombre": "FFHH - Administrador Cursos",
+				"activo": "S"
+			},
+			{
+				"codpfl": "RESFFHH",
+				"nombre": "FFHH - Responsable Cursos",
+				"activo": "S"
+			},
+			{
+				"codpfl": "FICHAJETOT",
+				"nombre": "FICH - Acceso consulta total Fichajes",
+				"activo": "S"
+			},
+			{
+				"codpfl": "FICHAEMPLE",
+				"nombre": "FICH - Consulta Fichajes",
+				"activo": "S"
+			},
+			{
+				"codpfl": "FICHCORREC",
+				"nombre": "FICH - Corrección Fichaje",
+				"activo": "S"
+			},
+			{
+				"codpfl": "FICHAADMIN",
+				"nombre": "FICH - Perfila Fichajes",
+				"activo": "S"
+			},
+			{
+				"codpfl": "FORMAVSEC",
+				"nombre": "FORM - Acceso Certificado AVSEC",
+				"activo": "S"
+			},
+			{
+				"codpfl": "FORMOKN",
+				"nombre": "FORM - Acceso a formación on-line OKN",
+				"activo": "S"
+			},
+			{
+				"codpfl": "FORMCATLOG",
+				"nombre": "FORM - Acceso al Catálogo de Formación",
+				"activo": "S"
+			},
+			{
+				"codpfl": "FORMINFSAP",
+				"nombre": "FORM - Acceso al informe de SAP por empleado",
+				"activo": "S"
+			},
+			{
+				"codpfl": "FRADMIN",
+				"nombre": "FORM - Asignar Autorizadores",
+				"activo": "S"
+			},
+			{
+				"codpfl": "FORMACCESO",
+				"nombre": "FORM - Gestión Accesos Formación",
+				"activo": "S"
+			},
+			{
+				"codpfl": "FORHANEMP",
+				"nombre": "FORM - Handling Empleado",
+				"activo": "S"
+			},
+			{
+				"codpfl": "FORHANADM",
+				"nombre": "FORM - Handling Responsables",
+				"activo": "S"
+			},
+			{
+				"codpfl": "LISRESAULA",
+				"nombre": "FORM - Listado de Reservas de Aulas",
+				"activo": "S"
+			},
+			{
+				"codpfl": "FORMMCURS",
+				"nombre": "FORM - Mantenimiento de Cursos",
+				"activo": "S"
+			},
+			{
+				"codpfl": "FORMACION",
+				"nombre": "FORM - Perfil para Globalia Formación",
+				"activo": "S"
+			},
+			{
+				"codpfl": "RRHH_AULAS",
+				"nombre": "FORM - Reserva de Aulas",
+				"activo": "S"
+			},
+			{
+				"codpfl": "FORMSUFO",
+				"nombre": "FORM - Sugerencias a Formación",
+				"activo": "S"
+			},
+			{
+				"codpfl": "FORMVIEWSO",
+				"nombre": "FORM - VISUALIZAR SOLICITUDES",
+				"activo": "S"
+			},
+			{
+				"codpfl": "GCONDPTOPR",
+				"nombre": "GCDP - Gestion Consumos Dep. Proveedores",
+				"activo": "S"
+			},
+			{
+				"codpfl": "GCSCACCSAY",
+				"nombre": "GCSCAS- Gestión Consumo Sayos Acceso Sayo",
+				"activo": "S"
+			},
+			{
+				"codpfl": "GCSCEXPSAP",
+				"nombre": "GCSCES- Gestión Consumo Sayos Exporta SAP",
+				"activo": "S"
+			},
+			{
+				"codpfl": "GCSCIMPFAC",
+				"nombre": "GCSCIF- Gestión Consumo Sayos Importa Fra",
+				"activo": "S"
+			},
+			{
+				"codpfl": "GCONSUMOS",
+				"nombre": "GCVC - GESTIÓN DE CONSUMOS",
+				"activo": "S"
+			},
+			{
+				"codpfl": "GCONSUMSC",
+				"nombre": "GCVC - GESTIÓN DE CONSUMOS SAYOS",
+				"activo": "S"
+			},
+			{
+				"codpfl": "GCSACCES",
+				"nombre": "GCVC - gestión de Accesos",
+				"activo": "S"
+			},
+			{
+				"codpfl": "GERYCOBAS",
+				"nombre": "GERB - Acceso a Geryco del personal de Bases",
+				"activo": "S"
+			},
+			{
+				"codpfl": "GERYTEMPOR",
+				"nombre": "GERY - Acceso Temporal EUREST",
+				"activo": "S"
+			},
+			{
+				"codpfl": "GERYTIERRA",
+				"nombre": "GERY - Acceso personal de tierra",
+				"activo": "S"
+			},
+			{
+				"codpfl": "GERYTCP",
+				"nombre": "GERY - Acceso sobrecargos",
+				"activo": "S"
+			},
+			{
+				"codpfl": "GERYCOADM",
+				"nombre": "GERY - Geryco Administracion",
+				"activo": "S"
+			},
+			{
+				"codpfl": "GERYTEMP",
+				"nombre": "GERY - Subir documentos divertimento",
+				"activo": "S"
+			},
+			{
+				"codpfl": "GROUPHAN",
+				"nombre": "GROUP - Perfil para empleados Handling (RFU,RAG)",
+				"activo": "S"
+			},
+			{
+				"codpfl": "SEGURIDADT",
+				"nombre": "GRUP - Acceso para control Fichajes",
+				"activo": "S"
+			},
+			{
+				"codpfl": "SEGURIDAD",
+				"nombre": "GRUP - Acceso para los guardias de seguridad",
+				"activo": "S"
+			},
+			{
+				"codpfl": "PILOTADMIN",
+				"nombre": "GRUP - Administración Menu de Pilotos",
+				"activo": "S"
+			},
+			{
+				"codpfl": "CONTCENTR",
+				"nombre": "GRUP - Contact Center",
+				"activo": "S"
+			},
+			{
+				"codpfl": "AEATIERRAG",
+				"nombre": "GRUP - Empleados AEA Tierra",
+				"activo": "S"
+			},
+			{
+				"codpfl": "FOROS",
+				"nombre": "GRUP - Foros de empleados",
+				"activo": "S"
+			},
+			{
+				"codpfl": "GRUPOMNTO",
+				"nombre": "GRUP - Para empleados de mantenimiento",
+				"activo": "S"
+			},
+			{
+				"codpfl": "PERFIL_V17",
+				"nombre": "GRUP - Perfil Exclusivo Empleados Travelplan",
+				"activo": "S"
+			},
+			{
+				"codpfl": "NOMHAL",
+				"nombre": "GRUP - Perfil Viajes Halcón",
+				"activo": "S"
+			},
+			{
+				"codpfl": "HANEXT",
+				"nombre": "GRUP - Perfil para Handling",
+				"activo": "S"
+			},
+			{
+				"codpfl": "PERFILAEA",
+				"nombre": "GRUP - Perfil para trabajadores de Air Europa",
+				"activo": "S"
+			},
+			{
+				"codpfl": "TCPINF",
+				"nombre": "GRUP - Propuesta de formación para TCCPs",
+				"activo": "S"
+			},
+			{
+				"codpfl": "POZSEG",
+				"nombre": "GRUP - Seguridad Pozuelo",
+				"activo": "S"
+			},
+			{
+				"codpfl": "PILOTGRUP",
+				"nombre": "GRUP- Colectivo de Pilotos y tripulación técnica",
+				"activo": "S"
+			},
+			{
+				"codpfl": "GSFAPP",
+				"nombre": "GSF - Solicitudes Facturación Pasajeros",
+				"activo": "S"
+			},
+			{
+				"codpfl": "GSIS",
+				"nombre": "GSIS - Perfil para Globalia Sistemas",
+				"activo": "S"
+			},
+			{
+				"codpfl": "DESARROLLO",
+				"nombre": "GSIS - Perfil para desarrollo informatica",
+				"activo": "S"
+			},
+			{
+				"codpfl": "GSISPARTES",
+				"nombre": "GSIS - Perfil partes de trabajo PROCESOS",
+				"activo": "S"
+			},
+			{
+				"codpfl": "INDICUAD",
+				"nombre": "INDI - Cuadro de Mandos de Tesorería",
+				"activo": "S"
+			},
+			{
+				"codpfl": "INDIMTOACC",
+				"nombre": "INDI - Gestión Accesos Indicadores",
+				"activo": "S"
+			},
+			{
+				"codpfl": "INDICCONEX",
+				"nombre": "INDI - Indicadores Conexflow",
+				"activo": "S"
+			},
+			{
+				"codpfl": "PRVINFIND",
+				"nombre": "INDI - Informe de Indicadores de Proveedores",
+				"activo": "S"
+			},
+			{
+				"codpfl": "INDIGESTIO",
+				"nombre": "INDI - Mto. Perfiles",
+				"activo": "S"
+			},
+			{
+				"codpfl": "INDIPERFIL",
+				"nombre": "INDI - Quién tiene qué",
+				"activo": "S"
+			},
+			{
+				"codpfl": "LIQGASGES",
+				"nombre": "LIQG - Liquidación de Gastos Gestor Accesos",
+				"activo": "S"
+			},
+			{
+				"codpfl": "LIQGASSOL",
+				"nombre": "LIQG - Liquidación de Gastos Solicitantes",
+				"activo": "S"
+			},
+			{
+				"codpfl": "SUPADMLOPD",
+				"nombre": "LOPD - Administración LOPD",
+				"activo": "S"
+			},
+			{
+				"codpfl": "ADMLOPD",
+				"nombre": "LOPD - Gestión LOPD",
+				"activo": "S"
+			},
+			{
+				"codpfl": "LOPDNOTIF",
+				"nombre": "LOPD - Notificaciones LOPD para GSC",
+				"activo": "S"
+			},
+			{
+				"codpfl": "MODBILLUX",
+				"nombre": "MBUX - MODIFICAR BILLETES UX",
+				"activo": "S"
+			},
+			{
+				"codpfl": "MODBILLADM",
+				"nombre": "MBUXADM - Gestión de accesos",
+				"activo": "S"
+			},
+			{
+				"codpfl": "ADMINCMINO",
+				"nombre": "MINO - Administrador Incentivos Minoristas",
+				"activo": "S"
+			},
+			{
+				"codpfl": "INCMINO",
+				"nombre": "MINO - Incentivos Minoristas",
+				"activo": "S"
+			},
+			{
+				"codpfl": "INTMINO",
+				"nombre": "MINO - Intranet Halcón y Forline",
+				"activo": "S"
+			},
+			{
+				"codpfl": "DIRINCMINO",
+				"nombre": "MINO - Responsables Minoristas",
+				"activo": "S"
+			},
+			{
+				"codpfl": "CONNOMINT",
+				"nombre": "MNTO - Consulta de datos nómina red interna",
+				"activo": "S"
+			},
+			{
+				"codpfl": "GENERALAUX",
+				"nombre": "MNTO - Especial para el usuario GENERAL (NO TOCAR)",
+				"activo": "S"
+			},
+			{
+				"codpfl": "MNTOPUBLIS",
+				"nombre": "MNTO - Excel empleados para publicidad",
+				"activo": "S"
+			},
+			{
+				"codpfl": "GESTPORTAL",
+				"nombre": "MNTO - Gestor de opciones del portal",
+				"activo": "S"
+			},
+			{
+				"codpfl": "PRENSAMTO",
+				"nombre": "MNTO - Mantenimiento Noticias",
+				"activo": "S"
+			},
+			{
+				"codpfl": "GENERALINT",
+				"nombre": "MNTO - Perfil General para Bloque Internacional",
+				"activo": "S"
+			},
+			{
+				"codpfl": "GENERALDOM",
+				"nombre": "MNTO - Perfil General para Empleados Dominicana",
+				"activo": "S"
+			},
+			{
+				"codpfl": "GENERALEXT",
+				"nombre": "MNTO - Perfil básico para personal Extranjero",
+				"activo": "S"
+			},
+			{
+				"codpfl": "GENERAL",
+				"nombre": "MNTO - Perfil general para toda la Corporación",
+				"activo": "S"
+			},
+			{
+				"codpfl": "ADMIN",
+				"nombre": "MNTO - Perfil para el Administrador",
+				"activo": "S"
+			},
+			{
+				"codpfl": "EUREST",
+				"nombre": "MNTO - Perfil para mantener los menús de Eurest",
+				"activo": "S"
+			},
+			{
+				"codpfl": "SECRE",
+				"nombre": "MNTO - Perfil para opciones sólo de secretarias",
+				"activo": "S"
+			},
+			{
+				"codpfl": "SUBCOM",
+				"nombre": "MNTO - Posibilidad de subir comunicados",
+				"activo": "S"
+			},
+			{
+				"codpfl": "MPMTAR",
+				"nombre": "MPM - TARIFICADOR SEGUROS",
+				"activo": "S"
+			},
+			{
+				"codpfl": "MYIDDP",
+				"nombre": "MYID - Dar Perfiles",
+				"activo": "S"
+			},
+			{
+				"codpfl": "MYID2",
+				"nombre": "MYID - Gestión Beneficiarios",
+				"activo": "S"
+			},
+			{
+				"codpfl": "MYID4",
+				"nombre": "MYID - Gestión Beneficiarios (sólo consulta)",
+				"activo": "S"
+			},
+			{
+				"codpfl": "MYID3",
+				"nombre": "MYID - Login Myidtravel",
+				"activo": "S"
+			},
+			{
+				"codpfl": "MYID1",
+				"nombre": "MYID - Mto. Beneficiarios",
+				"activo": "S"
+			},
+			{
+				"codpfl": "MYIDQTQ",
+				"nombre": "MYID - ¿Quién Tiene Qué?",
+				"activo": "S"
+			},
+			{
+				"codpfl": "NAPYPDIET",
+				"nombre": "NAPY - Anticipos Dietas",
+				"activo": "S"
+			},
+			{
+				"codpfl": "SCONSBENE",
+				"nombre": "NAPY - Consulta Beneficiarios (sin Gestión)",
+				"activo": "S"
+			},
+			{
+				"codpfl": "CONBENEF",
+				"nombre": "NAPY - Consulta Beneficiarios y Gestión de Frees",
+				"activo": "S"
+			},
+			{
+				"codpfl": "NAPCONSULT",
+				"nombre": "NAPY - Consulta Datos Trabajadores (NAPYP)",
+				"activo": "S"
+			},
+			{
+				"codpfl": "BASA",
+				"nombre": "PBAS - Perfil de pruebas de BAS",
+				"activo": "S"
+			},
+			{
+				"codpfl": "PERADMREF",
+				"nombre": "PERS - Administrador de Reflex",
+				"activo": "S"
+			},
+			{
+				"codpfl": "PERREF",
+				"nombre": "PERS - REFLEX",
+				"activo": "S"
+			},
+			{
+				"codpfl": "PLANPENS",
+				"nombre": "PLN - Plan de Pensiones AEA PIL,TCP, TMA",
+				"activo": "S"
+			},
+			{
+				"codpfl": "FORPMIADM",
+				"nombre": "PMI - Administrador PMI",
+				"activo": "S"
+			},
+			{
+				"codpfl": "FORPMIEMP",
+				"nombre": "PMI - Curso PMI",
+				"activo": "S"
+			},
+			{
+				"codpfl": "FORPMIRES",
+				"nombre": "PMI - Responsable PMI",
+				"activo": "S"
+			},
+			{
+				"codpfl": "FORPMRADM",
+				"nombre": "PMR - Administrador PMR",
+				"activo": "S"
+			},
+			{
+				"codpfl": "FORPMREMP",
+				"nombre": "PMR - Curso PMR",
+				"activo": "S"
+			},
+			{
+				"codpfl": "FORPMRES",
+				"nombre": "PMR - Responsable PMR",
+				"activo": "S"
+			},
+			{
+				"codpfl": "PREPGESTIO",
+				"nombre": "PREP - Mto. Perfiles",
+				"activo": "S"
+			},
+			{
+				"codpfl": "PREPPERFIL",
+				"nombre": "PREP - Quién tiene qué",
+				"activo": "S"
+			},
+			{
+				"codpfl": "PREPBASICO",
+				"nombre": "PREP - Usuario Básico",
+				"activo": "S"
+			},
+			{
+				"codpfl": "PPTONAPP",
+				"nombre": "PRES - Acceso nueva aplicación",
+				"activo": "S"
+			},
+			{
+				"codpfl": "PPTOADM",
+				"nombre": "PRES - Administrador de gestión presupuestaria",
+				"activo": "S"
+			},
+			{
+				"codpfl": "PPTOADMHOT",
+				"nombre": "PRES - Admón. Usuarios Hoteles",
+				"activo": "S"
+			},
+			{
+				"codpfl": "PPTOCRE",
+				"nombre": "PRES - Creación del presupuesto",
+				"activo": "S"
+			},
+			{
+				"codpfl": "PPTOGEN",
+				"nombre": "PRES - General de pptos (creación e informes)",
+				"activo": "S"
+			},
+			{
+				"codpfl": "PPTOINFHOT",
+				"nombre": "PRES - Informe de Hoteles",
+				"activo": "S"
+			},
+			{
+				"codpfl": "PPTOINFSEG",
+				"nombre": "PRES - Informes Seguimiento Hoteles",
+				"activo": "S"
+			},
+			{
+				"codpfl": "PPTOPERPOR",
+				"nombre": "PRES - Perfiles Opciones Portal",
+				"activo": "S"
+			},
+			{
+				"codpfl": "PPTOINF",
+				"nombre": "PRES - Visualizar informes",
+				"activo": "S"
+			},
+			{
+				"codpfl": "PPTOTAB",
+				"nombre": "PRES - Visualizar tablas ppto",
+				"activo": "S"
+			},
+			{
+				"codpfl": "CATAGRRHH",
+				"nombre": "PREV - Acceso a Catálogos para RRHH",
+				"activo": "S"
+			},
+			{
+				"codpfl": "PREVEVACAT",
+				"nombre": "PREV - Acceso al catálogo de Evaluaciones",
+				"activo": "S"
+			},
+			{
+				"codpfl": "ADMACCID",
+				"nombre": "PREV - Administración Accidentes de trabajo",
+				"activo": "S"
+			},
+			{
+				"codpfl": "ADMCOORD",
+				"nombre": "PREV - Administración Coordinación",
+				"activo": "S"
+			},
+			{
+				"codpfl": "ADMEXAMPR",
+				"nombre": "PREV - Administración Exámenes",
+				"activo": "S"
+			},
+			{
+				"codpfl": "ADMFORMA",
+				"nombre": "PREV - Administración Formación",
+				"activo": "S"
+			},
+			{
+				"codpfl": "ADMINFOR",
+				"nombre": "PREV - Administración Información",
+				"activo": "S"
+			},
+			{
+				"codpfl": "ADMVIGIL",
+				"nombre": "PREV - Administración Vigilancia de la salud",
+				"activo": "S"
+			},
+			{
+				"codpfl": "DELPREV",
+				"nombre": "PREV - Deleg. Prev. Accidentes",
+				"activo": "S"
+			},
+			{
+				"codpfl": "DELPCOORD",
+				"nombre": "PREV - Deleg. Prev. Coordinación",
+				"activo": "S"
+			},
+			{
+				"codpfl": "PREHISTINF",
+				"nombre": "PREV - Gestion Información Histórica",
+				"activo": "S"
+			},
+			{
+				"codpfl": "PREHISFOR",
+				"nombre": "PREV - Gestión Formación Histórica",
+				"activo": "S"
+			},
+			{
+				"codpfl": "GESTDELTA",
+				"nombre": "PREV - Gestor de DELTA",
+				"activo": "S"
+			},
+			{
+				"codpfl": "OSACCID",
+				"nombre": "PREV - O.P. Accidentes de trabajo",
+				"activo": "S"
+			},
+			{
+				"codpfl": "OPEXAPR",
+				"nombre": "PREV - O.P. Exámenes",
+				"activo": "S"
+			},
+			{
+				"codpfl": "OSFORMA",
+				"nombre": "PREV - O.P. Formación",
+				"activo": "S"
+			},
+			{
+				"codpfl": "OSINFOR",
+				"nombre": "PREV - O.P. Información",
+				"activo": "S"
+			},
+			{
+				"codpfl": "OS VIGIL",
+				"nombre": "PREV - O.P. Vigilancia de la salud",
+				"activo": "S"
+			},
+			{
+				"codpfl": "OSCOORD",
+				"nombre": "PREV - O.S. Coordinación",
+				"activo": "S"
+			},
+			{
+				"codpfl": "PREVMAYORI",
+				"nombre": "PREV - Opciones Exclusivas Servicio Mancomunado",
+				"activo": "S"
+			},
+			{
+				"codpfl": "PROVTECPRE",
+				"nombre": "PREV - Perfil Provisional Técnicos PRL",
+				"activo": "S"
+			},
+			{
+				"codpfl": "REIPOPINF",
+				"nombre": "PREV - R.E.I.P. + O.P. Información",
+				"activo": "S"
+			},
+			{
+				"codpfl": "REIPOPVIG",
+				"nombre": "PREV - R.E.I.P. + O.P. Vigilancia",
+				"activo": "S"
+			},
+			{
+				"codpfl": "REIPINFOR",
+				"nombre": "PREV - R.E.I.P. Información",
+				"activo": "S"
+			},
+			{
+				"codpfl": "REIPVIGIL",
+				"nombre": "PREV - R.E.I.P. Vigilancia de la salud",
+				"activo": "S"
+			},
+			{
+				"codpfl": "INSTRU",
+				"nombre": "PREV - Resposable formación Prevención",
+				"activo": "S"
+			},
+			{
+				"codpfl": "TECACCID",
+				"nombre": "PREV - S.P.R.L. Accidentes de trabajo",
+				"activo": "S"
+			},
+			{
+				"codpfl": "TECNIEXAPR",
+				"nombre": "PREV - S.P.R.L. Exámenes",
+				"activo": "S"
+			},
+			{
+				"codpfl": "TECFORMA",
+				"nombre": "PREV - S.P.R.L. Formación",
+				"activo": "S"
+			},
+			{
+				"codpfl": "TECINFOR",
+				"nombre": "PREV - S.P.R.L. Información",
+				"activo": "S"
+			},
+			{
+				"codpfl": "TECVIGIL",
+				"nombre": "PREV - S.P.R.L. Vigilancia de la salud",
+				"activo": "S"
+			},
+			{
+				"codpfl": "PREVSOLPRO",
+				"nombre": "PREV - Solicitud Protocolo",
+				"activo": "S"
+			},
+			{
+				"codpfl": "TECCOORD",
+				"nombre": "PREV - Técnico Coordinación",
+				"activo": "S"
+			},
+			{
+				"codpfl": "TECACOSO",
+				"nombre": "PREV - Técnico de Protocolo",
+				"activo": "S"
+			},
+			{
+				"codpfl": "PROVGESTIO",
+				"nombre": "PROV - Mto. Perfiles",
+				"activo": "S"
+			},
+			{
+				"codpfl": "PROVPERFIL",
+				"nombre": "PROV - Quién tiene qué",
+				"activo": "S"
+			},
+			{
+				"codpfl": "PROVBASICO",
+				"nombre": "PROV - Usuario Básico",
+				"activo": "S"
+			},
+			{
+				"codpfl": "RRHHESP001",
+				"nombre": "RRHH - Acceso Especial Atrasos Piloto",
+				"activo": "S"
+			},
+			{
+				"codpfl": "ACCOXFERA",
+				"nombre": "RRHH - Acceso SSO Oxfera",
+				"activo": "S"
+			},
+			{
+				"codpfl": "RRHHUSRDIE",
+				"nombre": "RRHH - Acceso a Gestión Dietas",
+				"activo": "S"
+			},
+			{
+				"codpfl": "ACCESODM",
+				"nombre": "RRHH - Acceso al DM",
+				"activo": "S"
+			},
+			{
+				"codpfl": "RRHHACPART",
+				"nombre": "RRHH - Accesos Partes Actividad",
+				"activo": "S"
+			},
+			{
+				"codpfl": "BAJASADM",
+				"nombre": "RRHH - Administración Bajas",
+				"activo": "S"
+			},
+			{
+				"codpfl": "FINIQADM",
+				"nombre": "RRHH - Administración Desvinculaciones",
+				"activo": "S"
+			},
+			{
+				"codpfl": "VARIAADM",
+				"nombre": "RRHH - Administración Variables Finiquitos",
+				"activo": "S"
+			},
+			{
+				"codpfl": "ADMINVEN",
+				"nombre": "RRHH - Administración de Vencimientos de Contrato",
+				"activo": "S"
+			},
+			{
+				"codpfl": "RRHH2",
+				"nombre": "RRHH - Administrador",
+				"activo": "S"
+			},
+			{
+				"codpfl": "ADMABS",
+				"nombre": "RRHH - Administrador Absentismos",
+				"activo": "S"
+			},
+			{
+				"codpfl": "RRHHADPART",
+				"nombre": "RRHH - Administrador Partes Actividad",
+				"activo": "S"
+			},
+			{
+				"codpfl": "RRHHADMIN",
+				"nombre": "RRHH - Administrador RRHH",
+				"activo": "S"
+			},
+			{
+				"codpfl": "RRHHEVAL",
+				"nombre": "RRHH - Administrador de Evaluaciones",
+				"activo": "S"
+			},
+			{
+				"codpfl": "INFOWADM",
+				"nombre": "RRHH - Administrador de Informes WEB",
+				"activo": "S"
+			},
+			{
+				"codpfl": "VARNOADM",
+				"nombre": "RRHH - Administrador de Variables de Nominas",
+				"activo": "S"
+			},
+			{
+				"codpfl": "AUTOINSBOL",
+				"nombre": "RRHH - Autoinscripción Bolsa de Empleo",
+				"activo": "S"
+			},
+			{
+				"codpfl": "CONSBENE",
+				"nombre": "RRHH - Consulta beneficiarios propio empleado",
+				"activo": "S"
+			},
+			{
+				"codpfl": "RRHHLISTIN",
+				"nombre": "RRHH - Gestión Avanzada del listín telefónico",
+				"activo": "S"
+			},
+			{
+				"codpfl": "GSOLFRE",
+				"nombre": "RRHH - Gestión Solicitudes Free",
+				"activo": "S"
+			},
+			{
+				"codpfl": "RRHHGCAND",
+				"nombre": "RRHH - Gestión de Candidatos",
+				"activo": "S"
+			},
+			{
+				"codpfl": "GCVYOF",
+				"nombre": "RRHH - Gestión de Ofertas y CV",
+				"activo": "S"
+			},
+			{
+				"codpfl": "RRHHSALIDA",
+				"nombre": "RRHH - Gestión de la bolsa de Empleo",
+				"activo": "S"
+			},
+			{
+				"codpfl": "GCVOF2",
+				"nombre": "RRHH - Gestión de ofertas y perfiles exlusivo GCE",
+				"activo": "S"
+			},
+			{
+				"codpfl": "RRHHSAP",
+				"nombre": "RRHH - Manuales SAP-HR",
+				"activo": "S"
+			},
+			{
+				"codpfl": "SOLRRHH",
+				"nombre": "RRHH - Peticiones de empleados a RRHH",
+				"activo": "S"
+			},
+			{
+				"codpfl": "RESABS",
+				"nombre": "RRHH - Responsable Absentismos",
+				"activo": "S"
+			},
+			{
+				"codpfl": "BAJASRES",
+				"nombre": "RRHH - Responsable Bajas",
+				"activo": "S"
+			},
+			{
+				"codpfl": "FINIQRES",
+				"nombre": "RRHH - Responsable Desvinculaciones",
+				"activo": "S"
+			},
+			{
+				"codpfl": "INFOERESP",
+				"nombre": "RRHH - Responsable Informe Económico",
+				"activo": "S"
+			},
+			{
+				"codpfl": "INFOTRESP",
+				"nombre": "RRHH - Responsable Informe Tiempos",
+				"activo": "S"
+			},
+			{
+				"codpfl": "RRHHABPART",
+				"nombre": "RRHH - Responsable Partes Actividad",
+				"activo": "S"
+			},
+			{
+				"codpfl": "VARIARES",
+				"nombre": "RRHH - Responsable Variables Finiquitos",
+				"activo": "S"
+			},
+			{
+				"codpfl": "RRHHRESP",
+				"nombre": "RRHH - Responsable de Evaluaciones",
+				"activo": "S"
+			},
+			{
+				"codpfl": "INFOWRES",
+				"nombre": "RRHH - Responsable de Informes WEB",
+				"activo": "S"
+			},
+			{
+				"codpfl": "VARNORES",
+				"nombre": "RRHH - Responsable de Variables de Nominas",
+				"activo": "S"
+			},
+			{
+				"codpfl": "RESPERSN",
+				"nombre": "RRHH - Responsables de solicitudes",
+				"activo": "S"
+			},
+			{
+				"codpfl": "RRHH3",
+				"nombre": "RRHH - Solicitante",
+				"activo": "S"
+			},
+			{
+				"codpfl": "RRHH1",
+				"nombre": "RRHH - Super Administrador",
+				"activo": "S"
+			},
+			{
+				"codpfl": "VALID",
+				"nombre": "RRHH - Validador",
+				"activo": "S"
+			},
+			{
+				"codpfl": "RRHHVALDIE",
+				"nombre": "RRHH - Validador Anticipo y Liquidación Dietas",
+				"activo": "S"
+			},
+			{
+				"codpfl": "ALTASVALID",
+				"nombre": "RRHH - Validador de Altas",
+				"activo": "S"
+			},
+			{
+				"codpfl": "VARNOVAL",
+				"nombre": "RRHH - Validador de Variables de Nominas",
+				"activo": "S"
+			},
+			{
+				"codpfl": "VENCON",
+				"nombre": "RRHH - Vencimientos de Contratos",
+				"activo": "S"
+			},
+			{
+				"codpfl": "INFORCRE",
+				"nombre": "RRHH- Creación de informes web",
+				"activo": "S"
+			},
+			{
+				"codpfl": "ABSVALID",
+				"nombre": "RRHH- Validador Absentismos",
+				"activo": "S"
+			},
+			{
+				"codpfl": "PERFILBW",
+				"nombre": "SAPL - Acceso a SAP BW",
+				"activo": "S"
+			},
+			{
+				"codpfl": "PERFILHR",
+				"nombre": "SAPL - Acceso a SAP HR",
+				"activo": "S"
+			},
+			{
+				"codpfl": "PERFILSSM",
+				"nombre": "SAPL - Acceso a SAP SSM",
+				"activo": "S"
+			},
+			{
+				"codpfl": "PERFILDES",
+				"nombre": "SAPL - Acceso entornos Desarrollo",
+				"activo": "S"
+			},
+			{
+				"codpfl": "PERFILFI",
+				"nombre": "SAPL - Accesos a SAP FI",
+				"activo": "S"
+			},
+			{
+				"codpfl": "SAPCOMBOS",
+				"nombre": "SAPL - Habilita los Mandantes de SAP Logon",
+				"activo": "S"
+			},
+			{
+				"codpfl": "SAPLOGONPF",
+				"nombre": "SAPL - Perfilado usuarios SAP Logon",
+				"activo": "S"
+			},
+			{
+				"codpfl": "SEF",
+				"nombre": "SEF - Facturación Electrónica",
+				"activo": "S"
+			},
+			{
+				"codpfl": "VERSKYT",
+				"nombre": "SKYT - Acceso a Cursos",
+				"activo": "S"
+			},
+			{
+				"codpfl": "ADMSKYT",
+				"nombre": "SKYT - Administrador Cursos",
+				"activo": "S"
+			},
+			{
+				"codpfl": "RESSKYT",
+				"nombre": "SKYT - Responsable Cursos",
+				"activo": "S"
+			},
+			{
+				"codpfl": "DATSOC",
+				"nombre": "SOCI - Datos Sociedades FI",
+				"activo": "S"
+			},
+			{
+				"codpfl": "SAPLSOCUSU",
+				"nombre": "SOCI - Datos de sociedades por Usuario",
+				"activo": "S"
+			},
+			{
+				"codpfl": "DATSOCVER",
+				"nombre": "SOCI - Gestión Accesos",
+				"activo": "S"
+			},
+			{
+				"codpfl": "CTRLPRIMIT",
+				"nombre": "SOPT - Acceso al control de primitivas",
+				"activo": "S"
+			},
+			{
+				"codpfl": "INVENTCC",
+				"nombre": "SOPT - Consulta Inventario",
+				"activo": "S"
+			},
+			{
+				"codpfl": "SOLCNS",
+				"nombre": "SOPT - Consulta de Instalaciones (Nuevo)",
+				"activo": "S"
+			},
+			{
+				"codpfl": "CREANEWUSR",
+				"nombre": "SOPT - Crear nuevos usuarios",
+				"activo": "S"
+			},
+			{
+				"codpfl": "INVENTEC",
+				"nombre": "SOPT - Eliminar Inventario",
+				"activo": "S"
+			},
+			{
+				"codpfl": "IMGEXPLOT",
+				"nombre": "SOPT - Explot Imaginaria",
+				"activo": "S"
+			},
+			{
+				"codpfl": "SOPGESTPFL",
+				"nombre": "SOPT - Gestión de Perfiles de Soporte",
+				"activo": "S"
+			},
+			{
+				"codpfl": "GESTPERSOP",
+				"nombre": "SOPT - Gestor de Opciones de Soporte",
+				"activo": "S"
+			},
+			{
+				"codpfl": "INVENTIC",
+				"nombre": "SOPT - Inserción Inventario",
+				"activo": "S"
+			},
+			{
+				"codpfl": "INVENT",
+				"nombre": "SOPT - Inventario Informática",
+				"activo": "S"
+			},
+			{
+				"codpfl": "INVENTLI",
+				"nombre": "SOPT - Listados Inventario",
+				"activo": "S"
+			},
+			{
+				"codpfl": "INVENTMB",
+				"nombre": "SOPT - Mantenimientos Básicos Inventario",
+				"activo": "S"
+			},
+			{
+				"codpfl": "INVENTMC",
+				"nombre": "SOPT - Modificación Inventario",
+				"activo": "S"
+			},
+			{
+				"codpfl": "ADMSOP",
+				"nombre": "SOPT - Perfil Administración Soporte",
+				"activo": "S"
+			},
+			{
+				"codpfl": "INSTSOP",
+				"nombre": "SOPT - Perfil instaladores soporte",
+				"activo": "S"
+			},
+			{
+				"codpfl": "SOLENV",
+				"nombre": "SOPT - Solicitud de Instalaciones (Nuevo)",
+				"activo": "S"
+			},
+			{
+				"codpfl": "SOLSOP",
+				"nombre": "SOPT - Solicitudes a Soporte",
+				"activo": "S"
+			},
+			{
+				"codpfl": "CTLSOP",
+				"nombre": "SOPT - Ver Estadísticas Soporte Sistemas",
+				"activo": "S"
+			},
+			{
+				"codpfl": "ADMINESTAD",
+				"nombre": "SOPT - Ver las estadísticas de todas las empresas",
+				"activo": "S"
+			},
+			{
+				"codpfl": "INCBAS",
+				"nombre": "SOPT - Visualizar las incidencias de mi base",
+				"activo": "S"
+			},
+			{
+				"codpfl": "INCEMP",
+				"nombre": "SOPT - Visualizar las incidencias de mi empresa",
+				"activo": "S"
+			},
+			{
+				"codpfl": "PERFIL_ASJ",
+				"nombre": "SRPT - Asesoría Jurídica",
+				"activo": "S"
+			},
+			{
+				"codpfl": "PERFIL_ADM",
+				"nombre": "SRPT - Sharepoint Admin.",
+				"activo": "S"
+			},
+			{
+				"codpfl": "TESTNOM",
+				"nombre": "TEST - sólo para 14293",
+				"activo": "S"
+			},
+			{
+				"codpfl": "TESTPROV",
+				"nombre": "TEST - sólo para situaciones temporales",
+				"activo": "S"
+			},
+			{
+				"codpfl": "ENVARCHIVS",
+				"nombre": "TRAS - Envío seguro de Documentos",
+				"activo": "S"
+			},
+			{
+				"codpfl": "TSRTPCBO",
+				"nombre": "TSR - Tipos de cambio",
+				"activo": "S"
+			},
+			{
+				"codpfl": "VESADMALL",
+				"nombre": "VEST - ADMINISTRACION COMPLETA",
+				"activo": "S"
+			},
+			{
+				"codpfl": "ADMINVESTU",
+				"nombre": "VEST - Administrador de Vestuario",
+				"activo": "S"
+			},
+			{
+				"codpfl": "VESDOMADM",
+				"nombre": "VEST - DOMINICANA ADMINISTRACION",
+				"activo": "S"
+			},
+			{
+				"codpfl": "VESDOMALM",
+				"nombre": "VEST - DOMINICANA ALMACEN",
+				"activo": "S"
+			},
+			{
+				"codpfl": "VESHOTGEST",
+				"nombre": "VEST - GESTION HOTELES",
+				"activo": "S"
+			},
+			{
+				"codpfl": "VESHOTOTS",
+				"nombre": "VEST - GESTION HOTELES NO PROPIOS",
+				"activo": "S"
+			},
+			{
+				"codpfl": "VESGLOBADM",
+				"nombre": "VEST - GLOBALIA ADMINISTRACION",
+				"activo": "S"
+			},
+			{
+				"codpfl": "VESGLOBALM",
+				"nombre": "VEST - GLOBALIA ALMACEN",
+				"activo": "S"
+			},
+			{
+				"codpfl": "VESVHAADM",
+				"nombre": "VEST - HALCON ADMINISTRACION",
+				"activo": "S"
+			},
+			{
+				"codpfl": "VESHANADM",
+				"nombre": "VEST - HANDLING GROUNDFORCE ADMINISTRACION",
+				"activo": "S"
+			},
+			{
+				"codpfl": "VESINFOR",
+				"nombre": "VEST - INFORMATICA",
+				"activo": "S"
+			},
+			{
+				"codpfl": "VESMARADM",
+				"nombre": "VEST - MARRUECOS ADMINISTRACION",
+				"activo": "S"
+			},
+			{
+				"codpfl": "VESMARHAN",
+				"nombre": "VEST - MARRUECOS HANDLING",
+				"activo": "S"
+			},
+			{
+				"codpfl": "VESTTEMP",
+				"nombre": "VEST - PERFIL TEMPORAL",
+				"activo": "S"
+			},
+			{
+				"codpfl": "VESRRHHMIN",
+				"nombre": "VEST - RRHH MINORISTA",
+				"activo": "S"
+			},
+			{
+				"codpfl": "VESTECNO",
+				"nombre": "VEST - Tecnocon",
+				"activo": "S"
+			},
+			{
+				"codpfl": "VESCONSU",
+				"nombre": "VEST - USUARIO DE CONSULTA",
+				"activo": "S"
+			},
+			{
+				"codpfl": "VESTU",
+				"nombre": "VEST - Usuario de Vestuario (solicitud prendas)",
+				"activo": "S"
+			},
+			{
+				"codpfl": "VESHANADMM",
+				"nombre": "VEST - VEST - HANDLING MADRID",
+				"activo": "S"
+			},
+			{
+				"codpfl": "SOLFREE",
+				"nombre": "WKFL - Solicitud de Billetes Free",
+				"activo": "S"
+			},
+			{
+				"codpfl": "XIVIADMAV",
+				"nombre": "XIVI - Gestor Avanzado",
+				"activo": "S"
+			},
+			{
+				"codpfl": "XIVIADM",
+				"nombre": "XIVI - Gestor Básico",
+				"activo": "S"
+			},
+			{
+				"codpfl": "XIVIUSRAV",
+				"nombre": "XIVI - Usuario Avanzado",
+				"activo": "S"
+			},
+			{
+				"codpfl": "XIVIUSR",
+				"nombre": "XIVI - Usuario Base",
+				"activo": "S"
+			},
+			{
+				"codpfl": "CONSRETFRE",
+				"nombre": "YPS - Consulta Retribuciones (Automático)",
+				"activo": "S"
+			},
+			{
+				"codpfl": "YPSADM",
+				"nombre": "YPS - Consulta Retribuciones (Permanente)",
+				"activo": "S"
+			}
+		]
+	}
+}

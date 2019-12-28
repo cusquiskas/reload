@@ -1,0 +1,1260 @@
+{
+	"children": [
+		{
+			"codmca": "9",
+			"parent": "0",
+			"nombre": "A.4",
+			"hlplbl": null,
+			"activa": "S"
+		},
+		{
+			"codmca": "10",
+			"parent": "0",
+			"nombre": "A.4",
+			"hlplbl": null,
+			"activa": "S"
+		},
+		{
+			"codmca": "8",
+			"parent": "0",
+			"nombre": "A.4",
+			"hlplbl": null,
+			"activa": "S"
+		},
+		{
+			"codmca": "TC",
+			"parent": "0",
+			"nombre": "Administración",
+			"hlplbl": null,
+			"activa": "S",
+			"children": [
+				{
+					"codmca": "331",
+					"parent": "TC",
+					"nombre": "Admin. Intranet",
+					"hlplbl": null,
+					"activa": "S"
+				},
+				{
+					"codmca": "1706",
+					"parent": "TC",
+					"nombre": "Asesoría Jurídica",
+					"hlplbl": null,
+					"activa": "S",
+					"children": [
+						{
+							"codmca": "1627",
+							"parent": "1706",
+							"nombre": "Datos Sociedades",
+							"hlplbl": null,
+							"activa": "S"
+						},
+						{
+							"codmca": "1597",
+							"parent": "1706",
+							"nombre": "Gestor Documental",
+							"hlplbl": null,
+							"activa": "S"
+						}
+					]
+				},
+				{
+					"codmca": "1802",
+					"parent": "TC",
+					"nombre": "Control de Ingresos",
+					"hlplbl": null,
+					"activa": "S",
+					"children": [
+						{
+							"codmca": "1737",
+							"parent": "1802",
+							"nombre": "Cajas y Control de Gastos",
+							"hlplbl": null,
+							"activa": "S"
+						},
+						{
+							"codmca": "1730",
+							"parent": "1802",
+							"nombre": "Facturación",
+							"hlplbl": null,
+							"activa": "S"
+						},
+						{
+							"codmca": "1803",
+							"parent": "1802",
+							"nombre": "Revenue Accounting",
+							"hlplbl": null,
+							"activa": "S"
+						}
+					]
+				},
+				{
+					"codmca": "1001",
+					"parent": "TC",
+					"nombre": "Estadísticas",
+					"hlplbl": null,
+					"activa": "S"
+				},
+				{
+					"codmca": "1704",
+					"parent": "TC",
+					"nombre": "Organización",
+					"hlplbl": null,
+					"activa": "S",
+					"children": [
+						{
+							"codmca": "1629",
+							"parent": "1704",
+							"nombre": "Archivo Corporativo",
+							"hlplbl": null,
+							"activa": "S",
+							"children": [
+								{
+									"codmca": "1632",
+									"parent": "1629",
+									"nombre": "Atención Solicitudes",
+									"hlplbl": null,
+									"activa": "S"
+								},
+								{
+									"codmca": "1633",
+									"parent": "1629",
+									"nombre": "Facturación",
+									"hlplbl": null,
+									"activa": "S"
+								},
+								{
+									"codmca": "1631",
+									"parent": "1629",
+									"nombre": "Gestión de Inventarios",
+									"hlplbl": null,
+									"activa": "S"
+								},
+								{
+									"codmca": "1634",
+									"parent": "1629",
+									"nombre": "Informes",
+									"hlplbl": null,
+									"activa": "S"
+								},
+								{
+									"codmca": "1630",
+									"parent": "1629",
+									"nombre": "Parametrizaciones",
+									"hlplbl": null,
+									"activa": "S",
+									"children": [
+										{
+											"codmca": "1836",
+											"parent": "1630",
+											"nombre": "Indicadores",
+											"hlplbl": null,
+											"activa": "S"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"codmca": "1705",
+					"parent": "TC",
+					"nombre": "Presupuestos y Control",
+					"hlplbl": null,
+					"activa": "S",
+					"children": [
+						{
+							"codmca": "409",
+							"parent": "1705",
+							"nombre": "Gestión Presupuestaria",
+							"hlplbl": null,
+							"activa": "S"
+						}
+					]
+				},
+				{
+					"codmca": "1703",
+					"parent": "TC",
+					"nombre": "Proveedores y Acreedores",
+					"hlplbl": null,
+					"activa": "S",
+					"children": [
+						{
+							"codmca": "1957",
+							"parent": "1703",
+							"nombre": "Conformar Facturas",
+							"hlplbl": null,
+							"activa": "S",
+							"children": [
+								{
+									"codmca": "721",
+									"parent": "1957",
+									"nombre": "Administración",
+									"hlplbl": null,
+									"activa": "S",
+									"children": [
+										{
+											"codmca": "1975",
+											"parent": "721",
+											"nombre": "Gestión Proveedor y Acreedores",
+											"hlplbl": null,
+											"activa": "S"
+										},
+										{
+											"codmca": "1770",
+											"parent": "721",
+											"nombre": "Plataforma de Prepagos",
+											"hlplbl": null,
+											"activa": "S"
+										}
+									]
+								},
+								{
+									"codmca": "726",
+									"parent": "1957",
+									"nombre": "Gestión de Facturas",
+									"hlplbl": null,
+									"activa": "S"
+								},
+								{
+									"codmca": "1707",
+									"parent": "1957",
+									"nombre": "Indicadores",
+									"hlplbl": null,
+									"activa": "S"
+								},
+								{
+									"codmca": "729",
+									"parent": "1957",
+									"nombre": "Informes y Estadísticas",
+									"hlplbl": null,
+									"activa": "S"
+								}
+							]
+						},
+						{
+							"codmca": "720",
+							"parent": "1703",
+							"nombre": "Conformar Facturas Antiguo",
+							"hlplbl": null,
+							"activa": "S"
+						}
+					]
+				},
+				{
+					"codmca": "1693",
+					"parent": "TC",
+					"nombre": "Pruebas",
+					"hlplbl": null,
+					"activa": "S"
+				},
+				{
+					"codmca": "1702",
+					"parent": "TC",
+					"nombre": "Tesorería",
+					"hlplbl": null,
+					"activa": "S"
+				}
+			]
+		},
+		{
+			"codmca": "AS",
+			"parent": "0",
+			"nombre": "Autoservicio",
+			"hlplbl": null,
+			"activa": "S",
+			"children": [
+				{
+					"codmca": "9715",
+					"parent": "AS",
+					"nombre": "Atencion al Empleado",
+					"hlplbl": null,
+					"activa": "S"
+				},
+				{
+					"codmca": "2020",
+					"parent": "AS",
+					"nombre": "Beneficios Air Europa",
+					"hlplbl": null,
+					"activa": "S"
+				},
+				{
+					"codmca": "1762",
+					"parent": "AS",
+					"nombre": "Datos Personales",
+					"hlplbl": null,
+					"activa": "S",
+					"children": [
+						{
+							"codmca": "87",
+							"parent": "1762",
+							"nombre": "Pilotos",
+							"hlplbl": null,
+							"activa": "S",
+							"children": [
+								{
+									"codmca": "1447",
+									"parent": "87",
+									"nombre": "Gestión",
+									"hlplbl": null,
+									"activa": "S",
+									"children": [
+										{
+											"codmca": "1509",
+											"parent": "1447",
+											"nombre": "Cierre",
+											"hlplbl": null,
+											"activa": "S"
+										},
+										{
+											"codmca": "1455",
+											"parent": "1447",
+											"nombre": "Facturación",
+											"hlplbl": null,
+											"activa": "S"
+										},
+										{
+											"codmca": "1899",
+											"parent": "1447",
+											"nombre": "Mantenimiento",
+											"hlplbl": null,
+											"activa": "S",
+											"children": [
+												{
+													"codmca": "1471",
+													"parent": "1899",
+													"nombre": "Configuraciones",
+													"hlplbl": null,
+													"activa": "S"
+												},
+												{
+													"codmca": "1462",
+													"parent": "1899",
+													"nombre": "Mantenimientos",
+													"hlplbl": null,
+													"activa": "S",
+													"children": [
+														{
+															"codmca": "1476",
+															"parent": "1462",
+															"nombre": "Gestión de Pedidos",
+															"hlplbl": null,
+															"activa": "S"
+														},
+														{
+															"codmca": "1481",
+															"parent": "1462",
+															"nombre": "Mantenimientos Vestuario",
+															"hlplbl": null,
+															"activa": "S"
+														},
+														{
+															"codmca": "1473",
+															"parent": "1462",
+															"nombre": "Solicitudes",
+															"hlplbl": null,
+															"activa": "S",
+															"children": [
+																{
+																	"codmca": "1489",
+																	"parent": "1473",
+																	"nombre": "Ayuda",
+																	"hlplbl": null,
+																	"activa": "S"
+																},
+																{
+																	"codmca": "1521",
+																	"parent": "1473",
+																	"nombre": "Solicitudes",
+																	"hlplbl": null,
+																	"activa": "S",
+																	"children": [
+																		{
+																			"codmca": "571",
+																			"parent": "1521",
+																			"nombre": "Geryco",
+																			"hlplbl": null,
+																			"activa": "S",
+																			"children": [
+																				{
+																					"codmca": "575",
+																					"parent": "571",
+																					"nombre": "Ayuda",
+																					"hlplbl": null,
+																					"activa": "S"
+																				},
+																				{
+																					"codmca": "572",
+																					"parent": "571",
+																					"nombre": "Bolsas",
+																					"hlplbl": null,
+																					"activa": "S",
+																					"children": [
+																						{
+																							"codmca": "647",
+																							"parent": "572",
+																							"nombre": "Gestión Consumos",
+																							"hlplbl": null,
+																							"activa": "S",
+																							"children": [
+																								{
+																									"codmca": "672",
+																									"parent": "647",
+																									"nombre": "Herramientas",
+																									"hlplbl": null,
+																									"activa": "S",
+																									"children": [
+																										{
+																											"codmca": "130",
+																											"parent": "672",
+																											"nombre": "Com. Serv./Invitas/Desc.Aut.",
+																											"hlplbl": null,
+																											"activa": "S"
+																										},
+																										{
+																											"codmca": "472",
+																											"parent": "672",
+																											"nombre": "Compras",
+																											"hlplbl": null,
+																											"activa": "S"
+																										},
+																										{
+																											"codmca": "1721",
+																											"parent": "672",
+																											"nombre": "Gestión Consumos SC",
+																											"hlplbl": null,
+																											"activa": "S"
+																										}
+																									]
+																								}
+																							]
+																						}
+																					]
+																				},
+																				{
+																					"codmca": "574",
+																					"parent": "571",
+																					"nombre": "Listados",
+																					"hlplbl": null,
+																					"activa": "S"
+																				},
+																				{
+																					"codmca": "573",
+																					"parent": "571",
+																					"nombre": "Utilidades",
+																					"hlplbl": null,
+																					"activa": "S"
+																				}
+																			]
+																		}
+																	]
+																}
+															]
+														}
+													]
+												},
+												{
+													"codmca": "1472",
+													"parent": "1899",
+													"nombre": "Sistema de Puntos",
+													"hlplbl": null,
+													"activa": "S"
+												}
+											]
+										},
+										{
+											"codmca": "1454",
+											"parent": "1447",
+											"nombre": "Prendas",
+											"hlplbl": null,
+											"activa": "S"
+										}
+									]
+								},
+								{
+									"codmca": "1452",
+									"parent": "87",
+									"nombre": "Informes",
+									"hlplbl": null,
+									"activa": "S"
+								}
+							]
+						},
+						{
+							"codmca": "174",
+							"parent": "1762",
+							"nombre": "Vestuario",
+							"hlplbl": null,
+							"activa": "S"
+						}
+					]
+				},
+				{
+					"codmca": "9718",
+					"parent": "AS",
+					"nombre": "Datos Profesionales",
+					"hlplbl": null,
+					"activa": "S"
+				},
+				{
+					"codmca": "1800",
+					"parent": "AS",
+					"nombre": "Documentos en Descarga",
+					"hlplbl": null,
+					"activa": "S"
+				},
+				{
+					"codmca": "1825",
+					"parent": "AS",
+					"nombre": "Gestión de Presencia",
+					"hlplbl": null,
+					"activa": "S"
+				}
+			]
+		},
+		{
+			"codmca": "IN",
+			"parent": "0",
+			"nombre": "Recursos Humanos",
+			"hlplbl": null,
+			"activa": "S",
+			"children": [
+				{
+					"codmca": "94",
+					"parent": "IN",
+					"nombre": "Atención al Empleado",
+					"hlplbl": null,
+					"activa": "S"
+				},
+				{
+					"codmca": "1543",
+					"parent": "IN",
+					"nombre": "CDP",
+					"hlplbl": null,
+					"activa": "S"
+				},
+				{
+					"codmca": "89",
+					"parent": "IN",
+					"nombre": "Comunicacion",
+					"hlplbl": null,
+					"activa": "S"
+				},
+				{
+					"codmca": "63",
+					"parent": "IN",
+					"nombre": "Conoce Globalia",
+					"hlplbl": null,
+					"activa": "S",
+					"children": [
+						{
+							"codmca": "58",
+							"parent": "63",
+							"nombre": "Revista Fórum",
+							"hlplbl": null,
+							"activa": "S"
+						}
+					]
+				},
+				{
+					"codmca": "352",
+					"parent": "IN",
+					"nombre": "Datos Personales",
+					"hlplbl": null,
+					"activa": "S"
+				},
+				{
+					"codmca": "188",
+					"parent": "IN",
+					"nombre": "Formación",
+					"hlplbl": null,
+					"activa": "S",
+					"children": [
+						{
+							"codmca": "1560",
+							"parent": "188",
+							"nombre": "Control de Presencia",
+							"hlplbl": null,
+							"activa": "S"
+						},
+						{
+							"codmca": "1563",
+							"parent": "188",
+							"nombre": "Empleados Internacionales",
+							"hlplbl": null,
+							"activa": "S"
+						},
+						{
+							"codmca": "1569",
+							"parent": "188",
+							"nombre": "Gestión Empleados",
+							"hlplbl": null,
+							"activa": "S"
+						},
+						{
+							"codmca": "1567",
+							"parent": "188",
+							"nombre": "Información Hoteles",
+							"hlplbl": null,
+							"activa": "S"
+						},
+						{
+							"codmca": "1572",
+							"parent": "188",
+							"nombre": "Informes",
+							"hlplbl": null,
+							"activa": "S"
+						},
+						{
+							"codmca": "1576",
+							"parent": "188",
+							"nombre": "Manuales Aplicación",
+							"hlplbl": null,
+							"activa": "S"
+						},
+						{
+							"codmca": "1544",
+							"parent": "188",
+							"nombre": "Parametrización",
+							"hlplbl": null,
+							"activa": "S"
+						},
+						{
+							"codmca": "1557",
+							"parent": "188",
+							"nombre": "Proyecciones",
+							"hlplbl": null,
+							"activa": "S"
+						}
+					]
+				},
+				{
+					"codmca": "754",
+					"parent": "IN",
+					"nombre": "Manuales SAP-HR",
+					"hlplbl": null,
+					"activa": "S",
+					"children": [
+						{
+							"codmca": "761",
+							"parent": "754",
+							"nombre": "Aplicaciones Portal-RRHH",
+							"hlplbl": null,
+							"activa": "S"
+						},
+						{
+							"codmca": "1264",
+							"parent": "754",
+							"nombre": "Tecnicos SAP",
+							"hlplbl": null,
+							"activa": "S"
+						}
+					]
+				},
+				{
+					"codmca": "1385",
+					"parent": "IN",
+					"nombre": "Minorista",
+					"hlplbl": null,
+					"activa": "S",
+					"children": [
+						{
+							"codmca": "1734",
+							"parent": "1385",
+							"nombre": "Divisas",
+							"hlplbl": null,
+							"activa": "S"
+						},
+						{
+							"codmca": "1685",
+							"parent": "1385",
+							"nombre": "Extractos Tarjetas Corporativas",
+							"hlplbl": null,
+							"activa": "S"
+						},
+						{
+							"codmca": "746",
+							"parent": "1385",
+							"nombre": "Indicadores",
+							"hlplbl": null,
+							"activa": "S"
+						}
+					]
+				},
+				{
+					"codmca": "312",
+					"parent": "IN",
+					"nombre": "Mto. Intranet",
+					"hlplbl": null,
+					"activa": "S"
+				},
+				{
+					"codmca": "370",
+					"parent": "IN",
+					"nombre": "Organización/Empleo",
+					"hlplbl": null,
+					"activa": "S"
+				},
+				{
+					"codmca": "145",
+					"parent": "IN",
+					"nombre": "Prevención",
+					"hlplbl": null,
+					"activa": "S",
+					"children": [
+						{
+							"codmca": "169",
+							"parent": "145",
+							"nombre": "Administración Prevención",
+							"hlplbl": null,
+							"activa": "S"
+						},
+						{
+							"codmca": "1682",
+							"parent": "145",
+							"nombre": "Coordinación",
+							"hlplbl": null,
+							"activa": "S"
+						},
+						{
+							"codmca": "1406",
+							"parent": "145",
+							"nombre": "Documentación PRL",
+							"hlplbl": null,
+							"activa": "S"
+						},
+						{
+							"codmca": "146",
+							"parent": "145",
+							"nombre": "Formación",
+							"hlplbl": null,
+							"activa": "S"
+						},
+						{
+							"codmca": "1427",
+							"parent": "145",
+							"nombre": "Gestiones Históricas",
+							"hlplbl": null,
+							"activa": "S"
+						},
+						{
+							"codmca": "161",
+							"parent": "145",
+							"nombre": "Gestión Accidentes de Trabajo",
+							"hlplbl": null,
+							"activa": "S"
+						},
+						{
+							"codmca": "157",
+							"parent": "145",
+							"nombre": "Gestión Delt@",
+							"hlplbl": null,
+							"activa": "S"
+						},
+						{
+							"codmca": "453",
+							"parent": "145",
+							"nombre": "Gestión Formación",
+							"hlplbl": null,
+							"activa": "S"
+						},
+						{
+							"codmca": "461",
+							"parent": "145",
+							"nombre": "Gestión Información",
+							"hlplbl": null,
+							"activa": "S"
+						},
+						{
+							"codmca": "1414",
+							"parent": "145",
+							"nombre": "Gestión Vigilancia de la Salud",
+							"hlplbl": null,
+							"activa": "S"
+						},
+						{
+							"codmca": "1258",
+							"parent": "145",
+							"nombre": "Histórico Accid. Trabajo",
+							"hlplbl": null,
+							"activa": "S"
+						},
+						{
+							"codmca": "1321",
+							"parent": "145",
+							"nombre": "Mi Sección de Prevención",
+							"hlplbl": null,
+							"activa": "S"
+						},
+						{
+							"codmca": "1741",
+							"parent": "145",
+							"nombre": "Seguimientos Prevención",
+							"hlplbl": null,
+							"activa": "S"
+						}
+					]
+				}
+			]
+		},
+		{
+			"codmca": "CG",
+			"parent": "0",
+			"nombre": "Utilidades",
+			"hlplbl": null,
+			"activa": "S",
+			"children": [
+				{
+					"codmca": "745",
+					"parent": "CG",
+					"nombre": "Aplicaciones",
+					"hlplbl": null,
+					"activa": "S"
+				},
+				{
+					"codmca": "19",
+					"parent": "CG",
+					"nombre": "Beneficios Sociales",
+					"hlplbl": null,
+					"activa": "S"
+				},
+				{
+					"codmca": "1935",
+					"parent": "CG",
+					"nombre": "CARGO Form. y Proc.",
+					"hlplbl": null,
+					"activa": "S"
+				},
+				{
+					"codmca": "1780",
+					"parent": "CG",
+					"nombre": "Calidad y Medio Ambiente",
+					"hlplbl": null,
+					"activa": "S"
+				},
+				{
+					"codmca": "2049",
+					"parent": "CG",
+					"nombre": "Compliance",
+					"hlplbl": null,
+					"activa": "S"
+				},
+				{
+					"codmca": "1594",
+					"parent": "CG",
+					"nombre": "Crisis AEA",
+					"hlplbl": null,
+					"activa": "S"
+				},
+				{
+					"codmca": "1818",
+					"parent": "CG",
+					"nombre": "Curso SkyTeam",
+					"hlplbl": null,
+					"activa": "S"
+				},
+				{
+					"codmca": "744",
+					"parent": "CG",
+					"nombre": "Enlaces",
+					"hlplbl": null,
+					"activa": "S"
+				},
+				{
+					"codmca": "1949",
+					"parent": "CG",
+					"nombre": "FORMACIÓN OOVV INT.",
+					"hlplbl": null,
+					"activa": "S"
+				},
+				{
+					"codmca": "1914",
+					"parent": "CG",
+					"nombre": "FORMACIÓN OOVV NAC.",
+					"hlplbl": null,
+					"activa": "S"
+				},
+				{
+					"codmca": "1742",
+					"parent": "CG",
+					"nombre": "Formación AESA",
+					"hlplbl": null,
+					"activa": "S"
+				},
+				{
+					"codmca": "1618",
+					"parent": "CG",
+					"nombre": "Formación PVSO",
+					"hlplbl": null,
+					"activa": "S",
+					"children": [
+						{
+							"codmca": "21",
+							"parent": "1618",
+							"nombre": "Mantenimiento",
+							"hlplbl": null,
+							"activa": "S"
+						},
+						{
+							"codmca": "127",
+							"parent": "1618",
+							"nombre": "Plan de Pensiones",
+							"hlplbl": null,
+							"activa": "S"
+						}
+					]
+				},
+				{
+					"codmca": "359",
+					"parent": "CG",
+					"nombre": "Informes de Negocio",
+					"hlplbl": null,
+					"activa": "S"
+				},
+				{
+					"codmca": "1536",
+					"parent": "CG",
+					"nombre": "LOPD",
+					"hlplbl": null,
+					"activa": "S"
+				},
+				{
+					"codmca": "205",
+					"parent": "CG",
+					"nombre": "Manuales y Documentacion",
+					"hlplbl": null,
+					"activa": "S",
+					"children": [
+						{
+							"codmca": "206",
+							"parent": "205",
+							"nombre": "Manuales",
+							"hlplbl": null,
+							"activa": "S",
+							"children": [
+								{
+									"codmca": "1332",
+									"parent": "206",
+									"nombre": "FAX",
+									"hlplbl": null,
+									"activa": "S"
+								},
+								{
+									"codmca": "1585",
+									"parent": "206",
+									"nombre": "Fotocopiadoras",
+									"hlplbl": null,
+									"activa": "S"
+								},
+								{
+									"codmca": "1326",
+									"parent": "206",
+									"nombre": "Impresoras",
+									"hlplbl": null,
+									"activa": "S",
+									"children": [
+										{
+											"codmca": "1496",
+											"parent": "1326",
+											"nombre": "Cargo",
+											"hlplbl": null,
+											"activa": "S"
+										},
+										{
+											"codmca": "1430",
+											"parent": "1326",
+											"nombre": "Convenios",
+											"hlplbl": null,
+											"activa": "S"
+										},
+										{
+											"codmca": "678",
+											"parent": "1326",
+											"nombre": "Groundforce",
+											"hlplbl": null,
+											"activa": "S"
+										},
+										{
+											"codmca": "780",
+											"parent": "1326",
+											"nombre": "Hoteles",
+											"hlplbl": null,
+											"activa": "S"
+										},
+										{
+											"codmca": "1608",
+											"parent": "1326",
+											"nombre": "Morocco GHS",
+											"hlplbl": null,
+											"activa": "S"
+										},
+										{
+											"codmca": "1375",
+											"parent": "1326",
+											"nombre": "PMR",
+											"hlplbl": null,
+											"activa": "S"
+										},
+										{
+											"codmca": "212",
+											"parent": "1326",
+											"nombre": "Plantillas",
+											"hlplbl": null,
+											"activa": "S"
+										},
+										{
+											"codmca": "216",
+											"parent": "1326",
+											"nombre": "Platón",
+											"hlplbl": null,
+											"activa": "S"
+										}
+									]
+								},
+								{
+									"codmca": "1333",
+									"parent": "206",
+									"nombre": "Multifunción",
+									"hlplbl": null,
+									"activa": "S"
+								}
+							]
+						}
+					]
+				},
+				{
+					"codmca": "706",
+					"parent": "CG",
+					"nombre": "Minoristas",
+					"hlplbl": null,
+					"activa": "S"
+				},
+				{
+					"codmca": "2039",
+					"parent": "CG",
+					"nombre": "PCI-DSS",
+					"hlplbl": null,
+					"activa": "S"
+				},
+				{
+					"codmca": "1945",
+					"parent": "CG",
+					"nombre": "Peticiones material oficina",
+					"hlplbl": null,
+					"activa": "S"
+				},
+				{
+					"codmca": "1588",
+					"parent": "CG",
+					"nombre": "Seguridad",
+					"hlplbl": null,
+					"activa": "S"
+				},
+				{
+					"codmca": "1807",
+					"parent": "CG",
+					"nombre": "Soporte Compras",
+					"hlplbl": null,
+					"activa": "S",
+					"children": [
+						{
+							"codmca": "518",
+							"parent": "1807",
+							"nombre": "Administración RRHH",
+							"hlplbl": null,
+							"activa": "S"
+						},
+						{
+							"codmca": "606",
+							"parent": "1807",
+							"nombre": "Bolsa de Empleo",
+							"hlplbl": null,
+							"activa": "S"
+						},
+						{
+							"codmca": "1797",
+							"parent": "1807",
+							"nombre": "Evaluaciones",
+							"hlplbl": null,
+							"activa": "S"
+						},
+						{
+							"codmca": "366",
+							"parent": "1807",
+							"nombre": "Gestión Candidatos",
+							"hlplbl": null,
+							"activa": "S"
+						},
+						{
+							"codmca": "517",
+							"parent": "1807",
+							"nombre": "Gestión Solicitudes",
+							"hlplbl": null,
+							"activa": "S"
+						},
+						{
+							"codmca": "100",
+							"parent": "1807",
+							"nombre": "Gestión de Ofertas Web",
+							"hlplbl": null,
+							"activa": "S"
+						}
+					]
+				},
+				{
+					"codmca": "218",
+					"parent": "CG",
+					"nombre": "Soporte Informática",
+					"hlplbl": null,
+					"activa": "S",
+					"children": [
+						{
+							"codmca": "1370",
+							"parent": "218",
+							"nombre": "Administración Portal",
+							"hlplbl": null,
+							"activa": "S"
+						},
+						{
+							"codmca": "244",
+							"parent": "218",
+							"nombre": "Descargas",
+							"hlplbl": null,
+							"activa": "S"
+						},
+						{
+							"codmca": "229",
+							"parent": "218",
+							"nombre": "Incidencias",
+							"hlplbl": null,
+							"activa": "S"
+						},
+						{
+							"codmca": "221",
+							"parent": "218",
+							"nombre": "Instalaciones",
+							"hlplbl": null,
+							"activa": "S"
+						},
+						{
+							"codmca": "1888",
+							"parent": "218",
+							"nombre": "Manuales Lync 2013",
+							"hlplbl": null,
+							"activa": "S"
+						},
+						{
+							"codmca": "697",
+							"parent": "218",
+							"nombre": "Spamina",
+							"hlplbl": null,
+							"activa": "S"
+						}
+					]
+				},
+				{
+					"codmca": "1967",
+					"parent": "CG",
+					"nombre": "Soporte Sunion",
+					"hlplbl": null,
+					"activa": "S"
+				},
+				{
+					"codmca": "770",
+					"parent": "CG",
+					"nombre": "Soporte Telefonía",
+					"hlplbl": null,
+					"activa": "S",
+					"children": [
+						{
+							"codmca": "1851",
+							"parent": "770",
+							"nombre": "Manuales Nokia Lumia",
+							"hlplbl": null,
+							"activa": "S",
+							"children": [
+								{
+									"codmca": "597",
+									"parent": "1851",
+									"nombre": "Gestión Compras Telef.",
+									"hlplbl": null,
+									"activa": "S",
+									"children": [
+										{
+											"codmca": "772",
+											"parent": "597",
+											"nombre": "Incidencias",
+											"hlplbl": null,
+											"activa": "S",
+											"children": [
+												{
+													"codmca": "775",
+													"parent": "772",
+													"nombre": "Telefonía Fija",
+													"hlplbl": null,
+													"activa": "S"
+												},
+												{
+													"codmca": "776",
+													"parent": "772",
+													"nombre": "Telefonía Móvil",
+													"hlplbl": null,
+													"activa": "S"
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"codmca": "771",
+							"parent": "770",
+							"nombre": "Solicitudes",
+							"hlplbl": null,
+							"activa": "S"
+						}
+					]
+				},
+				{
+					"codmca": "37",
+					"parent": "CG",
+					"nombre": "Tablón de Anuncios",
+					"hlplbl": null,
+					"activa": "S",
+					"children": [
+						{
+							"codmca": "202",
+							"parent": "37",
+							"nombre": "Consulta Gabriel",
+							"hlplbl": null,
+							"activa": "S"
+						},
+						{
+							"codmca": "508",
+							"parent": "37",
+							"nombre": "Mat. Oficina (lyreco)",
+							"hlplbl": null,
+							"activa": "S"
+						},
+						{
+							"codmca": "553",
+							"parent": "37",
+							"nombre": "Ventas",
+							"hlplbl": null,
+							"activa": "S"
+						}
+					]
+				},
+				{
+					"codmca": "192",
+					"parent": "CG",
+					"nombre": "Utilidades",
+					"hlplbl": null,
+					"activa": "S"
+				}
+			]
+		}
+	]
+}

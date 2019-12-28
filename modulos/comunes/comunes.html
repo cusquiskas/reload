@@ -1,0 +1,1184 @@
+<div>
+    <!-- Modal editar opción menu -->
+    <div class="container formNuevoEditarOpcionMenu text-center">
+        <form name="gestionOpcionesMenu" method="POST" frC-Callback="gestionOpcionesMenu"
+            action="/management/mvc-management/controller/portal.xwi_menu.guardar_menu_opcion.json">
+            <input type="hidden" name="p_flag" />
+
+            <div class="md-form row">
+                <div class="md-form col-3">
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="codigoOpcionMenu" name="p_codmop" maxlength="10"
+                            required />
+                        <label for="p_codmop">Código</label>
+                    </div>
+                </div>
+
+                <div class="md-form col-3">
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="tituloOpcionMenu" name="p_nombre" maxlength="100"
+                            required />
+                        <label for="p_nombre">Nombre de la Opción</label>
+                    </div>
+                </div>
+                <div class="md-form col-6">
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="urlOpcionMenu" name="p_direcc" maxlength="200"
+                            required />
+                        <label for="p_direcc">URL</label>
+                    </div>
+                </div>
+            </div>
+            <div class="md-form row">
+                <div class="md-form col-6">
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="urlAltOpcionMenu" name="p_diraux" maxlength="200" />
+                        <label for="p_dirAux">URL Secundaria</label>
+                    </div>
+                </div>
+                <div class="md-form col-6">
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="btnAltOpcionMenu" name="p_desbtn" maxlength="12" />
+                        <label for="p_dirAux">Nombre Botón Secundario</label>
+                    </div>
+                </div>
+            </div>
+            <div class="md-form row">
+                <div class="md-form col-12">
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="paramsOpcionMenu" name="p_params"
+                            maxlength="1000" />
+                        <label for="p_params">Parametros de la opción</label>
+                    </div>
+                </div>
+            </div>
+            <div class="md-form row">
+                <div class="md-form col-6">
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="truePalabraClaveOpcionMenu" maxlength="200"
+                            name="p_palcla" />
+                        <label for="p_palcla">Palabra Clave</label>
+                    </div>
+                </div>
+                <div class="md-form col-6">
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="palabraClaveOpcionMenu" maxlength="200"
+                            name="p_search" />
+                        <label for="p_search">Descripción</label>
+                    </div>
+                </div>
+            </div>
+            <div class="md-form row">
+                <div class="md-form col-6">
+                    <div class="input-group">
+                        <label for="p_ficadj" class="active">Imagen asociada</label>
+                        <button type="button" class="btnAdjuntarArchivo" id="btnAdjuntarArchivoOpcionMenu">
+                            <span>Selecciona archivo</span>
+                        </button>
+                        <input type="text" class="addfile" id="adjuntarArchivoOpcionMenu" name="x_icomop"
+                            frC-Submit="false" readonly />
+                        <button type="button" class="btnAdjuntarArchivo eliminarAdjuntarArchivo"
+                            id="btnRemoveAdjArchOpcionMenu">
+                            <i class="material-icons">close</i>
+                        </button>
+                        <input type="hidden" name="p_icomop" id="p_icomop" value="=" />
+                    </div>
+                </div>
+                <div class="md-form col-6">
+                    <div class="input-group">
+                        <input type="number" min="0" class="form-control" id="posicion" name="p_posici" />
+                        <label for="p_posici">Posición</label>
+                    </div>
+                </div>
+            </div>
+            <div class="md-form row justify-content-center">
+                <div class="md-form col-2">
+                    <div class="checkbox-slider--b-flat" style="border-radius:0px">
+                        <label>
+                            <input class="checkboxspam" name="p_activo" type="checkbox">
+                            <span style="font-size: 12px; color: #757575;">&nbsp;Activos</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="md-form col-2">
+                    <div class="checkbox-slider--b-flat" style="border-radius:0px">
+                        <label>
+                            <input class="checkboxspam" id="nuevaCssOpcionMenu" name="p_newcss" type="checkbox">
+                            <span style="font-size: 12px; color: #757575;">&nbsp;Nuevas CSS</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="md-form col-2">
+                    <div class="checkbox-slider--b-flat" style="border-radius:0px">
+                        <label>
+                            <input class="checkboxspam" id="tipoPopUpOpcionMenu" name="p__popup" type="checkbox">
+                            <span style="font-size: 12px; color: #757575;">&nbsp;Pop-Up</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="md-form col-2">
+                    <div class="checkbox-slider--b-flat" style="border-radius:0px">
+                        <label>
+                            <input class="checkboxspam" id="paramSesionOpcionMenu" name="p_stoken" type="checkbox">
+                            <span style="font-size: 12px; color: #757575;">&nbsp;XSID</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="md-form col-2">
+                    <div class="checkbox-slider--b-flat" style="border-radius:0px">
+                        <label>
+                            <input class="checkboxspam" id="quickLinkOpcionMenu" name="p__qlink" type="checkbox">
+                            <span style="font-size: 12px; color: #757575;">&nbsp;Quick link</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="md-form">
+                <label for="p_icomop">Icono</label>
+                <button type="button" class="btnAdjuntarArchivo" id="btnAdjuntarArchivoOpcionMenu">
+                    <span>Selecciona archivo</span>
+                </button>
+                <input type="text" class="form-control" id="adjuntarArchivoOpcionMenu" name="p_icomop" frC-Submit="false" readonly/>
+                <input type="hidden" class="adjArchOpcionMenuHidden" name="ficheroDefault" value='=' />
+                <input type="hidden" name="failUpload" frC-Submit="false" value='false' />
+                <button type="button" class="btnAdjuntarArchivo eliminarAdjuntarArchivo" id="btnRemoveAdjArchOpcionMenu">
+                    <i class="material-icons">close</i>
+                </button>
+            </div> -->
+            <div class="row rowOfTree">
+                <div class="col">
+                    <ul id="tree1">
+                    </ul>
+                </div>
+                <div class="col">
+                    <select class="selectpicker seleccionArbolOpMenu" multiple data-toggle="tooltip"
+                        data-placement="top" title="Carpetas asociadas a la opción seleccionada" name="p_codmca"
+                        frC-Reference="p_codmop:p_codmop" frC-indexResponse="root.carpetaOpcion:path,codmca" required
+                        frC-getAllSeparator="@"
+                        frC-Store="/management/mvc-management/controller/portal.xwi_menu.listar_carpeta_opcion.json">
+                    </select>
+                    <label for="p_codmca" hidden>Carpetas</label>
+                </div>
+            </div>
+            <button type="button" name="guardar" class="btn btn-primary" frC-Submit="false">Guardar</button>
+            <button type="button" id="cancelfunction" class="btn btn-default"
+                onclick="cerrarModalIE($('#myModal'));">Cancelar
+            </button>
+        </form>
+        <form name="controlEdicionOpcionesMenu" class="dn" frC-Callback="mostrarOpcionesMenu" frC-AutoLoad="true"
+            method="POST" action="/management/mvc-management/controller/portal.xwi_menu.listar_menu_carpeta.json">
+            <input name="p_activa" value="S" />
+        </form>
+        <form name="onFormLoad" frC-Callback="onFormLoad" frC-AutoLoad="true"></form>
+    </div>
+
+    <!-- Modal editar gestión perfil -->
+    <div class="container formNuevoEditarGestionPerfil text-center">
+        <form name="gestionPerfil" method="POST" frC-Callback="gestionPerfil"
+            action="/management/mvc-management/controller/portal.xwi_perfil.guardar_perfil.json">
+            <input type="hidden" name="p_flag" />
+            <div class="md-form">
+                <input type="text" class="form-control" id="codigoGestionPerfil" name="p_codpfl" maxlength="10"
+                    required />
+                <label for="p_codpfl">Código</label>
+            </div>
+            <div class="md-form">
+                <input type="text" class="form-control" id="descripcionGestionPerfil" name="p_nombre" maxlength="50"
+                    required />
+                <label for="p_nombre">Descripción</label>
+            </div>
+            <div class="md-form">
+                <select class="form-control custom-select" id="activo" name="p_activo" required>
+                    <option value="S">Sí</option>
+                    <option value="N">No</option>
+                </select>
+                <label for="p_activo" class="active">Activo</label>
+            </div>
+
+            <button type="submit" id="okfunction" class="btn btn-primary">Guardar</button>
+            <button type="button" id="cancelfunction" class="btn btn-default"
+                onclick="cerrarModalIE($('#myModal'));">Cancelar
+            </button>
+        </form>
+        <form name="controlEdicionPerfil" class="dn" frC-Callback="mostrarPerfil" frC-AutoLoad="true"></form>
+    </div>
+
+    <!-- Modal detalle gestión perfil -->
+    <div class="formDetalleGestionPerfil text-center">
+        <h6 class="text-left">Listado de Perfiles</h6>
+        <div class="listado">
+            <div class="row">
+                <div class="col-1">Código</div>
+                <div class="col-3">Nombre</div>
+                <div class="col-4">Empresa/Base</div>
+                <div class="col-2">¿Heredado?</div>
+                <div class="col-2">¿Nómina?</div>
+            </div>
+            <div class="listaUsuarioPerfil">
+
+            </div>
+        </div>
+        <div class="seccionOpcionesMenu">
+            <h6 class="text-left">Opciones de Menú:</h6>
+            <div class="listado listaOpcionPerfil">
+
+            </div>
+        </div>
+        <form name="detalleUsuarioPerfil" class="dn" frC-Callback="detalleUsuarioPerfil" method="POST"
+            action="/management/mvc-management/controller/portal.xwi_perfil.listar_usuarios_perfil.json">
+            <input name="p_codpfl">
+        </form>
+        <form name="detalleOpcionPerfil" class="dn" frC-Callback="detalleOpcionPerfil" method="POST"
+            action="/management/mvc-management/controller/portal.xwi_perfil.listar_opciones_menu.json">
+            <input name="p_codpfl">
+        </form>
+        <form name="onLoadDetalle" class="dn" frC-Callback="onLoadDetalle" method="POST" frC-AutoLoad="true"></form>
+    </div>
+
+    <!-- Modal mensaje borrar -->
+    <div class="container mensajeBorrar">
+        <div>
+            <p>¿Está seguro que desea eliminar el registro?</p>
+        </div>
+    </div>
+
+    <!-- Modal asignacion empleado -->
+    <div class="container asignacionEmpleado">
+        <form>
+            <label>Niveles Principales</label>
+            <div style="min-height: 600px" class="col arbolModalDepartamento margenArbol input-tree">
+                <ul class="arbolDepartamento"></ul>
+            </div>
+            <!--<div class="md-form row">
+                <div class="cuerpoAsignacion">
+                        
+                     <button type="button" class="masAtencionEmpleado col-1">
+                        <i class="material-icons masAtencionEmpleado" onclick="selectsAsinacionEmpleados();">add</i>
+                    </button>
+                    <div class="grupoSelects row col">
+                        <div class="col">
+                            <select class="form-control custom-select" id="opcionMenu">
+                                <option value="BUKRS">Sociedad</option>
+                                <option value="TRFAR">Convenio</option>
+                                <option value="KOKRS">Centro Coste</option>
+                                <option value="PERNR">Persona</option>
+                                <option value="ORGEH">Unidad Organizativa</option>
+                                <option value="ABKRS">Área de Nómina</option>
+                            </select>
+                            <label for="opcionMenu" class="active">Menú</label>
+                        </div>
+                        <div class="col">
+                            <select class="form-control custom-select" id="opcionMenu2"></select>
+                            <label for="opcionMenu2">Submenú</label>
+                        </div>
+                    </div> 
+                </div>
+            </div>-->
+        </form>
+        <form name="datosPerfil" class="dn" method="POST" frC-Callback="datosPerfil"
+            action="/management/mvc-management/controller/portal.xwi_perfil.listar_arbol_decision.json">
+            <input type="text" name="p_codgrp" value="PERFIL">
+            <input type="text" name="p_subgrp" value="">
+        </form>
+        <form name="onLoadPerfil" class="dn" frC-AutoLoad="true" frC-Callback="onLoadPerfil"></form>
+    </div>
+
+    <!-- Modal opciones perfil -->
+    <div class="container opcionesPerfil text-center">
+        <div class="tituloConfig">Perfiles</div>
+        <div style="text-align:left;margin:20px 20px;">
+            <strong>NOTA:</strong> Para cambiar perfiles de la sección "Seleccionables" haga doble click y pasará a la
+            sección "Seleccionados",
+            y viceversa.
+        </div>
+        <div class="container">
+            <form name="perfilesOpcionesMenu" method="POST" frC-Callback="perfilesOpcionesMenu"
+                action="/management/mvc-management/controller/portal.xwi_menu.guardar_perfil_opcion.json">
+                <div class="row" style="min-height: 100px;">
+                    <div class="col">
+                        <label for="l_codpfl">Seleccionables:</label>
+                        <select class="selectpicker perfilesCargados" multiple data-toggle="tooltip"
+                            data-placement="top" title="Listado de perfiles activos" name="l_codpfl"
+                            frC-indexResponse="root.perfil:nombre,codpfl"
+                            frC-Store="/management/mvc-management/controller/portal.xwi_perfil.listar_perfil.json?p_activo=S"
+                            frC-Submit="false">
+                        </select>
+                    </div>
+
+                    <div class="col">
+                        <label for="p_codpfl">Seleccionados:</label>
+                        <input name="p_codmop" type="" hidden />
+                        <select class="selectpicker perfilesSeleccionados" multiple data-toggle="tooltip"
+                            data-placement="top" title="Perfiles asociados a la opción seleccionada" name="p_codpfl"
+                            frC-Dependency="l_codpfl" frC-Reference="p_codmop:p_codmop"
+                            frC-indexResponse="root.perfilOpcion:codpfl" frC-getAllSeparator="@"
+                            frC-Store="/management/mvc-management/controller/portal.xwi_menu.listar_perfil_opcion.json">
+                        </select>
+                    </div>
+                </div>
+                <button type="submit" id="okfunction" class="btn btn-primary">Guardar</button>
+                <button type="button" id="cancelfunction" class="btn btn-default"
+                    onclick="cerrarModalIE($('#myModal'));">Cancelar
+                </button>
+            </form>
+            <form name="controlEdicionPerfilOpciones" class="dn" frC-Callback="controlEdicionPerfilOpciones"
+                frC-AutoLoad="true"></form>
+        </div>
+    </div>
+
+    <!-- Modal gestión carpetas -->
+    <div class="container modalGestionCarpetas text-center">
+        <form name="obtenerArbolModalGestionCarpetas" class="dn" frC-Callback="obtenerArbolModalGestionCarpetas"
+            frC-AutoLoad="true" method="POST"
+            action="/management/mvc-management/controller/portal.xwi_menu.listar_menu_carpeta.json"></form>
+        <form name="elementoGestionCarpeta" method="POST" frC-Callback="elementoGestionCarpeta"
+            action="/management/mvc-management/controller/portal.xwi_menu.guardar_menu_carpeta.json">
+            <input type="hidden" name="p_flag" />
+            <input type="hidden" name="p_padre_nombre" frC-Submit='false' />
+            <div class="md-form">
+                <input type="text" class="form-control" id="codigoCarpeta" maxlength="10" name="p_codmca" />
+                <label for="p_codmca">Código</label>
+            </div>
+            <div class="md-form">
+                <input type="text" class="form-control" id="nombreCarpeta" maxlength="100" name="p_nombre" required />
+                <label for="p_nombre">Nombre</label>
+            </div>
+            <div class="md-form">
+                <input type="text" class="form-control" id="txtLibre" maxlength="200" name="p_hlplbl" />
+                <label for="p_hlplbl">Texto libre</label>
+            </div>
+            <div class="md-form padreModalGestionCarpeta">
+                <input type="hidden" name="p_parent" />
+                <input type="text" class="form-control" frC-Submit='false' id="padre" name="p_padre"
+                    onclick="desplegarArbol()" required readonly />
+                <label for="p_padre" class="activa">Padre</label>
+            </div>
+            <div class="col dn arbolModalGestionCarpeta margenArbol">
+                <ul class="treeModalGestionCarpeta">
+                </ul>
+            </div>
+            <div class="md-form">
+                <select class="form-control custom-select" id="activo" name="p_activa" required>
+                    <option value="S">Sí</option>
+                    <option value="N">No</option>
+                </select>
+                <label for="p_activa" class="active">Activo</label>
+            </div>
+            <div class="md-form">
+                <input type="number" min="0" class="form-control" id="posicion" name="p_posici" />
+                <label for="p_posici">Posición</label>
+            </div>
+
+
+            <div class="md-form minh-25px">
+                <div class="form-check checkbox-slider--b-flat">
+                    <label>
+                        <input name="p_hidden" type="checkbox">
+                        <span>&nbsp;Carpeta oculta</span>
+                    </label>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Guardar</button>
+            <button type="button" class="btn btn-default" onclick="cerrarModalIE($('#myModal'));">Cancelar</button>
+        </form>
+        <form name="rellenarModalCarpeta" class="dn" frC-Callback="rellenarModalCarpeta" frC-AutoLoad="true"></form>
+    </div>
+
+    <!-- Modal cajas aplicaciones -->
+    <div class="nuevaCajaApp hoverable col-12 col-sm-6 col-md-4 col-lg-2">
+        <div class="box-title titulo textoLargo" multiple data-toggle="tooltip" data-placement="top" title="{{des}}">
+            <div id="EST{{cod}}" class="estrella {{favsel}}" />
+            <div class="box-title-txt textoLargo">{{des}}</div>
+        </div>
+        <div class="parrafo" title="{{search}}">
+            <div class="row">
+                <div class="col-auto iconoCajas">
+                    <img style="width:50px; height:50px" src="/estatico/portal/opcionmenu/{{icomopInt}}">
+                </div>
+                <div class="col">
+                    <span>{{search}}</span>
+                </div>
+            </div>
+        </div>
+        <div class="botonCaja">
+            <button id="{{cod}}-alter" class="btn-secn" codopc="{{cod}}" type="button" up="{{_up}}" url="{{urlaux}}"
+                prp="{{newcss}}">{{desbtn}}
+            </button>
+            <button id="{{cod}}-main" class="btn-main" codopc="{{cod}}" type="button" up="{{_up}}" url="{{url}}"
+                prp="{{newcss}}">Acceder »
+            </button>
+        </div>
+    </div>
+
+    <!-- Modal datos usuario -->
+    <div class="container modalDatosUsuario">
+        <div class="row">
+            <div class="col-3">
+                <img src="res/img/user.png" alt="">
+            </div>
+            <div class="col">
+                <form name="datUsrListinTlf" frC-Callback="datUsrListinTlf" frC-AutoLoad="true">
+                    <div class="md-form">
+                        <input type="text" class="form-control" readonly disabled name='nomemp'>
+                        <label class="active">
+                            <u>Empresa</u>:</label>
+                    </div>
+                    <div class="md-form row">
+                        <div class="col-6">
+                            <input type="text" class="form-control" readonly disabled name='nomdiv'>
+                            <label class="active margenIzq20">
+                                <u>División</u>:</label>
+                        </div>
+                        <div class="col-6">
+                            <input type="text" class="form-control" readonly disabled name='nomsdv'>
+                            <label class="active margenIzq20">
+                                <u>Subdivisión</u>:</label>
+                        </div>
+                    </div>
+                    <div class="md-form">
+                        <input type="text" class="form-control" readonly disabled name='nomdep'>
+                        <label class="active">
+                            <u>Departamento</u>:</label>
+                    </div>
+
+                    <div class="md-form row">
+                        <div class="col-4 movilEmpresa">
+                            <input type="text" class="form-control" readonly disabled name='movemp'>
+                            <label class="active margenIzq20">
+                                <u>Móvil de empresa</u>:</label>
+                        </div>
+                        <div class="col-4">
+                            <input type="text" class="form-control" readonly disabled name='tlfemp'>
+                            <label class="active margenIzq20">
+                                <u>Teléfono</u>:</label>
+                        </div>
+                        <div class="col-4">
+                            <input type="text" class="form-control" readonly disabled name='extusr'>
+                            <label class="active margenIzq20">
+                                <u>Extensión</u>:</label>
+                        </div>
+                    </div>
+                    <div class="md-form">
+                        <input type="text" class="form-control" readonly disabled name='email'>
+                        <label class="active">
+                            <u>E-mail</u>:</label>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal anuncio -->
+    <div class="container modalAnuncio">
+        <form name="datosAnuncio" frC-Callback="datosAnuncio" frC-AutoLoad="true">
+            <div class="row">
+                <div class="col">
+                    <div class="row imagenesModalAnunciosContainer">
+                        <img class="imagenesModalAnuncios" src="img" alt="">
+                    </div>
+                    <a href="fichero" download>
+                        <div style="text-align: center;" class="imgPdf"></div>
+                    </a>
+                    <div class="row">
+                        <div class="col">De:
+                            <frC-Graft name="nombre"></frC-Graft>
+                        </div>
+                        <div class="col text-right">
+                            <frC-Graft name="feccre"></frC-Graft>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <p class="descripcionAnuncio contorlEspaciosDes">
+                            <frC-Graft name="txtdoc"></frC-Graft>
+                        </p>
+                    </div>
+                    <div class="row">
+                        <div class="col">Tel.:
+                            <frC-Graft name="tlfemp"></frC-Graft>
+                        </div>
+                        <div class="col text-right">E-mail:
+                            <frC-Graft name="email"></frC-Graft>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!-- Modal anuncio sin Imagen -->
+    <div class="container modalAnuncioSinImagen">
+        <form name="datosAnuncio" frC-Callback="datosAnuncio" frC-AutoLoad="true">
+            <div class="row">
+                <div class="col">
+                    <div class="row imagenesModalAnunciosContainerSinImagen">
+                        <img class="imagenesModalAnuncios" src="img" alt="">
+                    </div>
+                    <a href="fichero" download>
+                        <div style="text-align: center;" class="imgPdf"></div>
+                    </a>
+                    <div class="row">
+                        <div class="col">De:
+                            <frC-Graft name="nombre"></frC-Graft>
+                        </div>
+                        <div class="col text-right">
+                            <frC-Graft name="feccre"></frC-Graft>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <p class="descripcionAnuncio contorlEspaciosDes">
+                            <frC-Graft name="txtdoc"></frC-Graft>
+                        </p>
+                    </div>
+                    <div class="row">
+                        <div class="col">Tel.:
+                            <frC-Graft name="tlfemp"></frC-Graft>
+                        </div>
+                        <div class="col text-right">E-mail:
+                            <frC-Graft name="email"></frC-Graft>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!-- Modal insertar politicas -->
+    <div class="container formInsertarModificarPoliticaRGPD text-center">
+        <form name="gestionPoliticaRGPD" method="POST" frC-Callback="gestionPoliticaRGPD"
+            action="/management/mvc-management/controller/portal.xwi_rgpd.guardar_politica_rgpd.json">
+            <input type="text" name="p_chkreq" value="S" class="dn" />
+            <input type="text" name="p_chkact" value="S" class="dn" />
+            <div class="row">
+                <div class="md-form col">
+                    <input type="text" class="form-control" name="p_codpol" readonly disabled />
+                    <label class="labelPoliticas" for="p_codpol">Código Política</label>
+                </div>
+                <div class="md-form col">
+                    <input type="text" class="form-control" name="p_nomcor" maxlength="30" required />
+                    <label class="labelPoliticas" for="p_nomcor">Nombre Corto</label>
+                </div>
+            </div>
+            <div class="row rowPoliticas">
+                <div class="md-form col">
+                    <input type="text" class="form-control" name="p_nomlar" required />
+                    <label class="labelPoliticas" for="p_nomlar">Nombre Largo</label>
+                </div>
+            </div>
+            <div class="row rowPoliticas">
+                <div class="md-form col">
+                    <input type="text" class="form-control" name="p_period" required />
+                    <label class="labelPoliticas" for="p_period">Período</label>
+                </div>
+                <div class="md-form col">
+                    <input type="text" class="form-control" name="p_vesion" required disabled />
+                    <label class="labelPoliticas active" for="p_vesion">Versión</label>
+                </div>
+                <div class="md-form col">
+                    <input type="text" class="form-control" name="p_chkacc" required disabled />
+                    <label class="labelPoliticas active" for="p_chkacc">Publicada</label>
+                </div>
+                <div class="md-form col">
+                    <input type="text" class="form-control" name="p_fechcr" readonly disabled />
+                    <label class="labelPoliticas active" for="p_fechcr">Creación</label>
+                </div>
+                <div class="md-form col">
+                    <input type="text" class="form-control" name="p_fechap" readonly disabled />
+                    <label class="labelPoliticas" for="p_fechap">Publicación</label>
+                </div>
+            </div>
+            <div class="md-form">
+                <div>
+                    <label class="labelPoliticas active" for="p_entrad">Entradilla</label>
+                </div>
+                <br>
+                <textarea name="p_entrad" class="entradillaPolitica" maxlength="500" required></textarea>
+            </div>
+            <div class="md-form">
+                <div>
+                    <label class="labelPoliticas active" for="p_txhtml">Contenido</label>
+                    <div class="divLapizPoliticas dn"></div>
+                </div>
+                <br>
+                <textarea id="textoPolitica" name="p_txhtml" class="txhtmlPoliticaRGPD" required></textarea>
+            </div>
+            <button type="button" class="btn btn-primary publicarFunction">Publicar</button>
+            <button type="button" class="btn btn-info guardarFunction">Guardar</button>
+            <button type="button" class="btn btn-default cancelarFunction">Cancelar</button>
+        </form>
+        <form name="eventosBotones" class="dn" frC-Callback="eventosBotones" frC-AutoLoad="true"></form>
+        <form name="mostrarDatosPolitica" class="dn" frC-Callback="mostrarDatosPolitica" frC-AutoLoad="true"></form>
+        <form name="editorTexto" class="dn" frC-Callback="editorTexto" frC-Autoload="true"></form>
+        <form name="bloquearEditor" class="dn" frC-Callback="bloquearEditor" frC-Autoload="true"></form>
+    </div>
+
+    <!-- Modal exclusiones -->
+    <div class="container formNuevoEditarExclusion text-center">
+        <form name="gestionExclusiones" method="POST" frC-Callback="gestionExclusiones"
+            action="/management/mvc-management/controller/portal.xwi_telefonia_movil.gestion_usuario_exclusion.json">
+            <input type="hidden" name="p_pkctex" />
+            <input type="hidden" name="p_pkcusr" />
+            <input type="hidden" name="p_pkfhst" />
+            <input type="hidden" name="p_opflag" />
+
+            <div class="md-form row">
+                <div class="md-form col">
+                    <input type="text" class="form-control" id="codigoUsuario" name="p_codusr" maxlength="10"
+                        required />
+                    <label for="p_codusr" class="activa active">Código de Usuario</label>
+                </div>
+                <div class="md-form col">
+                    <input type="text" class="form-control" id="nombreUsuario" readonly />
+                    <label class="activa active">Nombre de Usuario</label>
+                </div>
+            </div>
+            <div class="md-form row">
+                <div class="md-form col datefield">
+                    <input type="date" name="p_fdesde" class="inputdate-unstyled" required />
+                    <label for="p_fdesde" class="activa active">Fecha Desde</label>
+                </div>
+                <div class="md-form col datefield">
+                    <input type="date" name="p_fhasta" class="inputdate-unstyled" required />
+                    <label for="p_fhasta" class="activa active">Fecha Hasta</label>
+                </div>
+                <div class="md-form col">
+                    <select class="form-control custom-select tipoExclusionModalSelect" data-toggle="tooltip"
+                        data-placement="top" title="Tipo de exclusión" name="p_codtex"
+                        frC-indexResponse="root.texlist:destex,codtex"
+                        frC-Store="/management/mvc-management/controller/portal.xwi_telefonia_movil.listar_tipo_exclusion.json"
+                        required>
+                    </select>
+                    <label for="p_codtex" class="activa active">Tipo de Exclusión</label>
+                </div>
+            </div>
+            <button type="submit" id="okfunction" class="btn btn-primary">Guardar</button>
+            <button type="button" id="cancelfunction" class="btn btn-default"
+                onclick="cerrarModalIE($('#myModal'));">Cancelar
+            </button>
+        </form>
+        <form name="initModalExclusiones" class="dn" frC-Callback="initModalExclusiones" frC-AutoLoad="true"
+            method="POST">
+        </form>
+    </div>
+
+    <!-- Modal Beneficiarios -->
+    <div class="container formNuevoBeneficiario">
+        <div class="col">
+            <form name="addBeneficiario" frC-Callback="addBeneficiario">
+                <div class="md-form row">
+                    <div class="col">
+                        <select id="comboParentesco" name="pparen" class="form-control" frC-indexResponse="root:des,cod"
+                            frC-Store="/management/mvc-management/controller/newintra.xwi_personal.xlist$parentesco.json?p_ctlcbk="
+                            required></select>
+                        <label for="pparen" class="active">Parentesco</label>
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" name="nombre" maxlength="40" required />
+                        <label for="nombre">Nombre</label>
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" name="apell1" maxlength="40" required />
+                        <label for="apell1">1er Apellido</label>
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" name="apell2" maxlength="40" />
+                        <label for="apell2">2do Apellido</label>
+                    </div>
+                </div>
+                <div class="md-form row">
+                    <div class="col">
+                        <input id="fechaNacBene" type="date" class="form-control" name="fecnac" required />
+                        <label for="fecnac" class="active">Fecha Nacimiento</label>
+                    </div>
+                    <div class="col">
+                        <select class="form-control" name="tnif" required>
+                            <option value="1">1 - DNI (NIF)</option>
+                            <option value="2">2 - Pasaporte</option>
+                            <option value="3">3 - Tarjeta de Residente Comunitario</option>
+                            <option value="4">4 - Permiso de Residente y Trabajo</option>
+                            <option value="6">5 - Nº de Identificación de Extranjero</option>
+                            <option value="-">6 - Sin Identificador</option>
+                        </select>
+                        <label class="active" for="tnif">Tipo Documento</label>
+                    </div>
+                    <div class="col">
+                        <input id="dniBene" type="text" class="form-control" name="nif" maxlength="20" required />
+                        <label for="nif">Nº Documento</label>
+                    </div>
+                </div>
+                <div class="md-form row">
+                    <div class="col">
+                        <label for="docum" class="active"></label>
+                        <div>
+                            <button type="button" class="" id="botonAdjuntarArchivo">
+                                <span>Acreditación de Parentesco</span>
+                            </button>
+                            <input type="text" class="form-control" id="adjuntarArchivoBeneficiario" name="p_docben"
+                                disabled />
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Añadir</button>
+                <!-- <button type="button" id="cancelfunction" class="btn btn-default" onclick="cerrarModalIE($('#myModal'));">Cancelar</button> -->
+            </form>
+        </div>
+        <form name="eventosFormularioNuevoBeneficiario" frC-Autoload="true"
+            frC-Callback="eventosFormularioNuevoBeneficiario"></form>
+    </div>
+
+    <div class="container confirmarBorrarPerfil">
+        Confirma que desea borrar la condición del arbol? Si lo borra también se eliminaran todas las condiciones
+        relacionadas.
+    </div>
+
+    <div class="container infoMasTardePoliticaRGPD entradillaPoliticaRGPD">
+        No te preocupes si en estos momentos no puedes dedicarle unos minutos a la lectura de la información que te
+        hemos facilitado y que debes aceptar. En unos días, cuando accedas de nuevo al portal volveremos a mostrarte la
+        ventana con las condiciones para que finalmente puedas aceptarlas
+    </div>
+
+    <div class="container procedimientos-cae-excedenlicen">
+        <div class="card card-body bg-light modal-info-panel-0">
+            <ul align="justify">
+                <li>Lea detenidamente este procedimiento y en caso de que cualquier apartado le genere alguna duda,
+                    contacte con Servicios al empleado para que puedan solventarla antes de realizar la solicitud.
+                </li>
+                <br>
+                <li>El formulario de solicitud se deberá comunicar a Servicios al Empleado con al menos la antelación
+                    mínima que establezca la normativa de aplicación en cada tipo de excedencia a solicitar por el
+                    empleado.
+                </li>
+                <br>
+                <li>Cada tipo de excedencia conlleva la aportación de documentación que acredite el nacimiento del
+                    derecho de acuerdo al procedimiento de la empresa, siendo necesario cumplir cada requisito para su
+                    tramitación.
+                </li>
+                <div class="elem-by-codpla" codpla="6">
+                    <br>
+                    <li>La solicitud del/la TCP deberá ser aprobada por Servicios al empleado y jefatura/responsable
+                        del/la TCP, en base a la normativa y procedimientos internos de aplicación, para poder ser
+                        tramitada.
+                    </li>
+                </div>
+                <div class="elem-by-codpla" codpla="7">
+                    <br>
+                    <li>La solicitud del/la Tripulante deberá ser aprobada por Servicios al empleado y
+                        jefatura/responsable del/la Tripulante, en base a la normativa y procedimientos internos de
+                        aplicación, para poder ser tramitada.
+                    </li>
+                </div>
+                <div class="elem-by-codpla" codpla="1,4,5">
+                    <br>
+                    <li>La solicitud del/la empleado/a deberá ser aprobada por Servicios al empleado y
+                        jefatura/responsable del/la empleado/a, en base a la normativa y procedimientos internos de
+                        aplicación, para poder ser tramitada.
+                    </li>
+                </div>
+                <div class="elem-by-codpla" codpla="6">
+                    <br>
+                    <li>El/la TCP solo podrá hacer una solicitud de excedencia de forma simultánea, no pudiendo hacer
+                        una nueva hasta que esta se apruebe o rechace por parte de la empresa, salvo anulación por parte
+                        del/la tcp.
+                    </li>
+                </div>
+                <div class="elem-by-codpla" codpla="7">
+                    <br>
+                    <li>El/la Tripulante solo podrá hacer una solicitud de excedencia de forma simultánea, no pudiendo
+                        hacer una nueva hasta que esta se apruebe o rechace por parte de la empresa, salvo anulación por
+                        parte del/la Tripulante.
+                    </li>
+                </div>
+                <div class="elem-by-codpla" codpla="1,4,5">
+                    <br>
+                    <li>El/la empleado/a solo podrá hacer una solicitud de excedencia de forma simultánea, no pudiendo
+                        hacer una nueva hasta que esta se apruebe o rechace por parte de la empresa, salvo anulación por
+                        parte del/la empleado/a.
+                    </li>
+                </div>
+                <br>
+                <li>Las excedencias por guarda legal de un familiar tendrán una duración máxima de un año prorrogable de
+                    acuerdo al procedimiento y normativa de aplicación.
+                </li>
+                <br>
+                <li>Para la prórroga de excedencia por GL, será necesario remitir de nuevo la documentación que acredite
+                    el nacimiento del derecho, iniciándose de nuevo todo el proceso.
+                </li>
+                <div class="elem-by-codpla" codpla="1,4,5">
+                    <br>
+                    <li>La solicitud y concesión de Licencias no retribuidas o Permisos no retribuidos estarán
+                        supeditadas a la normativa reguladora de aplicación.
+                    </li>
+                </div>
+                <div class="elem-by-codpla" codpla="6">
+                    <br>
+                    <li>Una vez tramitada la solicitud de excedencia, el/la TCP recibirá carta firmada por la Dirección
+                        de RRHH, a través de su casillero digital, con copia a su jefatura/responsable
+                    </li>
+                </div>
+                <div class="elem-by-codpla" codpla="7">
+                    <br>
+                    <li>Una vez tramitada la solicitud de excedencia, el/la Tripulante recibirá carta firmada por la
+                        Dirección de RRHH, con copia a su jefatura/responsable
+                    </li>
+                </div>
+                <div class="elem-by-codpla" codpla="1,4,5">
+                    <br>
+                    <li>Una vez tramitada la solicitud de excedencia, el/la empleado/a recibirá carta firmada por la
+                        Dirección de RRHH, con copia a su jefatura/responsable
+                    </li>
+                </div>
+                <br>
+                <li>Una vez tramitada la excedencia, cualquier tipo de solicitud posterior (reducción de jornada o
+                    excedencia) que tenga aprobada y/o pendiente de iniciar quedará anulada, debiendo iniciar de nuevo
+                    el trámite de solicitud si sigue interesado/a.
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container procedimientos-cae-reduccjor">
+        <div class="card card-body bg-light modal-info-panel-0">
+            <ul align="justify">
+                <li>Lea detenidamente este procedimiento y en caso de que cualquier apartado le genere alguna duda,
+                    contacte con Servicios al empleado para que puedan solventarla antes de realizar la solicitud.
+                </li>
+                <br>
+                <li>Cada tipo de reducción de jornada conlleva la aportación de documentación que acredite el nacimiento
+                    del derecho de acuerdo al procedimiento de la empresa, siendo necesario cumplir cada requisito para
+                    su tramitación.
+                </li>
+                <div class="elem-by-codpla" codpla="11">
+                    <br>
+                    <li>El formulario de solicitud se deberá comunicar a Servicios al Empleado con al menos la
+                        antelación mínima que establezca la normativa de aplicación en cada tipo de reducción a
+                        solicitar por el/la TCP, siendo aconsejable presentarla con antelación de mes y medio o dos
+                        meses por si se requiere nueva documentación a aportar o hay algún defecto que resolver.
+                    </li>
+                </div>
+                <div class="elem-by-codpla" codpla="12">
+                    <br>
+                    <li>El formulario de solicitud se deberá comunicar a Servicios al Empleado con al menos la
+                        antelación mínima que establezca la normativa de aplicación en cada tipo de reducción a
+                        solicitar por el/la Tripulante, siendo aconsejable presentarla con antelación de mes y medio o
+                        dos meses por si se requiere nueva documentación a aportar o hay algún defecto que resolver.
+                    </li>
+                </div>
+                <div class="elem-by-codpla" codpla="8,9,10">
+                    <br>
+                    <li>El formulario de solicitud se deberá comunicar a Servicios al Empleado con al menos la
+                        antelación mínima que establezca la normativa de aplicación en cada tipo de reducción a
+                        solicitar por el/la empleado/a, siendo aconsejable presentarla con antelación de mes y medio o
+                        dos meses por si se requiere nueva documentación a aportar o hay algún defecto que resolver.
+                    </li>
+                </div>
+                <div class="elem-by-codpla" codpla="11">
+                    <br>
+                    <li>El número de días de RJ será proporcional si la RJ no se aplica a todo el mes natural.
+                    </li>
+                </div>
+                <div class="elem-by-codpla" codpla="11">
+                    <br>
+                    <li>La solicitud del/la TCP deberá ser aprobada por Servicios al empleado y jefatura/responsable
+                        del/la TCP, en base a la normativa y procedimientos internos de aplicación, para poder ser
+                        tramitada.
+                    </li>
+                </div>
+                <div class="elem-by-codpla" codpla="12">
+                    <br>
+                    <li>La solicitud del/la Tripulante deberá ser aprobada por Servicios al empleado y
+                        jefatura/responsable del/la Tripulante, en base a la normativa y procedimientos internos de
+                        aplicación, para poder ser tramitada.
+                    </li>
+                </div>
+                <div class="elem-by-codpla" codpla="11">
+                    <br>
+                    <li>Una vez que la solicitud ha sido aprobada por Servicios al empleado y jefatura/responsable
+                        del/la TCP recibirá un correo electrónico donde se le informará que ya puede terminar de
+                        tramitar su solicitud, es decir, podrá acceder a la disponibilidad de cupos de descanso mensual
+                        para el periodo total que abarque la RJ solicitado.
+                    </li>
+                </div>
+                <div class="elem-by-codpla" codpla="12">
+                    <br>
+                    <li>Una vez que la solicitud ha sido aprobada por Servicios al empleado y jefatura/responsable
+                        del/la Tripulante recibirá un correo electrónico donde se le informará que ya puede terminar de
+                        tramitar su solicitud, es decir, podrá acceder a la disponibilidad de intervalos de concreción
+                        horaria para cada mes del periodo total que abarque la RJ solicitada.
+                    </li>
+                </div>
+                <div class="elem-by-codpla" codpla="11">
+                    <br>
+                    <li>Desde el momento en el que la solicitud sea aprobada por Servicios al empleado y jefatura
+                        /responsable, el/la TCP tendrá 5 días naturales, para elegir el/los cupos de descanso disponible
+                        para el periodo total que abarque la RJ. Pasado ese tiempo si no hay respuesta por parte del/la
+                        TCP, la solicitud se anulará.
+                    </li>
+                </div>
+                <div class="elem-by-codpla" codpla="12">
+                    <br>
+                    <li>Desde el momento en el que la solicitud sea aprobada por Servicios al empleado y
+                        jefatura/responsable, el/la Tripulante tendrá 5 días naturales, para elegir el/los intervalos de
+                        concreción horaria disponible para el periodo total que abarque la RJ. Pasado ese tiempo si no
+                        hay respuesta por parte del/la Tripulante, la solicitud se anulará.
+                    </li>
+                </div>
+                <div class="elem-by-codpla" codpla="8,9,10">
+                    <br>
+                    <li>La solicitud del/la empleado/a deberá ser aprobada por Servicios al empleado y
+                        jefatura/responsable del/la empleado/a, en base a la normativa y procedimientos internos de
+                        aplicación, para poder ser tramitada.
+                    </li>
+                </div>
+                <div class="elem-by-codpla" codpla="11">
+                    <br>
+                    <li>El/la TCP solo podrá hacer una solicitud de reducción de jornada de forma simultánea, no
+                        pudiendo hacer una nueva hasta que esta se apruebe o rechace por parte de la empresa, salvo que
+                        el/la tcp anule dicha solicitud.
+                    </li>
+                </div>
+                <div class="elem-by-codpla" codpla="12">
+                    <br>
+                    <li>El/la Tripulante solo podrá hacer una solicitud de reducción de jornada de forma simultánea, no
+                        pudiendo hacer una nueva hasta que esta se apruebe o rechace por parte de la empresa, salvo que
+                        el/la Tripulante anule dicha solicitud.
+                    </li>
+                </div>
+                <div class="elem-by-codpla" codpla="8,9,10">
+                    <br>
+                    <li>El/la empleado/a solo podrá hacer una solicitud de reducción de jornada de forma simultánea, no
+                        pudiendo hacer una nueva hasta que esta se apruebe o rechace por parte de la empresa, salvo que
+                        el/la empleado/a anule dicha solicitud.
+                    </li>
+                </div>
+                <br>
+                <li>Las RJ por guarda legal de un familiar se concederán por un período máximo de un año
+                </li>
+                <br>
+                <li>Finalizada la RJ GL (de un menor, de un familiar…) que se tenga tramitada, si se realiza otra
+                    solicitud, se deberá aportar de nuevo la documentación necesaria, iniciándose de nuevo todo el
+                    proceso.
+                </li>
+                <div class="elem-by-codpla" codpla="11">
+                    <br>
+                    <li>Aquellos/as TCPs que quieran modificar una RJ activa, en cuanto al porcentaje de reducción o
+                        periodo de descanso, deberán tramitar primero la solicitud de finalización de esa RJ activa y
+                        proceder a pedir la nueva en las condiciones que le interese. Una vez el/la TCP compruebe el
+                        cupo disponible para la nueva solicitud, de no estar interesado podrá anular las peticiones y
+                        mantener la RJ activa que estaba disfrutando.
+                    </li>
+                </div>
+                <div class="elem-by-codpla" codpla="12">
+                    <br>
+                    <li>Aquellos/as Tripulante/s que quieran modificar una RJ activa, en cuanto a la concreción horaria,
+                        deberán tramitar primero la solicitud de finalización de esa RJ activa y proceder a pedir la
+                        nueva en las condiciones que les interese. Una vez el/la Tripulante compruebe la concreción
+                        disponible para la nueva solicitud, de no estar interesado podrá anular las peticiones y
+                        mantener la RJ activa que estaba disfrutando.
+                    </li>
+                </div>
+                <div class="elem-by-codpla" codpla="8,9,10">
+                    <br>
+                    <li>Aquellos/as empleados/as que quieran modificar una RJ activa, en cuanto a la concreción horaria,
+                        deberán tramitar primero la solicitud de finalización de esa RJ activa y proceder a pedir la
+                        nueva en las condiciones que le interese.
+                    </li>
+                </div>
+                <div class="elem-by-codpla" codpla="8,9,10">
+                    <br>
+                    <li>La solicitud y concesión de RJ voluntarias estarán supeditadas a la normativa reguladora de
+                        aplicación.
+                    </li>
+                </div>
+                <div class="elem-by-codpla" codpla="11">
+                    <br>
+                    <li>Una vez tramitada la solicitud de reducción de jornada el empleado recibirá carta firmada por la
+                        Dirección de RRHH, a través de su casillero digital, con copia a su jefatura/responsable
+                    </li>
+                </div>
+                <div class="elem-by-codpla" codpla="12">
+                    <br>
+                    <li>Una vez tramitada la solicitud de reducción de jornada el/la Tripulante recibirá carta firmada
+                        por la Dirección de RRHH, con copia a su jefatura/responsable
+                    </li>
+                </div>
+                <div class="elem-by-codpla" codpla="8,9,10">
+                    <br>
+                    <li>Una vez tramitada la solicitud de reducción de jornada el empleado recibirá carta firmada por la
+                        Dirección de RRHH, con copia a su jefatura/responsable
+                    </li>
+                </div>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container modalConfirmacion">
+        <div class="row">
+            <div class="col"><label for="p_motivo">Razón del rechazo</label></div>
+        </div>
+        <div class="row">
+            <div class="col"><textarea name="p_motivo"
+                    style="min-height: 200px; border: 1px solid #bdbdbd !important;"></textarea>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal crear y modificar gestión notificaciones -->
+    <div class="container formCrearModificarGestionNotificaciones text-center">
+        <form name="notificacion">
+            <div class="md-form row formularioGestionNoticiafiones">
+                <div class="md-form col2">
+                    <input id="referListadoNoticiafiones" type="text" class="form-control" name="refer" required />
+                    <label for="refer">Referencia</label>
+                </div>
+                <div class="md-form col">
+                    <select id="estadoListadoNoticiafiones" class="form-control custom-select" name="estado" required
+                        disabled>
+                        <option value="200">No Leida</option>
+                        <option value="100">Leida</option>
+                    </select>
+                    <label for="estado" class="active">Estado</label>
+                </div>
+                <div class="md-form col">
+                    <input id="fechaListadoNoticiafiones" type="date" name="fecha"
+                        class="inputFechaGestionNoticiafiones" required disabled />
+                    <label for="fecha" class="activa active">Fecha</label>
+                </div>
+            </div>
+            <div class="md-form row formularioGestionNoticiafiones">
+                <div class="md-form col">
+                    <input id="asuntoListadoNoticiafiones" type="text" class="form-control" name="titulo" required />
+                    <label for="titulo">Asunto</label>
+                </div>
+            </div>
+            <div class="md-form row formularioGestionNoticiafiones">
+                <div class="md-form col">
+                    <div>
+                        <label class="labelDetalleGestionNoticiafiones active" for="detall">Detalle</label>
+                    </div>
+                    <br>
+                    <textarea id="detalleGestionNoticiafiones" name="detall" class="detalleGestionNoticiafiones"
+                        required></textarea>
+                </div>
+            </div>
+            <div class="md-form row formularioGestionNoticiafiones">
+                <div class="md-form col divAdjuntoGestionNoticiafiones">
+                    <label for="excel" class="active labelAdjuntoGestionNoticiafiones">Destino</label>
+                    <br>
+                    <div>
+                        <button type="button" id="adjuntarGestionNotificaciones">
+                            <span>Selecciona archivo</span>
+                        </button>
+                        <input id="excel" type="text" class="form-control" name="excel" frC-Submit="false" disabled
+                            required />
+                    </div>
+                </div>
+            </div>
+        </form>
+        <form name="gestionNotificacion" class="dn" frC-Callback="gestionNotificacion"></form>
+        <form name="mostrarNotificacion" class="dn" frC-Callback="mostrarNotificacion" frC-AutoLoad="true"></form>
+    </div>
+
+    <!-- Modal usuarios disponibles para pantalla nuevo usuarios -->
+    <div class="container comboUsuariosExistentes text-center">
+        <div class="textoUsuariosDisponibles">
+            Hemos encontrado otras cuentas activas disponibles en nuestra paltaforma, elige con cual quieres continuar
+        </div>
+        <div class="col">
+            <select class="selectUsuariosDisponibles form-control custom-select" data-toggle="tooltip"
+                data-placement="top" title="Usuarios" name="usuariosDisponibles">
+            </select>
+        </div>
+        <form name="cargarUsuariosCombo" class="dn" frC-Callback="cargarUsuariosCombo" frC-AutoLoad="true"></form>
+    </div>
+
+    <div class="container formNuevoEditarGestionIcono text-center">
+
+        <form name="GestionIcono" method="POST" frC-Callback="GestionIcono"
+            action="/management/mvc-management/controller/portal.xwi_icono.guardar_icono.json">
+            <div class="container">
+                <div class=" row">
+
+                    <div class=" md-form row buscadorFiltrosListado  ">
+                        <div class=" md-form co12">
+
+                            <input class=" form-control P_FECHADESDE" type="date" name="P_FECHADESDE" required />
+                            <label class="active" for="P_FECHADESDE">Fecha Desde</label>
+                        </div>
+
+
+                        <div class="md-form row">
+                            <input class="form-control" type="time" name="P_Horainicio" value="00:00" required />
+
+                            <label class="active" for="P_Horainicio">Hora Desde</label>
+                        </div>
+
+
+                        <div class="md-form row">
+
+                            <input class="  form-control P_FECHAHASTA" type="date" name="P_FECHAHASTA" required />
+
+                            <label class="active" for="P_FECHAHASTA">Fecha Hasta</label>
+                        </div>
+
+                    </div>
+                    <div class="md-form row ">
+
+                        <input class="form-control" type="time" name="P_Horafin" value="23:59" required />
+                        <label class="active" for="P_Horafin">Hora Hasta</label>
+                    </div>
+
+
+                    <div class=" md-form row buscadorFiltrosListado  ">
+
+                        <div class="md-form row ">
+                            <input class="P_TEXTO form-control " type="text" name="P_TEXTO" required />
+                            <label for="P_TEXTO" class="active">Texto</label>
+
+                        </div>
+
+                        <input class="dn P_FLAG" type="text" name="P_FLAG" />
+
+                        <input class="dn P_FINAN" type="text" name="P_FINAN" />
+                        <input class="dn P_CODICO" type="number" name="P_CODICO" readonly disabled />
+
+
+
+                        <div class="md-form row ">
+                            <button type="button" id="btnAdjuntarArchivoIcono" class="  btnAdjuntarArchivoIcono"
+                                name="adjuntararchivo" frC-Submit="false">
+                                <label for="adjuntararchivo" class="active ">Imagen </label>
+                                <span>Selecciona archivo</span>
+                            </button>
+                            <input type="text" class="addfile  " id="adjuntarArchivoIcono" name="P_IMAGEN" />
+
+                            <button type="button" id="eliminarAdjuntarArchivoicono"
+                                class=" btnRemoveAdjArchIcono  btnAdjuntarArchivo eliminarAdjuntarArchivo"
+                                name="botonborrar" frC-Submit="false">
+                                <i class="material-icons">close</i>
+                            </button>
+                        </div>
+
+
+                    </div>
+
+
+
+                </div>
+
+
+                <button type="button" class="btn btn-info ComprobarFechas">
+                    <i class="material-icons">save</i>
+                    <span>Guardar</span>
+                </button>
+            </div>
+        </form>
+
+        <form name="eventosBotonesIcono" class="dn" frC-Callback="eventosBotonesIcono" frC-AutoLoad="true"></form>
+        <form name="listadoImagenesComun" frC-Callback="listadoImagenesComun" frC-AutoLoad="true"></form>
+
+        <form name="CargarFormulatioIcono" frC-Callback="CargarFormulatioIcono" frC-AutoLoad="true"></form>
+
+        </form>
+
+
+    </div>

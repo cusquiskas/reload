@@ -1,0 +1,82 @@
+<div class="card">
+    <div class="card-header aperturaDatosPersonales nav-lvl-1" id="heading2">
+        <h5 class="mb-0">
+            <a class="collapsed" data-toggle="collapse">
+                Situación Familiar
+            </a>
+        </h5>
+    </div>
+    <div id="collapse2" class="collapse cuerpoDatosPersonales">
+        <div class="card-body">
+            <form name="initSituacionFamiliar" method="POST" class="dn" frC-Callback="initSituacionFamiliar" action="/management/mvc-management/controller/newintra.xwi_autoservicio.datfa$obtener_sit_familiar.xml"
+                frC-AutoLoad="true">
+                <input name="p_codusr">
+                <input name="p_fecsol">
+                <input name="p_perfil">
+                <input type="hidden" name="xchn" value="json">
+            </form>
+            <form name="situacionFamiliar" method="POST" frC-Callback="situacionFamiliar" action="/management/mvc-management/controller/newintra.xwi_autoservicio.datfa$guardar_datos.json">
+                <div id="situacionFamiliarForm">
+                    <div class="md-form">
+                        <select class="form-control custom-select" id="estadoCivil" name="p_codfam" disabled required>
+                            <option value="0">Soltero/a</option>
+                            <option value="1">Casado/a</option>
+                            <option value="2">Viudo/a</option>
+                            <option value="3">Divorciado/a</option>
+                            <option value="5">Separado/a</option>
+                            <option value="9">Pareja Regularizada</option>
+                        </select>
+                        <label for="p_codfam" class="active">Estado civil</label>
+                    </div>
+                    <div class="md-form d-flex dn">
+                        <input type="password" class="form-control"  name="p_password"  disabled/>
+                        <label for="p_password" class="active">Contraseña</label>
+
+                    </div>
+                    <div class="md-form d-flex dn">
+                        <input type="text" class="form-control"  name="P_xsid"  disabled/>
+                        <label for="P_xsid" class="active">XSID</label>
+
+                    </div>
+                    <div class="md-form dn" id="divFechaDesde">
+                        <input type="date" class="form-control" id="fechaDesdeFam" name="p_fdesde" disabled required/>
+                        <label for="p_fdesde" class="active">Fecha desde</label>
+                    </div>
+                    <div class="dn" id="divAdjuntar">
+                        <label for="p_docfam" class="active">Adjuntar documentación</label>
+                        <div>
+                            <button type="button" class="" id="botonAdjuntarArchivo">
+                                <span>Selecciona archivo</span>
+                            </button>
+                            <input type="text" class="form-control" id="adjuntarArchivo" name="p_docfam" disabled required/>
+                        </div>
+                    </div>
+                </div>
+                <div class="row float-right">
+                    <div class="btnModificando row dn">
+                        <button type="button" class="btn btn-outline-success" id="guardarSituacionFamiliar">
+                            <i class="material-icons">save</i>
+                            <span>Guardar</span>
+                        </button>
+                        <button type="button" class="btn btn-outline-danger" id="cancelarSituacionFamiliar">
+                            <i class="material-icons">clear</i>
+                            <span>Cancelar</span>
+                        </button>
+                    </div>
+                    <button type="button" class="btn btn-outline-warning" id="modificarSituacionFamiliar">
+                        <i class="material-icons">edit</i>
+                        <span>Modificar</span>
+                    </button>
+                    <div id="mensajeSituacionFamiliar" class="mensajeRRHH dn">
+                        Solicitud de modificación abierta para este empleado
+                    </div>
+                </div>
+            </form>
+            <form name="borrarSituacionFamiliar" class="dn" method="POST" frC-Callback="borrarSituacionFamiliar" action="/management/mvc-management/controller/newintra.xwi_autoservicio.datba$borrar_documento.json">
+                <input name="p_docfam">
+                <input type="hidden" name="xchn" value="json">
+            </form>
+        </div>
+    </div>
+</div>
+<div class="dn" id="divCargadoresIndex"></div>

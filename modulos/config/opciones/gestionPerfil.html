@@ -1,0 +1,73 @@
+<div class="card-block gestionPerfil">
+
+    <form
+        name="borrarPerfil"
+        class="dn"
+        method="POST"
+        frC-Callback="borrarPerfil"
+        action="/management/mvc-management/controller/portal.xwi_perfil.guardar_perfil.json">
+        
+        <input name="p_codpfl" required/>
+        <input name="p_flag" value="D" />
+    </form>
+
+    <h4 class="card-title">Gestión de Perfiles</h4>
+    <form
+        name="listadoPerfil"
+        method="POST"
+        frC-Callback="listadoPerfil"
+        frC-AutoLoad="true"
+        action="/management/mvc-management/controller/portal.xwi_perfil.listar_perfil.json">
+
+        <div class="container">
+            <div class="row">
+                <div class="buscadorFiltrosListado">
+                    <div class="md-form">
+                        <input type="text" name="p_nombre" maxlength="50" />
+                        <label for="p_nombre" class="activa active">Búsqueda por nombre</label>
+                    </div>
+                    <input type="text" class="dn" />
+                    <div class="md-form">
+                        <select class="form-control custom-select" name="p_activo">
+                            <option value="">Todos</option>
+                            <option value="S">Sí</option>
+                            <option value="N">No</option>
+                        </select>
+                        <label for="p_activo" class="activa active">Activo</label>
+                    </div>
+
+                    <button type="submit" class="btn btn-info">
+                        <i class="material-icons">search</i>
+                        <span>Buscar</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="datatable">
+            <table
+                class="tblGestionPerfil table table-style-01"
+                type="datatable"
+                select="selectedRow"
+                deselect="deselectedRow"
+                source="root.perfil"
+                language="ES"
+                pagination="false">
+            
+                <thead>
+                    <tr>
+                        <th data="codpfl" width="20%">Código</th>
+                        <th data="nombre" width="70%">Nombre</th>
+                        <th data="activo" width="10%">Activo</th>
+                    </tr>
+                </thead>
+            </table>
+            <div for="datatable">
+                <button class="btn btn-outline-indigo" alpulsar="clickNuevo">Nuevo</button>
+                <button class="btn btn-outline-indigo" alpulsar="clickModificar">Modificar</button>
+                <button class="btn btn-outline-danger" alpulsar="clickBorrar">Borrar</button>
+                <button class="btn btn-outline-cyan" alpulsar="clickDetalle">Detalles</button>
+                <button class="btn btn-outline-info" alpulsar="clickAsignacionEmpleado">Asignación de empleado</button>
+            </div>
+        </div>
+    </form>
+</div>

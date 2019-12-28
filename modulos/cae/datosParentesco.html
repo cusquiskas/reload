@@ -1,0 +1,104 @@
+<div class="datos-parentesco-cae">
+    <form name="initParentesco" method="POST" class="dn" frC-Callback="initParentesco"
+        action="/management/mvc-management/controller/newintra.xwi_autoservicio.datpx$obtenerparentesco.json">
+        <input type="text" class="form-control" maxlength="80" name="P_fecsol" id="P_fecsol" disabled />
+        <input type="text" class="form-control" maxlength="40" name="P_codusr" id="P_codusr" disabled />
+    </form>
+    <form name="initNacimiento" method="POST" class="dn" frC-Callback="initNacimiento"
+        action="/management/mvc-management/controller/newintra.xwi_autoservicio.datpT$obtenerTRIPULAntes.json">
+        <input type="text" class="form-control P_fecsol" maxlength="40" name="P_fecsol" disabled />
+
+        <input type="text" class="form-control P_codusr " maxlength="40" name="P_codusr" disabled />
+    </form>
+    <form name="Parentesco" method="POST">
+        <div class="tituloConfig">Estado Solicitud</div>
+        <div class="md-form row">
+            <div class="md-form col-12">
+                <div class="input-group">
+                    <input name="p_estado" class="form-control" type="text" readonly="">
+                    <label for="p_estado" class="active">Estado</label>
+                </div>
+            </div>
+        </div>
+        <!--<input type="hidden" name="P_FECSOLI" >-->
+        <div class="row">
+            <div class="col-md-6">
+                <h4 class="card-title">Datos De La Madre</h4>
+                <div class="md-form d-flex">
+                    <div class="input-group">
+                        <input type="text" class="form-control" maxlength="40" name="p_madre_name" id="p_madre_name"
+                            disabled />
+                        <label for="p_madre_name" class="nombre-madre active">Nombre Madre</label>
+                    </div>
+                </div>
+                <div class="md-form d-flex">
+                    <div class="input-group">
+                        <input type="text" class="form-control" maxlength="40" name="p_madre_ape" id="p_madre_ape"
+                            disabled />
+                        <label for="p_madre_ape" class="apellido-madre active">Apellido Madre</label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h4 class="card-title">Datos Del Padre</h4>
+                <div class="md-form d-flex">
+                    <div class="input-group">
+                        <input type="text" class="form-control" maxlength="50" name="p_padre_name" id="p_padre_name"
+                            disabled />
+                        <label for="p_padre_name" class="nombre-padre active">Nombre Padre</label>
+                    </div>
+                </div>
+                <div class="md-form d-flex">
+                    <div class="input-group">
+                        <input type="text" class="form-control" maxlength="40" name="p_padre_ape" id="p_padre_ape"
+                            disabled />
+                        <label for="p_padre_ape" class="apellido-padre active">Apellido Padre</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <form name="initNacimiento" method="POST" class="dn" frC-Callback="initNacimiento"
+        action="/management/mvc-management/controller/newintra.xwi_autoservicio.datpT$obtenerTRIPULAntes.json">
+        <input type="text" class="form-control P_fecsol" maxlength="40" name="P_fecsol" disabled />
+
+        <input type="text" class="form-control P_codusr " maxlength="40" name="P_codusr" disabled />
+    </form>
+    <form name="Nacimiento" method="POST" disabled>
+        <div class="row">
+            <div class="md-form d-flex dn">
+                <input type="password" class="form-control" name="p_password" disabled />
+                <label for="p_password" class="active">Contraseña</label>
+            </div>
+            <div class="md-form d-flex dn">
+                <input type="text" class="form-control" name="P_xsid" disabled />
+                <label for="P_xsid" class="active">XSID</label>
+            </div>
+            <div class="col-md-4">
+                <div class="md-form d-flex " id="pais_input">
+                    <select type="text" class="form-control  custom-select" name="p_nacper" id="paisnaci"
+                        frC-indexResponse="root:alter,cod"
+                        frC-Store="/management/mvc-management/controller/newintra.xwi_personal.xlist$paises.json?xchn=json&p_ctlcbk=&p_nation=&p_swicod=S"
+                        required disabled></select>
+                    <label for="p_nacper" class="active">País</label>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="md-form d-flex" id="provincia_input">
+                    <select class="form-control  custom-select" id="provinaci" name="p_proper"
+                        frC-Reference="p_pais:p_nacper" frC-indexResponse="root:des,cod"
+                        frC-Store="/management/mvc-management/controller/newintra.xwi_personal.xlist$provincias.json?xchn=json&p_ctlcbk=&p_swicod=S"
+                        required disabled></select>
+                    <label for="p_proper" class="active">Provincia</label>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="md-form d-flex">
+                    <input type="text" class="form-control" maxlength="40" name="p_nacimiento" id="p_nacimiento"
+                        required disabled />
+                    <label for="p_nacimiento" class="lugar-nacimiento">Localidad</label>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

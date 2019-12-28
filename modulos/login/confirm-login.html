@@ -1,0 +1,32 @@
+<div class="comprobarSesion container">
+    <div class="text-center">
+        <div class="card-block">
+            <form name="accionCheckLogin" method="POST" frC-Callback="accionCheckLogin">
+                <input type="hidden" name="p_codusr">
+                <input name="p_pasusr" type="hidden">
+
+                <div class="txt-conflogin">
+                    Sr./Sra. <strong id="conflogin-usrname"></strong>,
+                    debe confirmar su sesión para acceder a esta zona
+                </div>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">
+                            <i class="material-icons">lock</i>
+                        </span>
+                    </div>
+                    <input id="login-password" name="p_auxpasusr" type="password" class="form-control" placeholder="Contraseña" frC-Submit="false">                    
+                    
+                    <!-- Se pone un segundo campo de texto por que sino el formulario se submita al presionar enter -->
+                    <input type="text" hidden>
+                </div>
+            </form>                             
+            <form name="autExecuteForm" class="dn" frC-Callback="autExecuteForm" frC-autoload="true">
+                <input type="hidden" name="p_opcion">
+                <input type="hidden" name="p_path">
+                <input type="hidden" name="p_punto_partida">
+                <input type="hidden" name="p_url">
+            </form>
+        </div>
+    </div>
+</div>

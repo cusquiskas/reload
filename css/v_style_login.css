@@ -1,0 +1,320 @@
+.new-login .title, .new-login h1, .new-login h2, .new-login h3, .new-login h4, .new-login h5, .new-login .button, .new-login button, .new-login input[type=button], .new-login input[type=submit], .new-login .button-info, .new-login .header-user-module, .new-login .main-footer, .new-login .main-sidebar, .new-login .secondary-sidebar, .new-login .post-list-category, .new-login .read-further, .new-login .announcements-body date, .new-login .pagination, .new-login .module-rrhh, .new-login .navigation-breadcrumb, .new-login .breadcrumb, .new-login .login-form {
+	font-family: 'Varela Round', sans-serif;
+}
+
+/* Login process
+-----------------------------------------------------------------------------*/
+
+.main-container.login-form-container {
+	justify-content: center;
+	color: #FFF;
+	background: #1071b2;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	height: calc(100vh - 54px);
+}
+
+.login-form {
+	padding: 2em;
+	border-radius: 5px;
+	color: #777777;
+	background: #FFF;
+}
+
+.login-form h2 {
+	text-align: center;
+	margin-bottom: 1.25rem;
+	font-size: 1.2em;
+	color: #1b65bd;
+	text-transform: uppercase;
+}
+
+.text-input-label, .meta-input-label {
+	display: block;
+	margin-bottom: .625rem;
+}
+
+.text-input-label {
+	display: flex;
+	padding: 1em 0 .25em;
+	margin-left: .25em;
+	margin-right: .25em;
+	border-bottom: 1px solid #999;
+	align-items: center;
+}
+
+.text-input-label input {
+	border: 0;
+	width: 100%;
+	flex-grow: 5;
+}
+
+.text-input-label-icon {
+	width: 25px;
+	height: 41px;
+	padding: 0 20px 0 5px;
+	text-align: center;
+}
+
+.login-form .button {
+	width: 100%;
+	font-size: 1.2rem;
+}
+
+.login-form .button:last-child {
+	margin: 0.625em 0 0;
+}
+
+.checkbox-label * {
+	vertical-align: middle;
+}
+
+.password-recovery-action {
+	text-align: right;
+}
+
+.login-form .faux-checkbox {
+	margin: 0 5px 0 5px;
+}
+
+.enabler-checkbox~.text-input-label-icon {
+	width: 35px;
+	height: 48px;
+	padding: 0 10px 0 5px;
+}
+
+.login-form .enabler-checkbox~.text-input-label-icon, .login-form .enabler-checkbox~input {
+	opacity: .5;
+	pointer-events: none;
+}
+
+.login-form .enabler-checkbox:checked~.text-input-label-icon, .login-form .enabler-checkbox:checked~input {
+	opacity: 1;
+	pointer-events: all;
+}
+
+.login-form .email-icon img, .login-form .barcode-icon img {
+	margin-top: 13px;
+}
+
+.login-form img[align=left] {
+	margin: 0 1em .5em 0;
+}
+
+.request-support-action {
+	margin: 1.25em 0 0;
+	text-align: center;
+}
+
+/* Botones */
+
+.new-login .button {
+	display: inline-block;
+	margin: auto;
+	border: 1px solid;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 1em;
+	font-size: 0.8em;
+	color: #fff;
+	font-style: normal;
+}
+
+.new-login .button:hover {
+	background: #fff;
+}
+
+.new-login .button.dark {
+	background: #1b65bd;
+}
+
+.new-login .button.dark:hover {
+	background: #1e5799;
+}
+
+.new-login a.button-info {
+	background-color: #1b65bd;
+	text-transform: uppercase;
+	color: #fff;
+	padding: 0.5em 1em !important;
+	font-size: 0.72em;
+	line-height: 1.7em;
+	display: inline-block;
+	margin: 1em 0;
+}
+
+.new-login a.button-info:after {
+	content: " \00BB ";
+}
+
+.new-login a.button-info:hover {
+	background-color: #6bb2ed;
+}
+
+/* Custom checkbox */
+
+.new-login .faux-checkbox {
+	display: inline-block;
+	height: 1.8em;
+	width: 1.8em;
+	min-width: 1.8em;
+	line-height: 1.8em;
+	text-align: center;
+	background: #FFF;
+	color: #FFF;
+	border: 1px solid #9E9E9E;
+	border-radius: 3px;
+}
+
+.new-login :checked+.faux-checkbox {
+	background: #9E9E9E;
+}
+
+.new-login .faux-checkbox:after {
+	content: "✔";
+	font-size: 1.2em;
+}
+
+.new-login .login-form .faux-checkbox {
+	margin: 0 5px 0 5px;
+}
+
+.new-login .enabler-checkbox~.text-input-label-icon {
+	width: 35px;
+	height: 48px;
+	padding: 0 10px 0 5px;
+}
+
+.new-login .login-form .enabler-checkbox~.text-input-label-icon, .new-login .login-form .enabler-checkbox~input {
+	opacity: .5;
+	pointer-events: none;
+}
+
+.new-login .login-form .enabler-checkbox:checked~.text-input-label-icon, .new-login .login-form .enabler-checkbox:checked~input {
+	opacity: 1;
+	pointer-events: all;
+}
+
+/* Layout (media queries)
+-----------------------------------------------------------------------------*/
+
+@media (min-width: 600px) {
+	/* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+	.new-login .login-form {
+		width: 400px;
+	}
+}
+
+/* Añadidos a posteriori */
+
+.new-login section {
+	height: 100vh;
+	width: 100%;
+	display: flex;
+}
+
+.new-login .login-form button {
+	font-size: 18px;
+}
+
+.new-login small {
+	font-size: 90%;
+}
+
+.new-login input {
+	font-size: 110% !important;
+}
+
+.new-login .login-form {
+	display: table !important;
+}
+
+.new-login form[name=frmRecuperar] {
+	margin-top: -80px;
+}
+
+.new-login form[name=frmRecuperarPorIban] {
+	margin-top: -140px;
+}
+
+.not-clickeable {
+	pointer-events: none;
+}
+
+.new-login a {
+	color: #1b65bd !important;
+	text-decoration: none !important;
+}
+
+.body-login {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	min-height: 100%;
+	background: #1B49A0;
+}
+
+.box-sizing-initial {
+	box-sizing: initial;
+}
+
+.new-login {
+	position: absolute;
+	width: 100%;
+	height: calc(100vh - 54px);
+	top: 0;
+}
+
+.new-login input {
+	font-size: 100% !important;
+}
+
+.new-login input[type=text], .new-login input[type=password] {
+	font-size: 100% !important;
+	width: 200px !important;
+}
+
+.new-login input:focus {
+	border: 0 !important;
+	box-shadow: none !important;
+	outline-color: rgb(108, 164, 255) !important;
+	outline-style: auto !important;
+	outline-width: 2px !important;
+}
+
+.new-login input[type=checkbox] {
+	margin: 3px 3px 3px 4px !important;
+}
+
+.new-login .border-login {
+	position: absolute;
+	top: 79px;
+	width: 100%;
+	border: 1px solid white;
+}
+
+.new-login .login-form h2 {
+	text-align: center;
+	margin-bottom: 1.25rem;
+	font-size: 1.2em;
+	color: #1b65bd;
+	text-transform: uppercase;
+}
+
+.new-login input::-ms-reveal, .new-login input::-ms-clear {
+	display: none !important;
+}
+
+.d-chkibn {
+	padding-top: 215px;
+}
+
+.input-iban {
+	width: 40px;
+    min-width: 40px;
+    max-width: 40px;
+    margin: 0px 5px;
+    border-bottom: 1px solid #bdbdbd !important;
+    padding-left: 4px;
+}

@@ -1,0 +1,25 @@
+<div class="w-100 d-flex justify-content-center flex-column">
+        <div class="row responableBar dn">
+                <div class="col-12 ">
+                        <form class="dn" name="festivos"  method="GET"  frC-Callback="loadData"
+                                action="https://intranet.globalia-sistemas.com/gsic-soporte/restservices/armageddon/ausencias/festivos/{CodigoTrabajador}/{anyo}/true/">
+                        </form>
+                        <form class="dn" name="ausencias" method="GET"  frC-Callback="loadData"
+                                action="https://intranet.globalia-sistemas.com/gsic-soporte/restservices/armageddon/ausencias/{CodigoTrabajador}/{anyo}/">
+                        </form>
+                        <form class="dn" name="fichajes"  method="POST" frC-Callback="loadData"
+                                action="/management/mvc-management/controller/portal.xwi_presencia.lista_resumen_propio.json">
+                                <input type="text" name="fechad">
+                                <input type="text" name="fechah">
+                                <select class="selectEmployee" name="codusr" style="width:100%"></select>
+                        </form>
+                </div>
+        </div>
+        <div class="row">
+                <div class="col-12 d-flex justify-content-center">
+                        <div name="calendar" class="calendar">
+
+                        </div>
+                </div>
+        </div>
+</div>

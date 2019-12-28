@@ -1,0 +1,61 @@
+<div class="fichaje-module-popup d-flex justify-content-around" style="flex-direction: column;">
+    <form name="fichajeVirtual">
+        <div class="row">
+            <div class="leftSide col-md-6 col-12">
+                <div class="h-75 w-100">
+                    <h3><img src="res/img/icon-time.png" alt="entrada"><span>Fichaje</span></h3>
+                    <div class="info-time">
+                        <frC-Graft name="date" class="checkInDate d-block"></frC-Graft>
+                        <label>
+                            <frC-Graft name="time" class="checkInTime"></frC-Graft>
+                        </label>
+                    </div>
+                </div>
+                <div class="d-flex h-25 w-100 align-items-center">
+                    <button type="button" aria-label="checkIn"
+                        class="btn btn-primary returnBtn w-100 d-flex justify-content-center">Guardar
+                    </button>
+                </div>
+
+            </div>
+
+            <div class="rightSide col-md-6 col-12">
+                <div class="fichaje-module-popup registros">
+                    <h3>Últimos registros</h3>
+                    <ul name="lastRecords">
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </form>
+
+
+    <form class="card-body dn" name="lastRecords" method="POST" frC-Callback="onReceiveData"
+        action="/management/mvc-management/controller/portal.xwi_presencia.lista_resumen_propio.json">
+        <input name="fechad">
+        <input name="fechah">
+    </form>
+
+    <form class="card-body dn" name="checkIn" method="POST" frC-Callback="onDataSaved"
+        action="/management/mvc-management/controller/portal.xwi_presencia.gestion_detalle.json">
+        <input name="fecha">
+        <input name="direc">
+        <input name="trmnl">
+        <input name="tokenSession">
+        <input name="dispFecha">
+    </form>
+
+
+    <div class="dn">
+        <div class="recordNode">
+            <h4>{{fecha}}</h4>
+            <p>
+                <span class="entrance"><strong>{{horaI}}</strong></span>
+                <span class="exit"><strong>{{horaF}}</strong></span>
+            </p>
+        </div>
+    </div>
+
+
+</div>

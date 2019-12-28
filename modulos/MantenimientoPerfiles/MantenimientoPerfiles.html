@@ -1,0 +1,136 @@
+<div>
+    <div>
+        <div class="app-header mb-3">
+            <h2>
+                Gestión de perfiles
+            </h2>
+        </div>
+        <template id="modalReplace">
+
+        </template>
+        <div class="card p-1">
+            <form name="MantenimientoPerfiles" class="input-group mb-3 mt-1">
+                <div class="card-header nav-lvl-1 mt-2 col-12">
+                    <div class="d-flex justify-content-between">
+                        <p class="mb-0">Proceso: <span class="text-warning font-weight-bold">
+                                <frC-Graft name="Proceso"></frC-Graft>
+                            </span></p>
+                    </div>
+                </div>
+
+                <input name="p_codapl" type="hidden" />
+
+
+                <div class="w-100 d-flex justify-content-center" name="inputSearchApp">
+                    <div class="input-group-prepend w-25">
+                        <label class="input-group-text w-100" for="codapl">Seleccione Aplicación</label>
+                    </div>
+                    <select class="custom-select" name="codapl" class="75" frC-indexResponse="root:d,c"
+                        frC-Reference="!p_codapl:p_codapl"
+                        frC-Store="/management/mvc-management/controller/newintra.xwi_perfiles_rrhh.xlist$list_procesos.json"
+                        required>
+                    </select>
+
+                </div>
+
+
+                <!-- <select class="custom-select" name="usersProfileList"
+                    frC-Reference="!p_perfil:selectedProfile,!p_user:p_user" frC-indexResponse="root: user"
+                    frC-CacheControl='false'
+                    frC-Store="/management/mvc-management/controller/newintra.xwi_perfiles_rrhh.xlist$persona_perfiles.json?p_aplicacion=&p_empresa=&p_division=&p_subdivision=&p_departamento="
+                    hidden>
+                </select> -->
+
+                <select class="custom-select" name="p_apl" frC-Reference="!p_apl:codapl"
+                    frC-indexResponse="root:despfl,codpfl"
+                    frC-Store="/management/mvc-management/controller/newintra.xwi_perfiles_rrhh.xlist$perfiles_aplicacion.json"
+                    hidden>
+                </select>
+
+                <select class="custom-select" name="arbolDpt" frC-indexResponse="children:despfl,codpfl"
+                    frC-CacheControl='false'
+                    frC-Store="/management/mvc-management/controller/newintra.xwi_personal.xlist$departamentos.json?p_depok=&p_codusr&p_codpfl=&p_tiplst=JSON&p_ctlcbk&p_codemp=&p_fecha=&p_tipdep=&p_ficok=N&p_coddep=&node=&p_master=&p_codapl=&p_codpfl="
+                    hidden>
+                </select>
+
+                <input name="selectedProfile" hidden />
+
+                <select class="custom-select" name="usersProfileList"
+                    frC-Reference="!p_perfil:selectedProfile,!p_aplicacion:codapl" frC-indexResponse="root:user"
+                    frC-CacheControl='false'
+                    frC-Store="/management/mvc-management/controller/newintra.xwi_perfiles_rrhh.xlist$persona_perfiles.json?p_user=&p_empresa=&p_division=&p_subdivision=&p_departamento="
+                    hidden>
+                </select>
+
+                <div name="aplication" class="dn w-100 mt-3" style="background-color: white">
+                    <table class="table table-bordered col-md-13 position-sticky" style="top:80px; z-index:3"
+                        name="profilesTable">
+                        <thead name="theader"></thead>
+                    </table>
+                    <div class="row md-form pl-4 pr-4 pt-2">
+                        <div class="input-group col-6">
+                            <input type="text" class="form-control" name="foundUser" maxlength="10" required>
+                            <label for="foundUser">Empleado</label>
+                            <span class="input-group-addon hide-on-modal lupaBuscarUsuarios verUsuario mt-3">
+                                <i class="material-icons" name="lupa">search</i>
+                            </span>
+                            <input type="text" name="foundUserName" class="form-control" disabled>
+                        </div>
+                        <div class="input-group col-6">
+                            <input type="text" class="form-control col-3" name="codDpt" maxlength="10" required>
+                            <label for="codDpt">Departamento</label>
+                            <div class="col-1">
+                            </div>
+                            <input type="text" name="dptName" class="form-control" disabled>
+                        </div>
+                    </div>
+                    <div class="position-sticky btn-edit mr-0 ml-0 justify-content-center row"
+                        style="top:140px; z-index:10;background-color: white">
+                        <button class="btn floatClonBtn col-2" tabindex="0" type="button"
+                            disabled><span>Clonar</span></button>
+                        <button class="btn floatSustiBtn col-2" tabindex="0" type="button"
+                            disabled><span>Sustituir</span></button>
+                        <button class="btn floatRemoveBtn col-2" tabindex="0"
+                            type="button"><span>Eliminar</span></button>
+                        <button class="btn floatAddBtn col-2" tabindex="0" type="button"><span>Añadir</span></button>
+                    </div>
+                    <div class="col-md-13 d-switch d-orgeh hide-on-del">
+                        <ul class="arbolDepartamento tree"></ul>
+                    </div>
+
+                </div>
+            </form>
+
+
+            <form name="guardar_perfiles" method="post" frC-callback="onUserAdded"
+                action="/management/mvc-management/controller/newintra.xwi_perfiles_rrhh.xml$actualizar_perfiles.json">
+                <input name="p_aplicacion" type="hidden" value="" />
+                <input name="p_perfil" type="hidden" value="">
+                <input name="p_empdep" type="hidden" value="">
+                <input name="p_usuario" type="hidden" value="">
+                <input name="p_modo" type="hidden" value="OM">
+            </form>
+
+            <form name="refresh_users" method="post" frC-callback="onUsersChanged"
+                action="/management/mvc-management/controller/newintra.xwi_perfiles_rrhh.xlist$persona_perfiles.json">
+                <input name="p_aplicacion" type="hidden" value="" />
+                <input name="p_user" type="hidden" value="">
+                <input name="p_empresa" type="hidden" value="">
+                <input name="p_division" type="hidden" value="">
+                <input name="p_subdivision" type="hidden" value="">
+                <input name="p_departamento" type="hidden" value="">
+                <input name="p_perfil" type="hidden" value="">
+            </form>
+
+            <form name="borrar_perfil" method="post"
+                action="/management/mvc-management/controller/newintra.xwi_perfiles_rrhh.xml$eliminar_perfiles.json"
+                frC-Callback="deleteHandler">
+                <input type="hidden" name="p_aplicacion">
+                <input type="hidden" name="p_perfil">
+                <input type="hidden" name="p_usuario">
+                <input type="hidden" name="p_empresa">
+            </form>
+
+        </div>
+    </div>
+</div>

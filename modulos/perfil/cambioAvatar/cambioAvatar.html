@@ -1,0 +1,42 @@
+<section class="cambioAvatar">
+    <!-- <h2 class="h1 text-center py-5">CAMBIAR FOTO DE PERFIL</h2> -->
+    <form name="formAvatar">
+        <div class="row text-center text-md-left">
+            <div class="col-12 col-md-6">
+                <div id="avatar" class="avatar mx-auto">
+                </div>
+                <img src="#" class="fotoPerfil imageActualAvatar" alt="" />
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="row">
+                    <div class="col-12 ">
+                        <input type='file' id="archivoCrop" accept="image/png, image/jpeg, image/jpg, image/gif" />
+                    </div>
+                    <div class="col-12 form-check">
+                        <p class="form-check-label grey-text">
+                            Formatos de imagen admitidos: GIF, JPG, JPEG.<br>
+                            Tamaño máximo de la imagen: 5MB.<br>
+                            <br>
+                            La imagen subida en el apartado Perfil del Empleado y publicada a través del Portal, es visible para cualquier usuario del mismo. Por tanto, dado el carácter público de este portal, te rogamos que evite publicar cualquier tipo de imagen que pretendas mantener como privada.
+                            <br>
+                            <br>
+                        </p>
+                    </div>
+                    <div class="col-12 col-sm-4">
+                        <button type="button" class="btn btn-primary btn-block btnAceptarAvatar">ACEPTAR</button>
+                    </div>
+                    <div class="col-12 col-sm-4">
+                        <button type="button" id="rotatebutton" class="btn btn-primary btn-block">girar</button>
+                    </div>
+                    <div class="col-12 col-sm-4">
+                        <button type="button" class="btn btn-primary btn-block btnQuitarAvatar">QUITAR</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <form name="gestionAvatar" frC-Callback="gestionAvatar" method="POST" class="dn" action="/management/mvc-management/controller/portal.xwi_personal.guardar_avatar.json">
+        <input name="p_flag" />
+        <input name="p_imagen" />
+    </form>
+</section>

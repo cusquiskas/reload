@@ -1,0 +1,63 @@
+<div class="beneficiarios-cae">
+    <form
+        name="frmInit"
+        class='dn'
+        method="POST"
+        frC-Callback="cbkInit"
+        action="/management/mvc-management/controller/newintra.xwi_autoservicio.bene$listado_beneficiarios.json">
+        <input name="p_codusr" type="hidden">
+        <input name="p_fecsol" type="hidden">
+        <input name="p_perfil" type="hidden">
+    </form>
+    
+    <form name="frmBeneficiarios">
+
+        <div class="tituloConfig">Estado Solicitud</div>
+        <div class="md-form row">
+            <div class="md-form col-12">
+                <div class="input-group">
+                    <input name="p_estsol" class="form-control" type="text" readonly/>
+                    <label for="p_estsol" class="active">Estado</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="tituloConfig">Datos actuales</div>
+        <div class="listado">
+            <div class="row">
+                <div class="col-2">F.Desde</div>
+                <div class="col-3">Nombre</div>
+                <div class="col-2">F.Nacimiento</div>
+                <div class="col-2">Parentesco</div>
+                <div class="col-3">DNI/CIF</div>
+            </div>
+            <div class="tabla tblDatosActuales"></div>
+        </div>
+
+        <div class="tituloConfig">Pendientes de añadir</div>
+        <div class="listado">
+            <div class="row">
+                <div class="col-2">F.Desde</div>
+                <div class="col-3">Nombre</div>
+                <div class="col-2">F.Nacimiento</div>
+                <div class="col-2">Parentesco</div>
+                <div class="col-2">DNI/CIF</div>
+                <div class="col-1">Estado</div>
+            </div>
+            <div class="tabla tblPendientesAnadir"></div>
+        </div>
+
+        <div class="tituloConfig">Pendientes de eliminar</div>
+        <div class="listado">
+            <div class="row">
+                <div class="col-2">F.Desde</div>
+                <div class="col-3">Nombre</div>
+                <div class="col-2">F.Nacimiento</div>
+                <div class="col-2">Parentesco</div>
+                <div class="col-2">DNI/CIF</div>
+                <div class="col-1">Estado</div>
+            </div>
+            <div class="tabla tblPendientesBorrar"></div>
+        </div>
+    </form>
+</div>

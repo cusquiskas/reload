@@ -1,0 +1,152 @@
+<header>
+    <div class="container-fluid fixed-top">
+        <div class="row seccionHeadFija">
+            <div class="col-auto mr-auto logoNavbar">
+                <form name="IconoHeader"
+                    action="/management/mvc-management/controller/portal.xwi_icono.icono_ahora.json" method="POST"
+                    frC-Callback="IconoHeader" frC-AutoLoad="true">
+                </form>
+                <img class="ImagenIcono" src="res/img/logo-GLB-portal-empleado.png" alt="" itemprop="logo">
+            </div>
+            <div id="cajaHeader" class="col-auto datosSesion">
+                <form name="datosSesion"
+                    action="/management/mvc-management/controller/portal.xwi_personal.informacion_usuario.json"
+                    method="POST" frC-Callback="datosSesion" frC-AutoLoad="true">
+                    <div class="user-navbar dn">
+                        <a href="#" class="linkUserNavbar">
+                            <div class="name-user-navbar pb-perfil-tooltip" data-toggle="tooltip" data-html="true"
+                                data-placement="bottom">
+
+                                <span>Hola, </span>
+                                <strong>
+                                    <frC-Graft name="displayname"></frC-Graft>
+                                </strong>
+                                <div class="pbp-header">
+                                    <label></label>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-perfil" style="width: 0%"
+                                            role="progressbar">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </form>
+            </div>
+            <div class="col-auto divCasita">
+                <div class="logoNavbar casita dn">
+                    <img src="res/img/home.svg" alt="">
+                    <span class="textoHome">Home</span>
+                </div>
+            </div>
+            <div class="col-auto divMenu">
+                <nav class="navbar menuBocadillo dn">
+                    <div class="menu-navbar menu-navbarMVL">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent22">
+                            <div class="animated-icon4">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <span class="textoMenu">Menú</span>
+                        </button>
+                    </div>
+                </nav>
+            </div>
+            <div class="col-auto lupaPC dn">
+                <button class="buscarPC" type="button">
+                    <i class="material-icons">search</i>
+                    <span class="textoLupa">Buscar</span>
+                </button>
+                <div class="cajaBuscador">
+                    <form name="busquedaOpcionesMenu" method="POST" frC-Callback="busquedaOpcionesMenu"
+                        action="/management/mvc-management/controller/portal.xwi_menu.listar_menu_opcion_usuario.json">
+                        <button class="search-close-button cerrarPC" type="button">
+                            <i class="material-icons">close</i>
+                        </button>
+                        <input type="text" name="p_nombre" value="" autocomplete="off" maxlength="30" id="search-input"
+                            placeholder="Buscador de aplicaciones...">
+                        <input class="dn">
+                    </form>
+                    <div class="busquedaHead" id="listaBusquedaOpcionesMenu"></div>
+                </div>
+            </div>
+            <div class="col-auto divRecordatorios dn">
+                <div class="logoNavbar logo-header btnRecordatorio">
+                    <img src="res/img/sobre_new.svg" alt="">
+                    <span class="labelAlertas">Buzón</span>
+                    <span class="num_alertas dn"></span>
+                </div>
+            </div>
+
+            <div class="col-auto divRegistroHorario dn">
+                <button class="registroHorarioBtn" type="button">
+                    <img src="res/img/icon_registro.png" alt="" class="imgRegistroHorario">
+                    <span class="labelAlertas">Registro</span>
+                </button>
+            </div>
+            <div class="col-auto cerrarSesion">
+                <form name="cerrarSesion"
+                    action="/management/mvc-management/controller/portal.xwi_acceso.borrar_sesion.xml" method="POST"
+                    frC-Callback="cerrarSesion">
+                    <div class="btnSalirPortal dn">
+                        <img src="res/img/logout.svg" alt="">
+                        <span class="textoSalir">Salir</span>
+                    </div>
+                    <input type="hidden" name="p_oldses">
+                    <input type="hidden" name="xchn" value="JSON">
+                </form>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="clickFueraBuscador dn"></div>
+
+<div class="collapse navbar-collapse listaMenuApp nav-lvl-1" id="navbarSupportedContent22" style="z-index:20;">
+    <ul class="navbar-nav mr-auto scrollable-menu">
+        <div class="search-navbar dn  col-10">
+            <div class="search-widget serachOpciones">
+                <button class="search-button buscarPCResponsive">
+                    <i class="material-icons">search</i>
+                </button>
+                <button class="search-close-button cerrarPCResponsive">
+                    <i class="material-icons">close</i>
+                </button>
+                <form name="busquedaOpcionesMenuResponsive" method="POST" frC-Callback="busquedaOpcionesMenuResponsive"
+                    action="/management/mvc-management/controller/portal.xwi_menu.listar_menu_opcion_usuario.json">
+                    <input type="text" name="p_nombre" value="" autocomplete="off" maxlength="30" id="search-inputMenu"
+                        placeholder="Buscador de apps...">
+                    <input class="dn">
+                </form>
+                <div class="busquedaHead" id="listaBusquedaOpcionesMenuResponsive"></div>
+            </div>
+        </div>
+
+        <form name="cargaAplicaciones" class="dn" method="POST" frC-Callback="cargaAplicaciones"
+            action="/management/mvc-management/controller/portal.xwi_menu.listar_menu_usuario.json">
+            <input type="hidden" name="p_masmop" value="N">
+        </form>
+        <div class="opcionesMenu" id="listaAplicaciones"></div>
+        <!-- <img src="res/img/icon-logout.png" alt=""> -->
+    </ul>
+</div>
+
+<div class="modal-overlay"></div>
+
+<form name="registroOpciones" class="dn" method="POST" frC-Callback="callbackRegistroOpciones"
+    action="/management/mvc-management/controller/portal.xwi_menu.guardar_registro_opciones.json">
+    <input name="p_codmop">
+    <input name="p_punpar">
+    <input name="p_infusu">
+</form>
+
+<form name="frmContRecordatoriosPendiente" class="dn" method="POST" action="/recordatorio/user_services/count"
+    frC-Callback="cbkContarRecordatorios" frC-noSesion="true">
+    <input name="estados" value="200" type="list" />
+    <input name="estados" value="400" type="list" />
+</form>
+
+<form name="IconoHeaderManejar" class="dn" frC-AutoLoad="true" frC-Callback="IconoHeaderManejar">
+</form>

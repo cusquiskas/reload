@@ -1,0 +1,54 @@
+<div class="card">
+    <div class="card-header aperturaDatosPersonales nav-lvl-1" id="heading3">
+        <h5 class="mb-0">
+            <a class="collapsed" data-toggle="collapse" role="button">
+                Prorrateo Pagas Extra
+            </a>
+        </h5>
+    </div>
+    <div id="collapse3" class="collapse cuerpoDatosPersonales">
+        <div class="card-body">
+            <form name="initProrrateoPagas" method="POST" class="dn" frC-Callback="initProrrateoPagas" action="/management/mvc-management/controller/newintra.xwi_autoservicio.datpr$situacion_actual.json"
+                frC-AutoLoad="true">
+                <input type="hidden" name="xchn" value="json">
+            </form>
+            <form name="prorrateoPagas" method="POST" frC-Callback="prorrateoPagas" action="/management/mvc-management/controller/newintra.xwi_autoservicio.datpr$guardar.json">
+                <div id="pagasProrrateadas">
+                    <div id="pagas" class="form-check">
+                        <div class="md-form d-flex dn">
+                            <input type="password" class="form-control"  name="p_password"  disabled/>
+                            <label for="p_password" class="active">Contraseña</label>
+
+                        </div>
+                        <div class="md-form d-flex dn">
+                            <input type="text" class="form-control"  name="P_xsid"  disabled/>
+                            <label for="P_xsid" class="active">XSID</label>
+
+                        </div>
+                        <div class='row' style="line-height: 4;">
+                            <label class="form-check-label" for="defaultCheck1">¿Quiere solicitar que a partir de ahora se le prorrateen las pagas extras?
+                            </label>
+                            <button type="button" id="acceptarPagas" class="btn btn-outline-info right">Sí</button>
+                        </div>
+                        <p id="parrafoPagas" class="mensajeRRHH">Los cambios autorizados antes del día 14 se aplicarán en el mes en curso, después del día 14 para
+                            el mes siguiente.</p>
+                    </div>
+                    <input type="hidden" name="xchn" value="json">
+                </div>
+
+                <div id='yaPagasProrrateadas' class="mensajeRRHH dn">
+                    Actualmente, ya tienes prorrateadas las pagas extra.
+                </div>
+                <div id='solicitudEnCurso' class="mensajeRRHH dn">
+                    Ya se está tramitando una solicitud.
+                </div>
+                <div id='usuarioNoValido' class="mensajeRRHH dn">
+                    Esta opción no está disponible para tu perfil.
+                </div>
+                <div id='solicitudRealizada' class="mensajeRRHH dn">
+                    Ajuste realizado, puede tardar unos minutos en actualizarse la información en el portal.
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

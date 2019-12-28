@@ -1,0 +1,285 @@
+.brand-header {
+	background: #fff url("res/img/marcas/banner-marcas.png") no-repeat 98% 50%;
+	background-size: cover;
+	padding:1.5em 2.5em;
+	position: relative;
+}
+.brand-header h1{
+	color:#fff;
+	border: 0;
+	margin-bottom: 0;
+}
+.volver-marcas {
+	position: absolute;
+	right: 2em;
+	top:25%;
+}
+
+.brand-header > p {
+	color: white;
+	font-size: 70%;
+	position: absolute;
+	top: 25%;
+	margin-left: 20%;
+	padding-left: 20px;
+	padding-right: 20px;
+	text-align: justify;
+}
+.voyvengo {
+	color: #fff;
+	display: block;
+}
+
+.flot-panel {
+	display: none;
+	margin-top: 30px;
+}
+
+.flot-panel.active {
+	display: block;
+}
+
+table.table-fleet-details {
+	font-family: 'Varela Round', sans-serif;
+	border: 0px solid #fff;
+	background-color: #f8f8f8;
+	width: 100%;
+	text-align: left;
+	border-collapse: collapse;
+	margin-bottom:60px;
+}
+table.table-fleet-details td, table.table-fleet-details th {
+	padding: 6px 3px;
+}
+table.table-fleet-details tbody td {
+	font-size: 13px;
+	color:#222;
+}
+table.table-fleet-details tr:nth-child(even) {
+ 	background: #D0E4F5;
+}
+table.table-fleet-details thead {
+	background: #fff;
+	border-bottom: 1px solid #222;
+	border-top: 1px solid #222;
+}
+table.table-fleet-details thead th {
+	font-size: 12px;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: #222;
+}
+table.table-fleet-details thead th td{
+	padding:6px 4px;
+}
+table.table-fleet-details thead th:first-child {
+	border-left: none;
+}
+
+.mini-module-brand-list {
+	display: flex;
+}
+
+.mini-module-brand-list > li {
+	width: 100%;
+	margin: 0 0 0.75em 0;
+	text-align: center;
+	box-sizing: border-box;
+	display: flex;
+}
+
+.mini-module-brand-list a {
+	display: flex;
+	align-items: center;
+ 	justify-content: center;
+	box-sizing: border-box;
+	padding:40px 20px;
+	width: 100%;
+	background: #0577cb;
+}
+
+.mini-module-brand-list > li img {
+	filter: brightness(0) invert(1);
+
+}
+
+.mini-module-brand-list a:hover,
+.mini-module-brand-list a.active {
+	background: #e3e3e3;
+}
+
+.mini-module-brand-list a:hover img,
+.mini-module-brand-list a.active img {
+	filter: none;
+}
+
+.mini-module-brand-list a.active {
+	pointer-events: none;
+}
+
+.wrap-modules {
+	flex-wrap: wrap;
+}
+
+.panel-trigger {
+	padding-right: 35px;
+    cursor: pointer;
+    max-height: 134px;
+}
+
+.panel-trigger:after {
+	/* content: '+'; */
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	margin-top: -.5em;
+	height: 1em;
+	line-height: 1em;
+	font-size: 1.5em;
+}
+
+.panel-trigger.active:after {
+	/* content: '-'; */
+	margin-right: .1em;
+}
+
+.brand-side-info{
+	order: 1;
+	-webkit-order: 1;
+	-moz-order: 1;
+	-ms-order: 1;
+	width: 100%;
+	margin-bottom: 1.5em;
+	background: #e3e3e3;
+	box-sizing: border-box;
+	padding:1.5em;
+}
+
+.brand-side-info > div {
+	display: none;
+}
+
+.brand-side-info > div.active {
+	display: block;
+}
+
+.brand-side-info h1{
+	margin-bottom:1.5em;
+	text-transform: none;
+}
+
+.brand-side-info p{
+    font-size: 0.8em;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.super-marcas article {
+	text-align: justify;
+	text-justify: inter-word;
+}
+
+.super-marcas img {
+	width: 120%;
+}
+
+@media (min-width: 300px) {
+	.voyvengo {
+    display: none;
+	}
+}
+
+@media (min-width: 600px) {
+    .main-brand-section {
+		width: 50%;
+    }
+    
+    .mini-module-brand-list > li {
+		width: 49%;
+		margin-right:1%;
+    }
+    
+    .brand-side-info {
+		width: 49%;
+	}
+	.voyvengo {
+    display: none;
+	}
+	/* .brand-header > p {
+		font-size: 70%;
+		top: 25%;
+		margin-left: 20%;
+	} */
+}
+
+@media (min-width: 801px) {
+    .main-brand-section {
+		width: 66%;
+    }
+    
+    .mini-module-brand-list > li {
+		width: 49%;
+		margin-right:1%;
+    }
+    
+    .brand-side-info {
+		width: 32%;
+	}
+	.voyvengo {
+    display: block;
+	}
+	
+	/* .brand-header > p {
+    font-size: 85%;
+		top: 11%;
+		margin-left: 18%;
+	} */
+
+}
+
+@media (min-width: 1025px) {
+    .main-brand-section {
+		width: 66%;
+    }
+    
+    .mini-module-brand-list > li {
+		width: 24%;
+		margin-right:1%;
+    }
+    
+	.mini-module-brand-list > li:nth-child(4n) {
+		margin-right: 0;
+    }
+    
+    .brand-side-info {
+		width: 32%;
+	}
+
+}
+
+@media (min-width: 1281px) {
+    .main-brand-section {
+		width: 75%;
+    }
+    
+    .brand-side-info {
+		width: 24%;
+	}
+	
+	.brand-header > p {
+    font-size: 85%;
+    top: 20%;
+    margin-left: 14%;
+	}
+	.voyvengo {
+		display: block;
+
+	}
+}
+
+.textomarcas{
+	color: white;
+	font-size: 70%;
+	position: absolute;
+	text-align: justify;
+}

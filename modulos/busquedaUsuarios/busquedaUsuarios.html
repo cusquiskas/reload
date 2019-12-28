@@ -1,0 +1,128 @@
+<form
+    name = "obtenerArbolDepartamentos"
+    class = "dn"
+    frC-Callback = "obtenerArbolDepartamentos"
+    method="POST"
+    action="/management/mvc-management/controller/newintra.xwi_personal.xlist$departamentos.json">
+    <input name="p_depok"/>
+    <input name="p_codapl"/>
+    <input name="p_codusr"/>
+    <input name="p_codpfl"/>
+    <input name="p_tiplst" value="JSON"/>
+    <input name="p_ctlcbk"/>
+    <input name="p_codemp"/>
+    <input name="p_fecha"/>
+    <input name="p_tipdep"/>
+    <input name="p_ficok" value="S"/>
+    <input name="p_coddep"/>
+    <input name="node"/>
+    <input name="p_master"/>
+</form>
+
+<div class="container usr-search">
+    <form name="busquedaUsuario" method="POST" frC-Callback="busquedaUsuario" action="/management/mvc-management/controller/newintra.xwi_datos_usuario.lista_usuario.json">
+        <input name="p_codusr" hidden>
+        <input name="p_coddep" hidden>
+        <input name="p_tipdep" hidden>
+        <input name="p_codapl" hidden>
+        <input name="p_fecbaj" hidden>
+        <input name="p_feccon" hidden>
+        <input name="p_filtro" hidden>
+        <input name="p_dniusr" hidden>
+        <input name="p_modo" hidden>
+        <input name="p_fncr" hidden>
+        <input name="p_externo" hidden>
+        <input name="p_inicio" value="1" hidden> 
+        <input name="p_fin" value="5" hidden>
+        <input name="p_ndatos" value="L" hidden>
+        <input name="p_arean" hidden> 
+        <input name="combo-onload" type="text" class="dn" frC-Submit="false">
+
+        <div class="md-form row input-name dn">
+            <div class="md-form col">
+                <div class="input-group">
+                    <input name="p_nombre" class="form-control" type="text" maxlength="50"/>
+                    <label for="p_nombre">Nombre</label>
+                </div>
+            </div>
+        </div>
+        <div class="md-form row input-dep dn">
+            <div class="md-form col">
+                <div class="input-group">
+                    <input name="nomdep" id="dep-tree" class="form-control" type="text" maxlength="50" frC-Submit="false" readonly/>
+                    <label>Departamento</label>
+                    <div class="col dn arbolModalDepartamento margenArbol input-tree">
+                        <ul class="arbolDepartamento"></ul>
+                    </div>
+                    <div class="input-group-append">
+                        <span class="input-group-text cliqueable btnBorrarDepartamento">
+                            <i class="material-icons">cancel</i>
+                        </span>
+                        <span class="input-group-text cliqueable" id="btnDepartamento">
+                            <i class="material-icons">people</i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="md-form row input-div dn">
+            <div class="md-form col">
+                <div class="input-group">
+                    <select
+                        name="p_codemp"
+                        class="form-control custom-select"
+                        frC-indexResponse="lov:texto,valor"
+                        frC-Store="/management/mvc-management/controller/newintra.xwi_personal.xlist$empresas.json?p_empok=N&p_codapl=&p_codusr=&p_codpfl=&p_ctlcbk=&p_fecha=&p_swicod=S"
+                        frC-Reference="!p_tiplst:combo-onload">
+                    </select>
+                    <label for="p_codemp">Empresa</label>
+                </div>
+            </div>
+            <div class="md-form col">
+                <div class="input-group">
+                    <select
+                        name="p_coddiv"
+                        class="form-control custom-select"
+                        frC-indexResponse="lov:des,cod"
+                        frC-Store="/management/mvc-management/controller/newintra.xwi_personal.xlist$divisiones.json?p_divok=N&p_ctlcbk=&p_codusr=&p_codapl=&p_codpfl=&p_swicod=S&p_tiplst=JSON"
+                        frC-Reference="!p_codemp:p_codemp">
+                    </select>
+                    <label for="p_coddiv">División</label>
+                </div>
+            </div>
+            <div class="md-form col">
+                <div class="input-group">
+                    <select
+                        name="p_codsdv"
+                        class="form-control custom-select"
+                        frC-indexResponse="lov:des,cod"
+                        frC-Store="/management/mvc-management/controller/newintra.xwi_personal.xlist$subdivisiones.json?p_sdvok=N&p_ctlcbk=&p_codusr=&p_codapl=&p_codpfl=&p_swicod=S&p_tiplst=JSON"
+                        frC-Reference="!p_coddiv:p_coddiv">
+                    </select>
+                    <label for="p_codsdv">Centro de Trabajo</label>
+                </div>
+            </div>
+        </div>        
+    </form>
+</div>
+
+<div class="usertable-header">
+    <ul class="pagination my-pagination">
+        <li class="page-item page-prev disabled"><a class="page-link" href="#">Anterior</a></li>
+        <li class="page-item page-next disabled"><a class="page-link" href="#">Siguiente</a></li>
+    </ul>
+    <button type="button" class="btn btn-primary btn-with-img input-btn dn">
+        <span>Buscar </span><i class="material-icons">search</i>
+    </button>
+</div>
+
+<div class="listado tabla-usuarios">
+    <div class="row">
+        <div class="col-4 left">Nombre</div>
+        <div class="col-4 left">Empresa</div>
+        <div class="col-4 left">Departamento</div>
+    </div>
+    <div class="tabla" id="listaUsuarios">
+        <!-- Resultado del contenido del listado de usuarios -->
+    </div>
+</div>

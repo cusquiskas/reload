@@ -1,0 +1,184 @@
+/* Media Query (max-width: 575px)
+/* -------------------------------------------------- */
+
+@media (max-width: 575px) {
+    /* LOGIN ~ NUEVO USUARIO ~ USUARIO BLOQUEADO */
+    .login, .usuarioBloqueado {
+        margin-top: 0 !important;
+    }
+    .usuarioBloqueado .card-title {
+        font-size: 1.4em !important;
+    }
+    .login .card, .usuarioBloqueado .card {
+        box-shadow: none;
+    }
+    .seccionApp .nuevaCajaApp {
+        min-width: 100%!important;
+    }
+    /*modal favoritos */
+    .tabla.tablaGestionFavoritos {
+        height: 220px!important;
+    }
+    .pieNumeroFavoritos {
+        display: block!important;
+    }
+    .cabeceraNumeroFavoritos {
+        display: none;
+    }
+    #myModalEncuesta .modal-dialog, #myModalPoliticasRGPD .modal-dialog {
+        margin: 20px auto !important;
+        width: 90% !important;
+    }
+    /* .cuerpo {
+        padding: 0!important;
+    } */
+    /* responsive login*/
+    #header, #footer {
+        display: none;
+    }
+    .new-login .border-login {
+        border: 1px solid #1071b2!important;
+    }
+    /* .body {
+        margin: 0!important;
+        padding: 0!important;
+    } */
+}
+
+/* Media Query (max-width: 425px)
+/* -------------------------------------------------- */
+
+@media (max-width: 425px) {
+    /* HEADER */
+    header .seccionHeadFija .divCasita {
+        padding-left: 8px;
+        padding-right: 5px;
+    }
+    .nominas .listado .row {
+        padding: 0;
+    }
+    .nominas .listado .row:first-child:not(.tablaNominas) div, .nominas .tablaNominas div {
+        display: none;
+        padding: 5px;
+    }
+    .nominas .listado .row:first-child div.imgPdf, .nominas .listado .row:first-child div.sociedad, .nominas .listado .row:first-child div.Mes, .nominas .listado .row:first-child div.recibo {
+        display: block;
+        font-size: 12px;
+        text-align: left;
+    }
+    .nominas .listado .row:first-child:not(.tablaNominas) div.recibo {
+        padding-left: 15px;
+    }
+    .nominas .sociedad {
+        max-width: 60%;
+    }
+    .nominas .imgPdf {
+        max-width: 25%;
+        padding: 0 30px!important;
+    }
+    .nominas .Mes, .nominas .recibo {
+        max-width: 15%;
+    }
+    .nominas .tablaNominas .sociedad, .nominas .tablaNominas .imgPdf, .nominas .tablaNominas .Mes, .nominas .tablaNominas .recibo, .nominas .tablaNominas .anhoMovil {
+        display: block;
+        font-size: 12px;
+        text-align: left;
+    }
+    .nominas .listado {
+        margin-left: -50px;
+        margin-right: -25px;
+    }
+    .mesCabecera {
+        position: relative;
+        left: -20px;
+    }
+    .seccionHeadFija .menuBocadillo .menu-navbar {
+        padding-right: 25px!important;
+        padding-left: 5px!important;
+    }
+}
+
+/* Media Query (max-width: 768px) landscape phones, Tablet
+/* -------------------------------------------------- */
+
+@media (max-width: 768px) {
+    /* HEADER */
+    .logoNavbar:not(.logo-header) {
+        width: 70px;
+        overflow: hidden;
+        top: 7px;
+    }
+    .logoNavbar:not(.logo-header) img {
+        max-width: none !important;
+    }
+    .logoNavbar:not(.logo-header).casita {
+        width: 40px!important;
+    }
+    .casita .textoHome {
+        left: 0;
+    }
+    .divRecordatorios {
+        padding-left: 0px !important;
+    }
+    header .seccionHeadFija .divCasita {
+        padding-right: 5px;
+    }
+    .cerrarSesion {
+        padding: 0;
+    }
+    .lupaPC {
+        padding-left: 5px !important;
+        padding-right: 15px !important;
+    }
+    .seccionHeadFija .menuBocadillo .menu-navbar {
+        padding-right: 27px!important;
+        padding-left: 8px!important;
+    }
+    .divImagenNoticia {
+        height: auto!important;
+    }
+    .divImagenTextFija {
+        height: 600px!important;
+    }
+    #cajaOfertas .carousel-indicators {
+        bottom: 70px!important;
+    }
+    #cajaAccesos .list-group, #cajaFavoritos .list-group {
+        margin-top: 40px;
+    }
+    .body {
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .perfilEmpleado .jumbotron .w-100 {
+        width: unset!important;
+    }
+}
+
+@media (min-width: 768px) {
+    .contenidoMostrado {
+        padding-left: 38px;
+    }
+}
+
+/* Media Query (min-width: 1200px)
+/* -------------------------------------------------- */
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1270px;
+    }
+}
+
+@media (min-width: 992px) {
+    .menuNuevaFuncionalidad {
+        max-width: 23%;
+    }
+}
+
+@media (min-width: 425px) and (max-width: 768px) {
+    .scrollable-menu {
+        margin-top: 80px;
+    }
+}

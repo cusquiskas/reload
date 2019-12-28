@@ -1,0 +1,55 @@
+<div class="datos-familiares-cae">
+    <form
+        name="frmInit"
+        class='dn'
+        method="POST"
+        frC-Callback="cbkInit"
+        action="/management/mvc-management/controller/newintra.xwi_autoservicio.datfa$obtener_sit_familiar.xml">
+        <input name="p_codusr">
+        <input name="p_fecsol">
+        <input name="p_perfil">
+        <input name="xchn" value="JSON">
+    </form>
+    
+    <form name="frmDatosFamiliares">
+        <input name="filepath" type="hidden">
+
+        <div class="tituloConfig">Estado Solicitud</div>
+        <div class="md-form row">
+            <div class="md-form col-12">
+                <div class="input-group">
+                    <input name="p_estsol" class="form-control" type="text" readonly/>
+                    <label for="p_estsol" class="active">Estado</label>
+                </div>
+            </div>
+        </div>
+        
+        <div class="tituloConfig">Estado Civil</div>
+        <div class="md-form row">
+            <div class="md-form col-4">
+                <div class="input-group">
+                    <input name="p_estcvl" class="form-control" type="text" readonly/>
+                    <label for="p_estcvl" class="active">Estado Civil</label>
+                </div>
+            </div>
+            <div class="md-form col-4">
+                <div class="input-group">
+                    <input name="p_fdesde" class="form-control" type="text" readonly/>
+                    <label for="p_fdesde" class="active">Fecha Desde</label>
+                </div>
+            </div>
+            <div class="md-form col-4">
+                <div class="input-group">
+                    <input name="p_docadj" class="form-control" type="text" readonly/>
+                    <label for="p_docadj" class="active">Adjuntar documentación</label>
+                    <span class="input-group-append cliqueable btn-docadj">
+                        <span class="input-group-text">
+                            <i class="material-icons">search</i>
+                        </span>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+    </form>
+</div>

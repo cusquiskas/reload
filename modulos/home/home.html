@@ -1,0 +1,93 @@
+<template id='modal'></template>
+<template id='modalEncuesta'></template>
+<template id='modalPoliticasRGPD'></template>
+<template id='modalAlertasPendientes'></template>
+<div id="home">
+    <div class="container-fluid bannerHeader">
+        <div class="row ">
+            <div class="col-12 main-header-claim">
+                <img class="logoEMVEC" src="res/img/header-main-banner.png" alt="El mejor viaje es contigo">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="page-content-title">Bienvenidos al portal de Globalia</h1>
+                </div>
+                <!-- <div class="col-12 col-xl-8 bordeInferior"> -->
+                <div class="col-12 col-xl-8">
+                    <template id="cajaNovedades"></template>
+                    <!-- <div class="enlace-fitur">
+                        <span><a class="textoBanner" href="https://comunicacioninterna.globalia.com/tag/fitur2019" target="_blank"
+                                rel="noopener noreferrer">» LO MEJOR DE FITUR 2019 »</a></span>
+                        <a href="https://comunicacioninterna.globalia.com/tag/fitur2019" target="_blank"
+                            rel="noopener noreferrer"><img src="res/img/icon-fitur.png"></a>
+                    </div> -->
+                    <!-- <div class="enlace-feriadelviaje">
+                        <span><a class="textoBanner" href="https://comunicacioninterna.globalia.com/tag/feriaviaje" target="_blank"
+                                rel="noopener noreferrer">» Consulta aquí todas las noticias de la Feria del
+                                Viaje</a></span>
+                        <a href="https://comunicacioninterna.globalia.com/tag/feriaviaje" target="_blank"
+                            rel="noopener noreferrer"><img src="res/img/icon-feriadelviaje.png"></a>
+                    </div> -->
+                </div>
+                <div id="cajaAccesosListin" class="col-12 col-xl-4">
+                    <template id="cajaAccesos"></template>
+                    <template id="cajaListin"></template>
+                </div>
+                <div class="col-12 col-xl-8 contenedorValores bordeInferior">
+                    <template id="cajaValores"></template>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div id="divCajaVacantes" class="col-12 col-xl-4 bordeInferior">
+                    <template id="cajaVacantes"></template>
+                </div>
+                <div id="divCajaComunicados" class="col-12 col-xl-4 bordeInferior">
+                    <template id="cajaComunicados"></template>
+                </div>
+                <div id="divCajaFavoritos" class="col-12 col-xl-4">
+                    <template id="cajaFavoritos"></template>
+                </div>
+            </div>
+        </div>
+        <div class="modalFoto">
+            <button type="button" class="discard btn waves-effect waves-light">
+                <i class="material-icons">close</i>
+            </button>
+            <img src="" alt="">
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div id="divCajaAnuncios" class="col-12 col-xl-6">
+                    <template id="cajaAnuncios"></template>
+                </div>
+                <div id="divCajaOfertas" class="col-12 col-xl-6">
+                    <template id="cajaOfertas"></template>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid fullWidth">
+        <div class="row">
+            <div class="col-12">
+                <template id="cajaBanners"></template>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div id="divCajaPreFooter" class="col-12">
+                <template id="cajaPreFooter"></template>
+            </div>
+        </div>
+    </div>
+</div>
+
+<form name="noticiasHome" class="dn" method="POST" frC-Callback="noticiasHome"
+    action="/management/mvc-management/controller/portal.xwi_feed.listar_noticias.json">
+</form>

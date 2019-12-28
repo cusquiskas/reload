@@ -1,0 +1,22 @@
+<div class="card-block gestionCarpetas">
+    <form name="obtenerArbolCarpetasGesCarpeta" class="dn" frC-Callback="obtenerArbolCarpetasGesCarpeta" frC-AutoLoad="true"
+        method="POST" action="/management/mvc-management/controller/portal.xwi_menu.listar_menu_carpeta.json"></form>
+    <h4 class="card-title">Gestión de Carpetas</h4>
+    <form class="form-horizontal botones container" role="form" method="POST" action="">
+        <button type="button" class="btn btn-outline-indigo nuevoModGestionCarpeta">Nuevo</button>
+        <button type="button" class="btn btn-outline-indigo nuevoModGestionCarpeta">Modificar</button>
+        <button type="button" class="btn btn-outline-danger borrarGestionCarpeta">Borrar</button>
+        <button type="button" class="btn btn-outline-primary volverGetionCarpeta">
+            <i class="material-icons">exit_to_app</i>
+            <span>VOLVER</span>
+        </button>
+    </form>
+    <div class="col">
+        <ul class="treeGestionCarpeta">
+        </ul>
+    </div>
+    <form name="borrarGestionCarpeta" class="dn" method="POST" frC-Callback="borrarGestionCarpeta" action="/management/mvc-management/controller/portal.xwi_menu.guardar_menu_carpeta.json">
+        <input name="p_codmca" required/>
+        <input name="p_flag" value="D" />
+    </form>
+</div>

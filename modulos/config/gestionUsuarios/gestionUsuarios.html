@@ -1,0 +1,165 @@
+<div>
+    <div class="app-header">
+        <h2>
+            Gestión de usuarios
+        </h2>
+    </div>
+    <div class="card app-panel">
+        <form class="card-body" name="gestionUsuarios" method="POST" frC-Callback="gestionUsuarios"
+            action="/management/mvc-management/controller/portal.xwi_personal.guardar_usuario_intranet.json">
+
+            <div class="mb-4">
+                <h3>
+                    Datos del usuario
+                </h3>
+            </div>
+            <div class="row">
+                <div class="md-form col-md-12">
+                    <div class="input-group">
+                        <input type="text" class="form-control" name="codusr" maxlength="10" required />
+                        <label for="codusr">Nº Personal <span class="text-danger">*</span></label>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="md-form col-md-4">
+                    <div class="input-group">
+                        <input type="text" class="form-control" name="nombre" required  maxlength="40" />
+                        <label for="nombre">Nombre <span class="text-danger">*</span></label>
+                    </div>
+                </div>
+
+                <div class="md-form col-md-4">
+                    <div class="input-group">
+                        <input type="text" class="form-control" name="priapl" required maxlength="40" />
+                        <label for="priapl">Apellido 1 <span class="text-danger">*</span></label>
+                    </div>
+                </div>
+                <div class="md-form col-md-4
+                    ">
+                    <div class="input-group">
+                        <input type="text" class="form-control" name="secapl" maxlength="40"/>
+                        <label for="secapl">Apellido 2 </label>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="md-form col-md-6">
+                    <div class="input-group">
+                        <input type="text" class="form-control" name="dniusr" required maxlength="20"/>
+                        <label for="dniusr">NIF/NIE <span class="text-danger">*</span></label>
+                    </div>
+                </div>
+                <div class="md-form col-md-6">
+                    <div class="input-group">
+                        <input type="text" class="form-control" name="socext" maxlength="2000" required/>
+                        <label for="socext">Empresa Origen <span class="text-danger">*</span></label>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="mb-4">
+                <h3>
+                   Datos organizativos
+                </h3>
+            </div>
+            <div class="row">
+                <div class="md-form col-md-4">
+                    <div class="input-group">
+                        <select class="form-control" name="codemp" required>
+                            <option value="EXT" selected>Externos</option>
+                            <option value="FIC">Ficticios</option>
+                            <option value="EMP">Empleado</option>
+                            <option value="FQZ">Franquiciado</option>
+                            <option value="ESPC">Empleados Especiales</option>
+                        </select>
+                        <label for="codemp" class="active"> Tipo Usuario <span class="text-danger">*</span></label>
+                    </div>
+                </div>
+                <div class="md-form col-md-4">
+                    <div class="input-group">
+                        <select class="form-control" name="coddep" frC-Reference="!p_codemp:codemp"
+                            frC-indexResponse="root:des,cod"
+                            frC-Store="/management/mvc-management/controller/newintra.xwi_personal.xlist$departamentos.json?p_tiplst=FILTRO"
+                            required>
+                        </select>
+                        <label for="coddep" class="active"> Departamento <span class="text-danger">*</span></label>
+                    </div>
+                </div>
+                <div class="md-form col-md-4">
+                    <div class="input-group">
+                        <select class="form-control" name="socint" frC-indexResponse="lov:texto,valor,cif"
+                            frC-Store="/management/mvc-management/controller/newintra.xwi_personal.xlist$empresas.json?P_TIPLST=JSON&p_empok=N&p_swicod=N&p_codapl=&p_codusr=&p_codpfl=&p_ctlcbk=&p_fecha="
+                            required>
+                        </select>
+                        <label for="socint" class="active"> Empresa destino <span class="text-danger">*</span></label>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="md-form row">
+                <div class="col-md-6">
+                    <div class="input-group">
+                        <input type="date" class="inputdate-unstyled mb-2" name="fecbaj"/>
+                        <label for="fecbaj" class="active"> Fecha baja</label>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="input-group">
+                        <input type="date" class="inputdate-unstyled" name="fecnac"  required/>
+                        <label for="fecnac" class="active"> Fecha de nacimiento <span class="text-danger">*</span></label>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="md-form col-md-6">
+                    <div class="input-group">
+                        <select name="mthval" class="form-control" required>
+                            <option value="A" selected>Active Directory</option>
+                            <option value="G">GESUS</option>
+                        </select>
+                        <label for="mthval" class="active"> Método de Acceso <span class="text-danger">*</span></label>
+                    </div>
+                </div>
+                <div class="md-form col-md-6">
+                    <frC-Graft name="tipEmpleado"></frC-Graft>
+                </div>
+            </div>
+
+
+            <div class="row p-3">
+                <div class="card-title">
+                    <h3>
+                        Autorizador
+                    </h3>
+                </div>
+                <div class="input-group">
+                    <label class="col-md-12 p-0 control-label" for="usraut">Persona que Autoriza el acceso <span class="text-danger">*</span></label>
+                    <input name="usraut" class="col-md-2 form-control" maxlength="10" required/>
+                    <span class="input-group-addon hide-on-modal lupaBuscarUsuarios verUsuario mt-3">
+                        <i class="material-icons" name="lupa">search</i>
+                    </span>
+                    <input name="authName" class="col-md-10 form-control disabledField" disabled readonly/>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="md-form col d-flex align-items-center justify-content-center ">
+                    <button type="submit" role="executeForm" class="btn btn-primary form-control col-md-3"
+                        role="submit">Guardar</button>
+                    <button role="refresh" type="button"
+                        class="btn  btn-default btn-secundary form-control col-md-3">Limpiar</button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+</div>

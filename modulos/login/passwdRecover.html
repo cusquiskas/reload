@@ -1,0 +1,226 @@
+<!-- Modal no contraseña -->
+<div class="noPass">
+
+    <div class="main-container login-form-container d-contac dn">
+        <form
+            name="frmContactInfo"
+            class="login-form"
+            method="POST" action="/management/mvc-management/controller/portal.xwi_recuperacion.dev_dato_login.json"
+            frC-Callback="cbkContactInfo">
+            <!-- Field to prevent the autosubmit -->
+            <input name="NoTocar" class="dn" type="text" frC-Submit="false"/>
+
+            <h2>
+                Recuperación de contraseña
+            </h2>
+            <label class="text-input-label">
+                <span class="text-input-label-icon box-sizing-initial">
+                    <img src="res/img/icon-user.png" alt="Nombre de usuario">
+                </span>
+                <input name="p_codusr" type="text" placeholder="Código de empleado" required>
+            </label>
+            <button class="button dark btnRecuperarPassword" type="button">Continuar</button>
+        </form>
+    </div>
+
+    <div class="main-container login-form-container d-crrtlf dn">
+        <form
+            name="frmRecuperar"
+            class="login-form"
+            method="POST" action="/management/mvc-management/controller/portal.xwi_recuperacion.recuperar_password.json"
+            frC-Callback="cbkRecuperar">
+            <input name="p_mode" type="hidden"/>
+            <input name="p_savcor" type="hidden" frC-Submit="false"/>
+            <input name="p_savtel" type="hidden" frC-Submit="false"/>
+
+            <h2>
+                Recuperación de contraseña
+            </h2>
+            <label class="text-input-label">
+                <span class="text-input-label-icon box-sizing-initial">
+                    <img src="res/img/icon-user.png" alt="Nombre de usuario">
+                </span>
+                <input name="p_codusr" type="text" placeholder="Código de empleado" readonly>
+            </label>
+            <p class="fowardEmailToIban fowardTelephoneToIban">
+                <small>Indica cómo quieres recuperar tu contraseña, a través del mail y/o del teléfono:</small>
+            </p>
+            <p class="fowardEmailToIban dn">
+                <small>A continuación, vamos a enviarte un email a la dirección de recuperación que nos facilitaste para que puedas completar el proceso.</small>
+            </p>
+            <p class="fowardTelephoneToIban dn">
+                <small>A continuación, vamos a enviarte un SMS al número de teléfono móvil que nos facilitaste para que puedas completar el proceso.</small>
+            </p>
+            <span class="text-input-label fowardEmailToIban">
+                <input id="xchktlfx" class="dn enabler-checkbox" type="checkbox" frC-Submit="false">
+                <label class="faux-checkbox" for="xchktlfx"></label>
+                <span class="text-input-label-icon box-sizing-initial">
+                    <img src="res/img/icon-phone.png" alt="Teléfono">
+                </span>
+                <input name="p_teleph" type="text" placeholder="Teléfono" readonly>
+            </span>
+            <span class="text-input-label fowardTelephoneToIban">
+                <input id="xchkcrrx" class="dn enabler-checkbox" type="checkbox" frC-Submit="false">
+                <label class="faux-checkbox" for="xchkcrrx"></label>
+                <span class="text-input-label-icon email-icon box-sizing-initial">
+                    <img src="res/img/icon-email2.png" alt="Mail">
+                </span>
+                <input name="p_correo" type="text" maxlength="90" placeholder="Mail" readonly>
+            </span>
+            <button class="button dark btnRecuperarPassword" type="button">Continuar</button>
+            
+            <div class="password-recovery-action mt-2 fowardEmailToIban fowardTelephoneToIban">
+                <a class="fowardToIban"><small>Si no reconoces el email o el número de móvil,<br> haz clic aquí »</small></a>
+            </div>
+            <div class="password-recovery-action mt-2 fowardEmailToIban dn">
+                <a class="fowardToIban"><small>Si no reconoces el email, haz clic aqui »</small></a>
+            </div>
+            <div class="password-recovery-action mt-2 fowardTelephoneToIban dn">
+                <a class="fowardToIban"><small>Si no reconoces el número de móvil,<br> haz clic aquí »</small></a>
+            </div>
+        </form>
+    </div>
+
+    <div class="main-container login-form-container d-chkibn dn">
+        <form
+            name="frmRecuperarPorIban"
+            class="login-form"
+            method="POST" action="/management/mvc-management/controller/portal.xwi_recuperacion.reset_password.json"
+            frC-Callback="cbkRecuperarPorIban">
+
+            <h2>
+                Recuperación de contraseña
+            </h2>
+            <label class="text-input-label">
+                <span class="text-input-label-icon box-sizing-initial">
+                    <img src="res/img/icon-user.png" alt="Nombre de usuario">
+                </span>
+                <input name="p_codusr" type="text" placeholder="Código de empleado" readonly>
+            </label>
+            <p>
+                <small>Completa la siguiente información para iniciar el proceso de recuperación de contraseña y verificar tu identidad.</small>
+            </p>
+            <label class="text-input-label">
+                <span class="text-input-label-icon box-sizing-initial">
+                    <img src="res/img/icon-phone.png" alt="Número de teléfono móvil">
+                </span>
+                <input name="p_teleph" type="text" placeholder="Número de teléfono móvil">
+            </label>
+            <label class="text-input-label">
+                <span class="text-input-label-icon email-icon box-sizing-initial">
+                    <img src="res/img/icon-email2.png" alt="Email de recuperación de contraseña">
+                </span>
+                <input name="p_correo" type="text" maxlength="90" placeholder="Email de recuperación de contraseña">
+            </label>
+            <label class="text-input-label">
+                <span class="text-input-label-icon barcode-icon box-sizing-initial">
+                    <img src="res/img/icon-barcode.png" alt="Dígitos de control">
+                </span>
+                <span>ES** - **** - **** - **** -</span>
+                <input name="p_iban" class="input-iban" type="text" maxlength="4"><!-- placeholder="Dígitos de control"-->
+                <span class="iban-sufx"></span>
+            </label>
+            <p>
+                <small>
+                    <em>Completa los cuatro digitos que faltan de la cuenta bancaria en la que tienes domiciliada tu nómina de empleado.</em>
+                    <br>
+                    <span class="iban-oculto"></span>
+                </small>
+            </p>
+            <label class="meta-input-label">
+                <button class="button dark btnRecuperarPassword" type="button">Continuar</button>
+            </label>
+        </form>
+    </div>
+
+    <div class="main-container login-form-container d-chkkey dn">
+        <form name="fmrAskKey" class="login-form">
+            <h2>
+                Recuperación de contraseña
+            </h2>
+            <p>
+                <img src="res/img/icon-ok.png" alt="OK" align="left">
+                Hemos enviado un SMS con un código a tu número de teléfono.
+            </p>
+            <p>
+                Introduce el código que has recibido en la siguiente casilla para regenerar tu contraseña.
+            </p>
+            <label class="text-input-label">
+                <span class="text-input-label-icon box-sizing-initial">
+                    <img src="res/img/icon-phone.png" alt="Introduce el código">
+                </span>
+                <input name="p_clasms" type="text" placeholder="Introduce el código">
+            </label>
+            <button class="button dark btnRecuperarPassword" type="button">Regenerar contraseña</button>
+        </form>
+    </div>
+
+    <div class="main-container login-form-container d-newpss dn">
+        <form
+            name="frmPasswrdClaveSms"
+            class="login-form"
+            method="POST" action="/management/mvc-management/controller/portal.xwi_recuperacion.password_clavesms.json"
+            frC-Callback="cbkPasswrdClaveSms">
+            <input name="p_codusr" type="hidden"/>
+            <input name="p_clasms" type="hidden"/>
+            <input name="p_psswrd" type="hidden"/>
+
+            <h2>
+                Establecer nueva contraseña
+            </h2>
+            <p>Introduce la nueva contraseña:</p>
+            <label class="input-group text-input-label strengthify-input-group">
+                <span class="text-input-label-icon box-sizing-initial">
+                    <img src="res/img/icon-password2.png" alt="Contraseña">
+                </span>
+                <input name="p_auxpsswrd" type="password" placeholder="Contraseña" frC-Submit="false">
+            </label>
+            <label class="text-input-label next-strengthify-input-group">
+                <span class="text-input-label-icon box-sizing-initial">
+                    <img src="res/img/icon-password2.png" alt="Contraseña">
+                </span>
+                <input name="p_pssrpt" type="password" placeholder="Repetir contraseña" frC-Submit="false">
+            </label>
+            <button class="button dark btnRecuperarPassword" type="button">Continuar</button>
+        </form>
+    </div>
+
+    <div class="main-container login-form-container d-cnfcrr dn">
+        <form class="login-form">
+            <h2>
+                Recuperación de contraseña
+            </h2>
+            <p>
+                <img src="res/img/icon-ok.png" alt="OK" align="left">
+                Te confirmamos el envío del email a:<br>
+                <a class="correo-enviado-a"></a>
+            </p>
+            <p>
+                Sigue las instrucciones que te enviamos para regenerar tu contraseña.
+            </p>
+            <p>
+                En caso de no localizar el email en la bandeja de entrada, comprueba tu bandeja de correo no deseado.
+            </p>
+        </form>
+    </div>
+
+    <div class="main-container login-form-container d-tlfcnt dn">
+        <form action="?" class="login-form">
+            <h2>
+                Recuperación de contraseña
+            </h2>
+            <div class="request-support-action">
+                <a href="tel:971926696"><small>Teléfono de soporte: 971926696</small></a>
+            </div>
+            <button class="button dark btnVolverALogin" type="button">Volver</button>
+        </form>
+    </div>
+
+    <form
+        name="frmOnloadRecuperacionContrasena" class="dn"
+        method="POST" action="/management/mvc-management/controller/portal.xwi_recuperacion.load_password_validation.json"
+        frC-Callback="cbkOnloadRecuperacionContrasena" frC-AutoLoad="false">
+        <input name="p_codusr"/>
+    </form>
+
+</div>

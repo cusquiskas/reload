@@ -1,0 +1,38 @@
+<div class="d-flex justify-content-center mt-3">
+    <div class="d-flex justify-content-center flex-column listadoHorario" style="width: 60%;">
+        <div class="archivo-fichajes listado m-0">
+            <div class="row responableBar dn">
+                <div class="col-12">
+                        <form class="" name="fichajes" method="POST" frC-Callback="onDataLoad"
+                        action="/management/mvc-management/controller/portal.xwi_presencia.lista_resumen_propio.json">
+                        <input type="hidden" name="fechad"><input type="hidden" name="fechah"><input type="hidden" name="token">
+                        <select class="selectEmployee" name="codusr" style="width:100%"></select>
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-12 morfingRowDate"><span><img src="res/img/icon-date.png" alt="Fecha"
+                            width="22px"></span><strong>FECHA</strong></div>
+
+                <div class="col-md-3  col-12"><span><img src="res/img/icon-entrance.png" alt="Entrada"
+                            width="23px"></span><strong>PRIMER FIC.</strong></div>
+
+                <div class="col-md-3 col-12"><span><img src="res/img/icon-exit.png" alt="Salida"
+                            width="20px"></span><strong>ÚLTIMO FIC.</strong></div>
+                
+                <div class="col-md-2 col-12 dn morfingRowBtn"><span><img src="res/img/icon-date.png" alt="Detalle"
+                            width="22px"></span><strong>Detalle</strong></div>
+
+            </div>
+            <div name="rowsOfCheckIn" class="tabla">
+
+            </div>
+        </div>
+        <div class="w-100 d-flex justify-content-center mt-3">
+            <button class="btn btn-primary  col-md-3 col-12 d-flex justify-content-center" tabindex="0" type="button"
+                aria-label="SeeMore">Ver más</button>
+        </div>
+
+        
+    </div>
+</div>

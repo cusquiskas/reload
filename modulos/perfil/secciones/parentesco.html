@@ -1,0 +1,121 @@
+<div class="card">
+    <div class="card-header aperturaDatosPersonales  nav-lvl-1" id="heading10">
+        <h5 class="mb-0">
+            <a class="collapsed" data-toggle="collapse" role="button">
+                Datos Padres / Lugar Nacimiento
+            </a>
+        </h5>
+    </div>
+    <div id="collapse10" class="collapse cuerpoDatosPersonales">
+        <div class="card-body">
+            <div class="formDatosParentesco">
+                <form name="initParentesco" method="POST" class="dn" frC-Callback="initParentesco"
+                    action="/management/mvc-management/controller/newintra.xwi_autoservicio.datpx$obtenerparentesco.json">
+                    <input type="text" class="form-control" maxlength="40" name="P_fecsol" disabled />
+                    <input type="text" class="form-control" maxlength="40" name="P_codusr" disabled />
+                </form>
+                <form name="parentesco" method="POST" frC-Callback="parentesco"
+                    action="/management/mvc-management/controller/newintra.xwi_autoservicio.datpx$guardar.json">
+                    <div class="row divContenedorFormDatPX">
+                        <input type="hidden" name="p_docpare" />
+                        <div class="md-form d-flex dn">
+                            <input type="password" class="form-control" name="p_password" disabled />
+                            <label for="p_password" class="active">Contraseña</label>
+                        </div>
+                        <div class="md-form d-flex dn">
+                            <input type="text" class="form-control" name="P_xsid" disabled />
+                            <label for="P_xsid" class="active">XSID</label>
+
+                        </div>
+                        <div class="col-md-6">
+                            <h4 class="card-title">Datos De La Madre</h4>
+                            <div class="md-form d-flex">
+                                <input type="text" class="form-control" maxlength="40" name="p_madre_name" required
+                                    disabled />
+                                <label for="p_madre_name" class="nombre-madre">Nombre Madre</label>
+                            </div>
+                            <div class="md-form d-flex">
+                                <input type="text" class="form-control" maxlength="40" name="p_madre_ape" required
+                                    disabled />
+                                <label for="p_madre_ape" class="apellido-madre">Apellido Madre</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h4 class="card-title">Datos Del Padre</h4>
+                            <div class="md-form d-flex">
+                                <input type="text" class="form-control" maxlength="50" name="p_padre_name" required
+                                    disabled />
+                                <label for="p_padre_name" class="nombre-padre">Nombre Padre</label>
+                            </div>
+                            <div class="md-form d-flex">
+                                <input type="text" class="form-control" maxlength="40" name="p_padre_ape" required
+                                    disabled />
+                                <label for="p_padre_ape" class="apellido-padre">Apellido Padre</label>
+                            </div>
+                        </div>
+                    </div>
+                    <h4 class="card-title">Lugar De Nacimiento</h4>
+                    <div class="row divContenedorFormDatPT">
+                        <div class="col-md-4">
+                            <div class="md-form d-flex">
+                                <select type="text" class="form-control custom-select paisnaci" name="p_nacper"
+                                    frC-indexResponse="root:alter,cod"
+                                    frC-Store="/management/mvc-management/controller/newintra.xwi_personal.xlist$paises.json?xchn=json&p_ctlcbk=&p_nation=&p_swicod=S"
+                                    required disabled></select>
+                                <label for="p_nacper" class="active">País</label>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="md-form d-flex">
+                                <select class="form-control custom-select provinaci" name="p_proper"
+                                    frC-Reference="p_pais:p_nacper" frC-indexResponse="root:des,cod"
+                                    frC-Store="/management/mvc-management/controller/newintra.xwi_personal.xlist$provincias.json?xchn=json&p_ctlcbk=&p_swicod=S"
+                                    required disabled></select>
+                                <label for="p_proper" class="active">Provincia</label>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="md-form d-flex">
+                                <input type="text" class="form-control p_nacimiento" maxlength="40" name="p_nacimiento"
+                                    required disabled />
+                                <label for="p_nacimiento" class="lugar-nacimiento active">Localidad</label>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="divAdjuntarParentesco dn">
+                <div class="row mensajeRRHH">
+                    En caso de que no encuentre su Provincia en el listado, comuníquelo a <a href="mailTo:atencion.empleado@globalia-corp.com">atencion.empleado@globalia-corp.com</a>
+                </div>
+                <label for="p_docpare" class="active">Adjuntar documentación</label>
+                <div>
+                    <button type="button" class="" id="botonAdjuntarArchivoParentesco">
+                        <span>Selecciona archivo</span>
+                    </button>
+                    <input type="text" class="form-control" id="adjuntarArchivoParent" name="docAdj" disabled
+                        required />
+                </div>
+            </div>
+            <div class="row float-right">
+                <div class="btnModificando row dn">
+                    <button type="button" class="btn btn-outline-success btnGuardarDatosParentesco">
+                        <i class="material-icons">save</i>
+                        <span>Guardar</span>
+                    </button>
+                    <button type="button" class="btn btn-outline-danger btnCancelarDatosParentesco">
+                        <i class="material-icons">clear</i>
+                        <span>Cancelar</span>
+                    </button>
+                </div>
+                <button type="button" class="btn btn-outline-warning btnModificarDatosParentesco">
+                    <i class="material-icons">edit</i>
+                    <span>Modificar</span>
+                </button>
+                <div class="mensajeRRHH mensajeDatosParentesco dn">
+                    Trámite de modificación pendiente para este empleado
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
